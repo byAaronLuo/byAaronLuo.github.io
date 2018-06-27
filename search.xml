@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[如何在vue上使用sass]]></title>
+    <url>%2F2018%2F06%2F27%2Ftest-2%2F</url>
+    <content type="text"><![CDATA[如何安装SassSass、gem安装教程当安装完成后在终端输入1sass -v 如下sass常用更新、查看版本、帮助等命令12345678// 更新sassgem update sass//查看版本sass -v//查看sass帮助sass -h 如何在vue.js中安装sass的依赖的两种方法1. 在当前项目的目录下引入123cnpm install sass-loader -Dcnpm install node-sass -D 引入完成之后在package.json中会有如下两个依赖“node-sass”: “^4.9.0”,“sass-loader”: “^7.0.3”,这样这个项目就配置好了sass 如果运行项目之后不能使用sass那么就在webpack.base.conf.js中的module：的rules：[ ] 下添加：12345678910&#123; test: /\.vue$/, loader: &apos;vue-loader&apos;, options: &#123; loaders: &#123; scss: &apos;style-loader!css-loader!sass-loader&apos;, sass: &apos;style-loader!css-loader!sass-loader?indentedSyntax&apos;, &#125;, &#125;, &#125;, 2. 官方Sass Loader的引入方法sass Loade官方仓库]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>-sass</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[jQuery配合vue.js注册锚点实现动画过渡效果]]></title>
     <url>%2F2018%2F06%2F23%2Ftext-1%2F</url>
     <content type="text"><![CDATA[问题：如何利用jQuery实现网页导航栏注册锚点并有过渡效果引言：jquery库 - 特性jQuery 是一个 JavaScript 函数库。 jQuery 库包含以下特性： HTML 元素选取 HTML 元素操作 CSS 操作 HTML 事件函数 JavaScript 特效和动画 HTML DOM 遍历和修改 AJAX Utilities 为什么要实现点击导航栏到当前组件要有过渡效果：目前大多数官网首页都是各种炫酷的动画，如果仅仅只是在a标签的herf里添加#id,然后在组件里添加id，虽然会实现到滑到页面，但是是真的丑陋至极，毫无违和感，而且当你刷新的时候会自动在你的路由下添加一个路径，然后就出现空白，着实很烦。如何实现： 利用vue.js和jQuery，因为vue.js写好组件然后通过组件直接显示页面这样各个组件不会相互干扰。 在vue.js 里配置jQuery 和bootstrap（由于我需要bootstrap 做响应式布局这里我也介绍吧）jQuery 引用 第一步1cnpm install jquery --save 第二步在build/webpack.base.conf.js里加入1var webpack = require(&quot;webpack&quot;) 第三步同样build/webpack.base.conf.js中在module.exports的最后加入1234567plugins: [ new webpack.optimize.CommonsChunkPlugin(&apos;common.js&apos;), new webpack.ProvidePlugin(&#123; jQuery: &quot;jquery&quot;, $: &quot;jquery&quot; &#125;) ], 第四步在main.js 引入import $ from ‘jquery’1import $ from &apos;jquery&apos; 第五步重启本地服务器1cnpm run dev bootstrap引用第一步1cnpm install bootstrap --save 第二步在main.js中直接引入 12import &apos;../node_modules/bootstrap/dist/css/bootstrap.min.css&apos;;import &apos;../node_modules/bootstrap/dist/js/bootstrap.min.js&apos;; 第三步1cnpm run dev 代码12345678910111213141516171819202122HTML:&lt;ul class=&quot;nav navbar-nav ul_class_after&quot; v-for=&quot;(item,index) in navigation&quot;&gt; &lt;li&gt; &lt;a href=&quot;#&quot; class = &quot;a_class_jump&quot; @click=&quot;jump(item.item)&quot;&gt;&#123;&#123;item.item&#125;&#125;&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;&lt;About id=&quot;About&quot;&gt;&lt;/About&gt;&lt;div id = &quot;Services&quot; style=&quot;height: 1000px&quot;&gt;2222&lt;/div&gt;js:jump(item)&#123; var top = $(&apos;#&apos;+item).offset().top; //获取当前id距离顶部距离 if(item == &apos;Home&apos;)&#123; &#125; else if(item == &apos;About&apos;)&#123; $(&apos;html,body&apos;).animate(&#123;scrollTop:top&#125;,1500); &#125; else&#123; $(&apos;html,body&apos;).animate(&#123;scrollTop:top&#125;,2000); //滚动条跳到当前id的位置，完成此操作需要2s &#125;&#125; 这样就会有一个过渡效果并且在2s内完成跳转，然候如果第一次进入这个锚点会有一个动画效果 12345678910111213141516171819202122232425262728293031323334353637383940HTML: &lt;div class=&quot;div_class_item&quot; id = &quot;div_id_item1&quot;&gt;内容&lt;/div&gt;&lt;div class=&quot;div_class_item&quot; id = &quot;div_id_item2&quot;&gt;内容&lt;/div&gt;&lt;div class=&quot;div_class_item&quot; id = &quot;div_id_item3&quot;&gt;内容&lt;/div&gt;需要添加的css：.animate_positive&#123; animation:route 2s; animation-fill-mode:forwards; animation-direction:alternate;&#125;@-webkit-keyframes route&#123; from &#123; margin-left: -60em; &#125; to&#123;margin-left: 0em ; &#125;&#125;@keyframe route&#123; from &#123; margin-left: -60em; &#125; to&#123;margin-left: 0em ; &#125;&#125;js:function loadAnimation(container_Id,aimation_name,offset)&#123; var contain_To_Top,window_ScrooTop,window_height,offset_To_Top; offset_To_Top=$(container_Id).offset().top; ontain_To_Top=eval(offset_To_Top + offset); //字符串相加 window_ScrooTop =$(window).scrollTop(); //窗口滚动高度 window_height=$(window).height();//窗口高度 if(window_ScrooTop + window_height&gt;contain_To_Top)&#123; $((container_Id)).addClass((aimation_name)); &#125;&#125;$(document).ready(function(e)&#123; $(window).scroll(function()&#123; loadAnimation(&quot;#div_id_item3&quot;,&quot;animate_positive&quot;,0); loadAnimation(&quot;#div_id_item2&quot;,&quot;animate_positive&quot;,0); loadAnimation(&quot;#div_id_item1&quot;,&quot;animate_positive&quot;,0); &#125;);&#125;); 码云demo 以上就是做一个简单的jQuery配合vue.js 做的一个过渡效果]]></content>
@@ -8,7 +19,7 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>-jQueryhe</tag>
+        <tag>-jQuery</tag>
       </tags>
   </entry>
   <entry>
