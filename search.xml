@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[安装并破解office]]></title>
+    <url>%2F2018%2F07%2F06%2Ftext-3%2F</url>
+    <content type="text"><![CDATA[如何安装office2016并免费破解首先在msdn里找到office2016 msdn官网按照如图选择office2016然后点击详细信息，复制ed2k整个一长串链接复制完之后打开迅雷直接下载(下载的源文件是一个镜像)直接解压这个镜像找到里面的setup.exe安装完成之后在桌面空白处点击鼠标右键新建文件夹里就有office包括的Word，Excel，PowerPoint等等办公软件 破解office下载KMSpico_Install(这里我会给大家工具)简单介绍，这个工具可以激活window，office点击运行exe文件个人建议就放在他的默认文件C盘如果有的人之前用过这个软件激活window，那就在控制面板里找到程序与功能，卸载KMSpico_setup再安装注：安装过程中会出现进度条都已经完成了，但是没有响应，请不要强制关闭，等待自动关闭KM工具联系QQ：1071843726]]></content>
+      <categories>
+        <category>基础</category>
+      </categories>
+      <tags>
+        <tag>基础</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[如何在vue上使用sass]]></title>
     <url>%2F2018%2F06%2F27%2Ftest-2%2F</url>
     <content type="text"><![CDATA[如何安装SassSass、gem安装教程当安装完成后在终端输入1sass -v 如下sass常用更新、查看版本、帮助等命令12345678// 更新sassgem update sass//查看版本sass -v//查看sass帮助sass -h 如何在vue.js中安装sass的依赖的两种方法1. 在当前项目的目录下引入123cnpm install sass-loader -Dcnpm install node-sass -D 引入完成之后在package.json中会有如下两个依赖“node-sass”: “^4.9.0”,“sass-loader”: “^7.0.3”,这样这个项目就配置好了sass 如果运行项目之后不能使用sass那么就在webpack.base.conf.js中的module：的rules：[ ] 下添加：12345678910&#123; test: /\.vue$/, loader: &apos;vue-loader&apos;, options: &#123; loaders: &#123; scss: &apos;style-loader!css-loader!sass-loader&apos;, sass: &apos;style-loader!css-loader!sass-loader?indentedSyntax&apos;, &#125;, &#125;, &#125;, 2. 官方Sass Loader的引入方法sass Loade官方仓库]]></content>
