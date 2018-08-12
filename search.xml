@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[text_3]]></title>
+    <url>%2F2018%2F08%2F13%2Ftext-3%2F</url>
+    <content type="text"><![CDATA[如何使用javaScript,ajax,SpringBoot 实现前后台交互]]></content>
+      <categories>
+        <category>POST</category>
+      </categories>
+      <tags>
+        <tag>-javaScript&amp;&amp;ajax&amp;&amp;SpringBoot</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[如何在vue上使用sass]]></title>
     <url>%2F2018%2F06%2F27%2Ftest-2%2F</url>
     <content type="text"><![CDATA[如何安装SassSass、gem安装教程当安装完成后在终端输入1sass -v 如下sass常用更新、查看版本、帮助等命令12345678// 更新sassgem update sass//查看版本sass -v//查看sass帮助sass -h 如何在vue.js中安装sass的依赖的两种方法1. 在当前项目的目录下引入123cnpm install sass-loader -Dcnpm install node-sass -D 引入完成之后在package.json中会有如下两个依赖“node-sass”: “^4.9.0”,“sass-loader”: “^7.0.3”,这样这个项目就配置好了sass 如果运行项目之后不能使用sass那么就在webpack.base.conf.js中的module：的rules：[ ] 下添加：12345678910&#123; test: /\.vue$/, loader: &apos;vue-loader&apos;, options: &#123; loaders: &#123; scss: &apos;style-loader!css-loader!sass-loader&apos;, sass: &apos;style-loader!css-loader!sass-loader?indentedSyntax&apos;, &#125;, &#125;, &#125;, 2. 官方Sass Loader的引入方法sass Loade官方仓库]]></content>
