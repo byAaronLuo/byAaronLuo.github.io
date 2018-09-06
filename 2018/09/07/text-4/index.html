@@ -101,7 +101,7 @@
 
 
 
-  <meta name="keywords" content="Aaron,Hexo, NexT" />
+  <meta name="keywords" content="JS," />
 
 
 
@@ -114,14 +114,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="纯JS滚动（给控件注册锚点）犀牛书15.8 (P390)查询窗口滚动条的位置12345678910111213141516// 以一个对象的x,y属性的方式返回滚动条的偏移量function getScrollOffsets(window)&amp;#123;  //使用指定窗口，如果不带参数则使用当前窗口  window = window || window;  //除了IE8及更早版本以外，其他浏览器">
+<meta name="keywords" content="JS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Scroll">
+<meta property="og:url" content="http://yoursite.com/2018/09/07/text-4/index.html">
 <meta property="og:site_name" content="Aaron">
+<meta property="og:description" content="纯JS滚动（给控件注册锚点）犀牛书15.8 (P390)查询窗口滚动条的位置12345678910111213141516// 以一个对象的x,y属性的方式返回滚动条的偏移量function getScrollOffsets(window)&amp;#123;  //使用指定窗口，如果不带参数则使用当前窗口  window = window || window;  //除了IE8及更早版本以外，其他浏览器">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-22T15:34:59.327Z">
+<meta property="og:updated_time" content="2018-09-06T16:55:36.307Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
+<meta name="twitter:title" content="Scroll">
+<meta name="twitter:description" content="纯JS滚动（给控件注册锚点）犀牛书15.8 (P390)查询窗口滚动条的位置12345678910111213141516// 以一个对象的x,y属性的方式返回滚动条的偏移量function getScrollOffsets(window)&amp;#123;  //使用指定窗口，如果不带参数则使用当前窗口  window = window || window;  //除了IE8及更早版本以外，其他浏览器">
 
 
 
@@ -151,13 +155,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/about/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/07/text-4/"/>
 
 
 
 
 
-  <title>about | Aaron</title>
+  <title>Scroll | Aaron</title>
   
 
 
@@ -316,33 +320,186 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/07/text-4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Aaron">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">about</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline">Scroll</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-07T00:49:46+08:00">
+                2018-09-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-      </div>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JS/" itemprop="url" rel="index">
+                    <span itemprop="name">JS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="纯JS滚动（给控件注册锚点）"><a href="#纯JS滚动（给控件注册锚点）" class="headerlink" title="纯JS滚动（给控件注册锚点）"></a>纯JS滚动（给控件注册锚点）</h1><h2 id="犀牛书15-8-P390"><a href="#犀牛书15-8-P390" class="headerlink" title="犀牛书15.8 (P390)"></a>犀牛书15.8 (P390)</h2><h3 id="查询窗口滚动条的位置"><a href="#查询窗口滚动条的位置" class="headerlink" title="查询窗口滚动条的位置"></a>查询窗口滚动条的位置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">// 以一个对象的x,y属性的方式返回滚动条的偏移量</span><br><span class="line">function getScrollOffsets(window)&#123;</span><br><span class="line">  //使用指定窗口，如果不带参数则使用当前窗口</span><br><span class="line">  window = window || window;</span><br><span class="line">  //除了IE8及更早版本以外，其他浏览器都能使用</span><br><span class="line">  if(window.pageXOffset!=null)&#123;</span><br><span class="line">    return &#123;x:window.pageXOffset,y:window.pageYOffset&#125;;</span><br><span class="line">  &#125;</span><br><span class="line">  //对标准模式下的IE(或任何浏览器)</span><br><span class="line">  var d = window.document;</span><br><span class="line">  if(document.compatMode == &apos;CSS1Compat&apos;)&#123;</span><br><span class="line">    return&#123;x:d.documentElement.scrollLeft,y:d.documentElement.scrollTop&#125;;</span><br><span class="line">  &#125;</span><br><span class="line">  //对于怪异模式下的浏览器</span><br><span class="line">  return &#123;x:d.body.scrollLeft,y:d.body.scrollTop&#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>获取之后可以注册监听器实时监控滚动条的位置</p>
+<h3 id="判定元素在某点"><a href="#判定元素在某点" class="headerlink" title="判定元素在某点"></a>判定元素在某点</h3><p>getBoundingClientRect() 方法使我们能在视口中判定元素的位置，如果判定视口中的指定位置有什么元素可以使用Document对象的elementFromPoint()方法来判定。传递X和Y坐标（使用视口坐标而非文档坐标），该方法返回在一个指定位置的元素上</p>
+<h3 id="滚动"><a href="#滚动" class="headerlink" title="滚动"></a>滚动</h3><p>在主窗口 window中如果知道scrollLeft、scrollTop属性可以设置让浏览器滚动<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">// HTML</span><br><span class="line">&lt;button id=&quot;button_id_Click&quot;&gt;点击&lt;/button&gt;// 点击button从顶部到&lt;div&gt;456&lt;/div&gt;处</span><br><span class="line">&lt;div style=&quot;height: 1000px;&quot;&gt;123&lt;/div&gt;// 设置div高度为1000px;</span><br><span class="line">&lt;div style=&quot;height: 300px;&quot; id=&quot;div_id_Height&quot;&gt;456&lt;/div&gt;</span><br><span class="line">&lt;button id=&quot;button_id_ClickBack&quot;&gt;返回&lt;/button&gt;// 点击button从任意位置返回到顶部</span><br><span class="line">//JS</span><br><span class="line">var height = document.getElementById(&quot;div_id_Height&quot;).getBoundingClientRect();</span><br><span class="line">console.log(height);</span><br><span class="line">document.getElementById(&quot;button_id_Click&quot;).onclick = function()&#123;</span><br><span class="line">  window.scrollTo(0,height.y);</span><br><span class="line">&#125;</span><br><span class="line">document.getElementById(&quot;button_id_ClickBack&quot;).onclick = function()&#123;</span><br><span class="line">  var obj = new Object();</span><br><span class="line">  obj = getScrollOffsets(window);</span><br><span class="line">  console.log(obj.y);//观察滚动条的偏移量</span><br><span class="line">  window.scrollTo(0,0);</span><br><span class="line">&#125;</span><br><span class="line">// 以一个对象的x,y属性的方式返回滚动条的偏移量</span><br><span class="line">function getScrollOffsets(window)&#123;</span><br><span class="line">  //使用指定窗口，如果不带参数则使用当前窗口</span><br><span class="line">  window = window || window;</span><br><span class="line">  //除了IE8及更早版本以外，其他浏览器都能使用</span><br><span class="line">  if(window.pageXOffset!=null)&#123;</span><br><span class="line">    return &#123;x:window.pageXOffset,y:window.pageYOffset&#125;;</span><br><span class="line">  &#125;</span><br><span class="line">  //对标准模式下的IE(或任何浏览器)</span><br><span class="line">  var d = window.document;</span><br><span class="line">  if(document.compatMode == &apos;CSS1Compat&apos;)&#123;</span><br><span class="line">    return&#123;x:d.documentElement.scrollLeft,y:d.documentElement.scrollTop&#125;;</span><br><span class="line">  &#125;</span><br><span class="line">  //对于怪异模式下的浏览器</span><br><span class="line">  return &#123;x:d.body.scrollLeft,y:d.body.scrollTop&#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p> 但其实这种滑动效果不是很好，没有过渡效果，那么用js如何使用加载过渡效果呢？</p>
+<blockquote>
+<p>注 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/scrollTo" target="_blank" rel="noopener">MDN web docs</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//将以上window.scrollTo(x-coord,y-coord)的代码更改为</span><br><span class="line">window.scrollTo(&#123;</span><br><span class="line">  top:0, // 从浏览器任意位置返回至0</span><br><span class="line">  behavior:&quot;smooth&quot;,</span><br><span class="line">&#125;);</span><br><span class="line">window.scrollTo(&#123;</span><br><span class="line">  top:height.y，// 返回注册锚点处</span><br><span class="line">  behavior:&quot;smooth&quot;,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p>注 window.scrollTo中</p>
+</blockquote>
+<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><ul>
+<li><code>x-coord</code> 是文档中的横轴坐标。</li>
+<li><code>y-coord</code> 是文档中的纵轴坐标。</li>
+<li><code>options</code> 是一个包含三个属性的对象:</li>
+</ul>
+<ol>
+<li><code>_top_</code> 等同于  <code>_y-coord_</code></li>
+<li>left 等同于  <code>x_-coord_</code></li>
+<li><code>_behavior_</code>  类型String,表示滚动行为,支持参数 smooth(平滑滚动),instant(瞬间滚动),默认值auto,实测效果等同于instant<br>该函数实际上和 <a href="https://developer.mozilla.org/en-US/docs/DOM/Window.scroll" target="_blank" rel="noopener">window.scroll</a>是一样的。 相对滚动可以参考 <a href="https://developer.mozilla.org/en-US/docs/DOM/Window.scrollBy" target="_blank" rel="noopener">window.scrollBy</a>，<a href="https://developer.mozilla.org/en-US/docs/DOM/Window.scrollByLines" target="_blank" rel="noopener">window.scrollByLines</a>，和 <a href="https://developer.mozilla.org/en-US/docs/DOM/Window.scrollByPages" target="_blank" rel="noopener">window.scrollByPages</a>。</li>
+</ol>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JS/" rel="tag"><i class="fa fa-tag"></i> JS</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/13/text-3/" rel="next" title="如何使用javaScript,ajax,SpringBoot 实现前后台交互">
+                <i class="fa fa-chevron-left"></i> 如何使用javaScript,ajax,SpringBoot 实现前后台交互
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -375,8 +532,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -477,6 +643,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#纯JS滚动（给控件注册锚点）"><span class="nav-number">1.</span> <span class="nav-text">纯JS滚动（给控件注册锚点）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#犀牛书15-8-P390"><span class="nav-number">1.1.</span> <span class="nav-text">犀牛书15.8 (P390)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#查询窗口滚动条的位置"><span class="nav-number">1.1.1.</span> <span class="nav-text">查询窗口滚动条的位置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#判定元素在某点"><span class="nav-number">1.1.2.</span> <span class="nav-text">判定元素在某点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#滚动"><span class="nav-number">1.1.3.</span> <span class="nav-text">滚动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参数"><span class="nav-number">1.1.4.</span> <span class="nav-text">参数</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
