@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="JS," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Aaron" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="在JavaScript中，函数也是对象; 也就是说，函数属于Object类型，它们可以像任何其他对象（String，Array，Number等）一样以第一类方式使用，因为它们实际上是对象本身。它们可以“存储在变量中，作为参数传递给新函数，在函数中创建，并从函数返回”  什么是回调函数或者高阶函数所谓高阶函数（higher-order function) 就是操作函数的函数，它接收一个或者多个函数作">
+<meta name="keywords" content="JS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS回调函数（深入理解）">
+<meta property="og:url" content="http://yoursite.com/2018/09/20/text-6/index.html">
+<meta property="og:site_name" content="Aaron">
+<meta property="og:description" content="在JavaScript中，函数也是对象; 也就是说，函数属于Object类型，它们可以像任何其他对象（String，Array，Number等）一样以第一类方式使用，因为它们实际上是对象本身。它们可以“存储在变量中，作为参数传递给新函数，在函数中创建，并从函数返回”  什么是回调函数或者高阶函数所谓高阶函数（higher-order function) 就是操作函数的函数，它接收一个或者多个函数作">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-09-20T13:24:19.640Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JS回调函数（深入理解）">
+<meta name="twitter:description" content="在JavaScript中，函数也是对象; 也就是说，函数属于Object类型，它们可以像任何其他对象（String，Array，Number等）一样以第一类方式使用，因为它们实际上是对象本身。它们可以“存储在变量中，作为参数传递给新函数，在函数中创建，并从函数返回”  什么是回调函数或者高阶函数所谓高阶函数（higher-order function) 就是操作函数的函数，它接收一个或者多个函数作">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/09/20/text-6/"/>
+
+
+
+
+
+  <title>JS回调函数（深入理解） | Aaron</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Aaron</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/20/text-6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Aaron">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">JS回调函数（深入理解）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-20T21:09:01+08:00">
+                2018-09-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>在JavaScript中，函数也是对象; 也就是说，函数属于<strong>Object</strong>类型，它们可以像任何其他对象（String，Array，Number等）一样以第一类方式使用，因为它们实际上是对象本身。它们可以“存储在变量中，作为参数传递给新函数，在函数中创建，并从函数返回” </p>
+<h1 id="什么是回调函数或者高阶函数"><a href="#什么是回调函数或者高阶函数" class="headerlink" title="什么是回调函数或者高阶函数"></a>什么是回调函数或者高阶函数</h1><p>所谓高阶函数（higher-order function) 就是操作函数的函数，它接收一个或者多个函数作为参数，并返回一个新的函数。<br>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//这个高阶函数返回一个新的函数，这个新函数将它的实参传入f()</span><br><span class="line">//并返回f的返回值的逻辑非</span><br><span class="line">var even = function(a,b,c)&#123;</span><br><span class="line">    return a+b+c;</span><br><span class="line">&#125;</span><br><span class="line">function add(f)&#123;</span><br><span class="line">    return function()&#123;  //返回一个新的函数</span><br><span class="line">        var result = f.apply(this,arguments); // 调用f(),result == even(a,b,c)返回的数据</span><br><span class="line">        return result;  返回result</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">// 调用函数</span><br><span class="line">add(even)(1,2,3); // add(event)返回的是一个函数 console 为 6</span><br></pre></td></tr></table></figure></p>
+<p>上面的add()函数就是一个高阶函数。因此它接收一个函数作为参数，并返回一个新函数<br>一个回调函数，是一个被作为参数的函数传递给另一个函数(我们把另一个函数叫做’otherFunction’)的函数，回调函数在otherFunction中被调用。一个回调函数本质上是一种编程模式(为一个常见问题创建的解决方案)，因此回调函数也叫做回调模式</p>
+<p>经典回调函数例子：<br>在js中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// onclick 是一个函数，而不是一个变量，并且在这个匿名函数中可以加入参数</span><br><span class="line">document.getElementById(&apos;id&apos;).onclick = function()&#123;</span><br><span class="line">    alert(&quot;btn is clicked&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>jQuery中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(&apos;#btn&apos;).click(function()&#123;</span><br><span class="line">    alert(&quot;btn was clicked&quot;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>正如你在前面的例子中看到的，我们将一个函数作为参数传递给了click方法。click方法会调用（或者执行）我们传递给它的函数。这是Javascript中回调函数的典型用法，它在jQuery中广泛被使用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var friends = [&apos;Mike&apos;,&apos;stacy&apos;,&apos;Andy&apos;,&apos;Rick&apos;];</span><br><span class="line">friends.forEach(function(item,index)&#123;</span><br><span class="line">    console.log(indx+1+&quot;. &quot;+item); // 1. Mike, 2. Stacy, 3. Andy, 4. Rick</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>在forEach方法中，我们将一个匿名函数(no name’s function)作为参数传递给了forEach方法。<br>到目前为止，我们将匿名函数作为参数传递给了另一个函数或者方法，我们先来理解回调函数是怎么运作的。</p>
+<h1 id="回调函数是如何运作的？"><a href="#回调函数是如何运作的？" class="headerlink" title="回调函数是如何运作的？"></a>回调函数是如何运作的？</h1><p>因为函数在Javascript中是第一类对象，我们像对待对象一样对待函数，因此我们能像传递变量一样传递函数，在函数中返回函数，在其他函数中使用函数。当我们将一个回调函数作为参数传递给另一个函数，我们仅仅传递了函数定义，并没有在参数中执行函数。但是我们并不传递像平时执行函数一样带有一对执行小括号()的函数，而只是将otherFunction的函数名作为参数放入函数中，以用来回调。</p>
+<p>需要注意的很重要的一点是回调函数并不会马上被执行。它会在包含它的函数内的某个特定时间点被“回调”（就像它的名字一样）。<br>经典回调函数例子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var friends = [&apos;Mike&apos;,&apos;stacy&apos;,&apos;Andy&apos;,&apos;Rick&apos;];</span><br><span class="line">friends.forEach(function(item,index)&#123;</span><br><span class="line">    console.log(indx+1+&quot;. &quot;+item); // 1. Mike, 2. Stacy, 3. Andy, 4. Rick</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>这个匿名函数稍后会在函数体内被调用。即使有名字，它依然在包含它的函数内通过arguments对象获取</p>
+<h1 id="回调函数是闭包"><a href="#回调函数是闭包" class="headerlink" title="回调函数是闭包"></a>回调函数是闭包</h1><h2 id="什么是闭包？"><a href="#什么是闭包？" class="headerlink" title="什么是闭包？"></a>什么是闭包？</h2><p>函数对象可以通过作用域链相互关联起来，函数体内部的变量可以保存在函数的作用域中，这种特性在计算机科学文献中被称为“闭包”。<br>闭包这个术语非常古老，是指函数变量可以被隐藏于作用域链之内，因此看起来是函数将变量“包裹”了起来。</p>
+<h2 id="为什么说回调函数是闭包？"><a href="#为什么说回调函数是闭包？" class="headerlink" title="为什么说回调函数是闭包？"></a>为什么说回调函数是闭包？</h2><p>一个回调函数作为变量传递给另一个函数时，这个回调函数在包含它的函数内的某一点执行，就好像这个回调函数是在包含它的函数中定义的一样，这意味着回调函数本质上是一个闭包。<br>正如闭包的定义一样，闭包能访问它的函数作用域，因此回调函数能够访问到包含于它函数中的变量以及全局作用域中的变量</p>
+<h1 id="实现回调函数的基本原理"><a href="#实现回调函数的基本原理" class="headerlink" title="实现回调函数的基本原理"></a>实现回调函数的基本原理</h1><h2 id="使用命名或匿名函数作为回调"><a href="#使用命名或匿名函数作为回调" class="headerlink" title="使用命名或匿名函数作为回调"></a>使用命名或匿名函数作为回调</h2><p>在前面的forEach的例子中，我们使用了再参数位置定义的匿名函数作为回调函数。另一种常见的模式则是定义一个明明函数将函数名作为参数传递给执行函数<br>exm:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">// 全局变量</span><br><span class="line">var allUserData = [];</span><br><span class="line"></span><br><span class="line">// 普通的logStuff函数，将内容打印在控制台</span><br><span class="line">function logStuff(userData)&#123;</span><br><span class="line">    if(typeof userData === &quot;string&quot;)&#123;</span><br><span class="line">        console.log(userData);</span><br><span class="line">    &#125;else if(typeof userData === &quot;object&quot;)&#123;</span><br><span class="line">        for(item in userData)&#123;</span><br><span class="line">            console.log(item + &quot;: &quot;+ userData[item]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 包含两个参数的函数，其中最后一个参数是一个回调函数</span><br><span class="line">function getInput(options,callback)&#123;</span><br><span class="line">    allUserData.push[options];</span><br><span class="line">    callback(options);</span><br><span class="line">&#125;</span><br><span class="line">//当我们调用getInput函数时，我们将logStuff作为一个参数传递给它</span><br><span class="line">//因此logStuff将会在getInput函数内被回调（或者执行）</span><br><span class="line">getInput(&#123;name:&quot;Rich&quot;,speciality:&quot;JavaScript&quot;&#125;，logStuff);</span><br><span class="line">//name: Rich</span><br><span class="line">speciality: JavaScript</span><br></pre></td></tr></table></figure></p>
+<h2 id="传递参数给回调函数"><a href="#传递参数给回调函数" class="headerlink" title="传递参数给回调函数"></a>传递参数给回调函数</h2><p>既然回调函数在执行中仅仅是一个普通函数，那么这个函数可以接收参数。我们能够传递任何包含于它的函数属性或者全局变量作为回调函数的参数。在前面的示例中，我们将<code>选项</code>作为参数传递给回调函数,来试着让我们传递一个全局变量和一个局部变量：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// 全局变量</span><br><span class="line">var generalLastname = &apos;Cliton&apos;;</span><br><span class="line"></span><br><span class="line">function getInput(options,callback)&#123;</span><br><span class="line">    allUserData.push(options);</span><br><span class="line">    callback(generalLastname,options);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="确保回调函数是function"><a href="#确保回调函数是function" class="headerlink" title="确保回调函数是function"></a>确保回调函数是function</h2><p>一个函数在调用参数之前应该检查这个回调函数是否是一个function。此外最好将回调函数设置为可选。<br>重构前一个例子中的getInput函数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function getInput(options，callback)&#123;</span><br><span class="line">    allUserData.push(options);</span><br><span class="line">    // 检查callback是否是function</span><br><span class="line">    if(typeof callback ===&apos;function&apos;)&#123;</span><br><span class="line">        callback(options);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>如果没有检查，如果调用getInput函数要么没有回调函数作为参数，要么代替函数传递非函数，我们的代码将导致运行时错误。</p>
+<h2 id="回调函数this问题"><a href="#回调函数this问题" class="headerlink" title="回调函数this问题"></a>回调函数this问题</h2><p>当回调函数作为一个方法使用this属性时，我们一定要改变回调函数的方法来保证this的上下文。否则回调函数会被传递一个全局变量，或者指向当前方法的对象<br>code<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// 定义一个具有一些属性和一个方法的object</span><br><span class="line">var clientData = &#123;</span><br><span class="line">    id : 094545,</span><br><span class="line">    fullname : &quot;Not Set&quot;,</span><br><span class="line">    setUserName : function(firstName,lastName)&#123;</span><br><span class="line">        this.fullname  = firstName + &quot; &quot; + lastName;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">function getUserInput(firstName,lastName,callback)&#123;</span><br><span class="line">    //执行一些确认firstName or lastName的操作</span><br><span class="line">    //执行方法</span><br><span class="line">    callback(firstName,lastName);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在上面的例子中，当clientData.setUsername（callback）被执行时，this.fullName并没有设置clientData对象中的fullName属性。相反，它将设置window对象中的fullName属性，因为getUserInput是一个全局函数。这是因为全局函数中的this对象指向window对象。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">getUserInput(&quot;Barack&quot;,&quot;Obama&quot;,clientData.setUserName);</span><br><span class="line"></span><br><span class="line">console.log(clientData.fullName);  //Not Set</span><br><span class="line"></span><br><span class="line">//fullName属性将在window对象中被初始化,其中this指向window</span><br><span class="line"></span><br><span class="line">console.log(window.fullName);  //Barack Obama</span><br></pre></td></tr></table></figure></p>
+<h2 id="使用apply-call来保存this"><a href="#使用apply-call来保存this" class="headerlink" title="使用apply,call来保存this"></a>使用apply,call来保存this</h2><p>我们可以使用Call或者Apply函数来修复上面你的问题。到目前为止，我们知道了每个Javascript中的函数都有两个方法:Call 和 Apply。这些方法被用来设置函数内部的this对象以及给此函数传递变量。<br>call接收的第一个参数为被用来在函数内部当做this的对象，传递给函数的参数被挨个传递（当然使用逗号分开）。Apply函数的第一个参数也是在函数内部作为this的对象，然而最后一个参数确是传递给函数的值的数组。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 增加新的参数&apos;callbackObj&apos;作为回调对象</span><br><span class="line">function getUserInput(firstName,lastName,callback,callbackObj)&#123;</span><br><span class="line">    callbacj(callbackObj,[firstName,lastName]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>使用apply()函数正确设置了this对象，我们现在正确的执行了callback并在clientData对象中正确设置了fullName属性：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//我们将clientData.setUserName方法和clientData对象作为参数，clientData对象会被apply方法使用来设置this对象</span><br><span class="line">getUserInput(&quot;Barack&quot;,&quot;Obama&quot;,clientData.setUserName，clientData);</span><br><span class="line">console.log(clientData.fullName); //Barack Obama</span><br><span class="line">console.log(this.fullName) //undefined  //this指向window</span><br></pre></td></tr></table></figure></p>
+<h2 id="允许多重调用callbackl函数"><a href="#允许多重调用callbackl函数" class="headerlink" title="允许多重调用callbackl函数"></a>允许多重调用callbackl函数</h2><p>我们可以传递不止一个回调函数作为参数传递给一个函数，就像我们在一个函数中可以传递不止一个变量一样，例如在jQuery中的ajax方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function successCallback()&#123;</span><br><span class="line">&#125;</span><br><span class="line">function completeCallback()&#123;</span><br><span class="line">&#125;</span><br><span class="line">function errorCallback()&#123;</span><br><span class="line">&#125;</span><br><span class="line">$.ajax(&#123;</span><br><span class="line">url:&quot;&quot;;</span><br><span class="line">success: successCallback,</span><br><span class="line">complete: completeCallback,</span><br><span class="line">error: errorCallback,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<h1 id="创建属于你自己的回调函数"><a href="#创建属于你自己的回调函数" class="headerlink" title="创建属于你自己的回调函数"></a>创建属于你自己的回调函数</h1><p>既然你已经完全理解了关于Javascript中回调函数的一切（我认为你已经理解了，如果没有那么快速的重读以便），你看到了使用回调函数是如此的简单而强大，你应该查看你的代码看看有没有能使用回调函数的地方。回调函数将在以下几个方面帮助你： </p>
+<ul>
+<li>避免重复代码</li>
+<li>在你拥有更多多功能函数的地方实现更好的抽象（依然能保持所有功能）</li>
+<li>让代码具有更好的可维护性 </li>
+<li>使代码更容易阅读 </li>
+<li>编写更多特定功能的函数</li>
+</ul>
+<p>创建你的回调函数非常简单。在下面的例子中，我将创建一个函数完成以下工作：读取用户信息，用数据创建一首通用的诗，并且欢迎用户。这本来是个非常复杂的函数因为它包含很多if/else语句并且，它将在调用那些用户数据需要的功能方面有诸多限制和不兼容性。<br>相反，我用回调函数实现了添加功能，这样一来获取用户信息的主函数便可以通过简单的将用户全名和性别作为参数传递给回调函数并执行来完成任何任务。<br>简单来讲，getUserInput函数是多功能的：它能执行具有各种功能的回调函数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">//First,setup the generic poem creator function;it will be the callback function in the getUserInput function below</span><br><span class="line">function genericPoemMaker(name,gender)&#123;</span><br><span class="line">    console.log(name + &quot; is finer than fine wine.&quot;);</span><br><span class="line">    console.log(&quot;Altruistic and noble for the modern time.&quot;);</span><br><span class="line">    console.log(&quot;Always admirably adorned with the latest style.&quot;);</span><br><span class="line">    console.log(&quot; A &quot; + gender + &quot; of unfortunate tragedies who still manages a perpetual smile&quot;);</span><br><span class="line">&#125;</span><br><span class="line">//The callback, which is the last item in the parameter, will be our genericPoemMaker function we defined above.</span><br><span class="line">function getUserInput(firstName,lastName,gender,callback)&#123;</span><br><span class="line">    var fullName = firstName + &quot; &quot; + lastName;</span><br><span class="line">    //Make sure callback is a function</span><br><span class="line">    if(typeof callback === &apos;function&apos;)&#123;</span><br><span class="line">    //Execute the callback function and pass the parameters to it</span><br><span class="line">        callback(fullName,gender);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Call the getUserInput function and pass the genericPoemMaker function as a callback:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">getUserInput(&quot;Michael&quot;, &quot;Fassbender&quot;, &quot;Man&quot;, genericPoemMake);</span><br><span class="line">// Output</span><br><span class="line">/* Michael Fassbender is finer than fine wine.</span><br><span class="line">Altruistic and noble for the modern time.</span><br><span class="line">Always admirably adorned with the latest style.</span><br><span class="line">A Man of unfortunate tragedies who still manages a perpetual smile.</span><br><span class="line">*/</span><br></pre></td></tr></table></figure></p>
+<p>因为getUserInput函数仅仅只负责提取数据，我们可以把任意回调函数传递给它。例如，我们可以传递一个greetUser函数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function greetUser(customerName,sex)&#123;</span><br><span class="line">    var salutation == sex &amp;&amp; sex === &quot;Man&quot; ? &quot;Mr.&quot; : &quot;Ms.&quot;;</span><br><span class="line">    console.log(&quot;hello,&quot;+ salutation + &quot; &quot; + customerName);</span><br><span class="line">&#125;</span><br><span class="line">// 在getUserInput方法中通过传递greetUser方法作为一个回调函数</span><br><span class="line">getUserInput(&quot;Bill&quot;,&quot;Gates&quot;,&quot;Man&quot;,greetUser); // hello,Mr. Bill Gates</span><br></pre></td></tr></table></figure></p>
+<p>我们调用了完全相同的getUserInput函数，但是这次完成了一个完全不同的任务<br>正如你所见，回调函数很神奇。即使前面的例子相对简单，想象一下能节省多少工作量，你的代码将会变得更加的抽象，这一切只需要你开始使用回调函数</p>
+<p>在Javascript编程中回调函数经常以几种方式被使用，尤其是在现代web应用开发以及库和框架中：</p>
+<ul>
+<li>异步调用（例如读取文件，进行HTTP请求，等等）</li>
+<li>时间监听器/处理器</li>
+<li>setTimeout和setInterval方法</li>
+<li>一般情况：精简代码</li>
+</ul>
+<h1 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h1><p>Javascript回调函数非常美妙且功能强大，它们为你的web应用和代码提供了诸多好处。你应该在有需求时使用它；或者为了代码的抽象性，可维护性以及可读性而使用回调函数来重构你的代码。</p>
+<h1 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h1><p> 本文根据本人的理解以及参考 <em>understand Javascript callback functions and use them</em> 原文中关于“回调地狱”问题本人暂未解决，<a href="http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/" target="_blank" rel="noopener">原文地址，详情请点击查看</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JS/" rel="tag"><i class="fa fa-tag"></i> JS</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/16/text-5/" rel="next" title="Practice">
+                <i class="fa fa-chevron-left"></i> Practice
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="Aaron" />
+            
+              <p class="site-author-name" itemprop="name">Aaron</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/byAaronLuo" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:1071843726@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.lsowl.xyz/" title="Demos" target="_blank">Demos</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是回调函数或者高阶函数"><span class="nav-number">1.</span> <span class="nav-text">什么是回调函数或者高阶函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#回调函数是如何运作的？"><span class="nav-number">2.</span> <span class="nav-text">回调函数是如何运作的？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#回调函数是闭包"><span class="nav-number">3.</span> <span class="nav-text">回调函数是闭包</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是闭包？"><span class="nav-number">3.1.</span> <span class="nav-text">什么是闭包？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么说回调函数是闭包？"><span class="nav-number">3.2.</span> <span class="nav-text">为什么说回调函数是闭包？</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实现回调函数的基本原理"><span class="nav-number">4.</span> <span class="nav-text">实现回调函数的基本原理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用命名或匿名函数作为回调"><span class="nav-number">4.1.</span> <span class="nav-text">使用命名或匿名函数作为回调</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#传递参数给回调函数"><span class="nav-number">4.2.</span> <span class="nav-text">传递参数给回调函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#确保回调函数是function"><span class="nav-number">4.3.</span> <span class="nav-text">确保回调函数是function</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#回调函数this问题"><span class="nav-number">4.4.</span> <span class="nav-text">回调函数this问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用apply-call来保存this"><span class="nav-number">4.5.</span> <span class="nav-text">使用apply,call来保存this</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#允许多重调用callbackl函数"><span class="nav-number">4.6.</span> <span class="nav-text">允许多重调用callbackl函数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建属于你自己的回调函数"><span class="nav-number">5.</span> <span class="nav-text">创建属于你自己的回调函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结束语"><span class="nav-number">6.</span> <span class="nav-text">结束语</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#声明"><span class="nav-number">7.</span> <span class="nav-text">声明</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Aaron</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共字</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
