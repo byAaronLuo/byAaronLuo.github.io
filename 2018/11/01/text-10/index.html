@@ -123,7 +123,7 @@
 <meta property="og:description" content="简介Promise，其实是一个对象，用来传递异步操作的消息。它代表了某个未来才会知道结果的事件（通常指一个异步操作），并且这个事件提供统一的API，可供进一步处理。Promise对象有以下两个特点：  对象的状态不受外界影响。Promise对象代表一个异步操作，有三种状态：Pending、Resolved、Rejectd、只有异步操作的结果可以决定当前是哪一种状态，任何其他操作都无法改变这个状态。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://m.qpic.cn/psb?/V121Ebug3YYzMg/BNQ0ciMLiyr4XFQSPQaAJFys0xbbBnzpeJN4eVQlR*c!/b/dFMBAAAAAAAA&bo=fgezAgAAAAADB.o!&rf=viewer_4">
-<meta property="og:updated_time" content="2018-11-01T11:50:54.481Z">
+<meta property="og:updated_time" content="2018-11-01T11:56:41.160Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Promise">
 <meta name="twitter:description" content="简介Promise，其实是一个对象，用来传递异步操作的消息。它代表了某个未来才会知道结果的事件（通常指一个异步操作），并且这个事件提供统一的API，可供进一步处理。Promise对象有以下两个特点：  对象的状态不受外界影响。Promise对象代表一个异步操作，有三种状态：Pending、Resolved、Rejectd、只有异步操作的结果可以决定当前是哪一种状态，任何其他操作都无法改变这个状态。">
@@ -417,8 +417,8 @@
 <h1 id="Promise-all"><a href="#Promise-all" class="headerlink" title="Promise.all()"></a>Promise.all()</h1><p>Promise.all 方法用于将多个Promise实例包装成一个新的Promise实例<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var p = Promise.all([p1,p2,p3]);</span><br></pre></td></tr></table></figure></p>
 <p>上面的代码中，Promise.all 方法接受一个数组作为参数，p1,p2,p3都是Promise对象的实例；如果不是，就会先调用Promise.resolve方法，将参数转为Promise实例，再进一步处理，（<strong>Promise.all方法的参数不一定是数组，但是必须具有Iterator接口，且返回的每个成员都是Promise实例</strong>）<br>p 的状态由p1,p2,p3决定，分两种情况</p>
 <ul>
-<li>只有p1,p2,p3的状态都变成Fulfilled(Resolved), p的状态才会Fulfilled(Resolved)，此时p1,p2,p3的返回值组成一个数组，传递给p的回调函数</li>
-<li>只要p1,p2,p3中有一个被Rejecd，p的状态就变成Rejected,此时第一个被Rejected的实例的返回值会传递给p的回调函数<br>总的来说就是p1,p2,p3必须是 Promise实例，Promise.all方法中p的状态类似于<strong>p1&amp;&amp;p2&amp;&amp;p3</strong></li>
+<li><strong>只有p1,p2,p3的状态都变成Fulfilled(Resolved), p的状态才会Fulfilled(Resolved)</strong>，此时p1,p2,p3的返回值组成一个数组，传递给p的回调函数</li>
+<li><strong>只要p1,p2,p3中有一个被Rejecd，p的状态就变成Rejected</strong>,此时第一个被Rejected的实例的返回值会传递给p的回调函数<br>总的来说就是p1,p2,p3必须是 Promise实例，Promise.all方法中p的状态类似于<strong>p1&amp;&amp;p2&amp;&amp;p3</strong></li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var promises = [2,3,5,7,11,13].map(function(id)&#123;</span><br><span class="line">  return getJson(&quot;/post/&quot;+ id +&quot;/.json&quot;);</span><br><span class="line">&#125;);</span><br><span class="line">Promise.all(promises).then(function(posts)&#123;</span><br><span class="line">  //...</span><br><span class="line">&#125;).catch(function(reason)&#123;</span><br><span class="line">  //...</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <h1 id="Promise-race"><a href="#Promise-race" class="headerlink" title="Promise.race()"></a>Promise.race()</h1><p>Promise.race方法也是将多个Promise实例包装成一个新的Promise实例<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var p = Promise.race([p1,p2,p3]);</span><br></pre></td></tr></table></figure></p>
