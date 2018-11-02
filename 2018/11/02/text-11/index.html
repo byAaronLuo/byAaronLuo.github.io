@@ -101,7 +101,7 @@
 
 
 
-  <meta name="keywords" content="-jQuery," />
+  <meta name="keywords" content="js," />
 
 
 
@@ -114,20 +114,20 @@
 
 
 
-<meta name="description" content="问题：如何利用jQuery实现网页导航栏注册锚点并有过渡效果引言：jquery库 - 特性jQuery 是一个 JavaScript 函数库。 jQuery 库包含以下特性：  HTML 元素选取 HTML 元素操作 CSS 操作 HTML 事件函数 JavaScript 特效和动画 HTML DOM 遍历和修改 AJAX Utilities 为什么要实现点击导航栏到当前组件要有过渡效果：目前大多">
-<meta name="keywords" content="-jQuery">
+<meta name="description" content="简介由于JavaScript只有一个线程(单线程)，如果不引入异步操作，都是同步操作，那么将会一直等待上一个任务执行完成之后才能进行下一个任务，最大的问题就在于如果上一个任务耗时很长很长，下一个任务只需要1ms就执行完，那么不得不等待上一个任务执行完成之后再执行下一个任务，所以才不得不引入异步编程。异步简单的来说就是将一个任务分成几段，先执行一段，然后转而执行其他任务，等做好准备再回头执行另一段，">
+<meta name="keywords" content="js">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jQuery配合vue.js注册锚点实现动画过渡效果">
-<meta property="og:url" content="http://yoursite.com/2018/06/23/text-1/index.html">
+<meta property="og:title" content="async">
+<meta property="og:url" content="http://yoursite.com/2018/11/02/text-11/index.html">
 <meta property="og:site_name" content="Aaron">
-<meta property="og:description" content="问题：如何利用jQuery实现网页导航栏注册锚点并有过渡效果引言：jquery库 - 特性jQuery 是一个 JavaScript 函数库。 jQuery 库包含以下特性：  HTML 元素选取 HTML 元素操作 CSS 操作 HTML 事件函数 JavaScript 特效和动画 HTML DOM 遍历和修改 AJAX Utilities 为什么要实现点击导航栏到当前组件要有过渡效果：目前大多">
+<meta property="og:description" content="简介由于JavaScript只有一个线程(单线程)，如果不引入异步操作，都是同步操作，那么将会一直等待上一个任务执行完成之后才能进行下一个任务，最大的问题就在于如果上一个任务耗时很长很长，下一个任务只需要1ms就执行完，那么不得不等待上一个任务执行完成之后再执行下一个任务，所以才不得不引入异步编程。异步简单的来说就是将一个任务分成几段，先执行一段，然后转而执行其他任务，等做好准备再回头执行另一段，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V121Ebug2q0D8Y/shbVOiDJDqmmCGN6ovW87Dev5c6s4EmmGjyX2b12k3w!/b/dC0BAAAAAAAA&bo=gAJoAQAAAAACh0g!&rf=viewer_4">
-<meta property="og:updated_time" content="2018-06-27T05:26:12.431Z">
+<meta property="og:image" content="http://a4.qpic.cn/psb?/V121Ebug3YYzMg/y35H77MTNdCUtnQkRhDClGVzwD0nZPwkpO1AZ7uMpFQ!/m/dFMBAAAAAAAAnull&bo=tQLmAAAAAAADB3M!&rf=photolist&t=5">
+<meta property="og:updated_time" content="2018-11-02T15:06:52.249Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jQuery配合vue.js注册锚点实现动画过渡效果">
-<meta name="twitter:description" content="问题：如何利用jQuery实现网页导航栏注册锚点并有过渡效果引言：jquery库 - 特性jQuery 是一个 JavaScript 函数库。 jQuery 库包含以下特性：  HTML 元素选取 HTML 元素操作 CSS 操作 HTML 事件函数 JavaScript 特效和动画 HTML DOM 遍历和修改 AJAX Utilities 为什么要实现点击导航栏到当前组件要有过渡效果：目前大多">
-<meta name="twitter:image" content="http://m.qpic.cn/psb?/V121Ebug2q0D8Y/shbVOiDJDqmmCGN6ovW87Dev5c6s4EmmGjyX2b12k3w!/b/dC0BAAAAAAAA&bo=gAJoAQAAAAACh0g!&rf=viewer_4">
+<meta name="twitter:title" content="async">
+<meta name="twitter:description" content="简介由于JavaScript只有一个线程(单线程)，如果不引入异步操作，都是同步操作，那么将会一直等待上一个任务执行完成之后才能进行下一个任务，最大的问题就在于如果上一个任务耗时很长很长，下一个任务只需要1ms就执行完，那么不得不等待上一个任务执行完成之后再执行下一个任务，所以才不得不引入异步编程。异步简单的来说就是将一个任务分成几段，先执行一段，然后转而执行其他任务，等做好准备再回头执行另一段，">
+<meta name="twitter:image" content="http://a4.qpic.cn/psb?/V121Ebug3YYzMg/y35H77MTNdCUtnQkRhDClGVzwD0nZPwkpO1AZ7uMpFQ!/m/dFMBAAAAAAAAnull&bo=tQLmAAAAAAADB3M!&rf=photolist&t=5">
 
 
 
@@ -157,13 +157,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/06/23/text-1/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/11/02/text-11/"/>
 
 
 
 
 
-  <title>jQuery配合vue.js注册锚点实现动画过渡效果 | Aaron</title>
+  <title>async | Aaron</title>
   
 
 
@@ -334,7 +334,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/23/text-1/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/02/text-11/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron">
@@ -351,7 +351,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">jQuery配合vue.js注册锚点实现动画过渡效果</h1>
+          <h1 class="post-title" itemprop="name headline">async</h1>
         
 
         <div class="post-meta">
@@ -363,8 +363,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-23T16:18:43+08:00">
-                2018-06-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-02T23:05:26+08:00">
+                2018-11-02
               </time>
             
 
@@ -373,28 +373,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/前端/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -423,36 +401,34 @@
       
 
       
-        <h1 id="问题：如何利用jQuery实现网页导航栏注册锚点并有过渡效果"><a href="#问题：如何利用jQuery实现网页导航栏注册锚点并有过渡效果" class="headerlink" title="问题：如何利用jQuery实现网页导航栏注册锚点并有过渡效果"></a>问题：如何利用jQuery实现网页导航栏注册锚点并有过渡效果</h1><h2 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h2><h3 id="jquery库-特性"><a href="#jquery库-特性" class="headerlink" title="jquery库 - 特性"></a>jquery库 - 特性</h3><p>jQuery 是一个 JavaScript 函数库。</p>
-<p>jQuery 库包含以下特性：</p>
+        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>由于JavaScript只有一个线程(单线程)，如果不引入异步操作，都是同步操作，那么将会一直等待上一个任务执行完成之后才能进行下一个任务，最大的问题就在于如果上一个任务耗时很长很长，下一个任务只需要1ms就执行完，那么不得不等待上一个任务执行完成之后再执行下一个任务，所以才不得不引入异步编程。异步简单的来说就是将一个任务分成几段，先执行一段，然后转而执行其他任务，等做好准备再回头执行另一段，直到执行完。<br>ES6之前，异步编程解决方案大概有下面4种：</p>
 <ul>
-<li>HTML 元素选取</li>
-<li>HTML 元素操作</li>
-<li>CSS 操作</li>
-<li>HTML 事件函数</li>
-<li>JavaScript 特效和动画</li>
-<li>HTML DOM 遍历和修改</li>
-<li>AJAX</li>
-<li>Utilities <h2 id="为什么要实现点击导航栏到当前组件要有过渡效果："><a href="#为什么要实现点击导航栏到当前组件要有过渡效果：" class="headerlink" title="为什么要实现点击导航栏到当前组件要有过渡效果："></a>为什么要实现点击导航栏到当前组件要有过渡效果：</h2><h3 id="目前大多数官网首页都是各种炫酷的动画，如果仅仅只是在a标签的herf里添加-id-然后在组件里添加id，虽然会实现到滑到页面，但是是真的丑陋至极，毫无违和感，而且当你刷新的时候会自动在你的路由下添加一个路径，然后就出现空白，着实很烦。"><a href="#目前大多数官网首页都是各种炫酷的动画，如果仅仅只是在a标签的herf里添加-id-然后在组件里添加id，虽然会实现到滑到页面，但是是真的丑陋至极，毫无违和感，而且当你刷新的时候会自动在你的路由下添加一个路径，然后就出现空白，着实很烦。" class="headerlink" title="目前大多数官网首页都是各种炫酷的动画，如果仅仅只是在a标签的herf里添加#id,然后在组件里添加id，虽然会实现到滑到页面，但是是真的丑陋至极，毫无违和感，而且当你刷新的时候会自动在你的路由下添加一个路径，然后就出现空白，着实很烦。"></a>目前大多数官网首页都是各种炫酷的动画，如果仅仅只是在a标签的herf里添加#id,然后在组件里添加id，虽然会实现到滑到页面，但是是真的丑陋至极，毫无违和感，而且当你刷新的时候会自动在你的路由下添加一个路径，然后就出现空白，着实很烦。</h3><h1 id="如何实现："><a href="#如何实现：" class="headerlink" title="如何实现："></a>如何实现：</h1><blockquote>
-<p>利用vue.js和jQuery，因为vue.js写好组件然后通过组件直接显示页面这样各个组件不会相互干扰。</p>
-</blockquote>
-<h2 id="在vue-js-里配置jQuery-和bootstrap（由于我需要bootstrap-做响应式布局这里我也介绍吧）"><a href="#在vue-js-里配置jQuery-和bootstrap（由于我需要bootstrap-做响应式布局这里我也介绍吧）" class="headerlink" title="在vue.js 里配置jQuery 和bootstrap（由于我需要bootstrap 做响应式布局这里我也介绍吧）"></a>在vue.js 里配置jQuery 和bootstrap（由于我需要bootstrap 做响应式布局这里我也介绍吧）</h2><h3 id="jQuery-引用"><a href="#jQuery-引用" class="headerlink" title="jQuery 引用"></a>jQuery 引用</h3></li>
+<li>回调函数</li>
+<li>事件监听</li>
+<li>发布/订阅</li>
+<li>Promise对象</li>
 </ul>
-<h4 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install jquery --save</span><br></pre></td></tr></table></figure>
-<h4 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h4><p>在build/webpack.base.conf.js里加入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var webpack = require(&quot;webpack&quot;)</span><br></pre></td></tr></table></figure></p>
-<h4 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h4><p>同样build/webpack.base.conf.js中<br>在module.exports的最后加入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">plugins: [</span><br><span class="line">    new webpack.optimize.CommonsChunkPlugin(&apos;common.js&apos;),</span><br><span class="line">    new webpack.ProvidePlugin(&#123;</span><br><span class="line">      jQuery: &quot;jquery&quot;,</span><br><span class="line">      $: &quot;jquery&quot;</span><br><span class="line">    &#125;)</span><br><span class="line">  ],</span><br></pre></td></tr></table></figure></p>
-<h4 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h4><p>在main.js 引入import $ from ‘jquery’<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import $ from &apos;jquery&apos;</span><br></pre></td></tr></table></figure></p>
-<h4 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h4><p>重启本地服务器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm run dev</span><br></pre></td></tr></table></figure></p>
-<h3 id="bootstrap引用"><a href="#bootstrap引用" class="headerlink" title="bootstrap引用"></a>bootstrap引用</h3><h4 id="第一步-1"><a href="#第一步-1" class="headerlink" title="第一步"></a>第一步</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install bootstrap --save</span><br></pre></td></tr></table></figure>
-<h4 id="第二步-1"><a href="#第二步-1" class="headerlink" title="第二步"></a>第二步</h4><p>在main.js中直接引入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import &apos;../node_modules/bootstrap/dist/css/bootstrap.min.css&apos;;</span><br><span class="line">import &apos;../node_modules/bootstrap/dist/js/bootstrap.min.js&apos;;</span><br></pre></td></tr></table></figure>
-<h4 id="第三步-1"><a href="#第三步-1" class="headerlink" title="第三步"></a>第三步</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm run dev</span><br></pre></td></tr></table></figure>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">HTML:</span><br><span class="line">&lt;ul class=&quot;nav navbar-nav  ul_class_after&quot; v-for=&quot;(item,index) in navigation&quot;&gt;</span><br><span class="line">  &lt;li&gt;</span><br><span class="line">    &lt;a href=&quot;#&quot; class = &quot;a_class_jump&quot; @click=&quot;jump(item.item)&quot;&gt;&#123;&#123;item.item&#125;&#125;&lt;/a&gt;</span><br><span class="line">  &lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">&lt;About id=&quot;About&quot;&gt;&lt;/About&gt;</span><br><span class="line">&lt;div id = &quot;Services&quot; style=&quot;height: 1000px&quot;&gt;2222&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">js:</span><br><span class="line">jump(item)&#123;</span><br><span class="line">  var top = $(&apos;#&apos;+item).offset().top; //获取当前id距离顶部距离</span><br><span class="line">  if(item == &apos;Home&apos;)&#123;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line">  else if(item == &apos;About&apos;)&#123; </span><br><span class="line">    $(&apos;html,body&apos;).animate(&#123;scrollTop:top&#125;,1500); </span><br><span class="line">  &#125;</span><br><span class="line">  else&#123;</span><br><span class="line">    $(&apos;html,body&apos;).animate(&#123;scrollTop:top&#125;,2000);  //滚动条跳到当前id的位置，完成此操作需要2s</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这样就会有一个过渡效果并且在2s内完成跳转，然候如果第一次进入这个锚点会有一个动画效果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">HTML: </span><br><span class="line">&lt;div class=&quot;div_class_item&quot; id = &quot;div_id_item1&quot;&gt;内容&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;div_class_item&quot; id = &quot;div_id_item2&quot;&gt;内容&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;div_class_item&quot; id = &quot;div_id_item3&quot;&gt;内容&lt;/div&gt;</span><br><span class="line">需要添加的css：</span><br><span class="line">.animate_positive&#123;</span><br><span class="line">  animation:route 2s;</span><br><span class="line">  animation-fill-mode:forwards;</span><br><span class="line">  animation-direction:alternate;</span><br><span class="line">&#125;</span><br><span class="line">@-webkit-keyframes route&#123;</span><br><span class="line">  from &#123; margin-left: -60em;</span><br><span class="line">  &#125;</span><br><span class="line">  to&#123;margin-left: 0em ;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">@keyframe route&#123;</span><br><span class="line">  from &#123; margin-left: -60em;</span><br><span class="line">  &#125;</span><br><span class="line">  to&#123;margin-left: 0em ;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">js:</span><br><span class="line">function loadAnimation(container_Id,aimation_name,offset)&#123;</span><br><span class="line">  var contain_To_Top,window_ScrooTop,window_height,offset_To_Top;</span><br><span class="line">  offset_To_Top=$(container_Id).offset().top;</span><br><span class="line">  ontain_To_Top=eval(offset_To_Top + offset); //字符串相加</span><br><span class="line">  window_ScrooTop =$(window).scrollTop();  //窗口滚动高度</span><br><span class="line">  window_height=$(window).height();//窗口高度</span><br><span class="line">  if(window_ScrooTop + window_height&gt;contain_To_Top)&#123;</span><br><span class="line">    $((container_Id)).addClass((aimation_name));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">$(document).ready(function(e)&#123;</span><br><span class="line">  $(window).scroll(function()&#123;</span><br><span class="line">    loadAnimation(&quot;#div_id_item3&quot;,&quot;animate_positive&quot;,0);</span><br><span class="line">    loadAnimation(&quot;#div_id_item2&quot;,&quot;animate_positive&quot;,0);</span><br><span class="line">    loadAnimation(&quot;#div_id_item1&quot;,&quot;animate_positive&quot;,0);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p>码云<a href="https://gitee.com/luogan123/vuePractice.git" target="_blank" rel="noopener">demo</a></p>
-<p><img src="http://m.qpic.cn/psb?/V121Ebug2q0D8Y/shbVOiDJDqmmCGN6ovW87Dev5c6s4EmmGjyX2b12k3w!/b/dC0BAAAAAAAA&amp;bo=gAJoAQAAAAACh0g!&amp;rf=viewer_4" alt="1"></p>
-<p>以上就是做一个简单的jQuery配合vue.js 做的一个过渡效果</p>
+<h2 id="为什么要解决异步编程呢？"><a href="#为什么要解决异步编程呢？" class="headerlink" title="为什么要解决异步编程呢？"></a>为什么要解决异步编程呢？</h2><p>因为在异步编程中，可能你在执行某段代码的时候，因为异步可能引起变量没有值，比如当你在用ajax方法请求服务器，可能服务器还没有返回数据，而你却将数据填充到html中，所以需要解决诸如此类问题，引入了解决异步编程的方案，当数据到达之后再调用下一个任务，而不是同时执行，导致某些变量没有值</p>
+<p>在ES6中引入了<strong>Generator函数</strong>，统一了<strong>Promise对象</strong>的API，在未统一规范之前使用ajax请求服务器则是使用<strong>callback(回调函数)</strong>来完成异步操作，可以想象在回调操作中，如果要依次读取多个文件，那么则会出现<strong>回调地狱(callback hell)</strong>为了解决这个问题，引入了Promise对象，利用then方法，执行异步操作，但是Promise最大的问题在于代码冗余。<br>例如<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">function testAsync(x)</span><br><span class="line">&#123;</span><br><span class="line">  return new Promise((resolve,reject)=&gt;&#123;</span><br><span class="line">    if(x&lt;=2)</span><br><span class="line">      resolve(x);</span><br><span class="line">    else</span><br><span class="line">      reject(new Error(&quot;x&gt;2&quot;));</span><br><span class="line"></span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line">testAsync(1).then((value)=&gt;&#123;</span><br><span class="line">  console.log(value);</span><br><span class="line">  return testAsync(2);</span><br><span class="line">&#125;).then((value)=&gt;&#123;</span><br><span class="line">  console.log(value);</span><br><span class="line">  return(testAsync(3));</span><br><span class="line">&#125;).catch((e)=&gt;&#123;</span><br><span class="line">  console.log(e);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p><img src="http://a4.qpic.cn/psb?/V121Ebug3YYzMg/y35H77MTNdCUtnQkRhDClGVzwD0nZPwkpO1AZ7uMpFQ!/m/dFMBAAAAAAAAnull&amp;bo=tQLmAAAAAAADB3M!&amp;rf=photolist&amp;t=5" alt="1"><br>以上代码是由于一直调用then方法，原来的任务被Promise包装了一下，不管怎么操作，一眼看去都是一堆then，原来的语法变得很不清楚<br>但是可以参考<a href="https://www.asold.xyz/2018/10/28/text-9/" target="_blank" rel="noopener">ES6中的Generator函数</a>,Generator函数其实相当于是一个“协程”，意思是多个线程互相协作，完成异步任务。<br>Generator函数是协程在ES6的实现，最大特点就是可以交出函数的执行权，整个Generator函数就是一个封装的异步任务。异步操作需要暂停的地方，都用<strong>yield</strong>语句标明</p>
+<h1 id="async函数"><a href="#async函数" class="headerlink" title="async函数"></a>async函数</h1><h2 id="什么是async函数"><a href="#什么是async函数" class="headerlink" title="什么是async函数"></a>什么是async函数</h2><p>在ES7中提供了async函数，使得异步操作更加简便，简单来说，async函数就是Generator的语法糖<br>async函数对Generator函数的改进体现在一下5点：</p>
+<ul>
+<li>内置执行器。Generator函数的执行必须靠执行器，所以才有co模块，而async函数自带执行器。也就是说，async函数的执行与普通函数一模一样，只要一行</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var result = async testAsync();</span><br></pre></td></tr></table></figure>
+<ul>
+<li>上面的代码调用了async testAsync 函数，然后它会自动执行，输出最后的结果。完全不像Generator函数，需要调用next方法，或者用co模块，才能得到真正的执行，从而得到真正执行，从而得到最终结果</li>
+<li>更好的语义。async和await比起星号和yield，语义更清楚，async表示函数里有异步操作，await表示紧跟在后面的表达式需要等到结果。</li>
+<li>更广的适用性。co模式约定，yield命令后面只能是Thunk函数或者Promise对象，而async函数的await命令可以是Promise对象和原始类型的值（数值、字符串、布尔值，普通函数，但这时等同于同步操作（这里的同步操作指的是不处理异步操作））</li>
+<li>返回值是Promise。async函数的返回值时Promise对象，这比Generator函数的返回值时Iterator对象方便多了。</li>
+</ul>
+<p>进一步说，async函数完全可以看作由多个异步操作包装成的一个Promise对象，而await命令就是内部的then命令的语法糖。</p>
+<h2 id="async函数的用法"><a href="#async函数的用法" class="headerlink" title="async函数的用法"></a>async函数的用法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">async function helloWorld()</span><br><span class="line">&#123;</span><br><span class="line">  return &quot;Hello World&quot;;</span><br><span class="line">&#125;</span><br><span class="line">helloWorld().then((value)=&gt;&#123;</span><br><span class="line">  console.log(value); //Hello World</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="await命令用法"><a href="#await命令用法" class="headerlink" title="await命令用法"></a>await命令用法</h2><p>在Generator中，yield关键字只能使用在Generator函数中，同样，await关键字也不能单独使用，是需要使用在async方法中。 await字面意思是”等待”，等待后面表达式的执行结果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function testAsync()</span><br><span class="line">&#123;</span><br><span class="line">  return new Promise((resolve,reject)=&gt;&#123;</span><br><span class="line">    setTimeout(()=&gt;&#123;</span><br><span class="line">      console.log(&quot;testAsync&quot;);</span><br><span class="line">    &#125;,1000);</span><br><span class="line">    resolve();</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line">async function helloWorld()</span><br><span class="line">&#123;</span><br><span class="line">  await testAsync();</span><br><span class="line">  console.log(&quot;hello World&quot;);</span><br><span class="line">&#125;</span><br><span class="line">helloWorld();</span><br></pre></td></tr></table></figure></p>
+<p>以上代码testAsync()方法中返回一个Promise对象,用setTimeout模拟一个异步过程，即1s后打印”testAsync”，helloWorld()方法中 await testAsync()，表示阻塞当前主线程，完成testAsync这个异步操作之后并返回结果才继续执行下面的代码，打印“hello world”<br>由于await命令后面是Promise对象，可能运行结果会是Rejectd，所以最好是将await放在try…catch块中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">async function helloWorld()&#123;</span><br><span class="line">  try&#123;</span><br><span class="line">    await testAsync();</span><br><span class="line">  &#125;catch(e)&#123;</span><br><span class="line">    console.log(e);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">//或者</span><br><span class="line">async function helloWorld()&#123;</span><br><span class="line">  await testAsync().catch((e)=&gt;&#123;</span><br><span class="line">    console.log(e);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h1><p>在<a href="https://www.asold.xyz/2018/10/28/text-9/" target="_blank" rel="noopener">Generator函数</a>中最后的应用有一个B准备，A执行，B结束的案例，下面用async实现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">function BPrepare()&#123;</span><br><span class="line">  return new Promise((resolve,reject)=&gt;&#123;</span><br><span class="line">    setTimeout(()=&gt;&#123;</span><br><span class="line">      console.log(&quot;B准备&quot;);</span><br><span class="line">      resolve();</span><br><span class="line">    &#125;,500);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line">function AStart()&#123;</span><br><span class="line">  return new Promise((resolve,reject)=&gt;&#123;</span><br><span class="line">    setTimeout(()=&gt;&#123;</span><br><span class="line">      console.log(&quot;A执行&quot;);</span><br><span class="line">      resolve();</span><br><span class="line">    &#125;,500);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line">function BEnding()&#123;</span><br><span class="line">  return new Promise((resolve,reject)=&gt;&#123;</span><br><span class="line">    setTimeout(()=&gt;&#123;</span><br><span class="line">      console.log(&quot;B结束&quot;);</span><br><span class="line">      //reject(new Error(&quot;B不能结束&quot;));</span><br><span class="line">    &#125;,500);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line">async function task()&#123;</span><br><span class="line">  try&#123;</span><br><span class="line">    await BPrepare();</span><br><span class="line">    await AStart();</span><br><span class="line">    await BEnding();</span><br><span class="line">  &#125;catch(e)&#123;</span><br><span class="line">    throw e;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">task();</span><br></pre></td></tr></table></figure></p>
+<p>以上代码首先先生成相应的Promise对象，利用await命令阻塞执行过程，从而达到完美异步过程</p>
+<h1 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h1><p>本篇大部分来源于ES6标准入门（第二版）</p>
 
       
     </div>
@@ -470,7 +446,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/jQuery/" rel="tag"><i class="fa fa-tag"></i> -jQuery</a>
+            <a href="/tags/js/" rel="tag"><i class="fa fa-tag"></i> js</a>
           
         </div>
       
@@ -483,8 +459,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/06/23/Hello-World/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/11/01/text-10/" rel="next" title="Promise">
+                <i class="fa fa-chevron-left"></i> Promise
               </a>
             
           </div>
@@ -492,10 +468,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/27/test-2/" rel="prev" title="如何在vue上使用sass">
-                如何在vue上使用sass <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -668,7 +640,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#问题：如何利用jQuery实现网页导航栏注册锚点并有过渡效果"><span class="nav-number">1.</span> <span class="nav-text">问题：如何利用jQuery实现网页导航栏注册锚点并有过渡效果</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#引言："><span class="nav-number">1.1.</span> <span class="nav-text">引言：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#jquery库-特性"><span class="nav-number">1.1.1.</span> <span class="nav-text">jquery库 - 特性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要实现点击导航栏到当前组件要有过渡效果："><span class="nav-number">1.2.</span> <span class="nav-text">为什么要实现点击导航栏到当前组件要有过渡效果：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#目前大多数官网首页都是各种炫酷的动画，如果仅仅只是在a标签的herf里添加-id-然后在组件里添加id，虽然会实现到滑到页面，但是是真的丑陋至极，毫无违和感，而且当你刷新的时候会自动在你的路由下添加一个路径，然后就出现空白，着实很烦。"><span class="nav-number">1.2.1.</span> <span class="nav-text">目前大多数官网首页都是各种炫酷的动画，如果仅仅只是在a标签的herf里添加#id,然后在组件里添加id，虽然会实现到滑到页面，但是是真的丑陋至极，毫无违和感，而且当你刷新的时候会自动在你的路由下添加一个路径，然后就出现空白，着实很烦。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何实现："><span class="nav-number">2.</span> <span class="nav-text">如何实现：</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#在vue-js-里配置jQuery-和bootstrap（由于我需要bootstrap-做响应式布局这里我也介绍吧）"><span class="nav-number">2.1.</span> <span class="nav-text">在vue.js 里配置jQuery 和bootstrap（由于我需要bootstrap 做响应式布局这里我也介绍吧）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery-引用"><span class="nav-number">2.1.1.</span> <span class="nav-text">jQuery 引用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#第一步"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">第一步</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第二步"><span class="nav-number">2.1.1.2.</span> <span class="nav-text">第二步</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第三步"><span class="nav-number">2.1.1.3.</span> <span class="nav-text">第三步</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第四步"><span class="nav-number">2.1.1.4.</span> <span class="nav-text">第四步</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第五步"><span class="nav-number">2.1.1.5.</span> <span class="nav-text">第五步</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bootstrap引用"><span class="nav-number">2.1.2.</span> <span class="nav-text">bootstrap引用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#第一步-1"><span class="nav-number">2.1.2.1.</span> <span class="nav-text">第一步</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第二步-1"><span class="nav-number">2.1.2.2.</span> <span class="nav-text">第二步</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第三步-1"><span class="nav-number">2.1.2.3.</span> <span class="nav-text">第三步</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">2.2.</span> <span class="nav-text">代码</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要解决异步编程呢？"><span class="nav-number">1.1.</span> <span class="nav-text">为什么要解决异步编程呢？</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#async函数"><span class="nav-number">2.</span> <span class="nav-text">async函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是async函数"><span class="nav-number">2.1.</span> <span class="nav-text">什么是async函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#async函数的用法"><span class="nav-number">2.2.</span> <span class="nav-text">async函数的用法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#await命令用法"><span class="nav-number">2.3.</span> <span class="nav-text">await命令用法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#应用"><span class="nav-number">3.</span> <span class="nav-text">应用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#声明"><span class="nav-number">4.</span> <span class="nav-text">声明</span></a></li></ol></div>
             
 
           </div>
