@@ -101,7 +101,7 @@
 
 
 
-  <meta name="keywords" content="js," />
+  <meta name="keywords" content="node.js," />
 
 
 
@@ -114,18 +114,18 @@
 
 
 
-<meta name="description" content="在犀牛书中对this并没有太多详细的讲解，红皮书里7.2.2节对this做了一个简单的阐述，但是在实际情况下this的调用方法确实是很迷的。 关于this对象this对象是在运行时基于函数的执行环境绑定的；在全局函数中，this等于window，而当函数作为某个对象的方法调用时，this等于那个对象。不过匿名函数 的执行环境具有全局性，因此其this对象通常指向window。例如：12345678">
-<meta name="keywords" content="js">
+<meta name="description" content="Node中的模块系统使用Node编写应用程序主要就是使用：  ECMSCRIPT 编码规范 和浏览器不一样，在node中没有BOM/DOM   核心模块 文件操作 fs http 服务的 http url 路径操作模块 path路径处理模块 os操作系统信息   第三方模块 art-template 必须通过npm来下载使用   自定义模块 自己写的文件    什么是模块化 文件作用域 通信规则">
+<meta name="keywords" content="node.js">
 <meta property="og:type" content="article">
-<meta property="og:title" content="The question of this">
-<meta property="og:url" content="http://yoursite.com/2018/09/30/text-7/index.html">
+<meta property="og:title" content="node.js">
+<meta property="og:url" content="http://yoursite.com/2019/01/08/text-14/index.html">
 <meta property="og:site_name" content="Aaron">
-<meta property="og:description" content="在犀牛书中对this并没有太多详细的讲解，红皮书里7.2.2节对this做了一个简单的阐述，但是在实际情况下this的调用方法确实是很迷的。 关于this对象this对象是在运行时基于函数的执行环境绑定的；在全局函数中，this等于window，而当函数作为某个对象的方法调用时，this等于那个对象。不过匿名函数 的执行环境具有全局性，因此其this对象通常指向window。例如：12345678">
+<meta property="og:description" content="Node中的模块系统使用Node编写应用程序主要就是使用：  ECMSCRIPT 编码规范 和浏览器不一样，在node中没有BOM/DOM   核心模块 文件操作 fs http 服务的 http url 路径操作模块 path路径处理模块 os操作系统信息   第三方模块 art-template 必须通过npm来下载使用   自定义模块 自己写的文件    什么是模块化 文件作用域 通信规则">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-30T06:31:01.920Z">
+<meta property="og:updated_time" content="2019-01-08T15:30:24.594Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="The question of this">
-<meta name="twitter:description" content="在犀牛书中对this并没有太多详细的讲解，红皮书里7.2.2节对this做了一个简单的阐述，但是在实际情况下this的调用方法确实是很迷的。 关于this对象this对象是在运行时基于函数的执行环境绑定的；在全局函数中，this等于window，而当函数作为某个对象的方法调用时，this等于那个对象。不过匿名函数 的执行环境具有全局性，因此其this对象通常指向window。例如：12345678">
+<meta name="twitter:title" content="node.js">
+<meta name="twitter:description" content="Node中的模块系统使用Node编写应用程序主要就是使用：  ECMSCRIPT 编码规范 和浏览器不一样，在node中没有BOM/DOM   核心模块 文件操作 fs http 服务的 http url 路径操作模块 path路径处理模块 os操作系统信息   第三方模块 art-template 必须通过npm来下载使用   自定义模块 自己写的文件    什么是模块化 文件作用域 通信规则">
 
 
 
@@ -155,13 +155,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/09/30/text-7/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/01/08/text-14/"/>
 
 
 
 
 
-  <title>The question of this | Aaron</title>
+  <title>node.js | Aaron</title>
   
 
 
@@ -332,7 +332,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/30/text-7/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/08/text-14/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Aaron">
@@ -349,7 +349,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">The question of this</h1>
+          <h1 class="post-title" itemprop="name headline">node.js</h1>
         
 
         <div class="post-meta">
@@ -361,8 +361,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-30T14:28:25+08:00">
-                2018-09-30
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-08T23:13:44+08:00">
+                2019-01-08
               </time>
             
 
@@ -399,15 +399,84 @@
       
 
       
-        <p>在犀牛书中对this并没有太多详细的讲解，红皮书里7.2.2节对this做了一个简单的阐述，但是在实际情况下this的调用方法确实是很迷的。</p>
-<h1 id="关于this对象"><a href="#关于this对象" class="headerlink" title="关于this对象"></a>关于this对象</h1><p>this对象是在运行时基于函数的执行环境绑定的；在全局函数中，this等于window，而当函数作为某个对象的方法调用时，this等于那个对象。不过<strong>匿名函数</strong> 的执行环境具有全局性，因此其this对象通常指向window。<br>例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var name = &apos;The window&apos;;</span><br><span class="line">var object = &#123;</span><br><span class="line">    name : &quot;the obj&quot;,</span><br><span class="line">    getNameFunc : function()&#123;</span><br><span class="line">        return function()&#123;</span><br><span class="line">            return this.name;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(object.getNameFunc()());//&quot;The window&quot; (非严格模式下)</span><br></pre></td></tr></table></figure></p>
-<p>当燃为什么在控制台打印出来是“The window”呢，分析代码，首先创建了一个全局变量name，紧接着object对象里也创建了一个name属性，以及getNameFunc方法，在这个方法中还包含一个闭包(这个匿名函数),并返回this.name。当我们在调用object对象中的getNameFunc方法时，实际是返回一个方法，这个方法就是这个匿名函数。<br>每个函数在被调用的时候都会自动取得两个特殊变量：this，arguments。内部函数在搜索这两个变量的时候，<strong>只会搜索到其活动位置为止</strong>，因此永远不可能直接访问外部函数中这两个变量。不过把<strong>外部作用域</strong>中的this对象保存在一个闭包能够访问的变量里，就可以让闭包访问到该对象。<br>由于上例调用object.getNameFunc之后，返回的方法取得的特殊变量this不会访问外部函数中object.name，所以this指向的是window，在window.name则会去搜索全局变量name，所以打印出The window<br>如果把外部作用域的this对象保存在这个闭包能够访问的变量里，就可以访问到这个对象形如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var name = &apos;The window&apos;;</span><br><span class="line">var object = &#123;</span><br><span class="line">    name : &quot;the obj&quot;,</span><br><span class="line">    getNameFunc : function()&#123;</span><br><span class="line">        var self = this;</span><br><span class="line">        return function()&#123;</span><br><span class="line">            return self.name;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(object.getNameFunc()());//&quot;the obj&quot;</span><br></pre></td></tr></table></figure></p>
-<p>当前代码与前一个例子的代码不同之处在于，在定义匿名函数之前，定义一个self来存储this对象，而在定义闭包之后，闭包也可以访问到这个变量，因为self是包含函数中特意声明的一个变量，即使在函数返回之后，self也引用着object，所以调用object.getNameFunc()()返回的则是“the obj”<br>当然this 和arguments存在同样的问题，如果想访问作用域中的arguments对象，必须将改对象的引用存到另一个闭包能访问的变量中。</p>
-<p>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">var myObject = &#123;</span><br><span class="line">    foo : &quot;bar&quot;,</span><br><span class="line">    func: function()&#123;</span><br><span class="line">        var self = this;</span><br><span class="line">        console.log(this.foo);</span><br><span class="line">        console.log(self.foo);</span><br><span class="line">        (function()&#123;</span><br><span class="line">            console.log(this.foo);</span><br><span class="line">            console.log(self.foo);</span><br><span class="line">        &#125;());</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;;</span><br><span class="line">myObject.func();</span><br></pre></td></tr></table></figure></p>
-<p>以上程序输出的结果依次为 bar bar undefined bar<br>执行的作用域在myObject，调用的是myObject中的func方法，在func方法里还有一个匿名立即执行函数，分析调用myObject.func()时，在当前作用域（myObject中），定义了一个属性foo，所以在func方法中this 是指向这个对象（myObject）， 所以在func方法里this指向的myObject的foo，当在func的匿名立即执行函数中，这个匿名函数中的this不能访问到到外部函数的this，所以通过查询只能找到window，所以this指向的是window，所以this.foo指向的是window.bar,window.bar没有定义，所以是undefined，但是self 是在包含函数中特意声明的一个变量，用来存储指向myObject对象的对象，所以在这个匿名执行函数中，当找不到self时往上查询找到self是指向myObject，所以self.foo指向的是myObject.foo。</p>
-<p>当<br>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var client = &#123;</span><br><span class="line">    fullname : &quot;NOT SET&quot;,</span><br><span class="line">    setUserName : function(firstname,lastname)&#123;</span><br><span class="line">        this.fullname = firstname + &quot; &quot; + lastname;</span><br><span class="line">        return this.fullname;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">function getUserInput(firstname,lastname,callback)</span><br><span class="line">&#123;</span><br><span class="line">    return callback(firstname,lastname);</span><br><span class="line">&#125;</span><br><span class="line">getUserInput(&quot;aaron&quot;,&quot;luo&quot;,client.setUserName); // aaron luo</span><br><span class="line">console.log(client.fullname);//NOT SET</span><br><span class="line">console.log(fullname); //aaron luo</span><br></pre></td></tr></table></figure></p>
-<p>以上代码传入的方法看似是指向的client对象，但其实在传入client.setUsername作为回调的时候，我们实际是用的getUserInput方法的作用域，由于getUserInput被 <strong>挂载</strong>在window，这个作用域中this指向的是window，所以在打印client.fullname时其实并没有改变它的值，而是在window中创建了一个全局变量fullname，并将“aaron luo”赋值给fullname<br>如果想要改变this指向于client而不是window，那么需要将client传入getUserInput方法中，并用call或者apply方法固定this，来表示this指向的是client<br>代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var client = &#123;</span><br><span class="line">    fullname : &quot;NOT SET&quot;,</span><br><span class="line">    setUserName : function(firstname,lastname)&#123;</span><br><span class="line">        this.fullname = firstname + &quot; &quot; + lastname;</span><br><span class="line">        return this.fullname;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">function getUserInput(firstname,lastname,callback,object)</span><br><span class="line">&#123;</span><br><span class="line">    return callback.call(object,firstname,lastname);</span><br><span class="line">&#125;</span><br><span class="line">getUserInput(&quot;aaron&quot;,&quot;luo&quot;,client.setUserName,client); // aaron luo</span><br><span class="line">console.log(client.fullname);//aaron luo </span><br><span class="line">console.log(fullname); // Uncaught ReferenceError: fullname is not defined</span><br></pre></td></tr></table></figure></p>
-<p>这样一来我们通过修改作用域就可以避免变量污染，但是要明确了解this到底指向那个作用域，简单来讲就是谁的作用域调用，this指向谁，具体情况具体分析。</p>
+        <h1 id="Node中的模块系统"><a href="#Node中的模块系统" class="headerlink" title="Node中的模块系统"></a>Node中的模块系统</h1><p>使用Node编写应用程序主要就是使用：</p>
+<ul>
+<li>ECMSCRIPT 编码规范<ul>
+<li>和浏览器不一样，在node中没有BOM/DOM</li>
+</ul>
+</li>
+<li>核心模块<ul>
+<li>文件操作 fs</li>
+<li>http 服务的 http</li>
+<li>url 路径操作模块</li>
+<li>path路径处理模块</li>
+<li>os操作系统信息</li>
+</ul>
+</li>
+<li>第三方模块<ul>
+<li>art-template</li>
+<li>必须通过npm来下载使用</li>
+</ul>
+</li>
+<li>自定义模块<ul>
+<li>自己写的文件</li>
+</ul>
+</li>
+</ul>
+<h2 id="什么是模块化"><a href="#什么是模块化" class="headerlink" title="什么是模块化"></a>什么是模块化</h2><ul>
+<li>文件作用域</li>
+<li>通信规则<ul>
+<li>加载  require</li>
+<li>导出 </li>
+</ul>
+</li>
+</ul>
+<h2 id="CommonJS"><a href="#CommonJS" class="headerlink" title="CommonJS"></a>CommonJS</h2><p>在node中的JavaScript还有一个很重要的概念系统：模块系统</p>
+<ul>
+<li>模块作用域</li>
+<li>使用require方法来加载模块</li>
+<li>使用exports接口对象用来导出模块中的成员</li>
+</ul>
+<h3 id="加载-require"><a href="#加载-require" class="headerlink" title="加载 require"></a>加载 require</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> 自定义变量名称 = <span class="built_in">require</span>(<span class="string">'模块'</span>);</span><br></pre></td></tr></table></figure>
+<p>两个作用</p>
+<ul>
+<li>执行被加载模块的代码</li>
+<li>得到被夹在模块中的exports导出接口对象</li>
+</ul>
+<p>require 加载规则</p>
+<ul>
+<li>优先从缓存加载（避免重复加载，提高效率）</li>
+<li>判断模块标识</li>
+</ul>
+<h3 id="导出exports"><a href="#导出exports" class="headerlink" title="导出exports"></a>导出exports</h3><ul>
+<li><p>node是模块作用域，默认文件中所有成员只能在当前文件模块有效</p>
+</li>
+<li><p>对于希望可以被其他模块访问的成员，需要将这些公开的成员都挂载到exports接口对象中就可以了</p>
+<blockquote>
+<p>导出多个成员必须在对象中</p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">exports.a = <span class="number">123</span>;</span><br><span class="line">exports.b =<span class="string">'hello'</span>;</span><br><span class="line">exports.c = functon()&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line">exports.d = &#123;</span><br><span class="line">    foo:<span class="string">'bar'</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>导出单个成员（拿到的就是函数、字符串、obj）如上例所示，a,b,c,d</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = <span class="string">'hello'</span>;</span><br></pre></td></tr></table></figure>
+<p>  以下情况会覆盖：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = <span class="string">'hello'</span>;</span><br><span class="line"><span class="comment">//add方法会覆盖字符串'hello'</span></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span> <span class="title">add</span> (<span class="params">x,y</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> x + y;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>  利用module导出多个属性</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    add : <span class="function"><span class="keyword">function</span> (<span class="params">x,y</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> x + y;</span><br><span class="line">    &#125;,</span><br><span class="line">    str:<span class="string">'hello'</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//main.js</span></span><br><span class="line"><span class="comment">// fooExpotrs 为foo.js 中 exports 对象</span></span><br><span class="line"><span class="keyword">var</span> fooExpotrs = <span class="built_in">require</span>(<span class="string">'./foo.js'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(fooExports.add(<span class="number">1</span>,<span class="number">2</span>))   <span class="comment">//3</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//foo.js</span></span><br><span class="line"><span class="comment">//exports 是一个对象</span></span><br><span class="line">exports.add = funcion(x,y)&#123;</span><br><span class="line">    <span class="keyword">return</span> x + y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//如果一个模块需要直接导出某个成员，而非挂载的方式</span></span><br><span class="line"><span class="comment">//则使用es6 中的module导出</span></span><br><span class="line"><span class="comment">// foo.js</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span> (<span class="params">x,y</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> x + y;</span><br><span class="line">&#125; </span><br><span class="line">moudle.exports = add;</span><br></pre></td></tr></table></figure>
+<p> 在node中，每个模块内部都有一个自己的moudle对象</p>
+<p>在module对象中，有一个成员叫exports 也是一个对象</p>
+<p>如果需要对外导出成员，只需要把导出的成员挂载到module.exports中去，node为了简化操作，专门提供了一个变量exports  = module.exports</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> moudle = &#123;</span><br><span class="line">    exports:&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(exports === <span class="built_in">module</span>.exports) <span class="comment">// true</span></span><br><span class="line"><span class="comment">//结果等价，说明可以用任意一方来导出</span></span><br><span class="line">exports.str = <span class="string">'hello'</span>;</span><br><span class="line"><span class="built_in">module</span>.exports.add = <span class="function"><span class="keyword">function</span>(<span class="params">x,y</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> x + y;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//&#123;add:[function],str:'hello'&#125;;</span></span><br></pre></td></tr></table></figure>
+<p>谁require，谁得到module.exports，其中exports相当于是module.exports的一个引用</p>
+<p>最后程序中相当于 return module.exports 而不是expotrs，所以给exports重新赋值不管用</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">exports.foo = <span class="string">'bar'</span>;</span><br><span class="line">moudle.exports.a = <span class="number">123</span>;</span><br><span class="line">exports = &#123;</span><br><span class="line">    a: <span class="number">456</span>,</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">module</span>.exports.foo = <span class="string">'hello'</span>;</span><br><span class="line">exports.c = <span class="string">'wordl'</span>;</span><br><span class="line">exports = moudle.exports</span><br><span class="line">exports.a = <span class="number">789</span>;</span><br><span class="line"><span class="comment">// &#123;foo:'hello',a:789&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//Function</span></span><br></pre></td></tr></table></figure>
+<h1 id="Express"><a href="#Express" class="headerlink" title="Express"></a>Express</h1><p>原生的http在某些方面表现不足以应对我们的开发需求，所以需要使用框架来加快开发，所以引入express框架</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//首先安装express</span></span><br><span class="line"><span class="comment">//npm install express --save</span></span><br><span class="line"><span class="comment">//加载模块资源</span></span><br><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">const</span> app = express();</span><br><span class="line">app.get(<span class="string">'/'</span>,(res,req)=&gt;&#123;</span><br><span class="line">   req.send(<span class="string">'hello expresss'</span>); </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p><a href="https://expressjs.com/zh-cn/4x/api.html" target="_blank" rel="noopener">express 官方文档</a></p>
 
       
     </div>
@@ -425,7 +494,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/js/" rel="tag"><i class="fa fa-tag"></i> js</a>
+            <a href="/tags/node-js/" rel="tag"><i class="fa fa-tag"></i> node.js</a>
           
         </div>
       
@@ -438,8 +507,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/20/text-6/" rel="next" title="JS回调函数（深入理解）">
-                <i class="fa fa-chevron-left"></i> JS回调函数（深入理解）
+              <a href="/2018/11/08/text-13/" rel="next" title="Module">
+                <i class="fa fa-chevron-left"></i> Module
               </a>
             
           </div>
@@ -447,10 +516,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/26/text-8/" rel="prev" title="Iterator">
-                Iterator <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -623,7 +688,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于this对象"><span class="nav-number">1.</span> <span class="nav-text">关于this对象</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Node中的模块系统"><span class="nav-number">1.</span> <span class="nav-text">Node中的模块系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是模块化"><span class="nav-number">1.1.</span> <span class="nav-text">什么是模块化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CommonJS"><span class="nav-number">1.2.</span> <span class="nav-text">CommonJS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#加载-require"><span class="nav-number">1.2.1.</span> <span class="nav-text">加载 require</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#导出exports"><span class="nav-number">1.2.2.</span> <span class="nav-text">导出exports</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Express"><span class="nav-number">2.</span> <span class="nav-text">Express</span></a></li></ol></div>
             
 
           </div>
