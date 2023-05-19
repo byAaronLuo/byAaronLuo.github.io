@@ -1,0 +1,1565 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>MYSQL常见符号函数语句归类 · Aaron 知识库</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="aaron">
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="MySQL注入基础.html" />
+    
+    
+    <link rel="prev" href="MYSQL.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../../../README.assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../../../README.assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../../../README.assets/favicon.ico'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../../../../README.assets/favicon.ico">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../README.assets/favicon.ico">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    01.WEB安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    01.SQLi
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../MSSQL/MSSQL.html">
+            
+                <a href="../MSSQL/MSSQL.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1.1" data-path="../MSSQL/MSSQL常见符号函数符号归类.html">
+            
+                <a href="../MSSQL/MSSQL常见符号函数符号归类.html">
+            
+                    
+                    MSSQL常见符号函数符号归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.2" data-path="../MSSQL/MSSQL注入基础.html">
+            
+                <a href="../MSSQL/MSSQL注入基础.html">
+            
+                    
+                    MSSQL注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.3" data-path="../MSSQL/常见防御手段及绕过方式.html">
+            
+                <a href="../MSSQL/常见防御手段及绕过方式.html">
+            
+                    
+                    常见防御手段及绕过方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="MYSQL.html">
+            
+                <a href="MYSQL.html">
+            
+                    
+                    MYSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1.2.1" data-path="MYSQL常见符号函数语句归类.html">
+            
+                <a href="MYSQL常见符号函数语句归类.html">
+            
+                    
+                    MYSQL常见符号函数语句归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2.2" data-path="MySQL注入基础.html">
+            
+                <a href="MySQL注入基础.html">
+            
+                    
+                    MySQL注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../Oracle/Oracle.html">
+            
+                <a href="../Oracle/Oracle.html">
+            
+                    
+                    Oracle
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.3.1" data-path="../Oracle/Oracle常用符号函数语句归类.html">
+            
+                <a href="../Oracle/Oracle常用符号函数语句归类.html">
+            
+                    
+                    Oracle常用符号函数语句归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.2" data-path="../Oracle/Oracle注入基础.html">
+            
+                <a href="../Oracle/Oracle注入基础.html">
+            
+                    
+                    Oracle注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../Postgresql/Postgresql.html">
+            
+                <a href="../Postgresql/Postgresql.html">
+            
+                    
+                    Postgresql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.4.1" data-path="../Postgresql/Postgresql常用符号函数语句归类.html">
+            
+                <a href="../Postgresql/Postgresql常用符号函数语句归类.html">
+            
+                    
+                    Postgresql常用符号函数语句归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4.2" data-path="../Postgresql/Postgresql注入基础.html">
+            
+                <a href="../Postgresql/Postgresql注入基础.html">
+            
+                    
+                    Postgresql注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4.3" data-path="../Postgresql/常见防御手段及绕过方式.html">
+            
+                <a href="../Postgresql/常见防御手段及绕过方式.html">
+            
+                    
+                    常见防御手段及绕过方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../SQL注入之伪静态页面布尔注入.html">
+            
+                <a href="../SQL注入之伪静态页面布尔注入.html">
+            
+                    
+                    SQL注入之伪静态页面布尔注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../ThinkPHP_3.2.3_SQLi.html">
+            
+                <a href="../ThinkPHP_3.2.3_SQLi.html">
+            
+                    
+                    ThinkPHP_3.2.3_SQLi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../02.XSS/">
+            
+                <a href="../../02.XSS/">
+            
+                    
+                    02.XSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../03.CSRF/">
+            
+                <a href="../../03.CSRF/">
+            
+                    
+                    03.CSRF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../03.CSRF/CSRF绕过Referer技巧.html">
+            
+                <a href="../../03.CSRF/CSRF绕过Referer技巧.html">
+            
+                    
+                    CSRF绕过Referer技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../04.OS注入/">
+            
+                <a href="../../04.OS注入/">
+            
+                    
+                    04.OS注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" >
+            
+                <span>
+            
+                    
+                    05.文件操作
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../../05.文件操作/文件上传.html">
+            
+                <a href="../../05.文件操作/文件上传.html">
+            
+                    
+                    文件上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../../05.文件操作/文件包含.html">
+            
+                <a href="../../05.文件操作/文件包含.html">
+            
+                    
+                    文件包含
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../06.SSRF/">
+            
+                <a href="../../06.SSRF/">
+            
+                    
+                    06.SSRF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../../06.SSRF/SSRF示例（weblogic_SSRF）.html">
+            
+                <a href="../../06.SSRF/SSRF示例（weblogic_SSRF）.html">
+            
+                    
+                    SSRF示例（weblogic_SSRF）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../../06.SSRF/SSRF绕过方式.html">
+            
+                <a href="../../06.SSRF/SSRF绕过方式.html">
+            
+                    
+                    SSRF绕过方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../07.XXE/">
+            
+                <a href="../../07.XXE/">
+            
+                    
+                    07.XXE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../08.SSTI/">
+            
+                <a href="../../08.SSTI/">
+            
+                    
+                    08.SSTI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" >
+            
+                <span>
+            
+                    
+                    09.反序列化
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.9.1" data-path="../../09.反序列化/Java序列化与反序列化.html">
+            
+                <a href="../../09.反序列化/Java序列化与反序列化.html">
+            
+                    
+                    Java序列化与反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.2" data-path="../../09.反序列化/PHP反序列化.html">
+            
+                <a href="../../09.反序列化/PHP反序列化.html">
+            
+                    
+                    PHP反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" >
+            
+                <span>
+            
+                    
+                    10.权限维持
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.10.1" data-path="../../10.权限维持/Web_权限维持.html">
+            
+                <a href="../../10.权限维持/Web_权限维持.html">
+            
+                    
+                    Web_权限维持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" >
+            
+                <span>
+            
+                    
+                    11.其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.11.1" data-path="../../11.其他/01.WAF绕过通用思路.html">
+            
+                <a href="../../11.其他/01.WAF绕过通用思路.html">
+            
+                    
+                    01.WAF绕过通用思路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.2" data-path="../../11.其他/02.蚁剑RSA加密绕过检测.html">
+            
+                <a href="../../11.其他/02.蚁剑RSA加密绕过检测.html">
+            
+                    
+                    02.蚁剑RSA加密绕过检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.3" data-path="../../11.其他/03.GitHub云扫描器.html">
+            
+                <a href="../../11.其他/03.GitHub云扫描器.html">
+            
+                    
+                    03.GitHub云扫描器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.4" data-path="../../11.其他/04.JavaScript原型链污染.html">
+            
+                <a href="../../11.其他/04.JavaScript原型链污染.html">
+            
+                    
+                    04.JavaScript原型链污染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.5" data-path="../../11.其他/05.phpfilter协议利用.html">
+            
+                <a href="../../11.其他/05.phpfilter协议利用.html">
+            
+                    
+                    05.phpfilter协议利用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.6" data-path="../../11.其他/06.单点登录SSO原理.html">
+            
+                <a href="../../11.其他/06.单点登录SSO原理.html">
+            
+                    
+                    06.单点登录SSO原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.7" data-path="../../11.其他/07.任意用户密码重置的10种姿势.html">
+            
+                <a href="../../11.其他/07.任意用户密码重置的10种姿势.html">
+            
+                    
+                    07.任意用户密码重置的10种姿势
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.8" data-path="../../11.其他/08.网页接口加密暴破.html">
+            
+                <a href="../../11.其他/08.网页接口加密暴破.html">
+            
+                    
+                    08.网页接口加密暴破
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    02.JAVA安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../02.JAVA安全/01.Java_JVM内存模型.html">
+            
+                <a href="../../../02.JAVA安全/01.Java_JVM内存模型.html">
+            
+                    
+                    01.Java_JVM内存模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../02.JAVA安全/02.Java_面向对象.html">
+            
+                <a href="../../../02.JAVA安全/02.Java_面向对象.html">
+            
+                    
+                    02.Java_面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../../02.JAVA安全/03.Java反射机制.html">
+            
+                <a href="../../../02.JAVA安全/03.Java反射机制.html">
+            
+                    
+                    03.Java反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../../02.JAVA安全/04.Java序列化与反序列化.html">
+            
+                <a href="../../../02.JAVA安全/04.Java序列化与反序列化.html">
+            
+                    
+                    04.Java序列化与反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../../02.JAVA安全/05.RMI基础.html">
+            
+                <a href="../../../02.JAVA安全/05.RMI基础.html">
+            
+                    
+                    05.RMI基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../../02.JAVA安全/06.JNDI注入原理及利用.html">
+            
+                <a href="../../../02.JAVA安全/06.JNDI注入原理及利用.html">
+            
+                    
+                    06.JNDI注入原理及利用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../../02.JAVA安全/07.OGNL表达式.html">
+            
+                <a href="../../../02.JAVA安全/07.OGNL表达式.html">
+            
+                    
+                    07.OGNL表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../../../02.JAVA安全/08.EL表达式.html">
+            
+                <a href="../../../02.JAVA安全/08.EL表达式.html">
+            
+                    
+                    08.EL表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../../../02.JAVA安全/09.SpEL表达式.html">
+            
+                <a href="../../../02.JAVA安全/09.SpEL表达式.html">
+            
+                    
+                    09.SpEL表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../../../02.JAVA安全/10.Tomcat内存马基础入门.html">
+            
+                <a href="../../../02.JAVA安全/10.Tomcat内存马基础入门.html">
+            
+                    
+                    10.Tomcat内存马基础入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../../../02.JAVA安全/11.Spring框架内存马入门.html">
+            
+                <a href="../../../02.JAVA安全/11.Spring框架内存马入门.html">
+            
+                    
+                    11.Spring框架内存马入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../../../02.JAVA安全/12.Shiro550分析.html">
+            
+                <a href="../../../02.JAVA安全/12.Shiro550分析.html">
+            
+                    
+                    12.Shiro550分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../../../02.JAVA安全/13.Shiro550无文件内存马.html">
+            
+                <a href="../../../02.JAVA安全/13.Shiro550无文件内存马.html">
+            
+                    
+                    13.Shiro550无文件内存马
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../../../02.JAVA安全/14.Tomcat内存马无文件攻击.html">
+            
+                <a href="../../../02.JAVA安全/14.Tomcat内存马无文件攻击.html">
+            
+                    
+                    14.Tomcat内存马无文件攻击
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../../../02.JAVA安全/15.Jira_CVE2020-36239_RCE.html">
+            
+                <a href="../../../02.JAVA安全/15.Jira_CVE2020-36239_RCE.html">
+            
+                    
+                    15.Jira_CVE2020-36239_RCE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="../../../02.JAVA安全/16.fastJson反序列化原理及利用.html">
+            
+                <a href="../../../02.JAVA安全/16.fastJson反序列化原理及利用.html">
+            
+                    
+                    16.fastJson反序列化原理及利用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="../../../02.JAVA安全/17.Spring-Core_RCE.html">
+            
+                <a href="../../../02.JAVA安全/17.Spring-Core_RCE.html">
+            
+                    
+                    17.Spring-Core_RCE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="../../../02.JAVA安全/18.JNDI注入之com.sun.rowset.JdbcRowSetImpl利用链.html">
+            
+                <a href="../../../02.JAVA安全/18.JNDI注入之com.sun.rowset.JdbcRowSetImpl利用链.html">
+            
+                    
+                    18.JNDI注入之com.sun.rowset.JdbcRowSetImpl利用链
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >MYSQL常见符号函数语句归类</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x5E38;&#x7528;&#x7B26;&#x53F7;"><b>1.1. </b>&#x5E38;&#x7528;&#x7B26;&#x53F7;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6CE8;&#x91CA;&#x7B26;"><b>1.1.1. </b>&#x6CE8;&#x91CA;&#x7B26;</a></li><li><span class="title-icon "></span><a href="#&#x5E38;&#x7528;&#x8FD0;&#x7B97;&#x7B26;"><b>1.1.2. </b>&#x5E38;&#x7528;&#x8FD0;&#x7B97;&#x7B26;</a></li><li><span class="title-icon "></span><a href="#&#x5E38;&#x89C1;&#x5168;&#x5C40;&#x53D8;&#x91CF;"><b>1.1.3. </b>&#x5E38;&#x89C1;&#x5168;&#x5C40;&#x53D8;&#x91CF;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5E38;&#x7528;&#x51FD;&#x6570;"><b>1.2. </b>&#x5E38;&#x7528;&#x51FD;&#x6570;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7CFB;&#x7EDF;&#x51FD;&#x6570;&#x4FE1;&#x606F;"><b>1.2.1. </b>&#x7CFB;&#x7EDF;&#x51FD;&#x6570;&#x4FE1;&#x606F;</a></li><li><span class="title-icon "></span><a href="#&#x8FDB;&#x5236;&#x8F6C;&#x6362;"><b>1.2.2. </b>&#x8FDB;&#x5236;&#x8F6C;&#x6362;</a></li><li><span class="title-icon "></span><a href="#&#x5B57;&#x7B26;&#x4E32;&#x622A;&#x53D6;&#x62FC;&#x63A5;"><b>1.2.3. </b>&#x5B57;&#x7B26;&#x4E32;&#x622A;&#x53D6;/&#x62FC;&#x63A5;</a></li><li><span class="title-icon "></span><a href="#&#x5176;&#x4ED6;&#x5E38;&#x89C1;&#x51FD;&#x6570;"><b>1.2.4. </b>&#x5176;&#x4ED6;&#x5E38;&#x89C1;&#x51FD;&#x6570;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5E38;&#x7528;&#x8BED;&#x53E5;"><b>1.3. </b>&#x5E38;&#x7528;&#x8BED;&#x53E5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x7248;&#x672C;"><b>1.3.1. </b>&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x7248;&#x672C;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7528;&#x6237;"><b>1.3.2. </b>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7528;&#x6237;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x6240;&#x6709;&#x6570;&#x636E;&#x5E93;"><b>1.3.3. </b>&#x83B7;&#x53D6;&#x6240;&#x6709;&#x6570;&#x636E;&#x5E93;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;"><b>1.3.4. </b>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x7528;&#x6237;"><b>1.3.5. </b>&#x83B7;&#x53D6;&#x7528;&#x6237;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8868;&#x540D;"><b>1.3.6. </b>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8868;&#x540D;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x7684;&#x67D0;&#x8868;&#x7684;&#x5217;&#x540D;"><b>1.3.7. </b>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x7684;&#x67D0;&#x8868;&#x7684;&#x5217;&#x540D;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x67D0;&#x8868;&#x7684;&#x503C;"><b>1.3.8. </b>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x67D0;&#x8868;&#x7684;&#x503C;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div class="treeview__container"><ul>
+<li><div><a href="#&#x5E38;&#x7528;&#x7B26;&#x53F7;">&#x5E38;&#x7528;&#x7B26;&#x53F7;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x6CE8;&#x91CA;&#x7B26;">&#x6CE8;&#x91CA;&#x7B26;</a><i></i></div></li>
+<li><div><a href="#&#x5E38;&#x7528;&#x8FD0;&#x7B97;&#x7B26;">&#x5E38;&#x7528;&#x8FD0;&#x7B97;&#x7B26;</a><i></i></div></li>
+<li><div><a href="#&#x5E38;&#x89C1;&#x5168;&#x5C40;&#x53D8;&#x91CF;">&#x5E38;&#x89C1;&#x5168;&#x5C40;&#x53D8;&#x91CF;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x5E38;&#x7528;&#x51FD;&#x6570;">&#x5E38;&#x7528;&#x51FD;&#x6570;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x7CFB;&#x7EDF;&#x51FD;&#x6570;&#x4FE1;&#x606F;">&#x7CFB;&#x7EDF;&#x51FD;&#x6570;&#x4FE1;&#x606F;</a><i></i></div></li>
+<li><div><a href="#&#x8FDB;&#x5236;&#x8F6C;&#x6362;">&#x8FDB;&#x5236;&#x8F6C;&#x6362;</a><i></i></div></li>
+<li><div><a href="#&#x5B57;&#x7B26;&#x4E32;&#x622A;&#x53D6;&#x62FC;&#x63A5;">&#x5B57;&#x7B26;&#x4E32;&#x622A;&#x53D6;/&#x62FC;&#x63A5;</a><i></i></div></li>
+<li><div><a href="#&#x5176;&#x4ED6;&#x5E38;&#x89C1;&#x51FD;&#x6570;">&#x5176;&#x4ED6;&#x5E38;&#x89C1;&#x51FD;&#x6570;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x5E38;&#x7528;&#x8BED;&#x53E5;">&#x5E38;&#x7528;&#x8BED;&#x53E5;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x7248;&#x672C;">&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x7248;&#x672C;</a><i></i></div></li>
+<li><div><a href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7528;&#x6237;">&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7528;&#x6237;</a><i></i></div></li>
+<li><div><a href="#&#x83B7;&#x53D6;&#x6240;&#x6709;&#x6570;&#x636E;&#x5E93;">&#x83B7;&#x53D6;&#x6240;&#x6709;&#x6570;&#x636E;&#x5E93;</a><i></i></div></li>
+<li><div><a href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;">&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;</a><i></i></div></li>
+<li><div><a href="#&#x83B7;&#x53D6;&#x7528;&#x6237;">&#x83B7;&#x53D6;&#x7528;&#x6237;</a><i></i></div></li>
+<li><div><a href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8868;&#x540D;">&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8868;&#x540D;</a><i></i></div></li>
+<li><div><a href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x7684;&#x67D0;&#x8868;&#x7684;&#x5217;&#x540D;">&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x7684;&#x67D0;&#x8868;&#x7684;&#x5217;&#x540D;</a><i></i></div></li>
+<li><div><a href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x67D0;&#x8868;&#x7684;&#x503C;">&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x67D0;&#x8868;&#x7684;&#x503C;</a><i></i></div></li>
+</ul></li>
+</ul>
+</div>
+
+<h2 id="&#x5E38;&#x7528;&#x7B26;&#x53F7;"><a name="&#x5E38;&#x7528;&#x7B26;&#x53F7;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x7B26;&#x53F7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x5E38;&#x7528;&#x7B26;&#x53F7;</h2>
+<h3 id="&#x6CE8;&#x91CA;&#x7B26;"><a name="&#x6CE8;&#x91CA;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x91CA;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. &#x6CE8;&#x91CA;&#x7B26;</h3>
+<table>
+<thead>
+<tr>
+<th><strong>&#x6CE8;&#x91CA;&#x7B26;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>#</td>
+</tr>
+</tbody>
+</table>
+<p>url&#x7F16;&#x7801;:%23 | &#x5355;&#x884C;&#x6CE8;&#x91CA;
+&#x5728;URL&#x4E2D;#&#x8868;&#x793A;&#x951A;&#x70B9;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;hash&#x8DEF;&#x7531;&#xFF0C;&#x5E26;&#x4E0A;#&#x4E0D;&#x4F1A;&#x8BF7;&#x6C42;&#x540E;&#x7AEF;&#x8DEF;&#x7531;&#xFF0C;&#x800C;&#x662F;&#x5237;&#x65B0;&#x524D;&#x7AEF;&#x8DEF;&#x7531; |
+| -- x | &#x5355;&#x884C;&#x6CE8;&#x91CA;
+x&#x4E3A;&#x4EFB;&#x610F;&#x5B57;&#x7B26;&#xFF0C;&#x8FD9;&#x91CC;&#x8868;&#x793A;&#x6709;&#x4E00;&#x4E2A;&#x7A7A;&#x683C; |
+| /**/  | &#x591A;&#x884C;(&#x5185;&#x8054;)&#x6CE8;&#x91CA; |</p>
+<h3 id="&#x5E38;&#x7528;&#x8FD0;&#x7B97;&#x7B26;"><a name="&#x5E38;&#x7528;&#x8FD0;&#x7B97;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x8FD0;&#x7B97;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. &#x5E38;&#x7528;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<table>
+<thead>
+<tr>
+<th><strong>&#x8FD0;&#x7B97;&#x7B26;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;&amp;</td>
+<td>&#x540C; and</td>
+</tr>
+<tr>
+<td>||</td>
+<td>&#x540C; or</td>
+</tr>
+<tr>
+<td>!</td>
+<td>&#x540C; not</td>
+</tr>
+<tr>
+<td>^</td>
+<td>&#x5F02;&#x6216;&#xFF0C;&#x540C;xor</td>
+</tr>
+<tr>
+<td>\</td>
+<td>&#x8F6C;&#x4E49;&#x7B26;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>&#x4E00;&#x5143;&#x6BD4;&#x7279;&#x53CD;&#x8F6C;</td>
+</tr>
+<tr>
+<td>+</td>
+<td>&#x52A0;&#xFF0C;&#x53EF;&#x66FF;&#x4EE3;&#x7A7A;&#x683C;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x5E38;&#x89C1;&#x5168;&#x5C40;&#x53D8;&#x91CF;"><a name="&#x5E38;&#x89C1;&#x5168;&#x5C40;&#x53D8;&#x91CF;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x89C1;&#x5168;&#x5C40;&#x53D8;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. &#x5E38;&#x89C1;&#x5168;&#x5C40;&#x53D8;&#x91CF;</h3>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53D8;&#x91CF;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@@VERSION</td>
+<td>&#x8FD4;&#x56DE;&#x7248;&#x672C;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>@@GLOBAL.VERSION</td>
+<td>&#x540C;@@VERSION</td>
+</tr>
+<tr>
+<td>@@HOSTNAME</td>
+<td>&#x8FD4;&#x56DE;&#x5B89;&#x88C5;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>@@BASEDIR</td>
+<td>&#x8FD4;&#x56DE;MYSQL&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x5E38;&#x7528;&#x51FD;&#x6570;"><a name="&#x5E38;&#x7528;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x5E38;&#x7528;&#x51FD;&#x6570;</h2>
+<h3 id="&#x7CFB;&#x7EDF;&#x51FD;&#x6570;&#x4FE1;&#x606F;"><a name="&#x7CFB;&#x7EDF;&#x51FD;&#x6570;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x7CFB;&#x7EDF;&#x51FD;&#x6570;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. &#x7CFB;&#x7EDF;&#x51FD;&#x6570;&#x4FE1;&#x606F;</h3>
+<table>
+<thead>
+<tr>
+<th><strong>&#x51FD;&#x6570;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USER()</td>
+<td>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x64CD;&#x4F5C;&#x53E5;&#x67C4;&#x7684;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x540C;SESSION_USER()&#x3001;CURRENT_USER()&#xFF0C;&#x6709;&#x65F6;&#x4E5F;&#x7528;SYSTEM_USER()&#x3002;</td>
+</tr>
+<tr>
+<td>DATABASE()</td>
+<td>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x9009;&#x62E9;&#x7684;&#x6570;&#x636E;&#x5E93;&#x540D;&#xFF0C;&#x540C;SCHEMA()</td>
+</tr>
+<tr>
+<td>VERSION()</td>
+<td>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7248;&#x672C;&#x4FE1;&#x606F;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x8FDB;&#x5236;&#x8F6C;&#x6362;"><a name="&#x8FDB;&#x5236;&#x8F6C;&#x6362;" class="anchor-navigation-ex-anchor" href="#&#x8FDB;&#x5236;&#x8F6C;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. &#x8FDB;&#x5236;&#x8F6C;&#x6362;</h3>
+<table>
+<thead>
+<tr>
+<th><strong>&#x51FD;&#x6570;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORD(str)</td>
+<td>&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x7684;ASCII&#x503C;&#x3002;</td>
+</tr>
+<tr>
+<td>OCT(N)</td>
+<td>&#x4EE5;&#x5B57;&#x7B26;&#x4E32;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE; N &#x7684;&#x516B;&#x8FDB;&#x5236;&#x6570;&#xFF0C;N &#x662F;&#x4E00;&#x4E2A;BIGINT &#x578B;&#x6570;&#x503C;&#xFF0C;&#x4F5C;&#x7528;&#x76F8;&#x5F53;&#x4E8E;<code>CONV(N,10,8)</code>&#x3002;</td>
+</tr>
+<tr>
+<td>HEX(N_S)</td>
+<td>&#x53C2;&#x6570;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#xFF0C;&#x8FD4;&#x56DE; N_or_S &#x7684;16&#x8FDB;&#x5236;&#x5B57;&#x7B26;&#x4E32;&#x5F62;&#x5F0F;&#xFF0C;&#x4E3A;&#x6570;&#x5B57;&#x65F6;&#xFF0C;&#x8FD4;&#x56DE;&#x5176;16&#x8FDB;&#x5236;&#x6570;&#x5F62;&#x5F0F;&#x3002;</td>
+</tr>
+<tr>
+<td>UNHEX(str)</td>
+<td>HEX(str) &#x7684;&#x9006;&#x5411;&#x51FD;&#x6570;&#x3002;&#x5C06;&#x53C2;&#x6570;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x5BF9;16&#x8FDB;&#x5236;&#x6570;&#x5B57;&#x90FD;&#x8F6C;&#x6362;&#x4E3A;10&#x8FDB;&#x5236;&#x6570;&#x5B57;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x8F6C;&#x6362;&#x6210; ASCII &#x7801;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x5B57;&#x7B26;&#x3002;</td>
+</tr>
+<tr>
+<td>BIN(N)</td>
+<td>&#x8FD4;&#x56DE;&#x5341;&#x8FDB;&#x5236;&#x6570;&#x503C; N &#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x503C;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x73B0;&#x5F62;&#x5F0F;&#x3002;</td>
+</tr>
+<tr>
+<td>ASCII(str)</td>
+<td>&#x540C;<code>ORD(string)</code>&#x3002;</td>
+</tr>
+<tr>
+<td>CONV(N,from_base,to_base)</td>
+<td>&#x5C06;&#x6570;&#x503C;&#x578B;&#x53C2;&#x6570; N &#x7531;&#x521D;&#x59CB;&#x8FDB;&#x5236; from_base &#x8F6C;&#x6362;&#x4E3A;&#x76EE;&#x6807;&#x8FDB;&#x5236; <code>to_base</code> &#x7684;&#x5F62;&#x5F0F;&#x5E76;&#x8FD4;&#x56DE;&#x3002;</td>
+</tr>
+<tr>
+<td>CHAR(N,... [USING charset_name])</td>
+<td>&#x5C06;&#x6BCF;&#x4E00;&#x4E2A;&#x53C2;&#x6570; N &#x90FD;&#x89E3;&#x91CA;&#x4E3A;&#x6574;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;&#x7531;&#x8FD9;&#x4E9B;&#x6574;&#x6570;&#x5728; ASCII &#x7801;&#x4E2D;&#x6240;&#x5BF9;&#x5E94;&#x5B57;&#x7B26;&#x6240;&#x7EC4;&#x6210;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x5B57;&#x7B26;&#x4E32;&#x622A;&#x53D6;&#x62FC;&#x63A5;"><a name="&#x5B57;&#x7B26;&#x4E32;&#x622A;&#x53D6;&#x62FC;&#x63A5;" class="anchor-navigation-ex-anchor" href="#&#x5B57;&#x7B26;&#x4E32;&#x622A;&#x53D6;&#x62FC;&#x63A5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. &#x5B57;&#x7B26;&#x4E32;&#x622A;&#x53D6;/&#x62FC;&#x63A5;</h3>
+<table>
+<thead>
+<tr>
+<th><strong>&#x51FD;&#x6570;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SUBSTR(str,N_start,N_length)</td>
+<td>&#x5BF9;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;&#x8FDB;&#x884C;&#x622A;&#x53D6;&#xFF0C;&#x4E3A;SUBSTRING&#x7684;&#x7B80;&#x5355;&#x7248;&#x3002;</td>
+</tr>
+<tr>
+<td>SUBSTRING()</td>
+<td>&#x591A;&#x79CD;&#x683C;&#x5F0F;SUBSTRING(str,pos)&#x3001;</td>
+</tr>
+</tbody>
+</table>
+<p>SUBSTRING(str FROM pos)&#x3001;SUBSTRING(str,pos,len)&#x3001;
+SUBSTRING(str FROM pos FOR len)&#x3002; |
+| RIGHT(str,len) | &#x5BF9;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;&#x4ECE;&#x6700;&#x53F3;&#x8FB9;&#x622A;&#x53D6;&#x6307;&#x5B9A;&#x957F;&#x5EA6;&#x3002; |
+| LEFT(str,len) | &#x5BF9;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;&#x4ECE;&#x6700;&#x5DE6;&#x8FB9;&#x622A;&#x53D6;&#x6307;&#x5B9A;&#x957F;&#x5EA6;&#x3002; |
+| RPAD(str,len,padstr) | &#x5728; str &#x53F3;&#x65B9;&#x8865;&#x9F50; len &#x4F4D;&#x7684;&#x5B57;&#x7B26;&#x4E32; padstr&#xFF0C;&#x8FD4;&#x56DE;&#x65B0;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x5982;&#x679C; str &#x957F;&#x5EA6;&#x5927;&#x4E8E; len&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x957F;&#x5EA6;&#x5C06;&#x7F29;&#x51CF;&#x5230; len &#x6240;&#x6307;&#x5B9A;&#x7684;&#x957F;&#x5EA6;&#x3002; |
+| LPAD(str,len,padstr) | &#x4E0E;RPAD&#x76F8;&#x4F3C;&#xFF0C;&#x5728;str&#x5DE6;&#x8FB9;&#x8865;&#x9F50;&#x3002; |
+| MID(str,pos,len) | &#x540C;&#x4E8E; SUBSTRING(str,pos,len)&#x3002; |
+| INSERT(str,pos,len,newstr) | &#x5728;&#x539F;&#x59CB;&#x5B57;&#x7B26;&#x4E32; str &#x4E2D;&#xFF0C;&#x5C06;&#x81EA;&#x5DE6;&#x6570;&#x7B2C; pos &#x4F4D;&#x5F00;&#x59CB;&#xFF0C;&#x957F;&#x5EA6;&#x4E3A; len &#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x66FF;&#x6362;&#x4E3A;&#x65B0;&#x5B57;&#x7B26;&#x4E32; newstr&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x7ECF;&#x8FC7;&#x66FF;&#x6362;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;INSERT(str,len,1,0x0)&#x53EF;&#x5F53;&#x505A;&#x622A;&#x53D6;&#x51FD;&#x6570;&#x3002; |
+| CONCAT(str1,str2...) | &#x51FD;&#x6570;&#x7528;&#x4E8E;&#x5C06;&#x591A;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5408;&#x5E76;&#x4E3A;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32; |
+| GROUP_CONCAT(...) | &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x7ED3;&#x679C;&#xFF0C;&#x8BE5;&#x7ED3;&#x679C;&#x7531;&#x5206;&#x7EC4;&#x4E2D;&#x7684;&#x503C;&#x8FDE;&#x63A5;&#x7EC4;&#x5408;&#x800C;&#x6210;&#x3002; |
+| MAKE_SET(bits,str1,str2,...) | &#x6839;&#x636E;&#x53C2;&#x6570;1&#xFF0C;&#x8FD4;&#x56DE;&#x6240;&#x8F93;&#x5165;&#x5176;&#x4ED6;&#x7684;&#x53C2;&#x6570;&#x503C;&#x3002;&#x53EF;&#x7528;&#x4F5C;&#x5E03;&#x5C14;&#x76F2;&#x6CE8;&#xFF0C;&#x5982;&#xFF1A;EXP(MAKE_SET((LENGTH(DATABASE())&gt;8)+1,&apos;1&apos;,&apos;710&apos;))&#x3002; |</p>
+<h3 id="&#x5176;&#x4ED6;&#x5E38;&#x89C1;&#x51FD;&#x6570;"><a name="&#x5176;&#x4ED6;&#x5E38;&#x89C1;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x5176;&#x4ED6;&#x5E38;&#x89C1;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.4. &#x5176;&#x4ED6;&#x5E38;&#x89C1;&#x51FD;&#x6570;</h3>
+<table>
+<thead>
+<tr>
+<th><strong>&#x51FD;&#x6570;/&#x8BED;&#x53E5;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IF(exp,state1,state2)</td>
+<td>&#x6761;&#x4EF6;&#x8BED;&#x53E5;&#xFF0C;exp&#x4E3A;true&#xFF0C;&#x6267;&#x884C;state1&#xFF0C;&#x5426;&#x5219;&#x6267;&#x884C;state2</td>
+</tr>
+<tr>
+<td>CASE...WHEN exp THEN state1 ELSE state2 END</td>
+<td>&#x540C;IF</td>
+</tr>
+<tr>
+<td>SLEEP(N)</td>
+<td>&#x4F11;&#x7720;N&#x79D2;</td>
+</tr>
+<tr>
+<td>BENCHMARK(count,exp)&#xFF1A;</td>
+<td>&#x6267;&#x884C;&#x8868;&#x8FBE;&#x5F0F;exp&#xFF0C;count&#x6B21;&#xFF08;&#x6D88;&#x8017;CPU&#xFF09;</td>
+</tr>
+<tr>
+<td>LENGTH(str)</td>
+<td>&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x957F;&#x5EA6;&#x3002;</td>
+</tr>
+<tr>
+<td>PI()</td>
+<td>&#x8FD4;&#x56DE;&#x3C0;&#x7684;&#x5177;&#x4F53;&#x6570;&#x503C;&#x3002;</td>
+</tr>
+<tr>
+<td>REGEXP &quot;statement&quot;</td>
+<td>&#x6B63;&#x5219;&#x5339;&#x914D;&#x6570;&#x636E;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x5E03;&#x5C14;&#x503C;&#x3002;</td>
+</tr>
+<tr>
+<td>LIKE &quot;statement&quot;</td>
+<td>&#x5339;&#x914D;&#x6570;&#x636E;&#xFF0C;%&#x4EE3;&#x8868;&#x4EFB;&#x610F;&#x5185;&#x5BB9;&#x3002;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x5E03;&#x5C14;&#x503C;&#x3002;</td>
+</tr>
+<tr>
+<td>RLIKE &quot;statement&quot;</td>
+<td>&#x4E0E;regexp&#x76F8;&#x540C;&#x3002;</td>
+</tr>
+<tr>
+<td>LOCATE(substr,str,[pos])</td>
+<td>&#x8FD4;&#x56DE;&#x5B50;&#x5B57;&#x7B26;&#x4E32;&#x7B2C;&#x4E00;&#x6B21;&#x51FA;&#x73B0;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</td>
+</tr>
+<tr>
+<td>POSITION(substr IN str)</td>
+<td>&#x7B49;&#x540C;&#x4E8E; LOCATE()&#x3002;</td>
+</tr>
+<tr>
+<td>LOWER(str)</td>
+<td>&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#x5168;&#x90E8;&#x8F6C;&#x6210;&#x5C0F;&#x5199;&#x3002;&#x540C;&#xFF1A;LCASE(str)&#x3002;</td>
+</tr>
+<tr>
+<td>UPPER(str)</td>
+<td>&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x5168;&#x90E8;&#x8F6C;&#x6210;&#x5927;&#x5199;&#x3002;&#x540C;&#xFF1A;UCASE(str)&#x3002;</td>
+</tr>
+<tr>
+<td>ELT(N,str1,str2,str3,...)</td>
+<td>&#x4E0E;MAKE_SET(bit,str1,str2...)&#x7C7B;&#x4F3C;&#xFF0C;&#x6839;&#x636E;N&#x8FD4;&#x56DE;&#x53C2;&#x6570;&#x503C;&#x3002;</td>
+</tr>
+<tr>
+<td>NULLIF(expr1,expr2)</td>
+<td>&#x82E5;expr1&#x4E0E;expr2&#x76F8;&#x540C;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;expr1&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;NULL&#x3002;</td>
+</tr>
+<tr>
+<td>CHARSET(str)</td>
+<td>&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#x4F7F;&#x7528;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#x3002;</td>
+</tr>
+<tr>
+<td>DECODE(crypt_str,pass_str)</td>
+<td>&#x4F7F;&#x7528; pass_str &#x4F5C;&#x4E3A;&#x5BC6;&#x7801;&#xFF0C;&#x89E3;&#x5BC6;&#x52A0;&#x5BC6;&#x5B57;&#x7B26;&#x4E32; crypt_str&#x3002;&#x52A0;&#x5BC6;&#x51FD;&#x6570;&#xFF1A;ENCODE(str,pass_str)&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x5E38;&#x7528;&#x8BED;&#x53E5;"><a name="&#x5E38;&#x7528;&#x8BED;&#x53E5;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x8BED;&#x53E5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x5E38;&#x7528;&#x8BED;&#x53E5;</h2>
+<h3 id="&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x7248;&#x672C;"><a name="&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x7248;&#x672C;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x7248;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. &#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x7248;&#x672C;</h3>
+<pre class="language-"><code class="lang-sql"><span class="token keyword">select</span> version<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7528;&#x6237;"><a name="&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7528;&#x6237;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7528;&#x6237;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7528;&#x6237;</h3>
+<pre class="language-"><code class="lang-sql"><span class="token keyword">select</span> <span class="token keyword">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x6240;&#x6709;&#x6570;&#x636E;&#x5E93;"><a name="&#x83B7;&#x53D6;&#x6240;&#x6709;&#x6570;&#x636E;&#x5E93;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x6240;&#x6709;&#x6570;&#x636E;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.3. &#x83B7;&#x53D6;&#x6240;&#x6709;&#x6570;&#x636E;&#x5E93;</h3>
+<pre class="language-"><code class="lang-sql"><span class="token keyword">select</span> schema_name <span class="token keyword">from</span> information_schema<span class="token punctuation">.</span>schemata<span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;"><a name="&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.4. &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;</h3>
+<pre class="language-"><code class="lang-sql"><span class="token keyword">select</span> <span class="token keyword">database</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x7528;&#x6237;"><a name="&#x83B7;&#x53D6;&#x7528;&#x6237;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x7528;&#x6237;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.5. &#x83B7;&#x53D6;&#x7528;&#x6237;</h3>
+<pre class="language-"><code class="lang-sql"><span class="token keyword">desc</span> mysql<span class="token punctuation">.</span><span class="token keyword">user</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> mysql<span class="token punctuation">.</span><span class="token keyword">user</span>
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8868;&#x540D;"><a name="&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8868;&#x540D;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8868;&#x540D;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.6. &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8868;&#x540D;</h3>
+<pre class="language-"><code class="lang-sql"><span class="token keyword">select</span> table_name <span class="token keyword">from</span> information_schema<span class="token punctuation">.</span><span class="token keyword">tables</span> <span class="token keyword">where</span> table_schema <span class="token operator">=</span> <span class="token keyword">database</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x7684;&#x67D0;&#x8868;&#x7684;&#x5217;&#x540D;"><a name="&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x7684;&#x67D0;&#x8868;&#x7684;&#x5217;&#x540D;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x7684;&#x67D0;&#x8868;&#x7684;&#x5217;&#x540D;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.7. &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x7684;&#x67D0;&#x8868;&#x7684;&#x5217;&#x540D;</h3>
+<pre class="language-"><code class="lang-sql"><span class="token keyword">select</span> column_name <span class="token keyword">from</span> information_schema<span class="token punctuation">.</span><span class="token keyword">columns</span> <span class="token keyword">where</span> table_name <span class="token operator">=</span> <span class="token string">&apos;users&apos;</span>
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x67D0;&#x8868;&#x7684;&#x503C;"><a name="&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x67D0;&#x8868;&#x7684;&#x503C;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x67D0;&#x8868;&#x7684;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.8. &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x67D0;&#x8868;&#x7684;&#x503C;</h3>
+<pre class="language-"><code class="lang-sql"><span class="token keyword">select</span> id <span class="token punctuation">,</span>username<span class="token punctuation">,</span>password <span class="token keyword">from</span> users<span class="token punctuation">;</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; aaron 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2023-05-19 10:41:21
+</span></footer>
+
+<pre class="language-"><code class="lang-html">Author: aaron
+Url: https://byaaronluo.github.io/&#x77E5;&#x8BC6;&#x5E93;/01.WEB&#x5B89;&#x5168;/01.SQLi/MYSQL/MYSQL&#x5E38;&#x89C1;&#x7B26;&#x53F7;&#x51FD;&#x6570;&#x8BED;&#x53E5;&#x5F52;&#x7C7B;.html
+Source: aaron &#x77E5;&#x8BC6;&#x5E93;
+This article was originally published in&#x300C;aaron &#x77E5;&#x8BC6;&#x5E93;&#x300D;,Reproduced please indicate the source, thank you for cooperation!
+</code></pre>
+</body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="MYSQL.html" class="navigation navigation-prev " aria-label="Previous page: MYSQL">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="MySQL注入基础.html" class="navigation navigation-next " aria-label="Next page: MySQL注入基础">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"MYSQL常见符号函数语句归类","level":"1.2.1.2.1","depth":4,"next":{"title":"MySQL注入基础","level":"1.2.1.2.2","depth":4,"path":"知识库/01.WEB安全/01.SQLi/MYSQL/MySQL注入基础.md","ref":"知识库/01.WEB安全/01.SQLi/MYSQL/MySQL注入基础.md","articles":[]},"previous":{"title":"MYSQL","level":"1.2.1.2","depth":3,"path":"知识库/01.WEB安全/01.SQLi/MYSQL/MYSQL.md","ref":"知识库/01.WEB安全/01.SQLi/MYSQL/MYSQL.md","articles":[{"title":"MYSQL常见符号函数语句归类","level":"1.2.1.2.1","depth":4,"path":"知识库/01.WEB安全/01.SQLi/MYSQL/MYSQL常见符号函数语句归类.md","ref":"知识库/01.WEB安全/01.SQLi/MYSQL/MYSQL常见符号函数语句归类.md","articles":[]},{"title":"MySQL注入基础","level":"1.2.1.2.2","depth":4,"path":"知识库/01.WEB安全/01.SQLi/MYSQL/MySQL注入基础.md","ref":"知识库/01.WEB安全/01.SQLi/MYSQL/MySQL注入基础.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-highlight","chapter-fold","expandable-chapters","splitter","page-treeview","lightbox","donate","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo","favicon","github","flexible-alerts","prism","copyright","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy aaron 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; aaron","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript","shell":"bash","xml-dtd":"xml"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack"]},"github":{"url":"https://github.com/byAaronLuo/"},"livereload":{},"splitter":{},"copyright":{"copyProtect":true,"site":"https://byaaronluo.github.io/","author":"aaron","website":"aaron 知识库","image":""},"code":{"copyButtons":true},"donate":{"alipay":"/README.assets/alipay.jpeg","alipayText":"支付宝打赏","button":"打赏☕️","title":"","wechat":"/README.assets/wx.jpeg","wechatText":"微信打赏"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/README.assets/favicon.ico","bookmark":"/README.assets/favicon.ico","appleTouch":"/README.assets/favicon.ico","appleTouchMore":{"120x120":"/README.assets/favicon.ico","180x180":"/README.assets/favicon.ico"}},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 50px; min-height: 50px;border-radius:50%","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"aaron","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Aaron 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"知识库/01.WEB安全/01.SQLi/MYSQL/MYSQL常见符号函数语句归类.md","mtime":"2023-05-19T02:41:21.705Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-19T08:28:01.480Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-copyright/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
