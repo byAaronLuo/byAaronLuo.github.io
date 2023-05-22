@@ -1,0 +1,2064 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>10.如何在Ubuntu16.04上使用Apache设置密码身份验证 · Aaron 知识库</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="aaron">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="11.Ubuntu科学上网.html" />
+    
+    
+    <link rel="prev" href="09.SSH建立隧道以及转发.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../README.assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../README.assets/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../README.assets/favicon.ico'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../../README.assets/favicon.ico">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../README.assets/favicon.ico">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    知识库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    01.WEB安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../01.WEB安全/01.SQLi/">
+            
+                <a href="../01.WEB安全/01.SQLi/">
+            
+                    
+                    01.SQLi
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1.1" data-path="../01.WEB安全/01.SQLi/MSSQL/MSSQL.html">
+            
+                <a href="../01.WEB安全/01.SQLi/MSSQL/MSSQL.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1.1.1" data-path="../01.WEB安全/01.SQLi/MSSQL/MSSQL常见符号函数符号归类.html">
+            
+                <a href="../01.WEB安全/01.SQLi/MSSQL/MSSQL常见符号函数符号归类.html">
+            
+                    
+                    MSSQL常见符号函数符号归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.1.2" data-path="../01.WEB安全/01.SQLi/MSSQL/MSSQL注入基础.html">
+            
+                <a href="../01.WEB安全/01.SQLi/MSSQL/MSSQL注入基础.html">
+            
+                    
+                    MSSQL注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.1.3" data-path="../01.WEB安全/01.SQLi/MSSQL/常见防御手段及绕过方式.html">
+            
+                <a href="../01.WEB安全/01.SQLi/MSSQL/常见防御手段及绕过方式.html">
+            
+                    
+                    常见防御手段及绕过方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.2" data-path="../01.WEB安全/01.SQLi/MYSQL/MYSQL.html">
+            
+                <a href="../01.WEB安全/01.SQLi/MYSQL/MYSQL.html">
+            
+                    
+                    MYSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1.2.1" data-path="../01.WEB安全/01.SQLi/MYSQL/MYSQL常见符号函数语句归类.html">
+            
+                <a href="../01.WEB安全/01.SQLi/MYSQL/MYSQL常见符号函数语句归类.html">
+            
+                    
+                    MYSQL常见符号函数语句归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.2.2" data-path="../01.WEB安全/01.SQLi/MYSQL/MySQL注入基础.html">
+            
+                <a href="../01.WEB安全/01.SQLi/MYSQL/MySQL注入基础.html">
+            
+                    
+                    MySQL注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.3" data-path="../01.WEB安全/01.SQLi/Oracle/Oracle.html">
+            
+                <a href="../01.WEB安全/01.SQLi/Oracle/Oracle.html">
+            
+                    
+                    Oracle
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1.3.1" data-path="../01.WEB安全/01.SQLi/Oracle/Oracle常用符号函数语句归类.html">
+            
+                <a href="../01.WEB安全/01.SQLi/Oracle/Oracle常用符号函数语句归类.html">
+            
+                    
+                    Oracle常用符号函数语句归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.3.2" data-path="../01.WEB安全/01.SQLi/Oracle/Oracle注入基础.html">
+            
+                <a href="../01.WEB安全/01.SQLi/Oracle/Oracle注入基础.html">
+            
+                    
+                    Oracle注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.4" data-path="../01.WEB安全/01.SQLi/Postgresql/Postgresql.html">
+            
+                <a href="../01.WEB安全/01.SQLi/Postgresql/Postgresql.html">
+            
+                    
+                    Postgresql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1.4.1" data-path="../01.WEB安全/01.SQLi/Postgresql/Postgresql常用符号函数语句归类.html">
+            
+                <a href="../01.WEB安全/01.SQLi/Postgresql/Postgresql常用符号函数语句归类.html">
+            
+                    
+                    Postgresql常用符号函数语句归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.4.2" data-path="../01.WEB安全/01.SQLi/Postgresql/Postgresql注入基础.html">
+            
+                <a href="../01.WEB安全/01.SQLi/Postgresql/Postgresql注入基础.html">
+            
+                    
+                    Postgresql注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.4.3" data-path="../01.WEB安全/01.SQLi/Postgresql/常见防御手段及绕过方式.html">
+            
+                <a href="../01.WEB安全/01.SQLi/Postgresql/常见防御手段及绕过方式.html">
+            
+                    
+                    常见防御手段及绕过方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.5" data-path="../01.WEB安全/01.SQLi/SQL注入之伪静态页面布尔注入.html">
+            
+                <a href="../01.WEB安全/01.SQLi/SQL注入之伪静态页面布尔注入.html">
+            
+                    
+                    SQL注入之伪静态页面布尔注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.6" data-path="../01.WEB安全/01.SQLi/ThinkPHP_3.2.3_SQLi.html">
+            
+                <a href="../01.WEB安全/01.SQLi/ThinkPHP_3.2.3_SQLi.html">
+            
+                    
+                    ThinkPHP_3.2.3_SQLi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../01.WEB安全/02.XSS/">
+            
+                <a href="../01.WEB安全/02.XSS/">
+            
+                    
+                    02.XSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../01.WEB安全/03.CSRF/">
+            
+                <a href="../01.WEB安全/03.CSRF/">
+            
+                    
+                    03.CSRF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.3.1" data-path="../01.WEB安全/03.CSRF/CSRF绕过Referer技巧.html">
+            
+                <a href="../01.WEB安全/03.CSRF/CSRF绕过Referer技巧.html">
+            
+                    
+                    CSRF绕过Referer技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../01.WEB安全/04.OS注入/">
+            
+                <a href="../01.WEB安全/04.OS注入/">
+            
+                    
+                    04.OS注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" >
+            
+                <span>
+            
+                    
+                    05.文件操作
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.5.1" data-path="../01.WEB安全/05.文件操作/文件上传.html">
+            
+                <a href="../01.WEB安全/05.文件操作/文件上传.html">
+            
+                    
+                    文件上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5.2" data-path="../01.WEB安全/05.文件操作/文件包含.html">
+            
+                <a href="../01.WEB安全/05.文件操作/文件包含.html">
+            
+                    
+                    文件包含
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../01.WEB安全/06.SSRF/">
+            
+                <a href="../01.WEB安全/06.SSRF/">
+            
+                    
+                    06.SSRF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.6.1" data-path="../01.WEB安全/06.SSRF/SSRF示例（weblogic_SSRF）.html">
+            
+                <a href="../01.WEB安全/06.SSRF/SSRF示例（weblogic_SSRF）.html">
+            
+                    
+                    SSRF示例（weblogic_SSRF）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6.2" data-path="../01.WEB安全/06.SSRF/SSRF绕过方式.html">
+            
+                <a href="../01.WEB安全/06.SSRF/SSRF绕过方式.html">
+            
+                    
+                    SSRF绕过方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="../01.WEB安全/07.XXE/">
+            
+                <a href="../01.WEB安全/07.XXE/">
+            
+                    
+                    07.XXE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="../01.WEB安全/08.SSTI/">
+            
+                <a href="../01.WEB安全/08.SSTI/">
+            
+                    
+                    08.SSTI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" >
+            
+                <span>
+            
+                    
+                    09.反序列化
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.9.1" data-path="../01.WEB安全/09.反序列化/Java序列化与反序列化.html">
+            
+                <a href="../01.WEB安全/09.反序列化/Java序列化与反序列化.html">
+            
+                    
+                    Java序列化与反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9.2" data-path="../01.WEB安全/09.反序列化/PHP反序列化.html">
+            
+                <a href="../01.WEB安全/09.反序列化/PHP反序列化.html">
+            
+                    
+                    PHP反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.10" >
+            
+                <span>
+            
+                    
+                    10.权限维持
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.10.1" data-path="../01.WEB安全/10.权限维持/Web_权限维持.html">
+            
+                <a href="../01.WEB安全/10.权限维持/Web_权限维持.html">
+            
+                    
+                    Web_权限维持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11" >
+            
+                <span>
+            
+                    
+                    11.其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.11.1" data-path="../01.WEB安全/11.其他/01.WAF绕过通用思路.html">
+            
+                <a href="../01.WEB安全/11.其他/01.WAF绕过通用思路.html">
+            
+                    
+                    01.WAF绕过通用思路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11.2" data-path="../01.WEB安全/11.其他/02.蚁剑RSA加密绕过检测.html">
+            
+                <a href="../01.WEB安全/11.其他/02.蚁剑RSA加密绕过检测.html">
+            
+                    
+                    02.蚁剑RSA加密绕过检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11.3" data-path="../01.WEB安全/11.其他/03.GitHub云扫描器.html">
+            
+                <a href="../01.WEB安全/11.其他/03.GitHub云扫描器.html">
+            
+                    
+                    03.GitHub云扫描器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11.4" data-path="../01.WEB安全/11.其他/04.JavaScript原型链污染.html">
+            
+                <a href="../01.WEB安全/11.其他/04.JavaScript原型链污染.html">
+            
+                    
+                    04.JavaScript原型链污染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11.5" data-path="../01.WEB安全/11.其他/05.phpfilter协议利用.html">
+            
+                <a href="../01.WEB安全/11.其他/05.phpfilter协议利用.html">
+            
+                    
+                    05.phpfilter协议利用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11.6" data-path="../01.WEB安全/11.其他/06.单点登录SSO原理.html">
+            
+                <a href="../01.WEB安全/11.其他/06.单点登录SSO原理.html">
+            
+                    
+                    06.单点登录SSO原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11.7" data-path="../01.WEB安全/11.其他/07.任意用户密码重置的10种姿势.html">
+            
+                <a href="../01.WEB安全/11.其他/07.任意用户密码重置的10种姿势.html">
+            
+                    
+                    07.任意用户密码重置的10种姿势
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11.8" data-path="../01.WEB安全/11.其他/08.网页接口加密暴破.html">
+            
+                <a href="../01.WEB安全/11.其他/08.网页接口加密暴破.html">
+            
+                    
+                    08.网页接口加密暴破
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    02.JAVA安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" >
+            
+                <span>
+            
+                    
+                    19.CommonsCollections
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.1" >
+            
+                <span>
+            
+                    
+                    01.CC1
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.1.1" data-path="../02.JAVA安全/19.CommonsCollections/01.CC1/01.CommonsCollections1分析前置知识.html">
+            
+                <a href="../02.JAVA安全/19.CommonsCollections/01.CC1/01.CommonsCollections1分析前置知识.html">
+            
+                    
+                    01.CommonsCollections1分析前置知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.1.2" data-path="../02.JAVA安全/19.CommonsCollections/01.CC1/02.CommonsCollections1分析利用.html">
+            
+                <a href="../02.JAVA安全/19.CommonsCollections/01.CC1/02.CommonsCollections1分析利用.html">
+            
+                    
+                    02.CommonsCollections1分析利用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.1.3" data-path="../02.JAVA安全/19.CommonsCollections/01.CC1/03.CommonsCollections1%20LazyMap利用链.md">
+            
+                <span>
+            
+                    
+                    03.CommonsCollections1 LazyMap利用链
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2" >
+            
+                <span>
+            
+                    
+                    02.CC2
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.2.1" data-path="../02.JAVA安全/19.CommonsCollections/02.CC2/CommonsCollection2分析.html">
+            
+                <a href="../02.JAVA安全/19.CommonsCollections/02.CC2/CommonsCollection2分析.html">
+            
+                    
+                    CommonsCollection2分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.3" >
+            
+                <span>
+            
+                    
+                    03.CC3
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.3.1" data-path="../02.JAVA安全/19.CommonsCollections/03.CC3/CommonsCollections3分析.html">
+            
+                <a href="../02.JAVA安全/19.CommonsCollections/03.CC3/CommonsCollections3分析.html">
+            
+                    
+                    CommonsCollections3分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.4" >
+            
+                <span>
+            
+                    
+                    04.CC4
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.4.1" data-path="../02.JAVA安全/19.CommonsCollections/04.CC4/CommonsCollections4分析.html">
+            
+                <a href="../02.JAVA安全/19.CommonsCollections/04.CC4/CommonsCollections4分析.html">
+            
+                    
+                    CommonsCollections4分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.5" >
+            
+                <span>
+            
+                    
+                    05.CC5
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.5.1" data-path="../02.JAVA安全/19.CommonsCollections/05.CC5/CommonsCollections5分析.html">
+            
+                <a href="../02.JAVA安全/19.CommonsCollections/05.CC5/CommonsCollections5分析.html">
+            
+                    
+                    CommonsCollections5分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.6" >
+            
+                <span>
+            
+                    
+                    06.CC6
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.6.1" data-path="../02.JAVA安全/19.CommonsCollections/06.CC6/CommonsCollections6分析.html">
+            
+                <a href="../02.JAVA安全/19.CommonsCollections/06.CC6/CommonsCollections6分析.html">
+            
+                    
+                    CommonsCollections6分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.7" >
+            
+                <span>
+            
+                    
+                    07.CC7
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.7.1" data-path="../02.JAVA安全/19.CommonsCollections/07.CC7/CommonsCollections7分析.html">
+            
+                <a href="../02.JAVA安全/19.CommonsCollections/07.CC7/CommonsCollections7分析.html">
+            
+                    
+                    CommonsCollections7分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.8" data-path="../02.JAVA安全/19.CommonsCollections/08.CommonsCollections系列简单靶场.html">
+            
+                <a href="../02.JAVA安全/19.CommonsCollections/08.CommonsCollections系列简单靶场.html">
+            
+                    
+                    08.CommonsCollections系列简单靶场
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../02.JAVA安全/01.Java_JVM内存模型.html">
+            
+                <a href="../02.JAVA安全/01.Java_JVM内存模型.html">
+            
+                    
+                    01.Java_JVM内存模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../02.JAVA安全/02.Java_面向对象.html">
+            
+                <a href="../02.JAVA安全/02.Java_面向对象.html">
+            
+                    
+                    02.Java_面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../02.JAVA安全/03.Java反射机制.html">
+            
+                <a href="../02.JAVA安全/03.Java反射机制.html">
+            
+                    
+                    03.Java反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../02.JAVA安全/04.Java序列化与反序列化.html">
+            
+                <a href="../02.JAVA安全/04.Java序列化与反序列化.html">
+            
+                    
+                    04.Java序列化与反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../02.JAVA安全/05.RMI基础.html">
+            
+                <a href="../02.JAVA安全/05.RMI基础.html">
+            
+                    
+                    05.RMI基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../02.JAVA安全/06.JNDI注入原理及利用.html">
+            
+                <a href="../02.JAVA安全/06.JNDI注入原理及利用.html">
+            
+                    
+                    06.JNDI注入原理及利用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../02.JAVA安全/07.OGNL表达式.html">
+            
+                <a href="../02.JAVA安全/07.OGNL表达式.html">
+            
+                    
+                    07.OGNL表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9" data-path="../02.JAVA安全/08.EL表达式.html">
+            
+                <a href="../02.JAVA安全/08.EL表达式.html">
+            
+                    
+                    08.EL表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.10" data-path="../02.JAVA安全/09.SpEL表达式.html">
+            
+                <a href="../02.JAVA安全/09.SpEL表达式.html">
+            
+                    
+                    09.SpEL表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11" data-path="../02.JAVA安全/10.Tomcat内存马基础入门.html">
+            
+                <a href="../02.JAVA安全/10.Tomcat内存马基础入门.html">
+            
+                    
+                    10.Tomcat内存马基础入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.12" data-path="../02.JAVA安全/11.Spring框架内存马入门.html">
+            
+                <a href="../02.JAVA安全/11.Spring框架内存马入门.html">
+            
+                    
+                    11.Spring框架内存马入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13" data-path="../02.JAVA安全/12.Shiro550分析.html">
+            
+                <a href="../02.JAVA安全/12.Shiro550分析.html">
+            
+                    
+                    12.Shiro550分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14" data-path="../02.JAVA安全/13.Shiro550无文件内存马.html">
+            
+                <a href="../02.JAVA安全/13.Shiro550无文件内存马.html">
+            
+                    
+                    13.Shiro550无文件内存马
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.15" data-path="../02.JAVA安全/14.Tomcat内存马无文件攻击.html">
+            
+                <a href="../02.JAVA安全/14.Tomcat内存马无文件攻击.html">
+            
+                    
+                    14.Tomcat内存马无文件攻击
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.16" data-path="../02.JAVA安全/15.Jira_CVE2020-36239_RCE.html">
+            
+                <a href="../02.JAVA安全/15.Jira_CVE2020-36239_RCE.html">
+            
+                    
+                    15.Jira_CVE2020-36239_RCE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.17" data-path="../02.JAVA安全/16.fastJson反序列化原理及利用.html">
+            
+                <a href="../02.JAVA安全/16.fastJson反序列化原理及利用.html">
+            
+                    
+                    16.fastJson反序列化原理及利用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.18" data-path="../02.JAVA安全/17.Spring-Core_RCE.html">
+            
+                <a href="../02.JAVA安全/17.Spring-Core_RCE.html">
+            
+                    
+                    17.Spring-Core_RCE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.19" data-path="../02.JAVA安全/18.JNDI注入之com.sun.rowset.JdbcRowSetImpl利用链.html">
+            
+                <a href="../02.JAVA安全/18.JNDI注入之com.sun.rowset.JdbcRowSetImpl利用链.html">
+            
+                    
+                    18.JNDI注入之com.sun.rowset.JdbcRowSetImpl利用链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.20" data-path="../02.JAVA安全/20.CommonsBeanutils1分析.html">
+            
+                <a href="../02.JAVA安全/20.CommonsBeanutils1分析.html">
+            
+                    
+                    20.CommonsBeanutils1分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    03.主机安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="01.主机乱七八糟的问题汇总（持续更新）.html">
+            
+                <a href="01.主机乱七八糟的问题汇总（持续更新）.html">
+            
+                    
+                    01.主机乱七八糟的问题汇总（持续更新）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="02.计算机从加电到启动系统的过程（Linux）.html">
+            
+                <a href="02.计算机从加电到启动系统的过程（Linux）.html">
+            
+                    
+                    02.计算机从加电到启动系统的过程（Linux）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="03.Base64编码解码原理.html">
+            
+                <a href="03.Base64编码解码原理.html">
+            
+                    
+                    03.Base64编码解码原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="04.DNS隧道反弹shell.html">
+            
+                <a href="04.DNS隧道反弹shell.html">
+            
+                    
+                    04.DNS隧道反弹shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="05.ICMP隧道反弹shell.html">
+            
+                <a href="05.ICMP隧道反弹shell.html">
+            
+                    
+                    05.ICMP隧道反弹shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="06.Linux权限维持.html">
+            
+                <a href="06.Linux权限维持.html">
+            
+                    
+                    06.Linux权限维持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="07.Linux_SUID提权原理.html">
+            
+                <a href="07.Linux_SUID提权原理.html">
+            
+                    
+                    07.Linux_SUID提权原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="08.Linux的账号口令机制及其爆破.html">
+            
+                <a href="08.Linux的账号口令机制及其爆破.html">
+            
+                    
+                    08.Linux的账号口令机制及其爆破
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.9" data-path="09.SSH建立隧道以及转发.html">
+            
+                <a href="09.SSH建立隧道以及转发.html">
+            
+                    
+                    09.SSH建立隧道以及转发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3.10" data-path="10.如何在Ubuntu16.04上使用Apache设置密码身份验证.html">
+            
+                <a href="10.如何在Ubuntu16.04上使用Apache设置密码身份验证.html">
+            
+                    
+                    10.如何在Ubuntu16.04上使用Apache设置密码身份验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.11" data-path="11.Ubuntu科学上网.html">
+            
+                <a href="11.Ubuntu科学上网.html">
+            
+                    
+                    11.Ubuntu科学上网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12" data-path="12.Ubuntu配置zsh.html">
+            
+                <a href="12.Ubuntu配置zsh.html">
+            
+                    
+                    12.Ubuntu配置zsh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.13" data-path="13.Ubuntu如何正确换源.html">
+            
+                <a href="13.Ubuntu如何正确换源.html">
+            
+                    
+                    13.Ubuntu如何正确换源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.14" data-path="14.Windows_CMD.exe执行任意代码、命令、程序的漏洞.html">
+            
+                <a href="14.Windows_CMD.exe执行任意代码、命令、程序的漏洞.html">
+            
+                    
+                    14.Windows_CMD.exe执行任意代码、命令、程序的漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.15" data-path="15.CentOS7虚拟机根目录扩容（无卷组情况下）.html">
+            
+                <a href="15.CentOS7虚拟机根目录扩容（无卷组情况下）.html">
+            
+                    
+                    15.CentOS7虚拟机根目录扩容（无卷组情况下）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" >
+            
+                <span>
+            
+                    
+                    04.编程开发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" >
+            
+                <span>
+            
+                    
+                    01.GO
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1.1" data-path="../04.编程开发/01.GO/01.GO基础/">
+            
+                <a href="../04.编程开发/01.GO/01.GO基础/">
+            
+                    
+                    01.GO基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.2" >
+            
+                <span>
+            
+                    
+                    02.GO实例
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1.2.1" data-path="../04.编程开发/01.GO/02.GO实例/01.GO常用基础实例.html">
+            
+                <a href="../04.编程开发/01.GO/02.GO实例/01.GO常用基础实例.html">
+            
+                    
+                    01.GO常用基础实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.2.2" data-path="../04.编程开发/01.GO/02.GO实例/02.使用GO编写POC.html">
+            
+                <a href="../04.编程开发/01.GO/02.GO实例/02.使用GO编写POC.html">
+            
+                    
+                    02.使用GO编写POC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.2.3" data-path="../04.编程开发/01.GO/02.GO实例/03.使用GO模拟登陆.html">
+            
+                <a href="../04.编程开发/01.GO/02.GO实例/03.使用GO模拟登陆.html">
+            
+                    
+                    03.使用GO模拟登陆
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.2.4" data-path="../04.编程开发/01.GO/02.GO实例/04.使用GO+selenium.html">
+            
+                <a href="../04.编程开发/01.GO/02.GO实例/04.使用GO+selenium.html">
+            
+                    
+                    04.使用GO+selenium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.2.5" data-path="../04.编程开发/01.GO/02.GO实例/05.限制GO并发数.html">
+            
+                <a href="../04.编程开发/01.GO/02.GO实例/05.限制GO并发数.html">
+            
+                    
+                    05.限制GO并发数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.2.6" data-path="../04.编程开发/01.GO/02.GO实例/06.使用GO上传图片.html">
+            
+                <a href="../04.编程开发/01.GO/02.GO实例/06.使用GO上传图片.html">
+            
+                    
+                    06.使用GO上传图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >10.如何在Ubuntu16.04上使用Apache设置密码身份验证</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x4ECB;&#x7ECD;"><b>1.1. </b>&#x4ECB;&#x7ECD;</a></li><li><span class="title-icon "></span><a href="#&#x5148;&#x51B3;&#x6761;&#x4EF6;"><b>1.2. </b>&#x5148;&#x51B3;&#x6761;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#&#x7B2C;1&#x6B65;---&#x5B89;&#x88C5;apache-utilities&#x5305;"><b>1.3. </b>&#x7B2C;1&#x6B65; - &#x5B89;&#x88C5;Apache Utilities&#x5305;</a></li><li><span class="title-icon "></span><a href="#&#x7B2C;2&#x6B65;---&#x521B;&#x5EFA;&#x5BC6;&#x7801;&#x6587;&#x4EF6;"><b>1.4. </b>&#x7B2C;2&#x6B65; - &#x521B;&#x5EFA;&#x5BC6;&#x7801;&#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#&#x7B2C;3&#x6B65;---&#x914D;&#x7F6E;apache&#x5BC6;&#x7801;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;"><b>1.5. </b>&#x7B2C;3&#x6B65; - &#x914D;&#x7F6E;Apache&#x5BC6;&#x7801;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;</a></li><ul><li><span class="title-icon "></span><a href="#&#x9009;&#x9879;1&#xFF1A;&#x5728;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x5B9A;&#x4E49;&#x4E2D;&#x914D;&#x7F6E;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#xFF08;&#x9996;&#x9009;&#xFF09;"><b>1.5.1. </b>&#x9009;&#x9879;1&#xFF1A;&#x5728;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x5B9A;&#x4E49;&#x4E2D;&#x914D;&#x7F6E;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#xFF08;&#x9996;&#x9009;&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x9009;&#x9879;2&#xFF1A;&#x4F7F;&#x7528;htaccess&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x8BBF;&#x95EE;&#x63A7;&#x5236;"><b>1.5.2. </b>&#x9009;&#x9879;2&#xFF1A;&#x4F7F;&#x7528;.htaccess&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x8BBF;&#x95EE;&#x63A7;&#x5236;</a></li></ul><li><span class="title-icon "></span><a href="#&#x7B2C;4&#x6B65;---&#x786E;&#x8BA4;&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;"><b>1.6. </b>&#x7B2C;4&#x6B65; - &#x786E;&#x8BA4;&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div class="treeview__container"><ul>
+<li><div><a href="#&#x4ECB;&#x7ECD;">&#x4ECB;&#x7ECD;</a><i></i></div></li>
+<li><div><a href="#&#x5148;&#x51B3;&#x6761;&#x4EF6;">&#x5148;&#x51B3;&#x6761;&#x4EF6;</a><i></i></div></li>
+<li><div><a href="#&#x7B2C;1&#x6B65;---&#x5B89;&#x88C5;apache-utilities&#x5305;">&#x7B2C;1&#x6B65; - &#x5B89;&#x88C5;Apache Utilities&#x5305;</a><i></i></div></li>
+<li><div><a href="#&#x7B2C;2&#x6B65;---&#x521B;&#x5EFA;&#x5BC6;&#x7801;&#x6587;&#x4EF6;">&#x7B2C;2&#x6B65; - &#x521B;&#x5EFA;&#x5BC6;&#x7801;&#x6587;&#x4EF6;</a><i></i></div></li>
+<li><div><a href="#&#x7B2C;3&#x6B65;---&#x914D;&#x7F6E;apache&#x5BC6;&#x7801;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;">&#x7B2C;3&#x6B65; - &#x914D;&#x7F6E;Apache&#x5BC6;&#x7801;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x9009;&#x9879;1&#xFF1A;&#x5728;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x5B9A;&#x4E49;&#x4E2D;&#x914D;&#x7F6E;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#xFF08;&#x9996;&#x9009;&#xFF09;">&#x9009;&#x9879;1&#xFF1A;&#x5728;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x5B9A;&#x4E49;&#x4E2D;&#x914D;&#x7F6E;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#xFF08;&#x9996;&#x9009;&#xFF09;</a><i></i></div></li>
+<li><div><a href="#&#x9009;&#x9879;2&#xFF1A;&#x4F7F;&#x7528;htaccess&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x8BBF;&#x95EE;&#x63A7;&#x5236;">&#x9009;&#x9879;2&#xFF1A;&#x4F7F;&#x7528;.htaccess&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x8BBF;&#x95EE;&#x63A7;&#x5236;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x7B2C;4&#x6B65;---&#x786E;&#x8BA4;&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;">&#x7B2C;4&#x6B65; - &#x786E;&#x8BA4;&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;</a><i></i></div></li>
+</ul>
+</div>
+
+<blockquote>
+<p><a href="https://cloud.tencent.com/developer/article/1358394" target="_blank">https://cloud.tencent.com/developer/article/1358394</a></p>
+</blockquote>
+<h2 id="&#x4ECB;&#x7ECD;"><a name="&#x4ECB;&#x7ECD;" class="anchor-navigation-ex-anchor" href="#&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x4ECB;&#x7ECD;</h2>
+<p>&#x5728;&#x8FD0;&#x884C;&#x7F51;&#x7AD9;&#x65F6;&#xFF0C;&#x7F51;&#x7AD9;&#x7684;&#x67D0;&#x4E9B;&#x90E8;&#x5206;&#x901A;&#x5E38;&#x4F1A;&#x9650;&#x5236;&#x8BBF;&#x95EE;&#x8005;&#x3002;Web&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x81EA;&#x5DF1;&#x7684;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x548C;&#x6388;&#x6743;&#x65B9;&#x6CD5;&#xFF0C;&#x4F46;&#x5982;&#x679C;Web&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x8DB3;&#x6216;&#x4E0D;&#x53EF;&#x7528;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Web&#x670D;&#x52A1;&#x5668;&#x672C;&#x8EAB;&#x6765;&#x9650;&#x5236;&#x8BBF;&#x95EE;&#x3002;</p>
+<p>&#x5728;&#x672C;&#x6307;&#x5357;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x6F14;&#x793A;&#x5982;&#x4F55;&#x5728;Ubuntu 16.04&#x4E0A;&#x8FD0;&#x884C;&#x7684;Apache Web&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x5BF9;&#x8D44;&#x4EA7;&#x8FDB;&#x884C;&#x5BC6;&#x7801;&#x4FDD;&#x62A4;&#x3002;</p>
+<h2 id="&#x5148;&#x51B3;&#x6761;&#x4EF6;"><a name="&#x5148;&#x51B3;&#x6761;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x5148;&#x51B3;&#x6761;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x5148;&#x51B3;&#x6761;&#x4EF6;</h2>
+<p>&#x8981;&#x5B8C;&#x6210;&#x672C;&#x6559;&#x7A0B;&#xFF0C;&#x60A8;&#x9700;&#x8981;&#x8BBF;&#x95EE;Ubuntu 16.04&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<p>&#x6B64;&#x5916;&#xFF0C;&#x5728;&#x5F00;&#x59CB;&#x4E4B;&#x524D;&#xFF0C;&#x60A8;&#x5C06;&#x9700;&#x8981;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<ul>
+<li><strong>&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;sudo&#x7528;&#x6237;</strong>&#xFF1A;&#x60A8;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5177;&#x6709;<code>sudo</code>&#x6743;&#x9650;&#x7528;&#x6237;&#x6309;&#x7167;&#x7684;Ubuntu 16.04&#x670D;&#x52A1;&#x5668;&#x521D;&#x59CB;&#x8BBE;&#x7F6E;&#x6307;&#x5357;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#xFF0C;&#x6CA1;&#x6709;&#x670D;&#x52A1;&#x5668;&#x7684;&#x540C;&#x5B66;&#x53EF;&#x4EE5;&#x5728;<a href="https://cloud.tencent.com/product/cvm?from=10680" target="_blank">&#x8FD9;&#x91CC;&#x8D2D;&#x4E70;</a>&#xFF0C;&#x4E0D;&#x8FC7;&#x6211;&#x4E2A;&#x4EBA;&#x66F4;&#x63A8;&#x8350;&#x60A8;&#x4F7F;&#x7528;<strong>&#x514D;&#x8D39;</strong>&#x7684;&#x817E;&#x8BAF;&#x4E91;<a href="https://cloud.tencent.com/developer/labs?from=10680" target="_blank">&#x5F00;&#x53D1;&#x8005;&#x5B9E;&#x9A8C;&#x5BA4;</a>&#x8FDB;&#x884C;&#x8BD5;&#x9A8C;&#xFF0C;&#x5B66;&#x4F1A;&#x5B89;&#x88C5;&#x540E;&#x518D;<a href="https://cloud.tencent.com/product/cvm?from=10680" target="_blank">&#x8D2D;&#x4E70;&#x670D;&#x52A1;&#x5668;</a>&#x3002;</li>
+<li><strong>Apache2 Web&#x670D;&#x52A1;&#x5668;</strong>&#x3002;</li>
+<li>&#x4F7F;&#x7528;SSL&#x4FDD;&#x62A4;&#x7684;&#x7F51;&#x7AD9;
+&#xFF1A;&#x5982;&#x4F55;&#x8BBE;&#x7F6E;&#x8BE5;&#x7F51;&#x7AD9;&#x53D6;&#x51B3;&#x4E8E;&#x60A8;&#x662F;&#x5426;&#x62E5;&#x6709;&#x7F51;&#x7AD9;&#x7684;&#x57DF;&#x540D;&#x3002;<ul>
+<li><strong>&#x5982;&#x679C;&#x4F60;&#x6709;&#x57DF;&#x540D;</strong>&#xFF0C;&#x4FDD;&#x62A4;&#x4F60;&#x7F51;&#x7AD9;&#x7684;&#x6700;&#x7B80;&#x5355;&#x65B9;&#x6CD5;&#x662F;&#x4F7F;&#x7528;<a href="https://cloud.tencent.com/product/ssl?from=10680" target="_blank">&#x817E;&#x8BAF;&#x4E91;SSL&#x8BC1;&#x4E66;&#x670D;&#x52A1;</a>&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x514D;&#x8D39;&#x7684;&#x53EF;&#x4FE1;&#x8BC1;&#x4E66;&#x3002;<a href="https://cloud.tencent.com/document/product/400/6814?from=10680" target="_blank">&#x817E;&#x8BAF;&#x4E91;SSL&#x8BC1;&#x4E66;&#x5B89;&#x88C5;&#x64CD;&#x4F5C;&#x6307;&#x5357;</a>&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#x3002;</li>
+<li><strong>&#x5982;&#x679C;&#x4F60;&#x6CA1;&#x6709;&#x57DF;&#x540D;</strong>&#xFF0C;&#x5EFA;&#x8BAE;&#x60A8;&#x5148;&#x53BB;&#x8FD9;&#x91CC;<a href="https://dnspod.cloud.tencent.com/" target="_blank">&#x6CE8;&#x518C;&#x4E00;&#x4E2A;&#x57DF;&#x540D;</a>&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x53EA;&#x662F;&#x4F7F;&#x7528;&#x6B64;&#x914D;&#x7F6E;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#x6216;&#x4E2A;&#x4EBA;&#x4F7F;&#x7528;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x81EA;&#x7B7E;&#x540D;&#x8BC1;&#x4E66;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x8D2D;&#x4E70;&#x57DF;&#x540D;&#x3002;&#x81EA;&#x7B7E;&#x540D;&#x8BC1;&#x4E66;&#x63D0;&#x4F9B;&#x4E86;&#x76F8;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x52A0;&#x5BC6;&#xFF0C;&#x4F46;&#x6CA1;&#x6709;&#x57DF;&#x540D;&#x9A8C;&#x8BC1;&#x516C;&#x544A;&#x3002;&#x5173;&#x4E8E;&#x81EA;&#x7B7E;&#x540D;&#x8BC1;&#x4E66;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x4E3A;<a href="https://cloud.tencent.com/developer/article/1165840?from=10680" target="_blank">Apache&#x521B;&#x5EFA;&#x81EA;&#x7B7E;&#x540D;SSL&#x8BC1;&#x4E66;</a>&#x548C;<a href="https://cloud.tencent.com/developer/article/1160294?from=10680" target="_blank">&#x5982;&#x4F55;&#x4E3A;Nginx&#x521B;&#x5EFA;&#x81EA;&#x7B7E;&#x540D;SSL&#x8BC1;&#x4E66;</a>&#x8FD9;&#x4E24;&#x7BC7;&#x6587;&#x7AE0;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<p>&#x5F53;&#x6240;&#x6709;&#x8FD9;&#x4E9B;&#x90FD;&#x5230;&#x4F4D;&#x540E;&#xFF0C;&#x4EE5;<code>sudo</code>&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x767B;&#x5F55;&#x60A8;&#x7684;&#x670D;&#x52A1;&#x5668;&#x5E76;&#x7EE7;&#x7EED;&#x4E0B;&#x9762;&#x3002;</p>
+<h2 id="&#x7B2C;1&#x6B65;---&#x5B89;&#x88C5;apache-utilities&#x5305;"><a name="&#x7B2C;1&#x6B65;---&#x5B89;&#x88C5;apache-utilities&#x5305;" class="anchor-navigation-ex-anchor" href="#&#x7B2C;1&#x6B65;---&#x5B89;&#x88C5;apache-utilities&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x7B2C;1&#x6B65; - &#x5B89;&#x88C5;Apache Utilities&#x5305;</h2>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x4F7F;&#x7528;&#x540D;&#x4E3A;<code>apache2-utils</code>&#x5305;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x7684;&#x5B9E;&#x7528;&#x7A0B;&#x5E8F;<code>htpasswd</code>&#x6765;&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x5E76;&#x7BA1;&#x7406;&#x8BBF;&#x95EE;&#x53D7;&#x9650;&#x5185;&#x5BB9;&#x6240;&#x9700;&#x7684;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#x3002;</p>
+<pre class="language-"><code class="lang-javascript">sudo apt<span class="token operator">-</span><span class="token keyword">get</span> update
+sudo apt<span class="token operator">-</span><span class="token keyword">get</span> install apache2<span class="token operator">-</span>utils
+</code></pre>
+<h2 id="&#x7B2C;2&#x6B65;---&#x521B;&#x5EFA;&#x5BC6;&#x7801;&#x6587;&#x4EF6;"><a name="&#x7B2C;2&#x6B65;---&#x521B;&#x5EFA;&#x5BC6;&#x7801;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x7B2C;2&#x6B65;---&#x521B;&#x5EFA;&#x5BC6;&#x7801;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x7B2C;2&#x6B65; - &#x521B;&#x5EFA;&#x5BC6;&#x7801;&#x6587;&#x4EF6;</h2>
+<p>&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x8BE5;<code>htpasswd</code>&#x547D;&#x4EE4;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B83;&#x6765;&#x521B;&#x5EFA;Apache&#x53EF;&#x7528;&#x4E8E;&#x9A8C;&#x8BC1;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x7684;&#x5BC6;&#x7801;&#x6587;&#x4EF6;&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x5728;<code>/etc/apache2</code>&#x914D;&#x7F6E;&#x76EE;&#x5F55;&#x4E2D;&#x4E3A;&#x6B64;&#x76EE;&#x7684;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>.htpasswd</code>&#x7684;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x7B2C;&#x4E00;&#x6B21;&#x4F7F;&#x7528;&#x6B64;&#x5B9E;&#x7528;&#x7A0B;&#x5E8F;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x6DFB;&#x52A0;<code>-c</code>&#x9009;&#x9879;&#x4EE5;&#x521B;&#x5EFA;&#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x6211;&#x4EEC;&#x5728;&#x547D;&#x4EE4;&#x672B;&#x5C3E;&#x6307;&#x5B9A;&#x7528;&#x6237;&#x540D;&#xFF08;&#x5728;&#x6B64;&#x793A;&#x4F8B;&#x4E2D;&#x4E3A;<code>sammy</code>&#xFF09;&#x4EE5;&#x5728;&#x6587;&#x4EF6;&#x4E2D;&#x521B;&#x5EFA;&#x65B0;&#x6761;&#x76EE;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript">sudo htpasswd <span class="token operator">-</span>c <span class="token operator">/</span>etc<span class="token operator">/</span>apache2<span class="token operator">/</span><span class="token punctuation">.</span>htpasswd sammy
+</code></pre>
+<p>&#x7CFB;&#x7EDF;&#x5C06;&#x8981;&#x6C42;&#x60A8;&#x63D0;&#x4F9B;&#x5E76;&#x786E;&#x8BA4;&#x7528;&#x6237;&#x7684;&#x5BC6;&#x7801;&#x3002;</p>
+<p>&#x7701;&#x7565;&#x60A8;&#x8981;&#x6DFB;&#x52A0;&#x7684;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x7684;<code>-c</code>&#x53C2;&#x6570;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript">sudo htpasswd <span class="token operator">/</span>etc<span class="token operator">/</span>apache2<span class="token operator">/</span><span class="token punctuation">.</span>htpasswd another_user
+</code></pre>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6BCF;&#x6761;&#x8BB0;&#x5F55;&#x7684;&#x7528;&#x6237;&#x540D;&#x548C;&#x52A0;&#x5BC6;&#x5BC6;&#x7801;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript">cat <span class="token operator">/</span>etc<span class="token operator">/</span>apache2<span class="token operator">/</span><span class="token punctuation">.</span>htpasswd
+sammy<span class="token operator">:</span>$apr1$<span class="token number">.0</span>CAabqX$rb8lueIORA<span class="token operator">/</span>p8UzGPYtGs<span class="token operator">/</span>
+another_user<span class="token operator">:</span>$apr1$fqH7UG8a$SrUxurp<span class="token operator">/</span>Atfq6j7GL<span class="token operator">/</span><span class="token constant">VEC1</span>
+</code></pre>
+<h2 id="&#x7B2C;3&#x6B65;---&#x914D;&#x7F6E;apache&#x5BC6;&#x7801;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;"><a name="&#x7B2C;3&#x6B65;---&#x914D;&#x7F6E;apache&#x5BC6;&#x7801;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;" class="anchor-navigation-ex-anchor" href="#&#x7B2C;3&#x6B65;---&#x914D;&#x7F6E;apache&#x5BC6;&#x7801;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x7B2C;3&#x6B65; - &#x914D;&#x7F6E;Apache&#x5BC6;&#x7801;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;</h2>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x6709;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;Apache&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x7684;&#x683C;&#x5F0F;&#x7684;&#x7528;&#x6237;&#x548C;&#x5BC6;&#x7801;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x914D;&#x7F6E;Apache&#x4EE5;&#x5728;&#x63D0;&#x4F9B;&#x53D7;&#x4FDD;&#x62A4;&#x5185;&#x5BB9;&#x4E4B;&#x524D;&#x68C0;&#x67E5;&#x6B64;&#x6587;&#x4EF6;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x4E4B;&#x4E00;&#x5B8C;&#x6210;&#x6B64;&#x64CD;&#x4F5C;&#xFF1A;&#x76F4;&#x63A5;&#x5728;&#x7AD9;&#x70B9;&#x7684;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x6216;&#x8005;&#x5C06;.htaccess&#x6587;&#x4EF6;&#x653E;&#x5728;&#x9700;&#x8981;&#x9650;&#x5236;&#x7684;&#x76EE;&#x5F55;&#x4E2D;&#x3002;&#x901A;&#x5E38;&#x6700;&#x597D;&#x4F7F;&#x7528;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x60A8;&#x9700;&#x8981;&#x5141;&#x8BB8;&#x975E;root&#x7528;&#x6237;&#x7BA1;&#x7406;&#x81EA;&#x5DF1;&#x7684;&#x8BBF;&#x95EE;&#x9650;&#x5236;&#xFF0C;&#x8BF7;&#x68C0;&#x67E5;&#x7F51;&#x7AD9;&#x65C1;&#x8FB9;&#x7684;&#x7248;&#x672C;&#x63A7;&#x5236;&#x9650;&#x5236;&#xFF0C;&#x6216;&#x8005;&#x4F7F;&#x7528;.htaccess&#x6587;&#x4EF6;&#x7684;Web&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5DF2;&#x7528;&#x4E8E;&#x5176;&#x4ED6;&#x76EE;&#x7684;&#xFF0C;&#x770B;&#x770B;&#x7B2C;&#x4E8C;&#x4E2A;&#x9009;&#x9879;&#x3002;</p>
+<p>&#x9009;&#x62E9;&#x6700;&#x9002;&#x5408;&#x60A8;&#x9700;&#x6C42;&#x7684;&#x9009;&#x9879;&#x3002;</p>
+<h3 id="&#x9009;&#x9879;1&#xFF1A;&#x5728;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x5B9A;&#x4E49;&#x4E2D;&#x914D;&#x7F6E;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#xFF08;&#x9996;&#x9009;&#xFF09;"><a name="&#x9009;&#x9879;1&#xFF1A;&#x5728;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x5B9A;&#x4E49;&#x4E2D;&#x914D;&#x7F6E;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#xFF08;&#x9996;&#x9009;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x9009;&#x9879;1&#xFF1A;&#x5728;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x5B9A;&#x4E49;&#x4E2D;&#x914D;&#x7F6E;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#xFF08;&#x9996;&#x9009;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.1. &#x9009;&#x9879;1&#xFF1A;&#x5728;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x5B9A;&#x4E49;&#x4E2D;&#x914D;&#x7F6E;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#xFF08;&#x9996;&#x9009;&#xFF09;</h3>
+<p>&#x7B2C;&#x4E00;&#x4E2A;&#x9009;&#x9879;&#x662F;&#x7F16;&#x8F91;Apache&#x914D;&#x7F6E;&#x5E76;&#x5C06;&#x5BC6;&#x7801;&#x4FDD;&#x62A4;&#x6DFB;&#x52A0;&#x5230;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x6587;&#x4EF6;&#x3002;&#x8FD9;&#x901A;&#x5E38;&#x4F1A;&#x63D0;&#x4F9B;&#x66F4;&#x597D;&#x7684;&#x6027;&#x80FD;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x907F;&#x514D;&#x4E86;&#x8BFB;&#x53D6;&#x5206;&#x5E03;&#x5F0F;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x8D39;&#x7528;&#x3002;&#x6B64;&#x9009;&#x9879;&#x9700;&#x8981;&#x8BBF;&#x95EE;&#x914D;&#x7F6E;&#xFF0C;&#x8BE5;&#x914D;&#x7F6E;&#x5E76;&#x975E;&#x59CB;&#x7EC8;&#x53EF;&#x7528;&#xFF0C;&#x4F46;&#x662F;&#x5F53;&#x60A8;&#x786E;&#x5B9E;&#x6709;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x65F6;&#xFF0C;&#x5EFA;&#x8BAE;&#x60A8;&#x8BBF;&#x95EE;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x6253;&#x5F00;&#x8981;&#x6DFB;&#x52A0;&#x9650;&#x5236;&#x7684;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x6587;&#x4EF6;&#x3002;&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x7684;&#x793A;&#x4F8B;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4F7F;&#x7528;&#x5305;&#x542B;&#x901A;&#x8FC7;Ubuntu&#x7684;apache&#x5305;&#x5B89;&#x88C5;&#x7684;&#x9ED8;&#x8BA4;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x7684;<code>000-default.conf</code>&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript">sudo nano <span class="token operator">/</span>etc<span class="token operator">/</span>apache2<span class="token operator">/</span>sites<span class="token operator">-</span>enabled<span class="token operator">/</span><span class="token number">000</span><span class="token operator">-</span><span class="token keyword">default</span><span class="token punctuation">.</span>conf
+</code></pre>
+<p>&#x5728;&#x5185;&#x90E8;&#xFF0C;&#x5220;&#x9664;&#x4E86;&#x6CE8;&#x91CA;&#xFF0C;&#x6587;&#x4EF6;&#x770B;&#x8D77;&#x6765;&#x5E94;&#x8BE5;&#x7C7B;&#x4F3C;&#x4E8E;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript"><span class="token operator">&lt;</span>VirtualHost <span class="token operator">*</span><span class="token operator">:</span><span class="token number">80</span><span class="token operator">&gt;</span>
+  ServerAdmin webmaster@localhost
+  DocumentRoot <span class="token operator">/</span><span class="token keyword">var</span><span class="token operator">/</span>www<span class="token operator">/</span>html
+  ErrorLog $<span class="token punctuation">{</span><span class="token constant">APACHE_LOG_DIR</span><span class="token punctuation">}</span><span class="token operator">/</span>error<span class="token punctuation">.</span>log
+  CustomLog $<span class="token punctuation">{</span><span class="token constant">APACHE_LOG_DIR</span><span class="token punctuation">}</span><span class="token operator">/</span>access<span class="token punctuation">.</span>log combined
+<span class="token operator">&lt;</span><span class="token operator">/</span>VirtualHost<span class="token operator">&gt;</span>
+</code></pre>
+<p>&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x57FA;&#x4E8E;&#x6BCF;&#x4E2A;&#x76EE;&#x5F55;&#x5B8C;&#x6210;&#x3002;&#x8981;&#x8BBE;&#x7F6E;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#xFF0C;&#x60A8;&#x9700;&#x8981;&#x4F7F;&#x7528;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Directory</span> <span class="token attr-name">___</span><span class="token punctuation">&gt;</span></span></code>&#x5757;&#x6765;&#x5B9A;&#x4F4D;&#x8981;&#x9650;&#x5236;&#x7684;&#x76EE;&#x5F55;&#x3002;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x9650;&#x5236;&#x6574;&#x4E2A;&#x6587;&#x6863;&#x6839;&#x76EE;&#x5F55;&#xFF0C;&#x4F46;&#x60A8;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x6B64;&#x5217;&#x8868;&#x4EE5;&#x4EC5;&#x5B9A;&#x4F4D;Web&#x7A7A;&#x95F4;&#x4E2D;&#x7684;&#x7279;&#x5B9A;&#x76EE;&#x5F55;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript"><span class="token operator">&lt;</span>VirtualHost <span class="token operator">*</span><span class="token operator">:</span><span class="token number">80</span><span class="token operator">&gt;</span>
+  ServerAdmin webmaster@localhost
+  DocumentRoot <span class="token operator">/</span><span class="token keyword">var</span><span class="token operator">/</span>www<span class="token operator">/</span>html
+  ErrorLog $<span class="token punctuation">{</span><span class="token constant">APACHE_LOG_DIR</span><span class="token punctuation">}</span><span class="token operator">/</span>error<span class="token punctuation">.</span>log
+  CustomLog $<span class="token punctuation">{</span><span class="token constant">APACHE_LOG_DIR</span><span class="token punctuation">}</span><span class="token operator">/</span>access<span class="token punctuation">.</span>log combined
+
+  <span class="token operator">&lt;</span>Directory <span class="token string">&quot;/var/www/html&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>Directory<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>VirtualHost<span class="token operator">&gt;</span>
+</code></pre>
+<p>&#x5728;&#x6B64;&#x76EE;&#x5F55;&#x5757;&#x4E2D;&#xFF0C;&#x6307;&#x5B9A;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x8BBE;&#x7F6E;<code>Basic</code>&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x3002;&#x5BF9;&#x4E8E;<code>AuthName</code>&#xFF0C;&#x8BF7;&#x9009;&#x62E9;&#x5728;&#x63D0;&#x793A;&#x8F93;&#x5165;&#x51ED;&#x636E;&#x65F6;&#x5C06;&#x663E;&#x793A;&#x7ED9;&#x7528;&#x6237;&#x7684;&#x9886;&#x57DF;&#x540D;&#x79F0;&#x3002;&#x4F7F;&#x7528;&#x8BE5;<code>AuthUserFile</code>&#x6307;&#x4EE4;&#x5C06;Apache&#x6307;&#x5411;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x7684;&#x5BC6;&#x7801;&#x6587;&#x4EF6;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x8981;&#x6C42;<code>valid-user</code>&#x8BBF;&#x95EE;&#x6B64;&#x8D44;&#x6E90;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4EFB;&#x4F55;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;&#x5176;&#x8EAB;&#x4EFD;&#x7684;&#x4EBA;&#x90FD;&#x5C06;&#x88AB;&#x5141;&#x8BB8;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript"><span class="token operator">&lt;</span>VirtualHost <span class="token operator">*</span><span class="token operator">:</span><span class="token number">80</span><span class="token operator">&gt;</span>
+  ServerAdmin webmaster@localhost
+  DocumentRoot <span class="token operator">/</span><span class="token keyword">var</span><span class="token operator">/</span>www<span class="token operator">/</span>html
+  ErrorLog $<span class="token punctuation">{</span><span class="token constant">APACHE_LOG_DIR</span><span class="token punctuation">}</span><span class="token operator">/</span>error<span class="token punctuation">.</span>log
+  CustomLog $<span class="token punctuation">{</span><span class="token constant">APACHE_LOG_DIR</span><span class="token punctuation">}</span><span class="token operator">/</span>access<span class="token punctuation">.</span>log combined
+
+  <span class="token operator">&lt;</span>Directory <span class="token string">&quot;/var/www/html&quot;</span><span class="token operator">&gt;</span>
+      AuthType Basic
+      AuthName <span class="token string">&quot;Restricted Content&quot;</span>
+      AuthUserFile <span class="token operator">/</span>etc<span class="token operator">/</span>apache2<span class="token operator">/</span><span class="token punctuation">.</span>htpasswd
+      Require valid<span class="token operator">-</span>user
+  <span class="token operator">&lt;</span><span class="token operator">/</span>Directory<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>VirtualHost<span class="token operator">&gt;</span>
+</code></pre>
+<p>&#x5B8C;&#x6210;&#x540E;&#x4FDD;&#x5B58;&#x5E76;&#x5173;&#x95ED;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x5728;&#x91CD;&#x65B0;&#x542F;&#x52A8;Web&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x524D;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x68C0;&#x67E5;&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript">sudo apache2ctl configtest
+</code></pre>
+<p>&#x5982;&#x679C;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x90FD;&#x5DF2;&#x68C0;&#x51FA;&#x5E76;&#x83B7;&#x5F97;<code>Syntax OK</code>&#xFF0C;&#x8BF7;&#x91CD;&#x65B0;&#x542F;&#x52A8;&#x670D;&#x52A1;&#x5668;&#x4EE5;&#x5B9E;&#x65BD;&#x5BC6;&#x7801;&#x7B56;&#x7565;&#x3002;&#x7531;&#x4E8E;<code>systemctl</code>&#x4E0D;&#x663E;&#x793A;&#x6240;&#x6709;&#x670D;&#x52A1;&#x7BA1;&#x7406;&#x547D;&#x4EE4;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4F7F;&#x7528;<code>status</code>&#x4EE5;&#x786E;&#x4FDD;&#x670D;&#x52A1;&#x5668;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript">sudo systemctl restart apache2
+sudo systemctl status apache2
+</code></pre>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x60A8;&#x6307;&#x5B9A;&#x7684;&#x76EE;&#x5F55;&#x73B0;&#x5728;&#x5E94;&#x8BE5;&#x53D7;&#x5BC6;&#x7801;&#x4FDD;&#x62A4;&#x3002;</p>
+<h3 id="&#x9009;&#x9879;2&#xFF1A;&#x4F7F;&#x7528;htaccess&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x8BBF;&#x95EE;&#x63A7;&#x5236;"><a name="&#x9009;&#x9879;2&#xFF1A;&#x4F7F;&#x7528;htaccess&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x8BBF;&#x95EE;&#x63A7;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x9009;&#x9879;2&#xFF1A;&#x4F7F;&#x7528;htaccess&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x8BBF;&#x95EE;&#x63A7;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.2. &#x9009;&#x9879;2&#xFF1A;&#x4F7F;&#x7528;.htaccess&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x8BBF;&#x95EE;&#x63A7;&#x5236;</h3>
+<p>Apache&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>.htaccess</code>&#x6587;&#x4EF6;&#x4EE5;&#x5141;&#x8BB8;&#x5728;&#x5185;&#x5BB9;&#x76EE;&#x5F55;&#x4E2D;&#x8BBE;&#x7F6E;&#x67D0;&#x4E9B;&#x914D;&#x7F6E;&#x9879;&#x3002;&#x7531;&#x4E8E;Apache&#x5FC5;&#x987B;&#x5728;&#x6D89;&#x53CA;&#x76EE;&#x5F55;&#x7684;&#x6BCF;&#x4E2A;&#x8BF7;&#x6C42;&#x4E0A;&#x91CD;&#x65B0;&#x8BFB;&#x53D6;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x4F1A;&#x5BF9;&#x6027;&#x80FD;&#x4EA7;&#x751F;&#x8D1F;&#x9762;&#x5F71;&#x54CD;&#xFF0C;&#x56E0;&#x6B64;&#x9996;&#x9009;&#x9009;&#x9879;1&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x60A8;&#x5DF2;&#x7ECF;&#x5728;&#x4F7F;&#x7528;.htaccess&#x6587;&#x4EF6;&#x6216;&#x9700;&#x8981;&#x5141;&#x8BB8;&#x975E;root&#x7528;&#x6237;&#x7BA1;&#x7406;&#x9650;&#x5236;&#xFF0C;&#x90A3;&#x4E48;<code>.htaccess</code>&#x6587;&#x4EF6;&#x5408;&#x7406;&#x3002;</p>
+<p>&#x8981;&#x4F7F;&#x7528;<code>.htaccess</code>&#x6587;&#x4EF6;&#x542F;&#x7528;&#x5BC6;&#x7801;&#x4FDD;&#x62A4;&#xFF0C;&#x8BF7;&#x6253;&#x5F00;&#x4E3B;Apache&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript">sudo nano <span class="token operator">/</span>etc<span class="token operator">/</span>apache2<span class="token operator">/</span>apache2<span class="token punctuation">.</span>conf
+</code></pre>
+<p>&#x627E;&#x5230;&#x5305;&#x542B;<code>/var/www</code>&#x6587;&#x6863;&#x6839;&#x76EE;&#x5F55;&#x7684;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Directory</span><span class="token punctuation">&gt;</span></span></code>&#x5757;&#x3002;<code>.htaccess</code>&#x901A;&#x8FC7;&#x5C06;&#x8BE5;&#x5757;&#x4E2D;&#x7684;<code>AllowOverride</code>&#x6307;&#x4EE4;&#x4ECE;&#x201C;None&#x201D;&#x66F4;&#x6539;&#x4E3A;&#x201C;All&#x201D;&#x6765;&#x6253;&#x5F00;&#x5904;&#x7406;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript"><span class="token punctuation">.</span> <span class="token punctuation">.</span> <span class="token punctuation">.</span>
+
+<span class="token operator">&lt;</span>Directory <span class="token operator">/</span><span class="token keyword">var</span><span class="token operator">/</span>www<span class="token operator">/</span><span class="token operator">&gt;</span>
+  Options Indexes FollowSymLinks
+  AllowOverride All
+  Require all granted
+<span class="token operator">&lt;</span><span class="token operator">/</span>Directory<span class="token operator">&gt;</span>
+
+<span class="token punctuation">.</span> <span class="token punctuation">.</span> <span class="token punctuation">.</span>
+</code></pre>
+<p>&#x5B8C;&#x6210;&#x540E;&#x4FDD;&#x5B58;&#x5E76;&#x5173;&#x95ED;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5C06;<code>.htaccess</code>&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x5230;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x9650;&#x5236;&#x7684;&#x76EE;&#x5F55;&#x4E2D;&#x3002;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x6F14;&#x793A;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x9650;&#x5236;&#x57FA;&#x4E8E;<code>/var/www/html</code>&#x7684;&#x6574;&#x4E2A;&#x6587;&#x6863;&#x6839;&#x76EE;&#x5F55;&#xFF08;&#x6574;&#x4E2A;&#x7F51;&#x7AD9;&#xFF09;&#xFF0C;&#x4F46;&#x60A8;&#x53EF;&#x4EE5;&#x5C06;&#x6B64;&#x6587;&#x4EF6;&#x653E;&#x5728;&#x60A8;&#x5E0C;&#x671B;&#x9650;&#x5236;&#x8BBF;&#x95EE;&#x7684;&#x4EFB;&#x4F55;&#x76EE;&#x5F55;&#x4E2D;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript">sudo nano <span class="token operator">/</span><span class="token keyword">var</span><span class="token operator">/</span>www<span class="token operator">/</span>html<span class="token operator">/</span><span class="token punctuation">.</span>htaccess
+</code></pre>
+<p>&#x5728;&#x6B64;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x6307;&#x5B9A;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x8BBE;&#x7F6E;<code>Basic</code>&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x3002;&#x5BF9;&#x4E8E;<code>AuthName</code>&#xFF0C;&#x8BF7;&#x9009;&#x62E9;&#x5728;&#x63D0;&#x793A;&#x8F93;&#x5165;&#x51ED;&#x636E;&#x65F6;&#x5C06;&#x663E;&#x793A;&#x7ED9;&#x7528;&#x6237;&#x7684;&#x9886;&#x57DF;&#x540D;&#x79F0;&#x3002;&#x4F7F;&#x7528;&#x8BE5;<code>AuthUserFile</code>&#x6307;&#x4EE4;&#x5C06;Apache&#x6307;&#x5411;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x7684;&#x5BC6;&#x7801;&#x6587;&#x4EF6;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x8981;&#x6C42;<code>valid-user</code>&#x8BBF;&#x95EE;&#x6B64;&#x8D44;&#x6E90;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4EFB;&#x4F55;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;&#x5176;&#x8EAB;&#x4EFD;&#x7684;&#x4EBA;&#x90FD;&#x5C06;&#x88AB;&#x5141;&#x8BB8;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript">AuthType Basic
+AuthName <span class="token string">&quot;Restricted Content&quot;</span>
+AuthUserFile <span class="token operator">/</span>etc<span class="token operator">/</span>apache2<span class="token operator">/</span><span class="token punctuation">.</span>htpasswd
+Require valid<span class="token operator">-</span>user
+</code></pre>
+<p>&#x4FDD;&#x5B58;&#x5E76;&#x5173;&#x95ED;&#x6587;&#x4EF6;&#x3002;&#x91CD;&#x65B0;&#x542F;&#x52A8;Web&#x670D;&#x52A1;&#x5668;&#x4EE5;&#x4F7F;&#x7528;&#x8BE5;<code>.htaccess</code>&#x6587;&#x4EF6;&#x5BC6;&#x7801;&#x4FDD;&#x62A4;&#x76EE;&#x5F55;&#x4E2D;&#x6216;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#xFF0C;&#x5E76;&#x4F7F;&#x7528;<code>systemctl status</code>&#x4EE5;&#x9A8C;&#x8BC1;&#x91CD;&#x65B0;&#x542F;&#x52A8;&#x662F;&#x5426;&#x6210;&#x529F;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript">sudo systemctl restart apache2
+sudo systemctl status apache2
+</code></pre>
+<h2 id="&#x7B2C;4&#x6B65;---&#x786E;&#x8BA4;&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;"><a name="&#x7B2C;4&#x6B65;---&#x786E;&#x8BA4;&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;" class="anchor-navigation-ex-anchor" href="#&#x7B2C;4&#x6B65;---&#x786E;&#x8BA4;&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. &#x7B2C;4&#x6B65; - &#x786E;&#x8BA4;&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;</h2>
+<p>&#x8981;&#x786E;&#x8BA4;&#x60A8;&#x7684;&#x5185;&#x5BB9;&#x53D7;&#x5230;&#x4FDD;&#x62A4;&#xFF0C;&#x8BF7;&#x5C1D;&#x8BD5;&#x5728;&#x7F51;&#x7EDC;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8BBF;&#x95EE;&#x53D7;&#x9650;&#x5236;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x60A8;&#x5E94;&#x8BE5;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#x63D0;&#x793A;&#x7B26;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p><a href="&#x5982;&#x4F55;&#x5728;Ubuntu%2016.04&#x4E0A;&#x4F7F;&#x7528;Apache&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;.assets/2023_05_19_10_24_21_LB41c5U7.png" data-lightbox="6a9616d6-2d6f-4c86-9744-07dbc12a66f1" data-title="image.png"><img src="&#x5982;&#x4F55;&#x5728;Ubuntu 16.04&#x4E0A;&#x4F7F;&#x7528;Apache&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;.assets/2023_05_19_10_24_21_LB41c5U7.png" alt="image.png"></a></p>
+<p>&#x5982;&#x679C;&#x8F93;&#x5165;&#x6B63;&#x786E;&#x7684;&#x51ED;&#x636E;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x8BE5;&#x5185;&#x5BB9;&#x3002;&#x5982;&#x679C;&#x8F93;&#x5165;&#x9519;&#x8BEF;&#x7684;&#x51ED;&#x636E;&#x6216;&#x70B9;&#x51FB;&#x201C;&#x53D6;&#x6D88;&#x201D;&#xFF0C;&#x60A8;&#x5C06;&#x770B;&#x5230;&#x201C;&#x672A;&#x6388;&#x6743;&#x201D;&#x9519;&#x8BEF;&#x9875;&#x9762;&#xFF1A;
+<a href="&#x5982;&#x4F55;&#x5728;Ubuntu%2016.04&#x4E0A;&#x4F7F;&#x7528;Apache&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;.assets/2023_05_19_10_24_21_PLqZKXNb.png" data-lightbox="052a6ebd-491d-4bf0-9251-2cc5a6cbe846" data-title="image.png"><img src="&#x5982;&#x4F55;&#x5728;Ubuntu 16.04&#x4E0A;&#x4F7F;&#x7528;Apache&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;.assets/2023_05_19_10_24_21_PLqZKXNb.png" alt="image.png"></a></p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; aaron 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2023-05-19 10:24:22
+</span></footer>
+
+<pre class="language-"><code class="lang-html">Author: aaron
+Url: https://byaaronluo.github.io/&#x77E5;&#x8BC6;&#x5E93;/03.&#x4E3B;&#x673A;&#x5B89;&#x5168;/10.&#x5982;&#x4F55;&#x5728;Ubuntu16.04&#x4E0A;&#x4F7F;&#x7528;Apache&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;.html
+Source: aaron &#x77E5;&#x8BC6;&#x5E93;
+This article was originally published in&#x300C;aaron &#x77E5;&#x8BC6;&#x5E93;&#x300D;,Reproduced please indicate the source, thank you for cooperation!
+</code></pre>
+</body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="09.SSH建立隧道以及转发.html" class="navigation navigation-prev " aria-label="Previous page: 09.SSH建立隧道以及转发">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="11.Ubuntu科学上网.html" class="navigation navigation-next " aria-label="Next page: 11.Ubuntu科学上网">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"10.如何在Ubuntu16.04上使用Apache设置密码身份验证","level":"1.2.3.10","depth":3,"next":{"title":"11.Ubuntu科学上网","level":"1.2.3.11","depth":3,"path":"知识库/03.主机安全/11.Ubuntu科学上网.md","ref":"知识库/03.主机安全/11.Ubuntu科学上网.md","articles":[]},"previous":{"title":"09.SSH建立隧道以及转发","level":"1.2.3.9","depth":3,"path":"知识库/03.主机安全/09.SSH建立隧道以及转发.md","ref":"知识库/03.主机安全/09.SSH建立隧道以及转发.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-highlight","chapter-fold","expandable-chapters","splitter","page-treeview","lightbox","donate","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo","favicon","github","flexible-alerts","prism","copyright","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy aaron 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; aaron","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript","shell":"bash","xml-dtd":"xml"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack"]},"github":{"url":"https://github.com/byAaronLuo/"},"livereload":{},"splitter":{},"copyright":{"copyProtect":true,"site":"https://byaaronluo.github.io/","author":"aaron","website":"aaron 知识库","image":""},"code":{"copyButtons":true},"donate":{"alipay":"/README.assets/alipay.jpeg","alipayText":"支付宝打赏","button":"打赏☕️","title":"","wechat":"/README.assets/wx.jpeg","wechatText":"微信打赏"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/README.assets/favicon.ico","bookmark":"/README.assets/favicon.ico","appleTouch":"/README.assets/favicon.ico","appleTouchMore":{"120x120":"/README.assets/favicon.ico","180x180":"/README.assets/favicon.ico"}},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 50px; min-height: 50px;border-radius:50%","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"aaron","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Aaron 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"知识库/03.主机安全/10.如何在Ubuntu16.04上使用Apache设置密码身份验证.md","mtime":"2023-05-19T02:24:22.443Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-22T13:39:18.415Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copyright/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
