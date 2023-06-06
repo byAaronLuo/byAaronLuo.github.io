@@ -17,7 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro-fixed/search.css">
                 
             
                 
@@ -29,43 +37,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-page-treeview/style.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-donate/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-insert-logo/plugin.css">
                 
             
                 
@@ -77,7 +53,19 @@
                 
             
                 
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-theme-d4t/style.css">
                 
             
         
@@ -99,7 +87,6 @@
     
 
         
-    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -116,37 +103,34 @@
     <link rel="prev" href="SSRF示例（weblogic_SSRF）.html" />
     
 
-    
-        <link rel="shortcut icon" href='../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="bookmark" href='../../../README.assets/favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="apple-touch-icon" href='../../../README.assets/favicon.ico'>
-    
-    
-        
-        <link rel="apple-touch-icon" sizes="120x120" href="../../../README.assets/favicon.ico">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="../../../README.assets/favicon.ico">
-        
-    
-
     </head>
     <body>
         
 <div class="book">
-    <div class="book-summary">
+    <div class="header-inner">
+        <!-- LOGO -->
+        <a href="/"><div class="logo"></div></a>
+        <span class="title"></span>
+
+        <!-- Search -->
         
-            
 <div id="book-search-input" role="search">
     <input type="text" placeholder="Type to search" />
 </div>
 
+
+        <!-- Nav -->
+        <ul class="header-nav">
             
-                <nav role="navigation">
-                
+        </ul>
+    </div>
+
+    <div class="book-summary">
+        <div class="sidebar-nav-space"></div>
+        
+        
+        <nav role="navigation">
+            
 
 
 <ul class="summary">
@@ -419,12 +403,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.1.6" data-path="../01.SQLi/ThinkPHP_3.2.3_SQLi.html">
+        <li class="chapter " data-level="1.2.1.6" data-path="../01.SQLi/ThinkPHP 3.2.3 SQLi.html">
             
-                <a href="../01.SQLi/ThinkPHP_3.2.3_SQLi.html">
+                <a href="../01.SQLi/ThinkPHP 3.2.3 SQLi.html">
             
                     
-                    ThinkPHP_3.2.3_SQLi
+                    ThinkPHP 3.2.3 SQLi
             
                 </a>
             
@@ -670,12 +654,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.10.1" data-path="../10.权限维持/Web_权限维持.html">
+        <li class="chapter " data-level="1.2.10.1" data-path="../10.权限维持/Web 权限维持.html">
             
-                <a href="../10.权限维持/Web_权限维持.html">
+                <a href="../10.权限维持/Web 权限维持.html">
             
                     
-                    Web_权限维持
+                    Web 权限维持
             
                 </a>
             
@@ -688,12 +672,38 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.11" >
+        <li class="chapter " data-level="1.2.11" data-path="../11.CORS跨域数据劫持/">
+            
+                <a href="../11.CORS跨域数据劫持/">
+            
+                    
+                    11.CORS跨域数据劫持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../12.任意URL跳转/">
+            
+                <a href="../12.任意URL跳转/">
+            
+                    
+                    12.任意URL跳转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" >
             
                 <span>
             
                     
-                    11.其他
+                    13.其他
             
                 </span>
             
@@ -702,9 +712,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.11.1" data-path="../11.其他/01.WAF绕过通用思路.html">
+        <li class="chapter " data-level="1.2.13.1" data-path="../13.其他/01.WAF绕过通用思路.html">
             
-                <a href="../11.其他/01.WAF绕过通用思路.html">
+                <a href="../13.其他/01.WAF绕过通用思路.html">
             
                     
                     01.WAF绕过通用思路
@@ -715,9 +725,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.11.2" data-path="../11.其他/02.蚁剑RSA加密绕过检测.html">
+        <li class="chapter " data-level="1.2.13.2" data-path="../13.其他/02.蚁剑RSA加密绕过检测.html">
             
-                <a href="../11.其他/02.蚁剑RSA加密绕过检测.html">
+                <a href="../13.其他/02.蚁剑RSA加密绕过检测.html">
             
                     
                     02.蚁剑RSA加密绕过检测
@@ -728,9 +738,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.11.3" data-path="../11.其他/03.GitHub云扫描器.html">
+        <li class="chapter " data-level="1.2.13.3" data-path="../13.其他/03.GitHub云扫描器.html">
             
-                <a href="../11.其他/03.GitHub云扫描器.html">
+                <a href="../13.其他/03.GitHub云扫描器.html">
             
                     
                     03.GitHub云扫描器
@@ -741,9 +751,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.11.4" data-path="../11.其他/04.JavaScript原型链污染.html">
+        <li class="chapter " data-level="1.2.13.4" data-path="../13.其他/04.JavaScript原型链污染.md">
             
-                <a href="../11.其他/04.JavaScript原型链污染.html">
+                <span>
             
                     
                     04.JavaScript原型链污染
@@ -754,12 +764,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.11.5" data-path="../11.其他/05.phpfilter协议利用.html">
+        <li class="chapter " data-level="1.2.13.5" data-path="../13.其他/05.php_filter协议利用.md">
             
-                <a href="../11.其他/05.phpfilter协议利用.html">
+                <span>
             
                     
-                    05.phpfilter协议利用
+                    05.php_filter协议利用
             
                 </a>
             
@@ -767,9 +777,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.11.6" data-path="../11.其他/06.单点登录SSO原理.html">
+        <li class="chapter " data-level="1.2.13.6" data-path="../13.其他/06.单点登录SSO原理.html">
             
-                <a href="../11.其他/06.单点登录SSO原理.html">
+                <a href="../13.其他/06.单点登录SSO原理.html">
             
                     
                     06.单点登录SSO原理
@@ -780,9 +790,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.11.7" data-path="../11.其他/07.任意用户密码重置的10种姿势.html">
+        <li class="chapter " data-level="1.2.13.7" data-path="../13.其他/07.任意用户密码重置的10种姿势.html">
             
-                <a href="../11.其他/07.任意用户密码重置的10种姿势.html">
+                <a href="../13.其他/07.任意用户密码重置的10种姿势.html">
             
                     
                     07.任意用户密码重置的10种姿势
@@ -793,9 +803,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.11.8" data-path="../11.其他/08.网页接口加密暴破.html">
+        <li class="chapter " data-level="1.2.13.8" data-path="../13.其他/08.网页接口加密暴破.html">
             
-                <a href="../11.其他/08.网页接口加密暴破.html">
+                <a href="../13.其他/08.网页接口加密暴破.html">
             
                     
                     08.网页接口加密暴破
@@ -806,9 +816,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.11.9" data-path="../11.其他/09.反弹shell.html">
+        <li class="chapter " data-level="1.2.13.9" data-path="../13.其他/09.反弹shell.html">
             
-                <a href="../11.其他/09.反弹shell.html">
+                <a href="../13.其他/09.反弹shell.html">
             
                     
                     09.反弹shell
@@ -819,9 +829,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.11.10" data-path="../11.其他/10.webshell原理.html">
+        <li class="chapter " data-level="1.2.13.10" data-path="../13.其他/10.webshell原理.html">
             
-                <a href="../11.其他/10.webshell原理.html">
+                <a href="../13.其他/10.webshell原理.html">
             
                     
                     10.webshell原理
@@ -832,12 +842,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.11.11" data-path="../11.其他/11.ByPaass_disable_Function.html">
+        <li class="chapter " data-level="1.2.13.11" data-path="../13.其他/11.ByPaass disable Function.html">
             
-                <a href="../11.其他/11.ByPaass_disable_Function.html">
+                <a href="../13.其他/11.ByPaass disable Function.html">
             
                     
-                    11.ByPaass_disable_Function
+                    11.ByPaass disable Function
             
                 </a>
             
@@ -845,9 +855,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.11.12" data-path="../11.其他/12.DVWA通关记录.html">
+        <li class="chapter " data-level="1.2.13.12" data-path="../13.其他/12.DVWA通关记录.html">
             
-                <a href="../11.其他/12.DVWA通关记录.html">
+                <a href="../13.其他/12.DVWA通关记录.html">
             
                     
                     12.DVWA通关记录
@@ -858,12 +868,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.11.13" data-path="../11.其他/13.PHP_SPRINTF格式化字符串漏洞.html">
+        <li class="chapter " data-level="1.2.13.13" data-path="../13.其他/13.PHP SPRINTF格式化字符串漏洞.html">
             
-                <a href="../11.其他/13.PHP_SPRINTF格式化字符串漏洞.html">
+                <a href="../13.其他/13.PHP SPRINTF格式化字符串漏洞.html">
             
                     
-                    13.PHP_SPRINTF格式化字符串漏洞
+                    13.PHP SPRINTF格式化字符串漏洞
             
                 </a>
             
@@ -871,9 +881,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.11.14" data-path="../11.其他/14.CTF题目收集.html">
+        <li class="chapter " data-level="1.2.13.14" data-path="../13.其他/14.CTF题目收集.html">
             
-                <a href="../11.其他/14.CTF题目收集.html">
+                <a href="../13.其他/14.CTF题目收集.html">
             
                     
                     14.CTF题目收集
@@ -884,9 +894,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.11.15" data-path="../11.其他/15.Fastjson检测规则梳理.html">
+        <li class="chapter " data-level="1.2.13.15" data-path="../13.其他/15.Fastjson检测规则梳理.html">
             
-                <a href="../11.其他/15.Fastjson检测规则梳理.html">
+                <a href="../13.其他/15.Fastjson检测规则梳理.html">
             
                     
                     15.Fastjson检测规则梳理
@@ -921,12 +931,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../../02.JAVA安全/01.Java_JVM内存模型/">
+        <li class="chapter " data-level="1.3.1" data-path="../../02.JAVA安全/01.Java JVM内存模型/">
             
-                <a href="../../02.JAVA安全/01.Java_JVM内存模型/">
+                <a href="../../02.JAVA安全/01.Java JVM内存模型/">
             
                     
-                    01.Java_JVM内存模型
+                    01.Java JVM内存模型
             
                 </a>
             
@@ -934,12 +944,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../../02.JAVA安全/02.Java_面向对象/">
+        <li class="chapter " data-level="1.3.2" data-path="../../02.JAVA安全/02.Java 面向对象/">
             
-                <a href="../../02.JAVA安全/02.Java_面向对象/">
+                <a href="../../02.JAVA安全/02.Java 面向对象/">
             
                     
-                    02.Java_面向对象
+                    02.Java 面向对象
             
                 </a>
             
@@ -1103,12 +1113,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.15" data-path="../../02.JAVA安全/15.Jira_CVE2020-36239_RCE/">
+        <li class="chapter " data-level="1.3.15" data-path="../../02.JAVA安全/15.Jira CVE2020-36239 RCE/">
             
-                <a href="../../02.JAVA安全/15.Jira_CVE2020-36239_RCE/">
+                <a href="../../02.JAVA安全/15.Jira CVE2020-36239 RCE/">
             
                     
-                    15.Jira_CVE2020-36239_RCE
+                    15.Jira CVE2020-36239 RCE
             
                 </a>
             
@@ -1129,12 +1139,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.17" data-path="../../02.JAVA安全/17.Spring-Core_RCE/">
+        <li class="chapter " data-level="1.3.17" data-path="../../02.JAVA安全/17.Spring-Core RCE/">
             
-                <a href="../../02.JAVA安全/17.Spring-Core_RCE/">
+                <a href="../../02.JAVA安全/17.Spring-Core RCE/">
             
                     
-                    17.Spring-Core_RCE
+                    17.Spring-Core RCE
             
                 </a>
             
@@ -1183,12 +1193,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.19.1.1" data-path="../../02.JAVA安全/19.CommonsCollections/01.CC1/01.CommonsCollections1分析前置知识.html">
+        <li class="chapter " data-level="1.3.19.1.1" data-path="../../02.JAVA安全/19.CommonsCollections/01.CC1/01.Commons Collections 1 分析前置知识.html">
             
-                <a href="../../02.JAVA安全/19.CommonsCollections/01.CC1/01.CommonsCollections1分析前置知识.html">
+                <a href="../../02.JAVA安全/19.CommonsCollections/01.CC1/01.Commons Collections 1 分析前置知识.html">
             
                     
-                    01.CommonsCollections1分析前置知识
+                    01.Commons Collections 1 分析前置知识
             
                 </a>
             
@@ -1196,12 +1206,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.19.1.2" data-path="../../02.JAVA安全/19.CommonsCollections/01.CC1/02.CommonsCollections1分析利用.html">
+        <li class="chapter " data-level="1.3.19.1.2" data-path="../../02.JAVA安全/19.CommonsCollections/01.CC1/02.Commons Collections 1 分析利用.html">
             
-                <a href="../../02.JAVA安全/19.CommonsCollections/01.CC1/02.CommonsCollections1分析利用.html">
+                <a href="../../02.JAVA安全/19.CommonsCollections/01.CC1/02.Commons Collections 1 分析利用.html">
             
                     
-                    02.CommonsCollections1分析利用
+                    02.Commons Collections 1 分析利用
             
                 </a>
             
@@ -1209,12 +1219,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.19.1.3" data-path="../../02.JAVA安全/19.CommonsCollections/01.CC1/03.CommonsCollections1%20LazyMap利用链.md">
+        <li class="chapter " data-level="1.3.19.1.3" data-path="../../02.JAVA安全/19.CommonsCollections/01.CC1/03.Commons Collections 1 LazyMap利用链.html">
             
-                <span>
+                <a href="../../02.JAVA安全/19.CommonsCollections/01.CC1/03.Commons Collections 1 LazyMap利用链.html">
             
                     
-                    03.CommonsCollections1 LazyMap利用链
+                    03.Commons Collections 1 LazyMap利用链
             
                 </a>
             
@@ -1241,12 +1251,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.19.2.1" data-path="../../02.JAVA安全/19.CommonsCollections/02.CC2/CommonsCollection2分析.html">
+        <li class="chapter " data-level="1.3.19.2.1" data-path="../../02.JAVA安全/19.CommonsCollections/02.CC2/Commons Collection 2 分析.html">
             
-                <a href="../../02.JAVA安全/19.CommonsCollections/02.CC2/CommonsCollection2分析.html">
+                <a href="../../02.JAVA安全/19.CommonsCollections/02.CC2/Commons Collection 2 分析.html">
             
                     
-                    CommonsCollection2分析
+                    Commons Collection 2 分析
             
                 </a>
             
@@ -1273,12 +1283,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.19.3.1" data-path="../../02.JAVA安全/19.CommonsCollections/03.CC3/CommonsCollections3分析.html">
+        <li class="chapter " data-level="1.3.19.3.1" data-path="../../02.JAVA安全/19.CommonsCollections/03.CC3/Commons Collections 3 分析.html">
             
-                <a href="../../02.JAVA安全/19.CommonsCollections/03.CC3/CommonsCollections3分析.html">
+                <a href="../../02.JAVA安全/19.CommonsCollections/03.CC3/Commons Collections 3 分析.html">
             
                     
-                    CommonsCollections3分析
+                    Commons Collections 3 分析
             
                 </a>
             
@@ -1305,12 +1315,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.19.4.1" data-path="../../02.JAVA安全/19.CommonsCollections/04.CC4/CommonsCollections4分析.html">
+        <li class="chapter " data-level="1.3.19.4.1" data-path="../../02.JAVA安全/19.CommonsCollections/04.CC4/Commons Collections 4 分析.html">
             
-                <a href="../../02.JAVA安全/19.CommonsCollections/04.CC4/CommonsCollections4分析.html">
+                <a href="../../02.JAVA安全/19.CommonsCollections/04.CC4/Commons Collections 4 分析.html">
             
                     
-                    CommonsCollections4分析
+                    Commons Collections 4 分析
             
                 </a>
             
@@ -1337,12 +1347,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.19.5.1" data-path="../../02.JAVA安全/19.CommonsCollections/05.CC5/CommonsCollections5分析.html">
+        <li class="chapter " data-level="1.3.19.5.1" data-path="../../02.JAVA安全/19.CommonsCollections/05.CC5/Commons Collections 5 分析.html">
             
-                <a href="../../02.JAVA安全/19.CommonsCollections/05.CC5/CommonsCollections5分析.html">
+                <a href="../../02.JAVA安全/19.CommonsCollections/05.CC5/Commons Collections 5 分析.html">
             
                     
-                    CommonsCollections5分析
+                    Commons Collections 5 分析
             
                 </a>
             
@@ -1369,12 +1379,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.19.6.1" data-path="../../02.JAVA安全/19.CommonsCollections/06.CC6/CommonsCollections6分析.html">
+        <li class="chapter " data-level="1.3.19.6.1" data-path="../../02.JAVA安全/19.CommonsCollections/06.CC6/Commons Collections 6 分析.html">
             
-                <a href="../../02.JAVA安全/19.CommonsCollections/06.CC6/CommonsCollections6分析.html">
+                <a href="../../02.JAVA安全/19.CommonsCollections/06.CC6/Commons Collections 6 分析.html">
             
                     
-                    CommonsCollections6分析
+                    Commons Collections 6 分析
             
                 </a>
             
@@ -1401,12 +1411,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.19.7.1" data-path="../../02.JAVA安全/19.CommonsCollections/07.CC7/CommonsCollections7分析.html">
+        <li class="chapter " data-level="1.3.19.7.1" data-path="../../02.JAVA安全/19.CommonsCollections/07.CC7/Commons Collections 7 分析.html">
             
-                <a href="../../02.JAVA安全/19.CommonsCollections/07.CC7/CommonsCollections7分析.html">
+                <a href="../../02.JAVA安全/19.CommonsCollections/07.CC7/Commons Collections 7 分析.html">
             
                     
-                    CommonsCollections7分析
+                    Commons Collections 7 分析
             
                 </a>
             
@@ -1419,12 +1429,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.19.8" data-path="../../02.JAVA安全/19.CommonsCollections/08.CommonsCollections系列简单靶场.html">
+        <li class="chapter " data-level="1.3.19.8" data-path="../../02.JAVA安全/19.CommonsCollections/08.Commons Collections 系列简单靶场.html">
             
-                <a href="../../02.JAVA安全/19.CommonsCollections/08.CommonsCollections系列简单靶场.html">
+                <a href="../../02.JAVA安全/19.CommonsCollections/08.Commons Collections 系列简单靶场.html">
             
                     
-                    08.CommonsCollections系列简单靶场
+                    08.Commons Collections 系列简单靶场
             
                 </a>
             
@@ -1482,9 +1492,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="../../03.主机安全/01.主机乱七八糟的问题汇总（持续更新）.html">
+        <li class="chapter " data-level="1.4.1" data-path="../../03.主机安全/01.主机乱七八糟的问题汇总（持续更新）.md">
             
-                <a href="../../03.主机安全/01.主机乱七八糟的问题汇总（持续更新）.html">
+                <span>
             
                     
                     01.主机乱七八糟的问题汇总（持续更新）
@@ -1748,6 +1758,19 @@
             
                     
                     21.Linux应急响应案例（DDG挖矿）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.22" data-path="../../03.主机安全/22.LD PRELOAD深入浅出.html">
+            
+                <a href="../../03.主机安全/22.LD PRELOAD深入浅出.html">
+            
+                    
+                    22.LD PRELOAD深入浅出
             
                 </a>
             
@@ -2193,6 +2216,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.7" data-path="../../../友情链接.html">
+            
+                <a href="../../../友情链接.html">
+            
+                    
+                    友情链接
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -2206,16 +2242,24 @@
 </ul>
 
 
-                </nav>
-            
+        </nav>
         
+        
+    </div>
+
+    <!-- Content nav -->
+    <div class="book-anchor">
+        <div class="book-anchor-title">ON THIS PAGE</div>
+        <div class="book-anchor-body">
+
+        </div>
     </div>
 
     <div class="book-body">
         
-            <div class="body-inner">
-                
-                    
+        <div class="body-inner">
+            
+            
 
 <div class="book-header" role="navigation">
     
@@ -2230,48 +2274,32 @@
 
 
 
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div class="search-plus" id="book-search-results">
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    
+<div id="book-search-results">
     <div class="search-noresults">
     
-                                <section class="normal markdown-section">
-                                
-                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#url&#x4E2D;&#x4F7F;&#x7528;"><b>1.1. </b>URL&#x4E2D;&#x4F7F;&#x7528;@</a></li><li><span class="title-icon "></span><a href="#ip&#x8FDB;&#x5236;&#x8F6C;&#x6362;"><b>1.2. </b>IP&#x8FDB;&#x5236;&#x8F6C;&#x6362;</a></li><li><span class="title-icon "></span><a href="#&#x672C;&#x5730;&#x73AF;&#x56DE;&#x5730;&#x5740;"><b>1.3. </b>&#x672C;&#x5730;&#x73AF;&#x56DE;&#x5730;&#x5740;</a></li><li><span class="title-icon "></span><a href="#punycode&#x8F6C;&#x7801;"><b>1.4. </b>punycode&#x8F6C;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x540C;&#x5F62;&#x5F02;&#x4E49;&#x5B57;&#x653B;&#x51FB;&#xFF08;idnhomographattack&#xFF0C;idn&#x6B3A;&#x9A97;&#xFF09;"><b>1.5. </b>&#x540C;&#x5F62;&#x5F02;&#x4E49;&#x5B57;&#x653B;&#x51FB;&#xFF08;IDN_homograph_attack&#xFF0C;IDN&#x6B3A;&#x9A97;&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x5C01;&#x95ED;&#x5F0F;&#x5B57;&#x6BCD;&#x6570;&#x5B57;-enclosed-alphanumerics&#x5B57;&#x7B26;"><b>1.6. </b>&#x5C01;&#x95ED;&#x5F0F;&#x5B57;&#x6BCD;&#x6570;&#x5B57; (Enclosed Alphanumerics)&#x5B57;&#x7B26;</a></li><li><span class="title-icon "></span><a href="#redirect"><b>1.7. </b>Redirect</a></li><li><span class="title-icon "></span><a href="#dns&#x89E3;&#x6790;"><b>1.8. </b>DNS&#x89E3;&#x6790;</a></li><li><span class="title-icon "></span><a href="#dns-&#x91CD;&#x7ED1;&#x5B9A;"><b>1.9. </b>DNS &#x91CD;&#x7ED1;&#x5B9A;</a></li><li><span class="title-icon "></span><a href="#&#x70B9;&#x5206;&#x5272;&#x7B26;&#x53F7;&#x66FF;&#x6362;"><b>1.10. </b>&#x70B9;&#x5206;&#x5272;&#x7B26;&#x53F7;&#x66FF;&#x6362;</a></li><li><span class="title-icon "></span><a href="#&#x77ED;&#x5730;&#x5740;&#x7ED5;&#x8FC7;"><b>1.11. </b>&#x77ED;&#x5730;&#x5740;&#x7ED5;&#x8FC7;</a></li><li><span class="title-icon "></span><a href="#url&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7F16;&#x7801;"><b>1.12. </b>URL&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7F16;&#x7801;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><div class="treeview__container"><ul>
-<li><div><a href="#url&#x4E2D;&#x4F7F;&#x7528;">URL&#x4E2D;&#x4F7F;&#x7528;@</a><i></i></div></li>
-<li><div><a href="#ip&#x8FDB;&#x5236;&#x8F6C;&#x6362;">IP&#x8FDB;&#x5236;&#x8F6C;&#x6362;</a><i></i></div></li>
-<li><div><a href="#&#x672C;&#x5730;&#x73AF;&#x56DE;&#x5730;&#x5740;">&#x672C;&#x5730;&#x73AF;&#x56DE;&#x5730;&#x5740;</a><i></i></div></li>
-<li><div><a href="#punycode&#x8F6C;&#x7801;">punycode&#x8F6C;&#x7801;</a><i></i></div></li>
-<li><div><a href="#&#x540C;&#x5F62;&#x5F02;&#x4E49;&#x5B57;&#x653B;&#x51FB;&#xFF08;idnhomographattack&#xFF0C;idn&#x6B3A;&#x9A97;&#xFF09;">&#x540C;&#x5F62;&#x5F02;&#x4E49;&#x5B57;&#x653B;&#x51FB;&#xFF08;IDN_homograph_attack&#xFF0C;IDN&#x6B3A;&#x9A97;&#xFF09;</a><i></i></div></li>
-<li><div><a href="#&#x5C01;&#x95ED;&#x5F0F;&#x5B57;&#x6BCD;&#x6570;&#x5B57;-enclosed-alphanumerics&#x5B57;&#x7B26;">&#x5C01;&#x95ED;&#x5F0F;&#x5B57;&#x6BCD;&#x6570;&#x5B57; (Enclosed Alphanumerics)&#x5B57;&#x7B26;</a><i></i></div></li>
-<li><div><a href="#redirect">Redirect</a><i></i></div></li>
-<li><div><a href="#dns&#x89E3;&#x6790;">DNS&#x89E3;&#x6790;</a><i></i></div></li>
-<li><div><a href="#dns-&#x91CD;&#x7ED1;&#x5B9A;">DNS &#x91CD;&#x7ED1;&#x5B9A;</a><i></i></div></li>
-<li><div><a href="#&#x70B9;&#x5206;&#x5272;&#x7B26;&#x53F7;&#x66FF;&#x6362;">&#x70B9;&#x5206;&#x5272;&#x7B26;&#x53F7;&#x66FF;&#x6362;</a><i></i></div></li>
-<li><div><a href="#&#x77ED;&#x5730;&#x5740;&#x7ED5;&#x8FC7;">&#x77ED;&#x5730;&#x5740;&#x7ED5;&#x8FC7;</a><i></i></div></li>
-<li><div><a href="#url&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7F16;&#x7801;">URL&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7F16;&#x7801;</a><i></i></div></li>
-</ul>
-</div>
-
-<p>&#x5728;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x4E3A;&#x4E86;&#x9632;&#x5FA1;SSRF&#x6F0F;&#x6D1E;&#xFF0C;&#x4F1A;&#x5BF9;&#x76F8;&#x5173;&#x7684;&#x8BF7;&#x6C42;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;(&#x9ED1;&#x540D;&#x5355;&#x3001;&#x767D;&#x540D;&#x5355;&#x3001;&#x6B63;&#x5219;&#x5339;&#x914D;&#x7B49;)&#xFF0C;&#x4F46;&#x662F;&#x5176;&#x4E2D;&#x4E00;&#x4E9B;&#x8FC7;&#x6EE4;&#x4EE3;&#x7801;&#x5B58;&#x5728;&#x7ED5;&#x8FC7;&#x7684;&#x53EF;&#x80FD;&#x884C;&#xFF0C;&#x8FD9;&#x91CC;&#x603B;&#x7ED3;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x7684;&#x7ED5;&#x8FC7;&#x65B9;&#x6CD5;(&#x90E8;&#x5206;&#x65B9;&#x6CD5;&#x53EA;&#x80FD;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6216;&#x9700;&#x8981;&#x7279;&#x5B9A;&#x8BED;&#x8A00;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#xFF0C;&#x9700;&#x8981;&#x7ED3;&#x5408;&#x573A;&#x666F;&#x4F7F;&#x7528;&#xFF0C;&#x5982;&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x793E;&#x4F1A;&#x5DE5;&#x7A0B;&#x5B66;&#x6B3A;&#x9A97;&#x7B49;)&#x3002;</p>
-<h2 id="url&#x4E2D;&#x4F7F;&#x7528;"><a name="url&#x4E2D;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#url&#x4E2D;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. URL&#x4E2D;&#x4F7F;&#x7528;@</h2>
+                    <section class="normal markdown-section">
+                        
+                        <p>&#x5728;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x4E3A;&#x4E86;&#x9632;&#x5FA1;SSRF&#x6F0F;&#x6D1E;&#xFF0C;&#x4F1A;&#x5BF9;&#x76F8;&#x5173;&#x7684;&#x8BF7;&#x6C42;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;(&#x9ED1;&#x540D;&#x5355;&#x3001;&#x767D;&#x540D;&#x5355;&#x3001;&#x6B63;&#x5219;&#x5339;&#x914D;&#x7B49;)&#xFF0C;&#x4F46;&#x662F;&#x5176;&#x4E2D;&#x4E00;&#x4E9B;&#x8FC7;&#x6EE4;&#x4EE3;&#x7801;&#x5B58;&#x5728;&#x7ED5;&#x8FC7;&#x7684;&#x53EF;&#x80FD;&#x884C;&#xFF0C;&#x8FD9;&#x91CC;&#x603B;&#x7ED3;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x7684;&#x7ED5;&#x8FC7;&#x65B9;&#x6CD5;(&#x90E8;&#x5206;&#x65B9;&#x6CD5;&#x53EA;&#x80FD;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6216;&#x9700;&#x8981;&#x7279;&#x5B9A;&#x8BED;&#x8A00;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#xFF0C;&#x9700;&#x8981;&#x7ED3;&#x5408;&#x573A;&#x666F;&#x4F7F;&#x7528;&#xFF0C;&#x5982;&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x793E;&#x4F1A;&#x5DE5;&#x7A0B;&#x5B66;&#x6B3A;&#x9A97;&#x7B49;)&#x3002;</p>
+<h2 id="url&#x4E2D;&#x4F7F;&#x7528;">URL&#x4E2D;&#x4F7F;&#x7528;@</h2>
 <p>URL(Uniform Resource Locator,&#x7EDF;&#x4E00;&#x8D44;&#x6E90;&#x5B9A;&#x4F4D;&#x7B26;),&#x7528;&#x4E8E;&#x5728;&#x4E92;&#x8054;&#x7F51;&#x4E2D;&#x5B9A;&#x4F4D;&#x6570;&#x636E;&#x8D44;&#x6E90;&#xFF0C;&#x5176;&#x5B8C;&#x6574;&#x683C;&#x5F0F;&#x5982;&#x4E0B;</p>
 <pre class="language-"><code>[&#x534F;&#x8BAE;&#x7C7B;&#x578B;]://[&#x8BBF;&#x95EE;&#x8D44;&#x6E90;&#x9700;&#x8981;&#x7684;&#x51ED;&#x8BC1;&#x4FE1;&#x606F;]@[&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;]:[&#x7AEF;&#x53E3;&#x53F7;]/[&#x8D44;&#x6E90;&#x5C42;&#x7EA7;UNIX&#x6587;&#x4EF6;&#x8DEF;&#x5F84;][&#x6587;&#x4EF6;&#x540D;]?[&#x67E5;&#x8BE2;]#[&#x7247;&#x6BB5;ID]
 </code></pre><p>&#x7531;&#x683C;&#x5F0F;&#x53EF;&#x77E5;&#xFF0C;@&#x7B26;&#x53F7;&#x4E4B;&#x540E;&#x662F;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5728;SSRF&#x4E00;&#x4E9B;&#x6B63;&#x5219;&#x5339;&#x914D;&#x4E2D;&#x7ED5;&#x8FC7;&#xFF0C;&#x4ECE;&#x800C;&#x5B9A;&#x4F4D;&#x5230;@&#x4E4B;&#x540E;&#x7684;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#xFF1A;</p>
 <pre class="language-"><code>http://google.com:80+&amp;@220.181.38.251:80/#+@google.com:80/
 </code></pre><p>curl &#x5E26;&#x7740;&#x503C;&#x4E3A;qq.com:&#x7684;Authorization&#x9A8C;&#x8BC1;&#x5934;&#x8BBF;&#x95EE;&#x767E;&#x5EA6;
-<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_48_0gmFcM7J.png" data-lightbox="de998cf8-d5a2-4b6d-babb-3530a4964fbf" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_48_0gmFcM7J.png" alt="image.png"></a></p>
-<h2 id="ip&#x8FDB;&#x5236;&#x8F6C;&#x6362;"><a name="ip&#x8FDB;&#x5236;&#x8F6C;&#x6362;" class="anchor-navigation-ex-anchor" href="#ip&#x8FDB;&#x5236;&#x8F6C;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. IP&#x8FDB;&#x5236;&#x8F6C;&#x6362;</h2>
+<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_48_0gmFcM7J.png" data-lightbox="7a78e8f7-e57e-42c2-918c-a15faf4d4d2a" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_48_0gmFcM7J.png" alt="image.png"></a></p>
+<h2 id="ip&#x8FDB;&#x5236;&#x8F6C;&#x6362;">IP&#x8FDB;&#x5236;&#x8F6C;&#x6362;</h2>
 <p>IP&#x5730;&#x5740;&#x662F;&#x4E00;&#x4E2A;32&#x4F4D;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#xFF0C;&#x901A;&#x5E38;&#x88AB;&#x5206;&#x5272;&#x4E3A;4&#x4E2A;8&#x4F4D;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x3002;&#x901A;&#x5E38;&#x7528;&#x201C;&#x70B9;&#x5206;&#x5341;&#x8FDB;&#x5236;&#x201D;&#x8868;&#x793A;&#x6210;&#xFF08;a.b.c.d&#xFF09;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x6240;&#x4EE5;IP&#x5730;&#x5740;&#x7684;&#x6BCF;&#x4E00;&#x6BB5;&#x53EF;&#x4EE5;&#x7528;&#x5176;&#x4ED6;&#x8FDB;&#x5236;&#x6765;&#x8F6C;&#x6362;&#x3002; <a href="https://github.com/vysecurity/IPFuscator" target="_blank">IPFuscator</a> &#x5DE5;&#x5177;&#x53EF;&#x5B9E;&#x73B0;IP&#x5730;&#x5740;&#x7684;&#x8FDB;&#x5236;&#x8F6C;&#x6362;&#xFF0C;&#x5305;&#x62EC;&#x4E86;&#x516B;&#x8FDB;&#x5236;&#x3001;&#x5341;&#x8FDB;&#x5236;&#x3001;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x3001;&#x6DF7;&#x5408;&#x8FDB;&#x5236;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x5DE5;&#x5177;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x6DFB;&#x52A0;&#x4E86;IPV6&#x7684;&#x8F6C;&#x6362;&#x548C;&#x7248;&#x672C;&#x8F93;&#x51FA;&#x7684;&#x4F18;&#x5316;&#xFF1A;
 &#x5728;&#x811A;&#x672C;&#x5BF9;IP&#x8FDB;&#x884C;&#x516B;&#x8FDB;&#x5236;&#x8F6C;&#x6362;&#x65F6;&#xFF0C;&#x4E00;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x4F1A;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x672B;&#x5C3E;&#x591A;&#x52A0;&#x4E00;&#x4E2A;L:
-<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_49_rP8C2tjU.png" data-lightbox="5dd8ed51-84d8-49b8-a1ca-9a640198f179" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_49_rP8C2tjU.png" alt="image.png"></a>
+<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_49_rP8C2tjU.png" data-lightbox="4cc031f8-8bd8-4864-bb1a-c2c0e0fa53af" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_49_rP8C2tjU.png" alt="image.png"></a>
 &#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x5728;Python2&#x4E0B;&#x533A;&#x5206;&#x4E86;int&#x548C;long&#x7C7B;&#x578B;&#xFF0C;int&#x6570;&#x636E;&#x8D85;&#x51FA;&#x6700;&#x5927;&#x503C;2147483647&#x540E;&#x4F1A;&#x8868;&#x793A;&#x4E3A;long&#x7C7B;&#x578B;&#xFF0C;&#x4F53;&#x73B0;&#x5728;&#x516B;&#x8FDB;&#x5236;&#x8F6C;&#x6362;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x672B;&#x5C3E;&#x8DDF;&#x4E86;&#x4E2A;L:
-<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_49_2BCLSNe5.png" data-lightbox="828d7778-1b59-4851-9719-2622ffd043f2" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_49_2BCLSNe5.png" alt="image.png"></a>
+<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_49_2BCLSNe5.png" data-lightbox="abe79744-1f16-4e1b-8e89-cfa9705f7db7" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_49_2BCLSNe5.png" alt="image.png"></a>
 &#x800C;&#x5728;python3&#x4E2D;&#x90FD;&#x4F7F;&#x7528;int&#x5904;&#x7406;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x5C06;&#x811A;&#x672C;&#x5347;&#x7EA7;&#x5230;Python&#x6765;&#x7528;&#xFF0C;&#x4F7F;&#x7528;2to3.py&#x5DE5;&#x5177;python3 2to3.py -w xx.py&#x8F6C;&#x6362;&#x4EE3;&#x7801;&#xFF1A;
-<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_49_QCPnZLJk.png" data-lightbox="e3d1ba74-0171-4cba-9f97-423524bee5b9" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_49_QCPnZLJk.png" alt="image.png"></a>
+<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_49_QCPnZLJk.png" data-lightbox="c7d64627-6123-4957-92e8-7b932a153e9b" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_49_QCPnZLJk.png" alt="image.png"></a>
 &#x7136;&#x540E;&#x53EF;&#x4EE5;&#x7528;python3&#x6765;&#x6267;&#x884C;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x4F7F;&#x7528;oct()&#x8F6C;&#x516B;&#x8FDB;&#x5236;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6709;0o&#x6807;&#x8BB0;&#xFF0C;&#x8FD9;&#x79CD;&#x7684;&#x5728;&#x8BBF;&#x95EE;&#x65F6;&#x6D4F;&#x89C8;&#x5668;&#x8BC6;&#x522B;&#x4E0D;&#x4E86;&#xFF1A;
-<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_50_IzOUTDhQ.png" data-lightbox="a27162dd-1828-4c19-8149-8da8bb2e2a38" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_50_IzOUTDhQ.png" alt="image.png"></a>
+<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_50_IzOUTDhQ.png" data-lightbox="71dcd484-2156-46eb-aa93-524f862b2b4c" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_50_IzOUTDhQ.png" alt="image.png"></a>
 &#x4FEE;&#x6B63;&#x8FC7;&#x540E;&#x7684;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python"><span class="token comment">#!/usr/bin/env python</span>
 <span class="token comment"># -*- coding:utf-8 -*-</span>
@@ -2299,7 +2327,7 @@ __version__ <span class="token operator">=</span> <span class="token string">&ap
 
 
 <span class="token keyword">def</span> <span class="token function">checkIP</span><span class="token punctuation">(</span>ip<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    m <span class="token operator">=</span> re<span class="token punctuation">.</span>match<span class="token punctuation">(</span><span class="token string">&apos;\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\Z&apos;</span><span class="token punctuation">,</span> ip<span class="token punctuation">)</span>
+    m <span class="token operator">=</span> re<span class="token punctuation">.</span><span class="token keyword">match</span><span class="token punctuation">(</span><span class="token string">&apos;\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\Z&apos;</span><span class="token punctuation">,</span> ip<span class="token punctuation">)</span>
 
     <span class="token keyword">if</span> m<span class="token punctuation">:</span>
         <span class="token comment"># Valid IP format</span>
@@ -2425,7 +2453,7 @@ __version__ <span class="token operator">=</span> <span class="token string">&ap
 <span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&apos;__main__&apos;</span><span class="token punctuation">:</span>
     main<span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
-<p><a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_50_SVIC0pmE.png" data-lightbox="ec366f98-59d5-4738-8282-58540fbd63b1" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_50_SVIC0pmE.png" alt="image.png"></a>
+<p><a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_50_SVIC0pmE.png" data-lightbox="93986fa9-3b7a-4e41-8d12-d41a3bc37822" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_50_SVIC0pmE.png" alt="image.png"></a>
 &#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;IPy&#x6A21;&#x5757;&#x8FDB;&#x884C;&#x8F6C;&#x6362;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python"><span class="token keyword">import</span> IPy <span class="token comment">#IPv4&#x4E0E;&#x5341;&#x8FDB;&#x5236;&#x4E92;&#x8F6C;</span>
 
@@ -2441,7 +2469,7 @@ IPy<span class="token punctuation">.</span>IP<span class="token punctuation">(</
 
 IPy<span class="token punctuation">.</span>IP<span class="token punctuation">(</span><span class="token string">&apos;127.0.0.1&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>v46map<span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
-<h2 id="&#x672C;&#x5730;&#x73AF;&#x56DE;&#x5730;&#x5740;"><a name="&#x672C;&#x5730;&#x73AF;&#x56DE;&#x5730;&#x5740;" class="anchor-navigation-ex-anchor" href="#&#x672C;&#x5730;&#x73AF;&#x56DE;&#x5730;&#x5740;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x672C;&#x5730;&#x73AF;&#x56DE;&#x5730;&#x5740;</h2>
+<h2 id="&#x672C;&#x5730;&#x73AF;&#x56DE;&#x5730;&#x5740;">&#x672C;&#x5730;&#x73AF;&#x56DE;&#x5730;&#x5740;</h2>
 <p>127.0.0.1&#xFF0C;&#x901A;&#x5E38;&#x88AB;&#x79F0;&#x4E3A;&#x672C;&#x5730;&#x56DE;&#x73AF;&#x5730;&#x5740;(Loopback Address)&#xFF0C;&#x6307;&#x672C;&#x673A;&#x7684;&#x865A;&#x62DF;&#x63A5;&#x53E3;&#xFF0C;&#x4E00;&#x4E9B;&#x8868;&#x793A;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;(ipv6&#x7684;&#x5730;&#x5740;&#x4F7F;&#x7528;http&#x8BBF;&#x95EE;&#x9700;&#x8981;&#x52A0;[]):</p>
 <pre class="language-"><code>http://127.0.0.1
 http://localhost
@@ -2453,23 +2481,23 @@ http://[::ffff:127.0.0.1]
 http://127.1
 http://127.0.1
 http://0:80
-</code></pre><h2 id="punycode&#x8F6C;&#x7801;"><a name="punycode&#x8F6C;&#x7801;" class="anchor-navigation-ex-anchor" href="#punycode&#x8F6C;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. punycode&#x8F6C;&#x7801;</h2>
+</code></pre><h2 id="punycode&#x8F6C;&#x7801;">punycode&#x8F6C;&#x7801;</h2>
 <p>IDN&#xFF08;&#x82F1;&#x8BED;&#xFF1A;Internationalized Domain Name&#xFF0C;&#x7F29;&#x5199;&#xFF1A;IDN&#xFF09;&#x5373;&#x4E3A;&#x56FD;&#x9645;&#x5316;&#x57DF;&#x540D;&#xFF0C;&#x53C8;&#x79F0;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x57DF;&#x540D;&#xFF0C;&#x662F;&#x6307;&#x90E8;&#x5206;&#x6216;&#x5B8C;&#x5168;&#x4F7F;&#x7528;&#x7279;&#x6B8A;&#x7684;&#x6587;&#x5B57;&#x6216;&#x5B57;&#x6BCD;&#x7EC4;&#x6210;&#x7684;&#x4E92;&#x8054;&#x7F51;&#x57DF;&#x540D;&#x3002;&#x5305;&#x62EC;&#x6CD5;&#x8BED;&#x3001;&#x963F;&#x62C9;&#x4F2F;&#x8BED;&#x3001;&#x4E2D;&#x6587;&#x3001;&#x65AF;&#x62C9;&#x592B;&#x8BED;&#x3001;&#x6CF0;&#x7C73;&#x5C14;&#x8BED;&#x3001;&#x5E0C;&#x4F2F;&#x6765;&#x8BED;&#x6216;&#x62C9;&#x4E01;&#x5B57;&#x6BCD;&#x7B49;&#x975E;&#x82F1;&#x6587;&#x5B57;&#x6BCD;&#xFF0C;&#x8FD9;&#x4E9B;&#x6587;&#x5B57;&#x7ECF;&#x591A;&#x5B57;&#x8282;&#x4E07;&#x56FD;&#x7801;&#x7F16;&#x8BD1;&#x800C;&#x6210;&#x3002;&#x5728;&#x57DF;&#x540D;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x56FD;&#x9645;&#x5316;&#x57DF;&#x540D;&#x4F7F;&#x7528;Punycode&#x8F6C;&#x5199;&#x5E76;&#x4EE5;&#x7F8E;&#x56FD;&#x4FE1;&#x606F;&#x4EA4;&#x6362;&#x6807;&#x51C6;&#x4EE3;&#x7801;&#xFF08;ASCII&#xFF09;&#x5B57;&#x7B26;&#x4E32;&#x50A8;&#x5B58;&#x3002;punycode&#x662F;&#x4E00;&#x79CD;&#x8868;&#x793A;Unicode&#x7801;&#x548C;ASCII&#x7801;&#x7684;&#x6709;&#x9650;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#xFF0C;&#x53EF;&#x5BF9;IDNs&#x8FDB;&#x884C;punycode&#x8F6C;&#x7801;&#xFF0C;&#x8F6C;&#x7801;&#x540E;&#x7684;punycode&#x5C31;&#x7531;26&#x4E2A;&#x5B57;&#x6BCD;+10&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x8FD8;&#x6709;&#x201C;-&#x201D;&#x7EC4;&#x6210;&#x3002;
 &#x4F7F;&#x7528;&#x5728;&#x7EBF;&#x7684;<a href="http://tools.jb51.net/punycode/index.php" target="_blank">&#x7F16;&#x7801;&#x5DE5;&#x5177;</a>&#x6D4B;&#x8BD5;&#xFF1A;
-<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_51_9XvEhmQi.png" data-lightbox="79bb1f28-204f-45b0-b885-40ccea3f1f90" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_51_9XvEhmQi.png" alt="image.png"></a>
+<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_51_9XvEhmQi.png" data-lightbox="e9afcba6-30e5-43e9-96a1-19bc5322e800" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_51_9XvEhmQi.png" alt="image.png"></a>
 &#x5BF9;&#x6B63;&#x5E38;&#x7684;&#x5B57;&#x6BCD;&#x6570;&#x5B57;&#x7EC4;&#x6210;&#x7684;&#x57DF;&#x540D;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;punycode&#x7F16;&#x7801;&#x683C;&#x5F0F;&#xFF0C;&#x5373;&#xFF1A;</p>
 <pre class="language-"><code>www.qq.com =&gt; www.xn--qq-.com
 </code></pre><p>&#x4E00;&#x4E9B;&#x6D4F;&#x89C8;&#x5668;&#x5BF9;&#x6B63;&#x5E38;&#x7684;&#x57DF;&#x540D;&#x4E0D;&#x4F1A;&#x4F7F;&#x7528;punycode&#x89E3;&#x7801;&#xFF0C;&#x5982;Chrome&#xFF0C;&#x6240;&#x4EE5;&#x5728;Chrome&#x4E2D;&#x8BBF;&#x95EE;&#x5931;&#x8D25;&#xFF0C;&#x6D4B;&#x8BD5;&#x4E86;&#x90E8;&#x5206;PHP&#x4E2D;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x4E5F;&#x4F1A;&#x5931;&#x8D25;&#xFF1A;
-<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_51_JAqBsWlS.png" data-lightbox="0c7fc5b1-6033-4837-ab92-e05129061105" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_51_JAqBsWlS.png" alt="image.png"></a></p>
-<h2 id="&#x540C;&#x5F62;&#x5F02;&#x4E49;&#x5B57;&#x653B;&#x51FB;&#xFF08;idnhomographattack&#xFF0C;idn&#x6B3A;&#x9A97;&#xFF09;"><a name="&#x540C;&#x5F62;&#x5F02;&#x4E49;&#x5B57;&#x653B;&#x51FB;&#xFF08;idnhomographattack&#xFF0C;idn&#x6B3A;&#x9A97;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x540C;&#x5F62;&#x5F02;&#x4E49;&#x5B57;&#x653B;&#x51FB;&#xFF08;idnhomographattack&#xFF0C;idn&#x6B3A;&#x9A97;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x540C;&#x5F62;&#x5F02;&#x4E49;&#x5B57;&#x653B;&#x51FB;&#xFF08;IDN_homograph_attack&#xFF0C;IDN&#x6B3A;&#x9A97;&#xFF09;</h2>
+<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_51_JAqBsWlS.png" data-lightbox="b244b6d1-d40a-469b-9d15-1f3e82526695" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_51_JAqBsWlS.png" alt="image.png"></a></p>
+<h2 id="&#x540C;&#x5F62;&#x5F02;&#x4E49;&#x5B57;&#x653B;&#x51FB;&#xFF08;idnhomographattack&#xFF0C;idn&#x6B3A;&#x9A97;&#xFF09;">&#x540C;&#x5F62;&#x5F02;&#x4E49;&#x5B57;&#x653B;&#x51FB;&#xFF08;IDN_homograph_attack&#xFF0C;IDN&#x6B3A;&#x9A97;&#xFF09;</h2>
 <p>&#x540C;&#x5F62;&#x5F02;&#x4E49;&#x5B57;&#x6307;&#x7684;&#x662F;&#x5F62;&#x72B6;&#x76F8;&#x4F3C;&#x4F46;&#x662F;&#x542B;&#x4E49;&#x4E0D;&#x540C;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x5B57;&#x7B26;&#x5982;&#x5E0C;&#x814A;&#x3001;&#x65AF;&#x62C9;&#x592B;&#x3001;&#x4E9A;&#x7F8E;&#x5C3C;&#x4E9A;&#x5B57;&#x6BCD;&#xFF0C;&#x90E8;&#x5206;&#x5B57;&#x7B26;&#x770B;&#x8D77;&#x6765;&#x548C;&#x82F1;&#x6587;&#x5B57;&#x6BCD;&#x4E00;&#x6A21;&#x4E00;&#x6837;&#xFF1A;
-<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_51_FpuMOSeh.png" data-lightbox="cc2bcfb5-2b44-4d9e-b087-06fbeabb9179" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_51_FpuMOSeh.png" alt="image.png"></a>
+<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_51_FpuMOSeh.png" data-lightbox="4348dcf9-8854-4ddc-8b6c-bd75e375843e" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_51_FpuMOSeh.png" alt="image.png"></a>
 &#x5982;&#x679C;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x6CE8;&#x518C;&#x57DF;&#x540D;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x8FDB;&#x884C;&#x6B3A;&#x9A97;&#x653B;&#x51FB;(<a href="https://www.xudongz.com/blog/2017/idn-phishing/" target="_blank">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x8BE6;&#x60C5;</a>)&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x51FA;&#x73B0;&#x4E86;punycode&#x8F6C;&#x7801;&#xFF0C;&#x7528;&#x6765;&#x5C06;&#x542B;&#x4E49;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x7684;&#x57DF;&#x540D;&#x7F16;&#x7801;&#x4E3A;IDN&#xFF0C;&#x76EE;&#x524D;&#x8C37;&#x6B4C;&#x6D4F;&#x89C8;&#x5668;&#x3001;Safari&#x7B49;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x5C06;&#x5B58;&#x5728;&#x591A;&#x79CD;&#x8BED;&#x8A00;&#x7684;&#x57DF;&#x540D;&#x8FDB;&#x884C;Punycode&#x7F16;&#x7801;&#x663E;&#x793A;&#x3002;</p>
-<h2 id="&#x5C01;&#x95ED;&#x5F0F;&#x5B57;&#x6BCD;&#x6570;&#x5B57;-enclosed-alphanumerics&#x5B57;&#x7B26;"><a name="&#x5C01;&#x95ED;&#x5F0F;&#x5B57;&#x6BCD;&#x6570;&#x5B57;-enclosed-alphanumerics&#x5B57;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x5C01;&#x95ED;&#x5F0F;&#x5B57;&#x6BCD;&#x6570;&#x5B57;-enclosed-alphanumerics&#x5B57;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. &#x5C01;&#x95ED;&#x5F0F;&#x5B57;&#x6BCD;&#x6570;&#x5B57; (Enclosed Alphanumerics)&#x5B57;&#x7B26;</h2>
+<h2 id="&#x5C01;&#x95ED;&#x5F0F;&#x5B57;&#x6BCD;&#x6570;&#x5B57;-enclosed-alphanumerics&#x5B57;&#x7B26;">&#x5C01;&#x95ED;&#x5F0F;&#x5B57;&#x6BCD;&#x6570;&#x5B57; (Enclosed Alphanumerics)&#x5B57;&#x7B26;</h2>
 <p><a href="https://www.haomeili.net/ZhiShi/34" target="_blank">&#x5C01;&#x95ED;&#x5F0F;&#x5B57;&#x6BCD;&#x6570;&#x5B57;</a>&#x662F;&#x4E00;&#x4E2A;&#x7531;&#x5B57;&#x6BCD;&#x6570;&#x5B57;&#x7EC4;&#x6210;&#x7684;Unicode&#x5370;&#x5237;&#x7B26;&#x53F7;&#x5757;&#xFF0C;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x7B26;&#x53F7;&#x5757;&#x66FF;&#x6362;&#x57DF;&#x540D;&#x4E2D;&#x7684;&#x5B57;&#x6BCD;&#x4E5F;&#x53EF;&#x4EE5;&#x88AB;&#x6D4F;&#x89C8;&#x5668;&#x63A5;&#x53D7;&#x3002;&#x76EE;&#x524D;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x6D4B;&#x8BD5;&#x53EA;&#x6709;&#x4E0B;&#x5217;&#x5355;&#x5706;&#x5708;&#x7684;&#x5B57;&#x7B26;&#x53EF;&#x7528;&#xFF1A;
 &#x2460;    &#x2461;    &#x2462;    &#x2463;    &#x2464;    &#x2465;    &#x2466;    &#x2467;    &#x2468;    &#x2469;    &#x246A;    &#x246B;    &#x246C;    &#x246D;    &#x246E;    &#x246F;    &#x2470;    &#x2471;    &#x2472;    &#x2473;    &#x24B6;    &#x24B7;    &#x24B8;    &#x24B9;    &#x24BA;    &#x24BB;    &#x24BC;    &#x24BD;    &#x24BE;    &#x24BF;    &#x24C0;    &#x24C1;    &#x24C2;    &#x24C3;    &#x24C4;    &#x24C5;    &#x24C6;    &#x24C7;    &#x24C8;    &#x24C9;    &#x24CA;    &#x24CB;    &#x24CC;    &#x24CD;    &#x24CE;    &#x24CF;     &#x24D0;    &#x24D1;    &#x24D2;    &#x24D3;    &#x24D4;    &#x24D5;    &#x24D6;    &#x24D7;    &#x24D8;    &#x24D9;    &#x24DA;    &#x24DB;    &#x24DC;    &#x24DD;    &#x24DE;    &#x24DF;     &#x24E0;    &#x24E1;    &#x24E2;    &#x24E3;    &#x24E4;    &#x24E5;    &#x24E6;    &#x24E7;    &#x24E8;    &#x24E9;    &#x24EA;<br>&#x6D4F;&#x89C8;&#x5668;&#x8BBF;&#x95EE;&#x65F6;&#x4F1A;&#x81EA;&#x52A8;&#x8BC6;&#x522B;&#x6210;&#x62C9;&#x4E01;&#x82F1;&#x6587;&#x5B57;&#x7B26;
-<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_51_jPe9ZW6s.png" data-lightbox="3c038e72-505b-4e5d-b91b-79353b586d2c" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_51_jPe9ZW6s.png" alt="image.png"></a></p>
-<h2 id="redirect"><a name="redirect" class="anchor-navigation-ex-anchor" href="#redirect"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. Redirect</h2>
+<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_51_jPe9ZW6s.png" data-lightbox="7df7c895-3807-4220-8571-185f383cd9f3" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_51_jPe9ZW6s.png" alt="image.png"></a></p>
+<h2 id="redirect">Redirect</h2>
 <p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x91CD;&#x5B9A;&#x5411;&#x6765;&#x8BA9;&#x670D;&#x52A1;&#x5668;&#x8BBF;&#x95EE;&#x76EE;&#x6807;&#x5730;&#x5740;&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x91CD;&#x5B9A;&#x5411;&#x7684;HTTP&#x72B6;&#x6001;&#x7801;&#xFF1A;300&#x3001;301&#x3001;302&#x3001;303&#x3001;305&#x3001;307&#x3001;308&#x3002;&#x5728;github&#x9879;&#x76EE;<a href="https://github.com/cujanovi./-Testing/" target="_blank">SSRF-Testing</a>&#x4E0A;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5DF2;&#x7ECF;&#x914D;&#x7F6E;&#x597D;&#x7684;&#x7528;&#x4F8B;&#xFF1A;</p>
 <pre class="language-"><code>https:./.localdomain.pw/img-without-body/301-http-www.qq.com-.i.jpg
 
@@ -2479,15 +2507,15 @@ https:./.localdomain.pw/json-with-body/301-http-169.254.169.254:80-.j.json
 </code></pre><p>&#x670D;&#x52A1;&#x7AEF;PHP&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span> <span class="token function">header</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;Location: http://www.baidu.com&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
-<h2 id="dns&#x89E3;&#x6790;"><a name="dns&#x89E3;&#x6790;" class="anchor-navigation-ex-anchor" href="#dns&#x89E3;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. DNS&#x89E3;&#x6790;</h2>
+<h2 id="dns&#x89E3;&#x6790;">DNS&#x89E3;&#x6790;</h2>
 <p>&#x914D;&#x7F6E;&#x57DF;&#x540D;&#x7684;DNS&#x89E3;&#x6790;&#x5230;&#x76EE;&#x6807;&#x5730;&#x5740;(A&#x3001;cname&#x7B49;)&#xFF0C;&#x8FD9;&#x91CC;&#x6709;&#x51E0;&#x4E2A;&#x914D;&#x7F6E;&#x89E3;&#x6790;&#x5230;&#x4EFB;&#x610F;&#x7684;&#x5730;&#x5740;&#x7684;&#x57DF;&#x540D;&#xFF1A;</p>
 <pre class="language-"><code class="lang-shell"><span class="token function">nslookup</span> <span class="token number">127.0</span>.0.1.nip.io
 <span class="token function">nslookup</span> owasp.org.127.0.0.1.nip.io
 </code></pre>
-<p><a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_52_w0B7J9Rk.png" data-lightbox="106dbd94-55ae-461a-9310-aca6c6777d2a" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_52_w0B7J9Rk.png" alt="image.png"></a></p>
-<h2 id="dns-&#x91CD;&#x7ED1;&#x5B9A;"><a name="dns-&#x91CD;&#x7ED1;&#x5B9A;" class="anchor-navigation-ex-anchor" href="#dns-&#x91CD;&#x7ED1;&#x5B9A;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. DNS &#x91CD;&#x7ED1;&#x5B9A;</h2>
+<p><a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_52_w0B7J9Rk.png" data-lightbox="cbe53151-fb42-40fe-ba9a-a805b46d3315" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_52_w0B7J9Rk.png" alt="image.png"></a></p>
+<h2 id="dns-&#x91CD;&#x7ED1;&#x5B9A;">DNS &#x91CD;&#x7ED1;&#x5B9A;</h2>
 <p>&#x5982;&#x679C;&#x67D0;&#x540E;&#x7AEF;&#x4EE3;&#x7801;&#x8981;&#x53D1;&#x8D77;&#x5916;&#x90E8;&#x8BF7;&#x6C42;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x5141;&#x8BB8;&#x5BF9;&#x5185;&#x90E8;IP&#x8FDB;&#x884C;&#x8BF7;&#x6C42;&#xFF0C;&#x5C31;&#x8981;&#x5BF9;&#x89E3;&#x6790;&#x7684;IP&#x8FDB;&#x884C;&#x5B89;&#x5168;&#x9650;&#x5236;&#xFF0C;&#x6574;&#x4E2A;&#x6D41;&#x7A0B;&#x4E2D;&#x9996;&#x5148;&#x662F;&#x8981;&#x8BF7;&#x6C42;&#x4E00;&#x6B21;&#x57DF;&#x540D;&#x5BF9;&#x89E3;&#x6790;&#x7684;IP&#x8FDB;&#x884C;&#x68C0;&#x6D4B;&#xFF0C;&#x68C0;&#x6D4B;&#x901A;&#x8FC7;&#x4EA4;&#x7ED9;&#x540E;&#x9762;&#x7684;&#x51FD;&#x6570;&#x53D1;&#x8D77;&#x8BF7;&#x6C42;&#x3002;&#x5982;&#x679C;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x8BF7;&#x6C42;&#x65F6;&#x8FD4;&#x56DE;&#x516C;&#x7F51;IP,&#x7B2C;&#x4E8C;&#x6B21;&#x8BF7;&#x6C42;&#x65F6;&#x8FD4;&#x56DE;&#x5185;&#x7F51;IP&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8FBE;&#x5230;&#x653B;&#x51FB;&#x6548;&#x679C;&#x3002;&#x8981;&#x4F7F;&#x5F97;&#x4E24;&#x6B21;&#x8BF7;&#x6C42;&#x8FD4;&#x56DE;&#x4E0D;&#x540C;IP&#x9700;&#x8981;&#x5BF9;DNS&#x7F13;&#x5B58;&#x8FDB;&#x884C;&#x63A7;&#x5236;&#xFF0C;&#x8981;&#x8BBE;&#x7F6E;DNS TTL&#x4E3A;0&#xFF0C;&#x6D4B;&#x8BD5;cloudflare&#x5E76;&#x4E0D;&#x884C;&#xFF1A;
-<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_52_taS2c3j9.png" data-lightbox="261b6deb-7db9-4704-86b9-7ed905df8af9" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_52_taS2c3j9.png" alt="image.png"></a>
+<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_52_taS2c3j9.png" data-lightbox="c471b9b6-e29a-49f0-8995-f0f331d166a7" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_52_taS2c3j9.png" alt="image.png"></a>
 &#x90A3;&#x4E48;&#x8FD8;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;DNS&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x80FD;&#x65B9;&#x4FBF;&#x63A7;&#x5236;&#x6BCF;&#x6B21;&#x89E3;&#x6790;&#x7684;IP&#x5730;&#x5740;&#x4E86;&#xFF0C;&#x4F7F;&#x7528;<a href="https://github.com/cujanovi./-Testing/" target="_blank">SSRF-Testing</a>&#x9879;&#x76EE;&#x4E2D;&#x7684;dns.py&#x811A;&#x672C;&#x6267;&#x884C;</p>
 <pre class="language-"><code class="lang-shell">python3 dns.py <span class="token number">216.58</span>.214.206 <span class="token number">169.254</span>.169.254 <span class="token number">127.0</span>.0.1 <span class="token number">53</span> localdomains.pw
 </code></pre>
@@ -2495,18 +2523,18 @@ https:./.localdomain.pw/json-with-body/301-http-169.254.169.254:80-.j.json
 <pre class="language-"><code class="lang-shell"><span class="token function">nslookup</span> <span class="token number">1111</span>.localdomains.pw <span class="token number">127.0</span>.0.1
 </code></pre>
 <p>&#x6307;&#x5B9A;DNS&#x670D;&#x52A1;&#x5668;&#x4E3A;127.0.0.1&#xFF0C;&#x67E5;&#x8BE2;&#x89E3;&#x6790;&#x8BB0;&#x5F55;&#xFF1A;
-<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_53_9Btjh1me.png" data-lightbox="fb164dbd-2f1e-4318-b01e-0f50a2a1ed6f" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_53_9Btjh1me.png" alt="image.png"></a>
+<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_53_9Btjh1me.png" data-lightbox="9229cd33-9877-4fbf-ad93-726aa595fe4e" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_53_9Btjh1me.png" alt="image.png"></a>
 &#x8FD9;&#x6837;&#x4E00;&#x6765;&#xFF0C;&#x4E24;&#x6B21;&#x89E3;&#x6790;&#x7684;IP&#x5C31;&#x80FD;&#x65B9;&#x4FBF;&#x7684;&#x63A7;&#x5236;&#x4E86;&#x3002;</p>
-<h2 id="&#x70B9;&#x5206;&#x5272;&#x7B26;&#x53F7;&#x66FF;&#x6362;"><a name="&#x70B9;&#x5206;&#x5272;&#x7B26;&#x53F7;&#x66FF;&#x6362;" class="anchor-navigation-ex-anchor" href="#&#x70B9;&#x5206;&#x5272;&#x7B26;&#x53F7;&#x66FF;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a>1.10. &#x70B9;&#x5206;&#x5272;&#x7B26;&#x53F7;&#x66FF;&#x6362;</h2>
+<h2 id="&#x70B9;&#x5206;&#x5272;&#x7B26;&#x53F7;&#x66FF;&#x6362;">&#x70B9;&#x5206;&#x5272;&#x7B26;&#x53F7;&#x66FF;&#x6362;</h2>
 <p>&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x5206;&#x5272;&#x7B26;&#x53F7;&#x6765;&#x4EE3;&#x66FF;&#x57DF;&#x540D;&#x4E2D;&#x7684;.&#x5206;&#x5272;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x3002;&#xFF61;&#xFF0E;&#x6765;&#x4EE3;&#x66FF;&#xFF1A;</p>
 <pre class="language-"><code class="lang-shell">http://www&#x3002;qq&#x3002;com 
 http://www&#xFF61;qq&#xFF61;com 
 http://www&#xFF0E;qq&#xFF0E;com
 </code></pre>
-<h2 id="&#x77ED;&#x5730;&#x5740;&#x7ED5;&#x8FC7;"><a name="&#x77ED;&#x5730;&#x5740;&#x7ED5;&#x8FC7;" class="anchor-navigation-ex-anchor" href="#&#x77ED;&#x5730;&#x5740;&#x7ED5;&#x8FC7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.11. &#x77ED;&#x5730;&#x5740;&#x7ED5;&#x8FC7;</h2>
+<h2 id="&#x77ED;&#x5730;&#x5740;&#x7ED5;&#x8FC7;">&#x77ED;&#x5730;&#x5740;&#x7ED5;&#x8FC7;</h2>
 <p>&#x8FD9;&#x4E2A;&#x662F;&#x5229;&#x7528;&#x4E92;&#x8054;&#x7F51;&#x4E0A;&#x4E00;&#x4E9B;&#x7F51;&#x7AD9;&#x63D0;&#x4F9B;&#x7684;<a href="https://www.shorturl.at/" target="_blank">&#x7F51;&#x5740;&#x7F29;&#x77ED;</a>&#x670D;&#x52A1;&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x9ED1;&#x540D;&#x5355;&#x7ED5;&#x8FC7;&#xFF0C;&#x5176;&#x539F;&#x7406;&#x4E5F;&#x662F;&#x5229;&#x7528;&#x91CD;&#x5B9A;&#x5411;&#xFF1A;
-<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_54_U2gwkHXE.png" data-lightbox="30b3ca4a-3cb9-4e12-831c-43c0968c5e6d" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_54_U2gwkHXE.png" alt="image.png"></a></p>
-<h2 id="url&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7F16;&#x7801;"><a name="url&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7F16;&#x7801;" class="anchor-navigation-ex-anchor" href="#url&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7F16;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1.12. URL&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7F16;&#x7801;</h2>
+<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_54_U2gwkHXE.png" data-lightbox="0bf0044d-2484-4d69-b038-94b24d23007d" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_54_U2gwkHXE.png" alt="image.png"></a></p>
+<h2 id="url&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7F16;&#x7801;">URL&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7F16;&#x7801;</h2>
 <p>URL&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7F16;&#x7801;&#x53EF;&#x88AB;&#x6D4F;&#x89C8;&#x5668;&#x6B63;&#x5E38;&#x8BC6;&#x522B;&#xFF0C;&#x7F16;&#x7801;&#x811A;&#x672C;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python">data <span class="token operator">=</span> <span class="token string">&quot;www.qq.com&quot;</span><span class="token punctuation">;</span>
 alist <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
@@ -2514,21 +2542,14 @@ alist <span class="token operator">=</span> <span class="token punctuation">[</s
     alist<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token builtin">hex</span><span class="token punctuation">(</span><span class="token builtin">ord</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">&apos;0x&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;%&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&apos;http://</span><span class="token interpolation"><span class="token punctuation">{</span><span class="token string">&quot;&quot;</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>alist<span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token string">&apos;</span></span><span class="token punctuation">)</span>
 </code></pre>
-<p><a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_54_fqPJTXVr.png" data-lightbox="4dde1d4d-28f4-42de-9d64-91feffeba691" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_54_fqPJTXVr.png" alt="image.png"></a>
-<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_54_YN5j2H6g.png" data-lightbox="81cdb1f4-2ec3-45e6-af79-7d2f972fea2f" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_54_YN5j2H6g.png" alt="image.png"></a></p>
-<footer class="page-footer"><span class="copyright">Copyright &#xA9; aaron 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+<p><a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_54_fqPJTXVr.png" data-lightbox="3eaa354d-171d-4877-82b7-cf2a2c3cfc9d" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_54_fqPJTXVr.png" alt="image.png"></a>
+<a href="SSRF%20&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_54_YN5j2H6g.png" data-lightbox="94252ded-1a43-45ae-b9f0-2bcd1399b8bf" data-title="image.png"><img src="SSRF &#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.assets/2023_05_19_10_39_54_YN5j2H6g.png" alt="image.png"></a></p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; d4m1ts 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
 2023-05-19 14:35:49
 </span></footer>
-
-<pre class="language-"><code class="lang-html">Author: aaron
-Url: https://byaaronluo.github.io/&#x77E5;&#x8BC6;&#x5E93;/01.WEB&#x5B89;&#x5168;/06.SSRF/SSRF&#x7ED5;&#x8FC7;&#x65B9;&#x5F0F;.html
-Source: aaron &#x77E5;&#x8BC6;&#x5E93;
-This article was originally published in&#x300C;aaron &#x77E5;&#x8BC6;&#x5E93;&#x300D;,Reproduced please indicate the source, thank you for cooperation!
-</code></pre>
-</body></html>
-                                
-                                </section>
-                            
+                        
+                    </section>
+                    
     </div>
     <div class="search-results">
         <div class="has-results">
@@ -2545,30 +2566,29 @@ This article was originally published in&#x300C;aaron &#x77E5;&#x8BC6;&#x5E93;&#
     </div>
 </div>
 
-                        </div>
-                    </div>
-                
+                </div>
             </div>
+            
+        </div>
 
-            
-                
-                <a href="SSRF示例（weblogic_SSRF）.html" class="navigation navigation-prev " aria-label="Previous page: SSRF示例（weblogic_SSRF）">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-                <a href="../07.XXE/" class="navigation navigation-next " aria-label="Next page: 07.XXE">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
+        
+        
+        <a href="SSRF示例（weblogic_SSRF）.html" class="navigation navigation-prev " aria-label="Previous page: SSRF示例（weblogic_SSRF）">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        
+        
+        <a href="../07.XXE/" class="navigation navigation-next " aria-label="Next page: 07.XXE">
+            <i class="fa fa-angle-right"></i>
+        </a>
+        
+        
         
     </div>
-
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"SSRF绕过方式","level":"1.2.6.2","depth":3,"next":{"title":"07.XXE","level":"1.2.7","depth":2,"path":"知识库/01.WEB安全/07.XXE/README.md","ref":"知识库/01.WEB安全/07.XXE/README.md","articles":[]},"previous":{"title":"SSRF示例（weblogic_SSRF）","level":"1.2.6.1","depth":3,"path":"知识库/01.WEB安全/06.SSRF/SSRF示例（weblogic_SSRF）.md","ref":"知识库/01.WEB安全/06.SSRF/SSRF示例（weblogic_SSRF）.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-highlight","chapter-fold","expandable-chapters","splitter","page-treeview","lightbox","donate","hide-element","code","tbfed-pagefooter","pageview-count","ancre-navigation","anchor-navigation-ex","insert-logo","favicon","github","flexible-alerts","prism","copyright","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy aaron 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; aaron","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript","shell":"bash","xml-dtd":"xml"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack"]},"github":{"url":"https://github.com/byAaronLuo/"},"livereload":{},"splitter":{},"copyright":{"copyProtect":true,"site":"https://byaaronluo.github.io/","author":"aaron","website":"aaron 知识库","image":""},"code":{"copyButtons":true},"donate":{"alipay":"/README.assets/alipay.jpeg","alipayText":"支付宝打赏","button":"打赏☕️","title":"","wechat":"/README.assets/wx.jpeg","wechatText":"微信打赏"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"/README.assets/favicon.ico","bookmark":"/README.assets/favicon.ico","appleTouch":"/README.assets/favicon.ico","appleTouchMore":{"120x120":"/README.assets/favicon.ico","180x180":"/README.assets/favicon.ico"}},"lightbox":{"jquery":true,"sameUuid":false},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 50px; min-height: 50px;border-radius:50%","url":"/README.assets/logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"aaron","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Aaron 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"知识库/01.WEB安全/06.SSRF/SSRF绕过方式.md","mtime":"2023-05-19T06:35:49.103Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-02T15:08:46.332Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"SSRF绕过方式","level":"1.2.6.2","depth":3,"next":{"title":"07.XXE","level":"1.2.7","depth":2,"path":"知识库/01.WEB安全/07.XXE/README.md","ref":"知识库/01.WEB安全/07.XXE/README.md","articles":[]},"previous":{"title":"SSRF示例（weblogic_SSRF）","level":"1.2.6.1","depth":3,"path":"知识库/01.WEB安全/06.SSRF/SSRF示例（weblogic_SSRF）.md","ref":"知识库/01.WEB安全/06.SSRF/SSRF示例（weblogic_SSRF）.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","expandable-chapters","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy d4m1ts 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript","shell":"bash","xml-dtd":"xml"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"github":{"url":"https://github.com/byAaronLuo"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"hide-element":{"elements":[".gitbook-link",".title",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{"collapsible":true,"level":2,"prepend":true,"scrollToTitle":true}},"theme":"default","author":"aaron","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Aaron 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"知识库/01.WEB安全/06.SSRF/SSRF绕过方式.md","mtime":"2023-05-19T06:35:49.103Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-06T05:23:17.597Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -2578,31 +2598,7 @@ This article was originally published in&#x300C;aaron &#x77E5;&#x8BC6;&#x5E93;&#
     <script src="../../../gitbook/theme.js"></script>
     
         
-        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
-        
-    
-        
         <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
-        
-    
-        
-        <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
@@ -2614,11 +2610,23 @@ This article was originally published in&#x300C;aaron &#x77E5;&#x8BC6;&#x5E93;&#
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-search-pro-fixed/jquery.mark.min.js"></script>
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-search-pro-fixed/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
         
     
         
@@ -2630,7 +2638,11 @@ This article was originally published in&#x300C;aaron &#x77E5;&#x8BC6;&#x5E93;&#
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-copyright/plugin.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
         
     
         
@@ -2638,11 +2650,11 @@ This article was originally published in&#x300C;aaron &#x77E5;&#x8BC6;&#x5E93;&#
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-theme-d4t/script.js"></script>
         
     
 
