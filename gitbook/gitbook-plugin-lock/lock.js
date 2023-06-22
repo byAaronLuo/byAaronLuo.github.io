@@ -33,7 +33,7 @@ require(['gitbook', 'jQuery'], function(gitbook, $) {
             '            即可查看全部文章\n' +
             '        </div>\n' +
             '        <div id="btw-modal-input-code" style="margin-top: 20px; background: rgb(255, 255, 255);"><input '+
-            '         id="btw-modal-input" type="text" maxLength="10" placeholder="请输入Token" '+
+            '         id="btw-modal-input" type="text" maxLength="16" placeholder="请输入Token" '+
             '    style="width: 160px; height: 32px; line-height: 32px; padding: 0 10px; margin: 0 10px; font-size: 13px; text-rendering: auto; text-transform: none; cursor: text; outline: none; box-sizing: border-box; border: 1px solid rgb(221, 221, 221); appearance: textfield; background-color: white; -webkit-rtl-ordering: logical;">'+
             '    <button onclick="bc()" id="btw-submit-btn" '+
             '             style="padding: 0 20px; height: 32px; font-size: 14px; outline: none; border: none; color: rgb(255, 255, 255); background: rgb(222, 104, 109); cursor: pointer;">提 '+
@@ -51,7 +51,7 @@ require(['gitbook', 'jQuery'], function(gitbook, $) {
                 bc()
             }
         })
-        const bc = function () {
+        bc = function () {
             const val = input.value
             if (val === thisValue) {
                 cla.style.height = height + 'px';
