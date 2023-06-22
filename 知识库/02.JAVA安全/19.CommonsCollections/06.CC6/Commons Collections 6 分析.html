@@ -61,6 +61,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-lock/lock.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
@@ -1089,6 +1093,19 @@
             
                     
                     15.Fastjson检测规则梳理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.16" data-path="../../../01.WEB安全/99.其他/16.Chrome实时修改javascript.html">
+            
+                <a href="../../../01.WEB安全/99.其他/16.Chrome实时修改javascript.html">
+            
+                    
+                    16.Chrome实时修改javascript
             
                 </a>
             
@@ -3399,7 +3416,7 @@ keyField<span class="token punctuation">.</span><span class="token function">set
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p><a href="Commons%20Collections%206%20&#x5206;&#x6790;.assets/2023_05_19_10_37_34_4hkAdQKN.png" data-lightbox="8fc439b8-bc70-410e-bd0c-1ef187c5339e" data-title="image.png"><img src="Commons Collections 6 &#x5206;&#x6790;.assets/2023_05_19_10_37_34_4hkAdQKN.png" alt="image.png"></a></p>
+<p><a href="Commons%20Collections%206%20&#x5206;&#x6790;.assets/2023_05_19_10_37_34_4hkAdQKN.png" data-lightbox="cf03e9bb-a2ff-4896-bc55-0a4130e8af9c" data-title="image.png"><img src="Commons Collections 6 &#x5206;&#x6790;.assets/2023_05_19_10_37_34_4hkAdQKN.png" alt="image.png"></a></p>
 <h3 id="&#x66F4;&#x6539;poc&#x53CD;&#x5E8F;&#x5217;&#x5316;hashmap">&#x66F4;&#x6539;poc(&#x53CD;&#x5E8F;&#x5217;&#x5316;HashMap)</h3>
 <pre class="language-"><code>java.io.ObjectInputStream.readObject()
     java.util.HashMap.readObject()
@@ -3480,7 +3497,7 @@ keyField<span class="token punctuation">.</span><span class="token function">set
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p><a href="Commons%20Collections%206%20&#x5206;&#x6790;.assets/2023_05_19_10_37_35_8CFXUb6Q.png" data-lightbox="a8048b70-1122-4089-998a-54c8cd76813c" data-title="image.png"><img src="Commons Collections 6 &#x5206;&#x6790;.assets/2023_05_19_10_37_35_8CFXUb6Q.png" alt="image.png"></a></p>
+<p><a href="Commons%20Collections%206%20&#x5206;&#x6790;.assets/2023_05_19_10_37_35_8CFXUb6Q.png" data-lightbox="af5f0f50-1611-46ca-9cfd-535f9b4f76d1" data-title="image.png"><img src="Commons Collections 6 &#x5206;&#x6790;.assets/2023_05_19_10_37_35_8CFXUb6Q.png" alt="image.png"></a></p>
 <h3 id="&#x66F4;&#x6539;poc1&#x53CD;&#x5E8F;&#x5217;&#x5316;hashset-1&#x6B21;&#x53CD;&#x5C04;">&#x66F4;&#x6539;POC_1(&#x53CD;&#x5E8F;&#x5217;&#x5316;HashSet 1&#x6B21;&#x53CD;&#x5C04;)</h3>
 <p>&#x5176;&#x5B9E;&#x770B;HashSet&#x8FD9;&#x4E2A;&#x7C7B;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8C03;&#x7528;add&#x65B9;&#x6CD5;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5176;&#x5B9E;&#x4F20;&#x5165;entry&#x4E4B;&#x540E;&#xFF0C;&#x5BF9;&#x5E94;&#x7684;Object&#x5C31;&#x662F;&#x6076;&#x610F;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4F1A;&#x8C03;&#x7528;<code>lazymap#get</code>&#x65B9;&#x6CD5;&#xFF0C;&#x4ECE;&#x800C;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x5C31;&#x6267;&#x884C;1&#x6B21;&#x547D;&#x4EE4;
 &#x5177;&#x4F53;&#x53EF;&#x4EE5;&#x770B;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF0C;&#x5F53;map.add(entry)&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x4F1A;&#x5F39;&#x51FA;notepad</p>
@@ -3497,13 +3514,13 @@ keyField<span class="token punctuation">.</span><span class="token function">set
 <span class="token class-name">HashSet</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashSet</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 map<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>entry<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p><a href="Commons%20Collections%206%20&#x5206;&#x6790;.assets/2023_05_19_10_37_35_crLERMzs.png" data-lightbox="54911709-2592-4c01-ac4d-3d123e1b0217" data-title="image.png"><img src="Commons Collections 6 &#x5206;&#x6790;.assets/2023_05_19_10_37_35_crLERMzs.png" alt="image.png"></a></p>
+<p><a href="Commons%20Collections%206%20&#x5206;&#x6790;.assets/2023_05_19_10_37_35_crLERMzs.png" data-lightbox="e2537ff1-020e-4610-809a-4d536e22e2d1" data-title="image.png"><img src="Commons Collections 6 &#x5206;&#x6790;.assets/2023_05_19_10_37_35_crLERMzs.png" alt="image.png"></a></p>
 <p>&#x8C03;&#x8BD5;&#x4E00;&#x4E0B;&#x5982;&#x4E0A;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5728;add&#x5904;&#xFF0C;&#x4F20;&#x5165;&#x7684;&#x662F;e&#x4E3A;entry</p>
-<p><a href="Commons%20Collections%206%20&#x5206;&#x6790;.assets/2023_05_19_10_37_35_WSaElxdU.png" data-lightbox="3e71fc5f-b2b4-4d9d-ac8d-ccb2452168d2" data-title="image.png"><img src="Commons Collections 6 &#x5206;&#x6790;.assets/2023_05_19_10_37_35_WSaElxdU.png" alt="image.png"></a></p>
+<p><a href="Commons%20Collections%206%20&#x5206;&#x6790;.assets/2023_05_19_10_37_35_WSaElxdU.png" data-lightbox="c870b454-4531-4934-b585-306fa304efb8" data-title="image.png"><img src="Commons Collections 6 &#x5206;&#x6790;.assets/2023_05_19_10_37_35_WSaElxdU.png" alt="image.png"></a></p>
 <p>&#x5728;&#x8C03;&#x7528;hash&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F20;&#x5165;&#x7684;&#x4E5F;&#x662F;entry</p>
-<p><a href="Commons%20Collections%206%20&#x5206;&#x6790;.assets/2023_05_19_10_37_36_wpu1o4OP.png" data-lightbox="8edfc250-1bc3-4079-8ae9-8dc52577fbab" data-title="image.png"><img src="Commons Collections 6 &#x5206;&#x6790;.assets/2023_05_19_10_37_36_wpu1o4OP.png" alt="image.png"></a></p>
+<p><a href="Commons%20Collections%206%20&#x5206;&#x6790;.assets/2023_05_19_10_37_36_wpu1o4OP.png" data-lightbox="65d93dc2-9619-4b5b-822e-21b17cdc22cb" data-title="image.png"><img src="Commons Collections 6 &#x5206;&#x6790;.assets/2023_05_19_10_37_36_wpu1o4OP.png" alt="image.png"></a></p>
 <p>&#x6700;&#x540E;&#x8C03;&#x7528;key(entry).hashcode()&#x8FD9;&#x65F6;&#x5C31;&#x4F1A;&#x8C03;&#x7528;<code>TiedMapEntry#hashcode</code>&#xFF0C;&#x6700;&#x540E;&#x5C31;&#x4F1A;&#x8C03;&#x7528;<code>LazyMap#get</code>&#x65B9;&#x6CD5;</p>
-<p><a href="Commons%20Collections%206%20&#x5206;&#x6790;.assets/2023_05_19_10_37_36_tm7UAlbd.png" data-lightbox="74a783cc-90ee-4dc5-9f29-37f22746cb03" data-title="image.png"><img src="Commons Collections 6 &#x5206;&#x6790;.assets/2023_05_19_10_37_36_tm7UAlbd.png" alt="image.png"></a></p>
+<p><a href="Commons%20Collections%206%20&#x5206;&#x6790;.assets/2023_05_19_10_37_36_tm7UAlbd.png" data-lightbox="1c8b6f49-3840-4a97-8909-8d6a4b1b7d0a" data-title="image.png"><img src="Commons Collections 6 &#x5206;&#x6790;.assets/2023_05_19_10_37_36_tm7UAlbd.png" alt="image.png"></a></p>
 <p>&#x90A3;&#x4E48;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x6267;&#x884C;&#x6210;&#x529F;&#x4E4B;&#x540E;&#xFF0C;&#x662F;&#x4E0D;&#x884C;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x5728;<code>LazyMap#get</code>&#x5904;&#xFF0C;&#x4F1A;&#x5224;&#x65AD;map &#x4E2D;&#x662F;&#x5426;&#x5B58;&#x5728;&#x5BF9;&#x5E94;&#x7684;key&#xFF0C;&#x5982;&#x679C;&#x5B58;&#x5728;&#xFF0C;&#x5C31;&#x4E0D;&#x4F1A;&#x8C03;&#x7528;factory.transform</p>
 <pre class="language-"><code class="lang-java"><span class="token comment">// lazymap#get</span>
 <span class="token keyword">public</span> <span class="token class-name">Object</span> <span class="token function">get</span><span class="token punctuation">(</span><span class="token class-name">Object</span> key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -3520,9 +3537,9 @@ map<span class="token punctuation">.</span><span class="token function">add</spa
 <pre class="language-"><code class="lang-java">lazyMap<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token string">&quot;foo&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <p>&#x6B64;&#x65F6;&#x8FD8;&#x672A;&#x6267;&#x884C;remove&#x64CD;&#x4F5C;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;lazymap&#x5B58;&#x5728;&#x503C;&#x4E3A;foo
-<a href="Commons%20Collections%206%20&#x5206;&#x6790;.assets/2023_05_19_10_37_37_yWxbY3D4.png" data-lightbox="e469f38d-0aab-4777-91d7-f51e9ddbdb47" data-title="image.png"><img src="Commons Collections 6 &#x5206;&#x6790;.assets/2023_05_19_10_37_37_yWxbY3D4.png" alt="image.png"></a></p>
+<a href="Commons%20Collections%206%20&#x5206;&#x6790;.assets/2023_05_19_10_37_37_yWxbY3D4.png" data-lightbox="c2430aa6-f68e-45c6-b361-a658748dd0a3" data-title="image.png"><img src="Commons Collections 6 &#x5206;&#x6790;.assets/2023_05_19_10_37_37_yWxbY3D4.png" alt="image.png"></a></p>
 <p>&#x6267;&#x884C;remove&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;lazymap&#x6E05;&#x7A7A;&#x4E86;</p>
-<p><a href="Commons%20Collections%206%20&#x5206;&#x6790;.assets/2023_05_19_10_37_37_yU5PJCus.png" data-lightbox="da81ebac-2d5d-440d-ae4f-2bd8ca15f86e" data-title="image.png"><img src="Commons Collections 6 &#x5206;&#x6790;.assets/2023_05_19_10_37_37_yU5PJCus.png" alt="image.png"></a></p>
+<p><a href="Commons%20Collections%206%20&#x5206;&#x6790;.assets/2023_05_19_10_37_37_yU5PJCus.png" data-lightbox="a6366a36-c99d-4bd3-aedb-12d2c38e43b2" data-title="image.png"><img src="Commons Collections 6 &#x5206;&#x6790;.assets/2023_05_19_10_37_37_yU5PJCus.png" alt="image.png"></a></p>
 <p>&#x5728;ysoserial&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x6BD4;&#x5982;CC1&#x4E2D;&#xFF0C;&#x90FD;&#x662F;&#x5728;&#x6700;&#x540E;&#x901A;&#x8FC7;&#x66FF;&#x6362;ChainedTransformer&#x4E2D;&#x7684;iTransformers&#x4E3A;&#x6076;&#x610F;&#x7684;transformers&#x6765;&#x5B8C;&#x6210;&#x6B65;&#x9AA4;</p>
 <pre class="language-"><code class="lang-java"><span class="token class-name">Transformer</span><span class="token punctuation">[</span><span class="token punctuation">]</span> transformers <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Transformer</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span>
     <span class="token keyword">new</span> <span class="token class-name">ConstantTransformer</span><span class="token punctuation">(</span><span class="token class-name">Runtime</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
@@ -3605,7 +3622,7 @@ f<span class="token punctuation">.</span><span class="token function">set</span>
 <span class="token punctuation">}</span>
 </code></pre>
 <p>&#x5728;&#x6700;&#x540E;&#x751F;&#x6210;&#x4E86;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x518D;&#x5C06;&#x524D;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x6CE8;&#x91CA;&#x6389;&#xFF0C;&#x53EA;&#x7559;&#x4E0B;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x6700;&#x540E;&#x53EA;&#x4F1A;&#x6267;&#x884C;transformers</p>
-<p><a href="Commons%20Collections%206%20&#x5206;&#x6790;.assets/2023_05_19_10_37_37_SvqhUa6W.png" data-lightbox="2c2f035e-40fa-4069-9e7f-55dd568be5fc" data-title="image.png"><img src="Commons Collections 6 &#x5206;&#x6790;.assets/2023_05_19_10_37_37_SvqhUa6W.png" alt="image.png"></a></p>
+<p><a href="Commons%20Collections%206%20&#x5206;&#x6790;.assets/2023_05_19_10_37_37_SvqhUa6W.png" data-lightbox="cd71a2a0-c25f-45a2-97f1-d754707cc2c5" data-title="image.png"><img src="Commons Collections 6 &#x5206;&#x6790;.assets/2023_05_19_10_37_37_SvqhUa6W.png" alt="image.png"></a></p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; aaron 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
 2023-06-12 18:13:32
 </span></footer>
@@ -3642,7 +3659,7 @@ f<span class="token punctuation">.</span><span class="token function">set</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Commons Collections 6 分析","level":"1.3.19.6.1","depth":4,"next":{"title":"07.CC7","level":"1.3.19.7","depth":3,"ref":"","articles":[{"title":"Commons Collections 7 分析","level":"1.3.19.7.1","depth":4,"path":"知识库/02.JAVA安全/19.CommonsCollections/07.CC7/Commons Collections 7 分析.md","ref":"知识库/02.JAVA安全/19.CommonsCollections/07.CC7/Commons Collections 7 分析.md","articles":[]}]},"previous":{"title":"06.CC6","level":"1.3.19.6","depth":3,"ref":"","articles":[{"title":"Commons Collections 6 分析","level":"1.3.19.6.1","depth":4,"path":"知识库/02.JAVA安全/19.CommonsCollections/06.CC6/Commons Collections 6 分析.md","ref":"知识库/02.JAVA安全/19.CommonsCollections/06.CC6/Commons Collections 6 分析.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","expandable-chapters","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy aaron 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript","shell":"bash","xml-dtd":"xml"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"github":{"url":"https://github.com/byAaronLuo"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"hide-element":{"elements":[".gitbook-link",".title",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{"collapsible":true,"level":2,"prepend":true,"scrollToTitle":true}},"theme":"default","author":"aaron","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Aaron 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"知识库/02.JAVA安全/19.CommonsCollections/06.CC6/Commons Collections 6 分析.md","mtime":"2023-06-12T10:13:32.509Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-19T10:00:09.589Z"},"basePath":"../../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Commons Collections 6 分析","level":"1.3.19.6.1","depth":4,"next":{"title":"07.CC7","level":"1.3.19.7","depth":3,"ref":"","articles":[{"title":"Commons Collections 7 分析","level":"1.3.19.7.1","depth":4,"path":"知识库/02.JAVA安全/19.CommonsCollections/07.CC7/Commons Collections 7 分析.md","ref":"知识库/02.JAVA安全/19.CommonsCollections/07.CC7/Commons Collections 7 分析.md","articles":[]}]},"previous":{"title":"06.CC6","level":"1.3.19.6","depth":3,"ref":"","articles":[{"title":"Commons Collections 6 分析","level":"1.3.19.6.1","depth":4,"path":"知识库/02.JAVA安全/19.CommonsCollections/06.CC6/Commons Collections 6 分析.md","ref":"知识库/02.JAVA安全/19.CommonsCollections/06.CC6/Commons Collections 6 分析.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","expandable-chapters","lock","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy aaron 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript","shell":"bash","xml-dtd":"xml"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"github":{"url":"https://github.com/byAaronLuo"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"lock":{"verificationCode":{"key":"Token","value":"!&pF@RFL8Vs$nhM6"},"lockTokenKey":"Token","email":"aaronluo54@gmail.com","allPage":false,"articleHeightPercent":0},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"hide-element":{"elements":[".gitbook-link",".title",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{"collapsible":true,"level":2,"prepend":true,"scrollToTitle":true}},"theme":"default","author":"aaron","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Aaron 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"知识库/02.JAVA安全/19.CommonsCollections/06.CC6/Commons Collections 6 分析.md","mtime":"2023-06-12T10:13:32.509Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-22T15:20:17.199Z"},"basePath":"../../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -3697,6 +3714,10 @@ f<span class="token punctuation">.</span><span class="token function">set</span>
     
         
         <script src="../../../../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lock/lock.js"></script>
         
     
         

