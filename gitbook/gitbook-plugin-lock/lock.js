@@ -51,7 +51,7 @@ require(['gitbook', 'jQuery'], function(gitbook, $) {
                 bc()
             }
         })
-        bc = function () {
+        bc = function() {
             const val = input.value
             if (val === thisValue) {
                 cla.style.height = height + 'px';
