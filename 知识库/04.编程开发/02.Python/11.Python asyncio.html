@@ -1,0 +1,3886 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>11.Python asyncio · Aaron 知识库</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="aaron">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro-fixed/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-lock/lock.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-theme-d4t/style.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="12.Python协程深入理解.html" />
+    
+    
+    <link rel="prev" href="10-进程与线程.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="header-inner">
+        <!-- LOGO -->
+        <a href="/"><div class="logo"></div></a>
+        <span class="title"></span>
+
+        <!-- Search -->
+        
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+        <!-- Nav -->
+        <ul class="header-nav">
+            
+        </ul>
+    </div>
+
+    <div class="book-summary">
+        <div class="sidebar-nav-space"></div>
+        
+        
+        <nav role="navigation">
+            
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    01.WEB安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    00.信息收集
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" >
+            
+                <span>
+            
+                    
+                    1.资产收集
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1.1" data-path="../../01.WEB安全/00.信息收集/1.资产收集/1.信息收集之主域名收集.html">
+            
+                <a href="../../01.WEB安全/00.信息收集/1.资产收集/1.信息收集之主域名收集.html">
+            
+                    
+                    1.信息收集之主域名收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.2" data-path="../../01.WEB安全/00.信息收集/1.资产收集/2.信息收集之子域名收集.html">
+            
+                <a href="../../01.WEB安全/00.信息收集/1.资产收集/2.信息收集之子域名收集.html">
+            
+                    
+                    2.信息收集之子域名收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.3" data-path="../../01.WEB安全/00.信息收集/1.资产收集/3.信息收集之其他信息收集.html">
+            
+                <a href="../../01.WEB安全/00.信息收集/1.资产收集/3.信息收集之其他信息收集.html">
+            
+                    
+                    3.信息收集之其他信息收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../01.WEB安全/00.信息收集/2.绕过CDN寻找真实IP/">
+            
+                <a href="../../01.WEB安全/00.信息收集/2.绕过CDN寻找真实IP/">
+            
+                    
+                    2.绕过CDN寻找真实IP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.2.1" data-path="../../01.WEB安全/00.信息收集/2.绕过CDN寻找真实IP/1.绕过CDN寻找真实IP.html">
+            
+                <a href="../../01.WEB安全/00.信息收集/2.绕过CDN寻找真实IP/1.绕过CDN寻找真实IP.html">
+            
+                    
+                    1.绕过CDN寻找真实IP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2.2" data-path="../../01.WEB安全/00.信息收集/2.绕过CDN寻找真实IP/2.CDN_2021_完全攻击指南_1.html">
+            
+                <a href="../../01.WEB安全/00.信息收集/2.绕过CDN寻找真实IP/2.CDN_2021_完全攻击指南_1.html">
+            
+                    
+                    2.CDN2021完全攻击指南_1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2.3" data-path="../../01.WEB安全/00.信息收集/2.绕过CDN寻找真实IP/3.CDN_2021_完全攻击指南_2.html">
+            
+                <a href="../../01.WEB安全/00.信息收集/2.绕过CDN寻找真实IP/3.CDN_2021_完全攻击指南_2.html">
+            
+                    
+                    3.CDN2021完全攻击指南_2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../../01.WEB安全/00.信息收集/3.网络空间搜索引擎使用手册/">
+            
+                <a href="../../01.WEB安全/00.信息收集/3.网络空间搜索引擎使用手册/">
+            
+                    
+                    3.网络空间搜索引擎使用手册
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.3.1" data-path="../../01.WEB安全/00.信息收集/3.网络空间搜索引擎使用手册/FOFA使用手册.html">
+            
+                <a href="../../01.WEB安全/00.信息收集/3.网络空间搜索引擎使用手册/FOFA使用手册.html">
+            
+                    
+                    FOFA使用手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../01.WEB安全/01.SQLi/">
+            
+                <a href="../../01.WEB安全/01.SQLi/">
+            
+                    
+                    01.SQLi
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../01.WEB安全/01.SQLi/MSSQL/MSSQL.html">
+            
+                <a href="../../01.WEB安全/01.SQLi/MSSQL/MSSQL.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.1" data-path="../../01.WEB安全/01.SQLi/MSSQL/MSSQL 注入基础.html">
+            
+                <a href="../../01.WEB安全/01.SQLi/MSSQL/MSSQL 注入基础.html">
+            
+                    
+                    MSSQL 注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2" data-path="../../01.WEB安全/01.SQLi/MSSQL/MSSQL常见符号函数符号归类.html">
+            
+                <a href="../../01.WEB安全/01.SQLi/MSSQL/MSSQL常见符号函数符号归类.html">
+            
+                    
+                    MSSQL常见符号函数符号归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.3" data-path="../../01.WEB安全/01.SQLi/MSSQL/常见防御手段及绕过方式.html">
+            
+                <a href="../../01.WEB安全/01.SQLi/MSSQL/常见防御手段及绕过方式.html">
+            
+                    
+                    常见防御手段及绕过方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../01.WEB安全/01.SQLi/MYSQL/MYSQL.html">
+            
+                <a href="../../01.WEB安全/01.SQLi/MYSQL/MYSQL.html">
+            
+                    
+                    MYSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="../../01.WEB安全/01.SQLi/MYSQL/MYSQL常见符号函数语句归类.html">
+            
+                <a href="../../01.WEB安全/01.SQLi/MYSQL/MYSQL常见符号函数语句归类.html">
+            
+                    
+                    MYSQL常见符号函数语句归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2" data-path="../../01.WEB安全/01.SQLi/MYSQL/MySQL注入基础.html">
+            
+                <a href="../../01.WEB安全/01.SQLi/MYSQL/MySQL注入基础.html">
+            
+                    
+                    MySQL注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../01.WEB安全/01.SQLi/Oracle/Oracle.html">
+            
+                <a href="../../01.WEB安全/01.SQLi/Oracle/Oracle.html">
+            
+                    
+                    Oracle
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="../../01.WEB安全/01.SQLi/Oracle/Oracle 注入基础.html">
+            
+                <a href="../../01.WEB安全/01.SQLi/Oracle/Oracle 注入基础.html">
+            
+                    
+                    Oracle 注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.2" data-path="../../01.WEB安全/01.SQLi/Oracle/Oracle常用符号函数语句归类.html">
+            
+                <a href="../../01.WEB安全/01.SQLi/Oracle/Oracle常用符号函数语句归类.html">
+            
+                    
+                    Oracle常用符号函数语句归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../../01.WEB安全/01.SQLi/Postgresql/Postgresql.html">
+            
+                <a href="../../01.WEB安全/01.SQLi/Postgresql/Postgresql.html">
+            
+                    
+                    Postgresql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.4.1" data-path="../../01.WEB安全/01.SQLi/Postgresql/Postgresql常用符号函数语句归类.html">
+            
+                <a href="../../01.WEB安全/01.SQLi/Postgresql/Postgresql常用符号函数语句归类.html">
+            
+                    
+                    Postgresql常用符号函数语句归类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.2" data-path="../../01.WEB安全/01.SQLi/Postgresql/Postgresql注入基础.html">
+            
+                <a href="../../01.WEB安全/01.SQLi/Postgresql/Postgresql注入基础.html">
+            
+                    
+                    Postgresql注入基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.3" data-path="../../01.WEB安全/01.SQLi/Postgresql/常见防御手段及绕过方式.html">
+            
+                <a href="../../01.WEB安全/01.SQLi/Postgresql/常见防御手段及绕过方式.html">
+            
+                    
+                    常见防御手段及绕过方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../../01.WEB安全/01.SQLi/SQL注入之伪静态页面布尔注入.html">
+            
+                <a href="../../01.WEB安全/01.SQLi/SQL注入之伪静态页面布尔注入.html">
+            
+                    
+                    SQL注入之伪静态页面布尔注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../../01.WEB安全/01.SQLi/ThinkPHP 3.2.3 SQLi.html">
+            
+                <a href="../../01.WEB安全/01.SQLi/ThinkPHP 3.2.3 SQLi.html">
+            
+                    
+                    ThinkPHP 3.2.3 SQLi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../01.WEB安全/02.XSS/">
+            
+                <a href="../../01.WEB安全/02.XSS/">
+            
+                    
+                    02.XSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../01.WEB安全/03.CSRF/">
+            
+                <a href="../../01.WEB安全/03.CSRF/">
+            
+                    
+                    03.CSRF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../../01.WEB安全/03.CSRF/CSRF绕过Referer技巧.html">
+            
+                <a href="../../01.WEB安全/03.CSRF/CSRF绕过Referer技巧.html">
+            
+                    
+                    CSRF绕过Referer技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../01.WEB安全/04.OS注入/">
+            
+                <a href="../../01.WEB安全/04.OS注入/">
+            
+                    
+                    04.OS注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" >
+            
+                <span>
+            
+                    
+                    05.文件操作
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../../01.WEB安全/05.文件操作/01.文件包含.html">
+            
+                <a href="../../01.WEB安全/05.文件操作/01.文件包含.html">
+            
+                    
+                    01.文件包含
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../../01.WEB安全/05.文件操作/02.文件上传.html">
+            
+                <a href="../../01.WEB安全/05.文件操作/02.文件上传.html">
+            
+                    
+                    02.文件上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="../../01.WEB安全/05.文件操作/03.文件读取.html">
+            
+                <a href="../../01.WEB安全/05.文件操作/03.文件读取.html">
+            
+                    
+                    03.文件读取
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../01.WEB安全/06.SSRF/">
+            
+                <a href="../../01.WEB安全/06.SSRF/">
+            
+                    
+                    06.SSRF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="../../01.WEB安全/06.SSRF/SSRF示例（weblogic_SSRF）.html">
+            
+                <a href="../../01.WEB安全/06.SSRF/SSRF示例（weblogic_SSRF）.html">
+            
+                    
+                    SSRF示例（weblogic_SSRF）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.2" data-path="../../01.WEB安全/06.SSRF/SSRF绕过方式.html">
+            
+                <a href="../../01.WEB安全/06.SSRF/SSRF绕过方式.html">
+            
+                    
+                    SSRF绕过方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../01.WEB安全/07.XXE/">
+            
+                <a href="../../01.WEB安全/07.XXE/">
+            
+                    
+                    07.XXE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../../01.WEB安全/08.SSTI/">
+            
+                <a href="../../01.WEB安全/08.SSTI/">
+            
+                    
+                    08.SSTI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" >
+            
+                <span>
+            
+                    
+                    09.反序列化
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.10.1" data-path="../../01.WEB安全/09.反序列化/Java序列化与反序列化.html">
+            
+                <a href="../../01.WEB安全/09.反序列化/Java序列化与反序列化.html">
+            
+                    
+                    Java序列化与反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.2" data-path="../../01.WEB安全/09.反序列化/PHP反序列化.html">
+            
+                <a href="../../01.WEB安全/09.反序列化/PHP反序列化.html">
+            
+                    
+                    PHP反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" >
+            
+                <span>
+            
+                    
+                    10.权限维持
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.11.1" data-path="../../01.WEB安全/10.权限维持/Web 权限维持.html">
+            
+                <a href="../../01.WEB安全/10.权限维持/Web 权限维持.html">
+            
+                    
+                    Web 权限维持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../../01.WEB安全/11.CORS跨域数据劫持/">
+            
+                <a href="../../01.WEB安全/11.CORS跨域数据劫持/">
+            
+                    
+                    11.CORS跨域数据劫持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../../01.WEB安全/12.任意URL跳转/">
+            
+                <a href="../../01.WEB安全/12.任意URL跳转/">
+            
+                    
+                    12.任意URL跳转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../../01.WEB安全/13.越权/">
+            
+                <a href="../../01.WEB安全/13.越权/">
+            
+                    
+                    13.越权
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../../01.WEB安全/14.代码执行/">
+            
+                <a href="../../01.WEB安全/14.代码执行/">
+            
+                    
+                    14.代码执行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../../01.WEB安全/15.未授权访问/">
+            
+                <a href="../../01.WEB安全/15.未授权访问/">
+            
+                    
+                    15.未授权访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" >
+            
+                <span>
+            
+                    
+                    99.其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.17.1" data-path="../../01.WEB安全/99.其他/01.WAF绕过通用思路.html">
+            
+                <a href="../../01.WEB安全/99.其他/01.WAF绕过通用思路.html">
+            
+                    
+                    01.WAF绕过通用思路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17.2" data-path="../../01.WEB安全/99.其他/02.蚁剑RSA加密绕过检测.html">
+            
+                <a href="../../01.WEB安全/99.其他/02.蚁剑RSA加密绕过检测.html">
+            
+                    
+                    02.蚁剑RSA加密绕过检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17.3" data-path="../../01.WEB安全/99.其他/03.GitHub云扫描器.html">
+            
+                <a href="../../01.WEB安全/99.其他/03.GitHub云扫描器.html">
+            
+                    
+                    03.GitHub云扫描器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17.4" data-path="../../01.WEB安全/99.其他/04.JavaScript 原型链污染.html">
+            
+                <a href="../../01.WEB安全/99.其他/04.JavaScript 原型链污染.html">
+            
+                    
+                    04.JavaScript 原型链污染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17.5" data-path="../../01.WEB安全/99.其他/05.php filter协议利用.html">
+            
+                <a href="../../01.WEB安全/99.其他/05.php filter协议利用.html">
+            
+                    
+                    05.php filter协议利用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17.6" data-path="../../01.WEB安全/99.其他/06.单点登录SSO原理.html">
+            
+                <a href="../../01.WEB安全/99.其他/06.单点登录SSO原理.html">
+            
+                    
+                    06.单点登录SSO原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17.7" data-path="../../01.WEB安全/99.其他/07.任意用户密码重置的10种姿势.html">
+            
+                <a href="../../01.WEB安全/99.其他/07.任意用户密码重置的10种姿势.html">
+            
+                    
+                    07.任意用户密码重置的10种姿势
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17.8" data-path="../../01.WEB安全/99.其他/08.网页接口加密暴破.html">
+            
+                <a href="../../01.WEB安全/99.其他/08.网页接口加密暴破.html">
+            
+                    
+                    08.网页接口加密暴破
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17.9" data-path="../../01.WEB安全/99.其他/09.反弹shell.html">
+            
+                <a href="../../01.WEB安全/99.其他/09.反弹shell.html">
+            
+                    
+                    09.反弹shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17.10" data-path="../../01.WEB安全/99.其他/10.webshell原理.html">
+            
+                <a href="../../01.WEB安全/99.其他/10.webshell原理.html">
+            
+                    
+                    10.webshell原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17.11" data-path="../../01.WEB安全/99.其他/11.ByPaass disable Function.html">
+            
+                <a href="../../01.WEB安全/99.其他/11.ByPaass disable Function.html">
+            
+                    
+                    11.ByPaass disable Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17.12" data-path="../../01.WEB安全/99.其他/12.DVWA通关记录.html">
+            
+                <a href="../../01.WEB安全/99.其他/12.DVWA通关记录.html">
+            
+                    
+                    12.DVWA通关记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17.13" data-path="../../01.WEB安全/99.其他/13.PHP SPRINTF格式化字符串漏洞.html">
+            
+                <a href="../../01.WEB安全/99.其他/13.PHP SPRINTF格式化字符串漏洞.html">
+            
+                    
+                    13.PHP SPRINTF格式化字符串漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17.14" data-path="../../01.WEB安全/99.其他/14.CTF题目收集.html">
+            
+                <a href="../../01.WEB安全/99.其他/14.CTF题目收集.html">
+            
+                    
+                    14.CTF题目收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17.15" data-path="../../01.WEB安全/99.其他/15.Fastjson检测规则梳理.html">
+            
+                <a href="../../01.WEB安全/99.其他/15.Fastjson检测规则梳理.html">
+            
+                    
+                    15.Fastjson检测规则梳理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17.16" data-path="../../01.WEB安全/99.其他/16.Chrome实时修改javascript.html">
+            
+                <a href="../../01.WEB安全/99.其他/16.Chrome实时修改javascript.html">
+            
+                    
+                    16.Chrome实时修改javascript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17.17" data-path="../../01.WEB安全/99.其他/17.webpack源码泄漏.html">
+            
+                <a href="../../01.WEB安全/99.其他/17.webpack源码泄漏.html">
+            
+                    
+                    17.webpack源码泄漏
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    02.JAVA安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../02.JAVA安全/01.Java JVM内存模型/">
+            
+                <a href="../../02.JAVA安全/01.Java JVM内存模型/">
+            
+                    
+                    01.Java JVM内存模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../02.JAVA安全/02.Java 面向对象/">
+            
+                <a href="../../02.JAVA安全/02.Java 面向对象/">
+            
+                    
+                    02.Java 面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../02.JAVA安全/03.Java反射机制/">
+            
+                <a href="../../02.JAVA安全/03.Java反射机制/">
+            
+                    
+                    03.Java反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../02.JAVA安全/04.Java序列化与反序列化/">
+            
+                <a href="../../02.JAVA安全/04.Java序列化与反序列化/">
+            
+                    
+                    04.Java序列化与反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../02.JAVA安全/05.RMI基础/">
+            
+                <a href="../../02.JAVA安全/05.RMI基础/">
+            
+                    
+                    05.RMI基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../02.JAVA安全/06.JNDI注入原理及利用/">
+            
+                <a href="../../02.JAVA安全/06.JNDI注入原理及利用/">
+            
+                    
+                    06.JNDI注入原理及利用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../02.JAVA安全/07.OGNL表达式/">
+            
+                <a href="../../02.JAVA安全/07.OGNL表达式/">
+            
+                    
+                    07.OGNL表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../../02.JAVA安全/08.EL表达式/">
+            
+                <a href="../../02.JAVA安全/08.EL表达式/">
+            
+                    
+                    08.EL表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../../02.JAVA安全/09.SpEL表达式/">
+            
+                <a href="../../02.JAVA安全/09.SpEL表达式/">
+            
+                    
+                    09.SpEL表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../../02.JAVA安全/10.Tomcat内存马基础入门/10.Tomcat内存马基础入门.html">
+            
+                <a href="../../02.JAVA安全/10.Tomcat内存马基础入门/10.Tomcat内存马基础入门.html">
+            
+                    
+                    10.Tomcat内存马基础入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../../02.JAVA安全/11.Tomcat内存马无文件攻击/">
+            
+                <a href="../../02.JAVA安全/11.Tomcat内存马无文件攻击/">
+            
+                    
+                    11.Tomcat内存马无文件攻击
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../../02.JAVA安全/12.Spring框架内存马入门/">
+            
+                <a href="../../02.JAVA安全/12.Spring框架内存马入门/">
+            
+                    
+                    12.Spring框架内存马入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../../02.JAVA安全/13.Shiro550分析/">
+            
+                <a href="../../02.JAVA安全/13.Shiro550分析/">
+            
+                    
+                    13.Shiro550分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../../02.JAVA安全/14.Shiro550无文件内存马/">
+            
+                <a href="../../02.JAVA安全/14.Shiro550无文件内存马/">
+            
+                    
+                    14.Shiro550无文件内存马
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../../02.JAVA安全/15.Jira CVE2020-36239 RCE/">
+            
+                <a href="../../02.JAVA安全/15.Jira CVE2020-36239 RCE/">
+            
+                    
+                    15.Jira CVE2020-36239 RCE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="../../02.JAVA安全/16.fastJson反序列化原理及利用/">
+            
+                <a href="../../02.JAVA安全/16.fastJson反序列化原理及利用/">
+            
+                    
+                    16.fastJson反序列化原理及利用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="../../02.JAVA安全/17.Spring-Core RCE/">
+            
+                <a href="../../02.JAVA安全/17.Spring-Core RCE/">
+            
+                    
+                    17.Spring-Core RCE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="../../02.JAVA安全/18.JNDI注入之com.sun.rowset.JdbcRowSetImpl利用链/">
+            
+                <a href="../../02.JAVA安全/18.JNDI注入之com.sun.rowset.JdbcRowSetImpl利用链/">
+            
+                    
+                    18.JNDI注入之com.sun.rowset.JdbcRowSetImpl利用链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" >
+            
+                <span>
+            
+                    
+                    19.CommonsCollections
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.19.1" >
+            
+                <span>
+            
+                    
+                    01.CC1
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.19.1.1" data-path="../../02.JAVA安全/19.CommonsCollections/01.CC1/01.Commons Collections 1 分析前置知识.html">
+            
+                <a href="../../02.JAVA安全/19.CommonsCollections/01.CC1/01.Commons Collections 1 分析前置知识.html">
+            
+                    
+                    01.Commons Collections 1 分析前置知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19.1.2" data-path="../../02.JAVA安全/19.CommonsCollections/01.CC1/02.Commons Collections 1 分析利用.html">
+            
+                <a href="../../02.JAVA安全/19.CommonsCollections/01.CC1/02.Commons Collections 1 分析利用.html">
+            
+                    
+                    02.Commons Collections 1 分析利用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19.1.3" data-path="../../02.JAVA安全/19.CommonsCollections/01.CC1/03.Commons Collections 1 LazyMap利用链.html">
+            
+                <a href="../../02.JAVA安全/19.CommonsCollections/01.CC1/03.Commons Collections 1 LazyMap利用链.html">
+            
+                    
+                    03.Commons Collections 1 LazyMap利用链
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19.2" >
+            
+                <span>
+            
+                    
+                    02.CC2
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.19.2.1" data-path="../../02.JAVA安全/19.CommonsCollections/02.CC2/Commons Collection 2 分析.html">
+            
+                <a href="../../02.JAVA安全/19.CommonsCollections/02.CC2/Commons Collection 2 分析.html">
+            
+                    
+                    Commons Collection 2 分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19.3" >
+            
+                <span>
+            
+                    
+                    03.CC3
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.19.3.1" data-path="../../02.JAVA安全/19.CommonsCollections/03.CC3/Commons Collections 3 分析.html">
+            
+                <a href="../../02.JAVA安全/19.CommonsCollections/03.CC3/Commons Collections 3 分析.html">
+            
+                    
+                    Commons Collections 3 分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19.4" >
+            
+                <span>
+            
+                    
+                    04.CC4
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.19.4.1" data-path="../../02.JAVA安全/19.CommonsCollections/04.CC4/Commons Collections 4 分析.html">
+            
+                <a href="../../02.JAVA安全/19.CommonsCollections/04.CC4/Commons Collections 4 分析.html">
+            
+                    
+                    Commons Collections 4 分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19.5" >
+            
+                <span>
+            
+                    
+                    05.CC5
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.19.5.1" data-path="../../02.JAVA安全/19.CommonsCollections/05.CC5/Commons Collections 5 分析.html">
+            
+                <a href="../../02.JAVA安全/19.CommonsCollections/05.CC5/Commons Collections 5 分析.html">
+            
+                    
+                    Commons Collections 5 分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19.6" >
+            
+                <span>
+            
+                    
+                    06.CC6
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.19.6.1" data-path="../../02.JAVA安全/19.CommonsCollections/06.CC6/Commons Collections 6 分析.html">
+            
+                <a href="../../02.JAVA安全/19.CommonsCollections/06.CC6/Commons Collections 6 分析.html">
+            
+                    
+                    Commons Collections 6 分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19.7" >
+            
+                <span>
+            
+                    
+                    07.CC7
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.19.7.1" data-path="../../02.JAVA安全/19.CommonsCollections/07.CC7/Commons Collections 7 分析.html">
+            
+                <a href="../../02.JAVA安全/19.CommonsCollections/07.CC7/Commons Collections 7 分析.html">
+            
+                    
+                    Commons Collections 7 分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19.8" data-path="../../02.JAVA安全/19.CommonsCollections/08.Commons Collections 系列简单靶场.html">
+            
+                <a href="../../02.JAVA安全/19.CommonsCollections/08.Commons Collections 系列简单靶场.html">
+            
+                    
+                    08.Commons Collections 系列简单靶场
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="../../02.JAVA安全/20.CommonsBeanutils1/">
+            
+                <a href="../../02.JAVA安全/20.CommonsBeanutils1/">
+            
+                    
+                    20.CommonsBeanutils1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="../../02.JAVA安全/21.ClassLoader详解/">
+            
+                <a href="../../02.JAVA安全/21.ClassLoader详解/">
+            
+                    
+                    21.ClassLoader详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    03.主机安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../03.主机安全/01.乱七八糟的问题汇总（持续更新）.html">
+            
+                <a href="../../03.主机安全/01.乱七八糟的问题汇总（持续更新）.html">
+            
+                    
+                    01.乱七八糟的问题汇总（持续更新）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../03.主机安全/02.计算机从加电到启动系统的过程（Linux）.html">
+            
+                <a href="../../03.主机安全/02.计算机从加电到启动系统的过程（Linux）.html">
+            
+                    
+                    02.计算机从加电到启动系统的过程（Linux）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../03.主机安全/03.Base64编码解码原理.html">
+            
+                <a href="../../03.主机安全/03.Base64编码解码原理.html">
+            
+                    
+                    03.Base64编码解码原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../03.主机安全/04.DNS隧道反弹shell.html">
+            
+                <a href="../../03.主机安全/04.DNS隧道反弹shell.html">
+            
+                    
+                    04.DNS隧道反弹shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../03.主机安全/05.ICMP隧道反弹shell.html">
+            
+                <a href="../../03.主机安全/05.ICMP隧道反弹shell.html">
+            
+                    
+                    05.ICMP隧道反弹shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../03.主机安全/06.Linux权限维持.html">
+            
+                <a href="../../03.主机安全/06.Linux权限维持.html">
+            
+                    
+                    06.Linux权限维持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../../03.主机安全/07.Linux_SUID提权原理.html">
+            
+                <a href="../../03.主机安全/07.Linux_SUID提权原理.html">
+            
+                    
+                    07.Linux_SUID提权原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../../03.主机安全/08.Linux的账号口令机制及其爆破.html">
+            
+                <a href="../../03.主机安全/08.Linux的账号口令机制及其爆破.html">
+            
+                    
+                    08.Linux的账号口令机制及其爆破
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../../03.主机安全/09.SSH建立隧道以及转发.html">
+            
+                <a href="../../03.主机安全/09.SSH建立隧道以及转发.html">
+            
+                    
+                    09.SSH建立隧道以及转发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../../03.主机安全/10.如何在Ubuntu16.04上使用Apache设置密码身份验证.html">
+            
+                <a href="../../03.主机安全/10.如何在Ubuntu16.04上使用Apache设置密码身份验证.html">
+            
+                    
+                    10.如何在Ubuntu16.04上使用Apache设置密码身份验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../../03.主机安全/11.Ubuntu科学上网.html">
+            
+                <a href="../../03.主机安全/11.Ubuntu科学上网.html">
+            
+                    
+                    11.Ubuntu科学上网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../../03.主机安全/12.Ubuntu配置zsh.html">
+            
+                <a href="../../03.主机安全/12.Ubuntu配置zsh.html">
+            
+                    
+                    12.Ubuntu配置zsh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../../03.主机安全/13.Ubuntu如何正确换源.html">
+            
+                <a href="../../03.主机安全/13.Ubuntu如何正确换源.html">
+            
+                    
+                    13.Ubuntu如何正确换源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="../../03.主机安全/14.Windows CMD.exe 执行任意代码、命令、程序的漏洞.html">
+            
+                <a href="../../03.主机安全/14.Windows CMD.exe 执行任意代码、命令、程序的漏洞.html">
+            
+                    
+                    14.Windows CMD.exe 执行任意代码、命令、程序的漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.15" data-path="../../03.主机安全/15.CentOS7虚拟机根目录扩容（无卷组情况下）.html">
+            
+                <a href="../../03.主机安全/15.CentOS7虚拟机根目录扩容（无卷组情况下）.html">
+            
+                    
+                    15.CentOS7虚拟机根目录扩容（无卷组情况下）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.16" data-path="../../03.主机安全/16.LVS架构及原理.html">
+            
+                <a href="../../03.主机安全/16.LVS架构及原理.html">
+            
+                    
+                    16.LVS架构及原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.17" data-path="../../03.主机安全/17.HTTP代理原理及实现.html">
+            
+                <a href="../../03.主机安全/17.HTTP代理原理及实现.html">
+            
+                    
+                    17.HTTP代理原理及实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.18" data-path="../../03.主机安全/18.Linux常用命令.html">
+            
+                <a href="../../03.主机安全/18.Linux常用命令.html">
+            
+                    
+                    18.Linux常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.19" data-path="../../03.主机安全/19.文件系统与文件权限.html">
+            
+                <a href="../../03.主机安全/19.文件系统与文件权限.html">
+            
+                    
+                    19.文件系统与文件权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.20" data-path="../../03.主机安全/20.应急响应.html">
+            
+                <a href="../../03.主机安全/20.应急响应.html">
+            
+                    
+                    20.应急响应
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.21" data-path="../../03.主机安全/21.Linux应急响应案例（DDG挖矿）.html">
+            
+                <a href="../../03.主机安全/21.Linux应急响应案例（DDG挖矿）.html">
+            
+                    
+                    21.Linux应急响应案例（DDG挖矿）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.22" data-path="../../03.主机安全/22.LD PRELOAD深入浅出.html">
+            
+                <a href="../../03.主机安全/22.LD PRELOAD深入浅出.html">
+            
+                    
+                    22.LD PRELOAD深入浅出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.23" data-path="../../03.主机安全/23.Ubuntu安装burp.html">
+            
+                <a href="../../03.主机安全/23.Ubuntu安装burp.html">
+            
+                    
+                    23.Ubuntu安装burp
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    04.编程开发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    01.GO
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../01.GO/01.GO基础/">
+            
+                <a href="../01.GO/01.GO基础/">
+            
+                    
+                    01.GO基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" >
+            
+                <span>
+            
+                    
+                    02.GO实例
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.2.1" data-path="../01.GO/02.GO实例/01.GO常用基础实例.html">
+            
+                <a href="../01.GO/02.GO实例/01.GO常用基础实例.html">
+            
+                    
+                    01.GO常用基础实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.2" data-path="../01.GO/02.GO实例/02.使用GO编写POC.html">
+            
+                <a href="../01.GO/02.GO实例/02.使用GO编写POC.html">
+            
+                    
+                    02.使用GO编写POC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.3" data-path="../01.GO/02.GO实例/03.使用GO模拟登陆.html">
+            
+                <a href="../01.GO/02.GO实例/03.使用GO模拟登陆.html">
+            
+                    
+                    03.使用GO模拟登陆
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.4" data-path="../01.GO/02.GO实例/04.使用GO+selenium.html">
+            
+                <a href="../01.GO/02.GO实例/04.使用GO+selenium.html">
+            
+                    
+                    04.使用GO+selenium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.5" data-path="../01.GO/02.GO实例/05.限制GO并发数.html">
+            
+                <a href="../01.GO/02.GO实例/05.限制GO并发数.html">
+            
+                    
+                    05.限制GO并发数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.6" data-path="../01.GO/02.GO实例/06.使用GO上传图片.html">
+            
+                <a href="../01.GO/02.GO实例/06.使用GO上传图片.html">
+            
+                    
+                    06.使用GO上传图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    02.Python
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="01.变量和类型.html">
+            
+                <a href="01.变量和类型.html">
+            
+                    
+                    01.变量和类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="02-分支结构.html">
+            
+                <a href="02-分支结构.html">
+            
+                    
+                    02-分支结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="03-循环结构.html">
+            
+                <a href="03-循环结构.html">
+            
+                    
+                    03-循环结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="04-函数与模块.html">
+            
+                <a href="04-函数与模块.html">
+            
+                    
+                    04-函数与模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5" data-path="05-字符串和常用数据结构.html">
+            
+                <a href="05-字符串和常用数据结构.html">
+            
+                    
+                    05-字符串和常用数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.6" data-path="06-面向对象编程基础.html">
+            
+                <a href="06-面向对象编程基础.html">
+            
+                    
+                    06-面向对象编程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.7" data-path="07-面向对象进阶.html">
+            
+                <a href="07-面向对象进阶.html">
+            
+                    
+                    07-面向对象进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.8" data-path="08-文件和异常.html">
+            
+                <a href="08-文件和异常.html">
+            
+                    
+                    08-文件和异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.9" data-path="09-字符串和正则表达式.html">
+            
+                <a href="09-字符串和正则表达式.html">
+            
+                    
+                    09-字符串和正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.10" data-path="10-进程与线程.html">
+            
+                <a href="10-进程与线程.html">
+            
+                    
+                    10-进程与线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2.11" data-path="11.Python asyncio.html">
+            
+                <a href="11.Python asyncio.html">
+            
+                    
+                    11.Python asyncio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.12" data-path="12.Python协程深入理解.html">
+            
+                <a href="12.Python协程深入理解.html">
+            
+                    
+                    12.Python协程深入理解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <span>
+            
+                    
+                    03.Web前端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" >
+            
+                <span>
+            
+                    
+                    00.前端基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1.1" data-path="../03.Web前端/00.前端基础/01.HTML/">
+            
+                <a href="../03.Web前端/00.前端基础/01.HTML/">
+            
+                    
+                    01.HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.2" data-path="../03.Web前端/00.前端基础/02.CSS/">
+            
+                <a href="../03.Web前端/00.前端基础/02.CSS/">
+            
+                    
+                    02.CSS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1.2.1" data-path="../03.Web前端/00.前端基础/02.CSS/01.flex布局.html">
+            
+                <a href="../03.Web前端/00.前端基础/02.CSS/01.flex布局.html">
+            
+                    
+                    01.flex布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.3" data-path="../03.Web前端/00.前端基础/03.JavaScript/">
+            
+                <a href="../03.Web前端/00.前端基础/03.JavaScript/">
+            
+                    
+                    03.JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1.3.1" data-path="../03.Web前端/00.前端基础/03.JavaScript/01.变量类型.html">
+            
+                <a href="../03.Web前端/00.前端基础/03.JavaScript/01.变量类型.html">
+            
+                    
+                    01.变量类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.3.2" data-path="../03.Web前端/00.前端基础/03.JavaScript/02.类型转换.html">
+            
+                <a href="../03.Web前端/00.前端基础/03.JavaScript/02.类型转换.html">
+            
+                    
+                    02.类型转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.3.3" data-path="../03.Web前端/00.前端基础/03.JavaScript/03.运算符.html">
+            
+                <a href="../03.Web前端/00.前端基础/03.JavaScript/03.运算符.html">
+            
+                    
+                    03.运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.3.4" data-path="../03.Web前端/00.前端基础/03.JavaScript/04.函数.html">
+            
+                <a href="../03.Web前端/00.前端基础/03.JavaScript/04.函数.html">
+            
+                    
+                    04.函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.3.5" data-path="../03.Web前端/00.前端基础/03.JavaScript/05.垃圾回收与内存泄露和优化.html">
+            
+                <a href="../03.Web前端/00.前端基础/03.JavaScript/05.垃圾回收与内存泄露和优化.html">
+            
+                    
+                    05.垃圾回收与内存泄露和优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.3.6" data-path="../03.Web前端/00.前端基础/03.JavaScript/06.事件.html">
+            
+                <a href="../03.Web前端/00.前端基础/03.JavaScript/06.事件.html">
+            
+                    
+                    06.事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.3.7" data-path="../03.Web前端/00.前端基础/03.JavaScript/07.事件队列.html">
+            
+                <a href="../03.Web前端/00.前端基础/03.JavaScript/07.事件队列.html">
+            
+                    
+                    07.事件队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.3.8" data-path="../03.Web前端/00.前端基础/03.JavaScript/08.事件轮询机制.html">
+            
+                <a href="../03.Web前端/00.前端基础/03.JavaScript/08.事件轮询机制.html">
+            
+                    
+                    08.事件轮询机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.3.9" data-path="../03.Web前端/00.前端基础/03.JavaScript/09.作用域.html">
+            
+                <a href="../03.Web前端/00.前端基础/03.JavaScript/09.作用域.html">
+            
+                    
+                    09.作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.3.10" data-path="../03.Web前端/00.前端基础/03.JavaScript/10.原型链与继承.html">
+            
+                <a href="../03.Web前端/00.前端基础/03.JavaScript/10.原型链与继承.html">
+            
+                    
+                    10.原型链与继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.3.11" data-path="../03.Web前端/00.前端基础/03.JavaScript/11.DOM.html">
+            
+                <a href="../03.Web前端/00.前端基础/03.JavaScript/11.DOM.html">
+            
+                    
+                    11.DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.3.12" data-path="../03.Web前端/00.前端基础/03.JavaScript/12.BOM.html">
+            
+                <a href="../03.Web前端/00.前端基础/03.JavaScript/12.BOM.html">
+            
+                    
+                    12.BOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.3.13" data-path="../03.Web前端/00.前端基础/03.JavaScript/13.全局内置对象.html">
+            
+                <a href="../03.Web前端/00.前端基础/03.JavaScript/13.全局内置对象.html">
+            
+                    
+                    13.全局内置对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.3.14" data-path="../03.Web前端/00.前端基础/03.JavaScript/14.ES6.html">
+            
+                <a href="../03.Web前端/00.前端基础/03.JavaScript/14.ES6.html">
+            
+                    
+                    14.ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.3.15" data-path="../03.Web前端/00.前端基础/03.JavaScript/15.this.html">
+            
+                <a href="../03.Web前端/00.前端基础/03.JavaScript/15.this.html">
+            
+                    
+                    15.this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.3.16" data-path="../03.Web前端/00.前端基础/03.JavaScript/16.正则.html">
+            
+                <a href="../03.Web前端/00.前端基础/03.JavaScript/16.正则.html">
+            
+                    
+                    16.正则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.3.17" data-path="../03.Web前端/00.前端基础/03.JavaScript/17.ServiceWorker.html">
+            
+                <a href="../03.Web前端/00.前端基础/03.JavaScript/17.ServiceWorker.html">
+            
+                    
+                    17.ServiceWorker
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.4" >
+            
+                <span>
+            
+                    
+                    04.ToDoListDemo
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1.4.1" data-path="../03.Web前端/00.前端基础/04.ToDoListDemo/01.通过bootstrap完成简单的todolist.html">
+            
+                <a href="../03.Web前端/00.前端基础/04.ToDoListDemo/01.通过bootstrap完成简单的todolist.html">
+            
+                    
+                    01.通过bootstrap完成简单的todolist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.4.2" data-path="../03.Web前端/00.前端基础/04.ToDoListDemo/02.在01的基础上完成数据装载.html">
+            
+                <a href="../03.Web前端/00.前端基础/04.ToDoListDemo/02.在01的基础上完成数据装载.html">
+            
+                    
+                    02.在01的基础上完成数据装载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.4.3" data-path="../03.Web前端/00.前端基础/04.ToDoListDemo/03.在01的基础上完成ajax获取数据并实时同步服务器.html">
+            
+                <a href="../03.Web前端/00.前端基础/04.ToDoListDemo/03.在01的基础上完成ajax获取数据并实时同步服务器.html">
+            
+                    
+                    03.在01的基础上完成ajax获取数据并实时同步服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../03.Web前端/01.Vue.js/">
+            
+                <a href="../03.Web前端/01.Vue.js/">
+            
+                    
+                    01.Vue.js
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.2.1" data-path="../03.Web前端/01.Vue.js/01.基础.html">
+            
+                <a href="../03.Web前端/01.Vue.js/01.基础.html">
+            
+                    
+                    01.基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.2" data-path="../03.Web前端/01.Vue.js/02.模板语法.html">
+            
+                <a href="../03.Web前端/01.Vue.js/02.模板语法.html">
+            
+                    
+                    02.模板语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.3" data-path="../03.Web前端/01.Vue.js/03.响应式基础.html">
+            
+                <a href="../03.Web前端/01.Vue.js/03.响应式基础.html">
+            
+                    
+                    03.响应式基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.4" data-path="../03.Web前端/01.Vue.js/04.计算属性.html">
+            
+                <a href="../03.Web前端/01.Vue.js/04.计算属性.html">
+            
+                    
+                    04.计算属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.5" data-path="../03.Web前端/01.Vue.js/05.类与样式绑定.html">
+            
+                <a href="../03.Web前端/01.Vue.js/05.类与样式绑定.html">
+            
+                    
+                    05.类与样式绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.6" data-path="../03.Web前端/01.Vue.js/06.条件渲染.html">
+            
+                <a href="../03.Web前端/01.Vue.js/06.条件渲染.html">
+            
+                    
+                    06.条件渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.7" data-path="../03.Web前端/01.Vue.js/07.列表渲染.html">
+            
+                <a href="../03.Web前端/01.Vue.js/07.列表渲染.html">
+            
+                    
+                    07.列表渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.8" data-path="../03.Web前端/01.Vue.js/08.事件处理.html">
+            
+                <a href="../03.Web前端/01.Vue.js/08.事件处理.html">
+            
+                    
+                    08.事件处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.9" data-path="../03.Web前端/01.Vue.js/09.表单输入绑定.html">
+            
+                <a href="../03.Web前端/01.Vue.js/09.表单输入绑定.html">
+            
+                    
+                    09.表单输入绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.10" data-path="../03.Web前端/01.Vue.js/10.生命周期.html">
+            
+                <a href="../03.Web前端/01.Vue.js/10.生命周期.html">
+            
+                    
+                    10.生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.11" data-path="../03.Web前端/01.Vue.js/11.侦听器.html">
+            
+                <a href="../03.Web前端/01.Vue.js/11.侦听器.html">
+            
+                    
+                    11.侦听器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.12" data-path="../03.Web前端/01.Vue.js/12.模版引用.html">
+            
+                <a href="../03.Web前端/01.Vue.js/12.模版引用.html">
+            
+                    
+                    12.模版引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.13" data-path="../03.Web前端/01.Vue.js/13.组件基础.html">
+            
+                <a href="../03.Web前端/01.Vue.js/13.组件基础.html">
+            
+                    
+                    13.组件基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.14" data-path="../03.Web前端/01.Vue.js/14.组件注册.html">
+            
+                <a href="../03.Web前端/01.Vue.js/14.组件注册.html">
+            
+                    
+                    14.组件注册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.15" data-path="../03.Web前端/01.Vue.js/15.组件Props.html">
+            
+                <a href="../03.Web前端/01.Vue.js/15.组件Props.html">
+            
+                    
+                    15.组件Props
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.16" data-path="../03.Web前端/01.Vue.js/16.组件事件.html">
+            
+                <a href="../03.Web前端/01.Vue.js/16.组件事件.html">
+            
+                    
+                    16.组件事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.17" data-path="../03.Web前端/01.Vue.js/17.组件v-model.html">
+            
+                <a href="../03.Web前端/01.Vue.js/17.组件v-model.html">
+            
+                    
+                    17.组件v-model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.18" data-path="../03.Web前端/01.Vue.js/18.透传 Attributes.html">
+            
+                <a href="../03.Web前端/01.Vue.js/18.透传 Attributes.html">
+            
+                    
+                    18.透传 Attributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.19" data-path="../03.Web前端/01.Vue.js/19.插槽 Slots.html">
+            
+                <a href="../03.Web前端/01.Vue.js/19.插槽 Slots.html">
+            
+                    
+                    19.插槽 Slots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.20" data-path="../03.Web前端/01.Vue.js/20.依赖注入.html">
+            
+                <a href="../03.Web前端/01.Vue.js/20.依赖注入.html">
+            
+                    
+                    20.依赖注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.21" data-path="../03.Web前端/01.Vue.js/21.异步组件.html">
+            
+                <a href="../03.Web前端/01.Vue.js/21.异步组件.html">
+            
+                    
+                    21.异步组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.22" data-path="../03.Web前端/01.Vue.js/22.组合式API.html">
+            
+                <a href="../03.Web前端/01.Vue.js/22.组合式API.html">
+            
+                    
+                    22.组合式API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" >
+            
+                <span>
+            
+                    
+                    99.其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.3.1" data-path="../03.Web前端/99.其他/01.使用Vuex做Echarts数据当页面初始化后如何更新dom.html">
+            
+                <a href="../03.Web前端/99.其他/01.使用Vuex做Echarts数据当页面初始化后如何更新dom.html">
+            
+                    
+                    01.使用Vuex做Echarts数据当页面初始化后如何更新dom
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    05.移动安全
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../05.移动安全/00.Android扫盲.html">
+            
+                <a href="../../05.移动安全/00.Android扫盲.html">
+            
+                    
+                    00.Android扫盲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../05.移动安全/01.安卓ROOT抓包及绕过SSLPinning.html">
+            
+                <a href="../../05.移动安全/01.安卓ROOT抓包及绕过SSLPinning.html">
+            
+                    
+                    01.安卓ROOT抓包及绕过SSLPinning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../05.移动安全/02.IOS抓包及绕过SSL.html">
+            
+                <a href="../../05.移动安全/02.IOS抓包及绕过SSL.html">
+            
+                    
+                    02.IOS抓包及绕过SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../05.移动安全/03.Pixel3刷机.html">
+            
+                <a href="../../05.移动安全/03.Pixel3刷机.html">
+            
+                    
+                    03.Pixel3刷机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../05.移动安全/04.HTTP单向验证-双向验证解释.html">
+            
+                <a href="../../05.移动安全/04.HTTP单向验证-双向验证解释.html">
+            
+                    
+                    04.HTTP单向验证-双向验证解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../05.移动安全/05.低版本安卓安装好apk无法打开情况分析.html">
+            
+                <a href="../../05.移动安全/05.低版本安卓安装好apk无法打开情况分析.html">
+            
+                    
+                    05.低版本安卓安装好apk无法打开情况分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../../05.移动安全/06.获取微信小程序源码.html">
+            
+                <a href="../../05.移动安全/06.获取微信小程序源码.html">
+            
+                    
+                    06.获取微信小程序源码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../../05.移动安全/07.证书双向验证抓包.html">
+            
+                <a href="../../05.移动安全/07.证书双向验证抓包.html">
+            
+                    
+                    07.证书双向验证抓包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../../05.移动安全/08.Xserver.html">
+            
+                <a href="../../05.移动安全/08.Xserver.html">
+            
+                    
+                    08.Xserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../../友情链接.html">
+            
+                <a href="../../../友情链接.html">
+            
+                    
+                    友情链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+        </nav>
+        
+        
+    </div>
+
+    <!-- Content nav -->
+    <div class="book-anchor">
+        <div class="book-anchor-title">ON THIS PAGE</div>
+        <div class="book-anchor-body">
+
+        </div>
+    </div>
+
+    <div class="book-body">
+        
+        <div class="body-inner">
+            
+            
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >11.Python asyncio</a>
+    </h1>
+</div>
+
+
+
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                    <section class="normal markdown-section">
+                        
+                        <h3 id="python-asyncio">Python Asyncio</h3>
+<p><a href="https://www.cnblogs.com/zhaof/p/8490045.html" target="_blank">&#x53C2;&#x8003;&#x6587;&#x6863;</a></p>
+<p>Asyncio&#x662F;&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x5F02;&#x6B65;&#x7F51;&#x7EDC;&#x64CD;&#x4F5C;&#xFF0C;&#x5E76;&#x53D1;&#xFF0C;&#x534F;&#x7A0B;</p>
+<p>Asyncio&#x5173;&#x952E;&#x5B57;</p>
+<ul>
+<li>event_loop &#x4E8B;&#x4EF6;&#x5FAA;&#x73AF; &#x7A0B;&#x5E8F;&#x5F00;&#x542F;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x961F;&#x5217;&#xFF0C;&#x628A;&#x4E00;&#x4E9B;&#x51FD;&#x6570;&#x6CE8;&#x518C;&#x5230;&#x4E8B;&#x4EF6;&#x961F;&#x5217;&#x4E2D;&#xFF0C;&#x5F53;&#x6EE1;&#x8DB3;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x8C03;&#x7528;&#x76F8;&#x5E94;&#x7684;&#x534F;&#x7A0B;&#x51FD;&#x6570;</li>
+<li>coroutine &#x534F;&#x7A0B; &#x534F;&#x7A0B;&#x5BF9;&#x8C61;&#xFF0C;&#x6307;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;<code>async</code>&#x5173;&#x952E;&#x5B57;&#x5B9A;&#x4E49;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5F53;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x4E0D;&#x4F1A;&#x7ACB;&#x5373;&#x6267;&#x884C;&#x51FD;&#x6570;&#xFF0C;&#x800C;&#x662F;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x534F;&#x7A0B;&#x5BF9;&#x8C61;&#x3002;&#x534F;&#x7A0B;&#x5BF9;&#x8C61;&#x9700;&#x8981;&#x6CE8;&#x518C;&#x5230;&#x4E8B;&#x4EF6;&#x961F;&#x5217;&#x4E2D;&#xFF0C;&#x7531;&#x4E8B;&#x4EF6;&#x961F;&#x5217;&#x8C03;&#x7528;</li>
+<li>task &#x4EFB;&#x52A1; &#x4E00;&#x4E2A;&#x534F;&#x7A0B;&#x5BF9;&#x8C61;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x539F;&#x751F;&#x53EF;&#x4EE5;&#x6302;&#x8D77;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x4EFB;&#x52A1;&#x5219;&#x662F;&#x5BF9;&#x534F;&#x7A0B;&#x8FDB;&#x4E00;&#x6B65;&#x5C01;&#x88C5;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x4EFB;&#x52A1;&#x7684;&#x5404;&#x79CD;&#x72B6;&#x6001;</li>
+<li>future &#x4EE3;&#x8868;&#x5C06;&#x6765;&#x6267;&#x884C;&#x6216;&#x6CA1;&#x6709;&#x6267;&#x884C;&#x7684;&#x7684;&#x4EFB;&#x52A1;&#x7ED3;&#x679C;&#xFF0C;&#x5B83;&#x4E0E;task&#x6CA1;&#x6709;&#x672C;&#x8D28;&#x4E0A;&#x7684;&#x533A;&#x522B;</li>
+<li>async/await &#x5173;&#x952E;&#x5B57;&#xFF0C;python3.5+&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x534F;&#x7A0B;&#x7684;&#x5173;&#x952E;&#x5B57;&#xFF0C;async&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x534F;&#x7A0B;&#xFF0C;await&#x7528;&#x4E8E;&#x6302;&#x8D77;&#x963B;&#x585E;&#x5F02;&#x6B65;&#x8C03;&#x7528;&#x63A5;&#x53E3;</li>
+</ul>
+<h3 id="&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x534F;&#x7A0B;">&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x534F;&#x7A0B;</h3>
+<p>&#x4F7F;&#x7528;<code>async</code>&#x5173;&#x952E;&#x5B57;&#x5B9A;&#x4E49;&#x534F;&#x7A0B;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> time <span class="token keyword">import</span> time
+<span class="token keyword">import</span> asyncio
+
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;i&apos;m coroutine&quot;</span><span class="token punctuation">)</span>
+
+start <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+coroutine <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># &#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;loop</span>
+loop <span class="token operator">=</span> asyncio<span class="token punctuation">.</span>get_event_loop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># &#x5C06;&#x534F;&#x7A0B;&#x52A0;&#x5165;&#x5230;&#x4E8B;&#x4EF6;&#x961F;&#x5217;&#x4E2D;</span>
+loop<span class="token punctuation">.</span>run_until_complete<span class="token punctuation">(</span>coroutine<span class="token punctuation">)</span>
+end <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;Time:{}&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>end<span class="token operator">-</span>start<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p><code>async</code>&#x5173;&#x952E;&#x5B57;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x534F;&#x7A0B;&#xFF0C;&#x4F7F;&#x7528;<code>get_event_loop()</code>&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x4E3B;&#x7EBF;&#x7A0B;&#x7684;&#x4E8B;&#x4EF6;loop&#xFF1B;&#x518D;&#x4F7F;&#x7528;<code>run_until_complete(coroutine)</code>&#x5C06;&#x534F;&#x7A0B;&#x6CE8;&#x518C;&#x5230;&#x4E8B;&#x4EF6;&#x961F;&#x5217;&#x4E2D;&#xFF0C;&#x5E76;&#x542F;&#x7528;&#x4E8B;&#x4EF6;&#x8F6E;&#x5FAA;&#x3002;</p>
+<h3 id="&#x521B;&#x5EFA;task">&#x521B;&#x5EFA;task</h3>
+<p>&#x534F;&#x7A0B;&#x5BF9;&#x8C61;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#xFF0C;&#x5F53;&#x6CE8;&#x518C;&#x5230;&#x4E8B;&#x4EF6;&#x961F;&#x5217;&#x4E2D;&#xFF0C;&#x5176;&#x5B9E;&#x662F;<code>run_until_complete(coroutine)</code>&#x5C06;&#x534F;&#x7A0B;&#x5C01;&#x88C5;&#x6210;&#x4E00;&#x4E2A;task&#x4EFB;&#x52A1;&#xFF0C;&#x7528;&#x4E8E;&#x4FDD;&#x5B58;&#x534F;&#x7A0B;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x4EE5;&#x53CA;&#x672A;&#x6765;&#x83B7;&#x53D6;&#x534F;&#x7A0B;&#x7ED3;&#x679C;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> time <span class="token keyword">import</span> time
+<span class="token keyword">import</span> asyncio
+
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;i&apos;m coroutine&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;return i&apos;m coroutine&quot;</span>
+
+start <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+coroutine <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x4E3B;&#x7EBF;&#x7A0B;&#x7684;&#x4E8B;&#x4EF6;&#x8F6E;&#x5FAA;&#x961F;&#x5217;</span>
+loop <span class="token operator">=</span> asyncio<span class="token punctuation">.</span>get_event_loop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># &#x521B;&#x5EFA;&#x4EFB;&#x52A1;</span>
+task <span class="token operator">=</span> loop<span class="token punctuation">.</span>create_task<span class="token punctuation">(</span>coroutine<span class="token punctuation">)</span>
+<span class="token comment"># &#x6267;&#x884C;&#x4EFB;&#x52A1;</span>
+loop<span class="token punctuation">.</span>run_until_complete<span class="token punctuation">(</span>task<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>task<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>task<span class="token punctuation">.</span>result<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+end <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;it takes %d seconds&apos;</span> <span class="token operator">%</span> <span class="token punctuation">(</span>end<span class="token operator">-</span>start<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x521B;&#x5EFA;task&#x540E;&#xFF0C;&#x5728;task&#x52A0;&#x5165;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x4E4B;&#x524D;&#x4E3A;pending&#x72B6;&#x6001;&#xFF0C;&#x5F53;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x72B6;&#x6001;&#x4E3A;finished</p>
+<p>&#x5173;&#x4E8E;&#x4E0A;&#x9762;&#x901A;&#x8FC7;loop.create_task(coroutine)&#x521B;&#x5EFA;task,&#x540C;&#x6837;&#x7684;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; asyncio.ensure_future(coroutine)&#x521B;&#x5EFA;task</p>
+<h3 id="&#x7ED1;&#x5B9A;&#x56DE;&#x8C03;">&#x7ED1;&#x5B9A;&#x56DE;&#x8C03;</h3>
+<p>&#x7ED1;&#x5B9A;&#x56DE;&#x8C03;&#xFF0C;&#x5728;task&#x6267;&#x884C;&#x5B8C;&#x6210;&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x6267;&#x884C;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x56DE;&#x8C03;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;future&#x5BF9;&#x8C61;&#xFF0C;&#x901A;&#x8FC7;&#x8BE5;&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x534F;&#x7A0B;&#x8FD4;&#x56DE;&#x503C; </p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> time <span class="token keyword">import</span> time
+<span class="token keyword">import</span> asyncio
+
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;i&apos;m coroutine&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;return i&apos;m coroutine&quot;</span>
+
+
+<span class="token keyword">def</span> <span class="token function">callback</span><span class="token punctuation">(</span>future<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;result is {}&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>future<span class="token punctuation">.</span>result<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+start <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+coroutine <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x4E3B;&#x7EBF;&#x7A0B;&#x7684;&#x4E8B;&#x4EF6;&#x8F6E;&#x5FAA;&#x961F;&#x5217;</span>
+loop <span class="token operator">=</span> asyncio<span class="token punctuation">.</span>get_event_loop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># &#x521B;&#x5EFA;&#x4EFB;&#x52A1;</span>
+task <span class="token operator">=</span> loop<span class="token punctuation">.</span>create_task<span class="token punctuation">(</span>coroutine<span class="token punctuation">)</span>
+<span class="token comment"># &#x7ED1;&#x5B9A;&#x56DE;&#x8C03;&#x51FD;&#x6570;</span>
+task<span class="token punctuation">.</span>add_done_callback<span class="token punctuation">(</span>callback<span class="token punctuation">)</span>
+<span class="token comment"># &#x6267;&#x884C;&#x4EFB;&#x52A1;</span>
+loop<span class="token punctuation">.</span>run_until_complete<span class="token punctuation">(</span>task<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>task<span class="token punctuation">)</span>
+
+end <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;it takes %d seconds&apos;</span> <span class="token operator">%</span> <span class="token punctuation">(</span>end<span class="token operator">-</span>start<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x901A;&#x8FC7;add_done_callback&#x65B9;&#x6CD5;&#x7ED9;task&#x4EFB;&#x52A1;&#x6DFB;&#x52A0;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5F53;task&#xFF08;&#x4E5F;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;coroutine&#xFF09;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x7684;&#x65F6;&#x5019;,&#x5C31;&#x4F1A;&#x8C03;&#x7528;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x5E76;&#x901A;&#x8FC7;&#x53C2;&#x6570;future&#x83B7;&#x53D6;&#x534F;&#x7A0B;&#x6267;&#x884C;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x521B;&#x5EFA; &#x7684;task&#x548C;&#x56DE;&#x8C03;&#x91CC;&#x7684;future&#x5BF9;&#x8C61;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</p>
+<h3 id="&#x963B;&#x585E;&#x548C;await">&#x963B;&#x585E;&#x548C;await</h3>
+<p>&#x4F7F;&#x7528;<code>async</code>&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x534F;&#x7A0B;&#xFF0C;&#x4F7F;&#x7528;await&#x53EF;&#x4EE5;&#x9488;&#x5BF9;&#x8017;&#x65F6;&#x64CD;&#x4F5C;&#x8FDB;&#x884C;&#x6302;&#x8D77;&#xFF0C;&#x5C31;&#x50CF;&#x751F;&#x6210;&#x5668;&#x7684;<code>yield</code>&#xFF0C;&#x51FD;&#x6570;&#x8BA9;&#x51FA;&#x63A7;&#x5236;&#x6743;&#x3002;&#x534F;&#x7A0B;&#x9047;&#x5230;<code>await</code>&#xFF0C;&#x4E8B;&#x4EF6;&#x8F6E;&#x5FAA;&#x4F1A;&#x6302;&#x8D77;&#x8BE5;&#x534F;&#x7A0B;&#xFF0C;&#x6267;&#x884C;&#x522B;&#x7684;&#x534F;&#x7A0B;&#xFF0C;&#x76F4;&#x5230;&#x534F;&#x7A0B;&#x4E5F;&#x6302;&#x8D77;&#x6216;&#x8005;&#x6267;&#x884C;&#x5B8C;&#x6210;&#xFF0C;&#x518D;&#x8FDB;&#x884C;&#x4E0B;&#x4E00;&#x4E2A;&#x534F;&#x7A0B;&#x7684;&#x6267;&#x884C;</p>
+<p>&#x8017;&#x65F6;&#x7684;&#x4E00;&#x822C;&#x662F;IO&#x64CD;&#x4F5C;&#xFF0C;&#x4F8B;&#x5982;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#xFF0C;&#x6587;&#x4EF6;&#x8BFB;&#x53D6;&#x3002;&#x6A21;&#x62DF;IO&#x64CD;&#x4F5C;&#xFF0C;&#x4F7F;&#x7528;<code>async.sleep()</code>&#x6A21;&#x62DF;IO&#x64CD;&#x4F5C;&#xFF0C;&#x534F;&#x7A0B;&#x7684;&#x76EE;&#x7684;&#x4E5F;&#x662F;&#x8BA9;IO&#x64CD;&#x4F5C;&#x5F02;&#x6B65;&#x5316;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> time <span class="token keyword">import</span> time
+<span class="token keyword">import</span> asyncio
+
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;i&apos;m coroutine&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">await</span> asyncio<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;return i&apos;m coroutine&quot;</span>
+
+
+<span class="token comment"># def callback(future):</span>
+<span class="token comment">#     print(&apos;result is {}&apos;.format(future.result()))</span>
+
+
+start <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+coroutine <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x4E3B;&#x7EBF;&#x7A0B;&#x7684;&#x4E8B;&#x4EF6;&#x8F6E;&#x5FAA;&#x961F;&#x5217;</span>
+loop <span class="token operator">=</span> asyncio<span class="token punctuation">.</span>get_event_loop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># &#x521B;&#x5EFA;&#x4EFB;&#x52A1;</span>
+task <span class="token operator">=</span> loop<span class="token punctuation">.</span>create_task<span class="token punctuation">(</span>coroutine<span class="token punctuation">)</span>
+<span class="token comment"># &#x6267;&#x884C;&#x4EFB;&#x52A1;</span>
+loop<span class="token punctuation">.</span>run_until_complete<span class="token punctuation">(</span>task<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>task<span class="token punctuation">.</span>result<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+end <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;it takes %d seconds&apos;</span> <span class="token operator">%</span> <span class="token punctuation">(</span>end<span class="token operator">-</span>start<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="&#x5E76;&#x53D1;&#x548C;&#x5E76;&#x884C;">&#x5E76;&#x53D1;&#x548C;&#x5E76;&#x884C;</h3>
+<p>&#x5E76;&#x53D1;&#x662F;&#x6307;&#x5177;&#x6709;&#x591A;&#x4E2A;&#x6D3B;&#x52A8;&#x7684;&#x7CFB;&#x7EDF;</p>
+<p>&#x5E76;&#x884C;&#x662F;&#x6307;&#x7528;&#x5E76;&#x53D1;&#x4F7F;&#x4E00;&#x4E2A;&#x7CFB;&#x7EDF;&#x8FD0;&#x884C;&#x5F97;&#x66F4;&#x5FEB;&#xFF0C;&#x5E76;&#x884C;&#x53EF;&#x4EE5;&#x5728;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x591A;&#x4E2A;&#x62BD;&#x8C61;&#x5C42;&#x6B21;&#x8FDB;&#x884C;&#x8FD0;&#x7528;</p>
+<p>&#x6240;&#x4EE5;&#x5E76;&#x884C;&#x901A;&#x5E38;&#x662F;&#x6307;&#x6709;&#x591A;&#x4E2A;&#x4EFB;&#x52A1;&#x540C;&#x65F6;&#x8FDB;&#x884C;&#xFF0C;&#x5E76;&#x884C;&#x5219;&#x662F;&#x5728;&#x540C;&#x4E00;&#x65F6;&#x523B;&#x6709;&#x591A;&#x4E2A;&#x4EFB;&#x52A1;&#x540C;&#x65F6;&#x8FDB;&#x884C;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> time <span class="token keyword">import</span> time
+<span class="token keyword">import</span> asyncio
+
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;i&apos;m coroutine{}&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">await</span> asyncio<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;return i&apos;m coroutine{}&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+
+
+<span class="token comment"># def callback(future):</span>
+<span class="token comment">#     print(&apos;result is {}&apos;.format(future.result()))</span>
+
+
+start <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+coroutine <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+coroutine1 <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+coroutine2 <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+<span class="token comment"># &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x4E3B;&#x7EBF;&#x7A0B;&#x7684;&#x4E8B;&#x4EF6;&#x8F6E;&#x5FAA;&#x961F;&#x5217;</span>
+loop <span class="token operator">=</span> asyncio<span class="token punctuation">.</span>get_event_loop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># &#x521B;&#x5EFA;&#x4EFB;&#x52A1;&#x5217;&#x8868;</span>
+tasks <span class="token operator">=</span> <span class="token punctuation">[</span>asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>coroutine<span class="token punctuation">)</span><span class="token punctuation">,</span> asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>
+    coroutine1<span class="token punctuation">)</span><span class="token punctuation">,</span> asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>coroutine2<span class="token punctuation">)</span><span class="token punctuation">]</span>
+<span class="token comment"># &#x6267;&#x884C;&#x4EFB;&#x52A1;</span>
+loop<span class="token punctuation">.</span>run_until_complete<span class="token punctuation">(</span>asyncio<span class="token punctuation">.</span>wait<span class="token punctuation">(</span>tasks<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> task <span class="token keyword">in</span> tasks<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;result is {}&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>task<span class="token punctuation">.</span>result<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+end <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;it takes %d seconds&apos;</span> <span class="token operator">%</span> <span class="token punctuation">(</span>end<span class="token operator">-</span>start<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<pre class="language-"><code>&#x8FD0;&#x884C;&#x7ED3;&#x679C;
+i&apos;m coroutine1
+i&apos;m coroutine2
+i&apos;m coroutine3
+result is return i&apos;m coroutine1
+result is return i&apos;m coroutine2
+result is return i&apos;m coroutine3
+it takes 2 seconds
+</code></pre><p>&#x603B;&#x5171;&#x65F6;&#x95F4;&#x4E3A;2s&#x3002;2s&#x963B;&#x585E;&#x65F6;&#x95F4;&#xFF0C;&#x6240;&#x6709;&#x534F;&#x7A0B;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x540C;&#x6B65;&#x6267;&#x884C;&#xFF0C;&#x81F3;&#x5C11;&#x9700;&#x8981;7s&#x3002;&#x6B64;&#x65F6;&#x8FD0;&#x7528;<code>asyncio</code>&#x6A21;&#x5757;&#x5B9E;&#x73B0;&#x4E86;&#x5E76;&#x53D1;&#xFF0C;<code>asyncio.wait(tasks)</code>&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>async.gather(*tasks)</code>&#xFF0C;&#x524D;&#x8005;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#xFF0C;&#x540E;&#x8005;&#x63A5;&#x6536;&#x4E00;&#x5806;task</p>
+<h3 id="&#x534F;&#x7A0B;&#x5D4C;&#x5957;">&#x534F;&#x7A0B;&#x5D4C;&#x5957;</h3>
+<p>&#x4F7F;&#x7528;async&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x534F;&#x7A0B;&#xFF0C;&#x534F;&#x7A0B;&#x7528;&#x4E8E;&#x8017;&#x65F6;&#x7684;io&#x64CD;&#x4F5C;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x5C01;&#x88C5;&#x66F4;&#x591A;&#x7684;io&#x64CD;&#x4F5C;&#x8FC7;&#x7A0B;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x5B9E;&#x73B0;&#x4E86;&#x5D4C;&#x5957;&#x7684;&#x534F;&#x7A0B;&#xFF0C;&#x5373;&#x4E00;&#x4E2A;&#x534F;&#x7A0B;&#x4E2D;await&#x4E86;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x534F;&#x7A0B;&#xFF0C;&#x5982;&#x6B64;&#x8FDE;&#x63A5;&#x8D77;&#x6765;</p>
+<h4 id="&#x5355;&#x4EFB;&#x52A1;">&#x5355;&#x4EFB;&#x52A1;</h4>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> time <span class="token keyword">import</span> time
+<span class="token keyword">import</span> asyncio
+
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;i&apos;m coroutine{}&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">await</span> asyncio<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;return i&apos;m coroutine{}&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+
+
+<span class="token comment"># def callback(future):</span>
+<span class="token comment">#     print(&apos;result is {}&apos;.format(future.result()))</span>
+
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    coroutine <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    result <span class="token operator">=</span> <span class="token keyword">await</span> coroutine
+    <span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+start <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+loop <span class="token operator">=</span> asyncio<span class="token punctuation">.</span>get_event_loop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+loop<span class="token punctuation">.</span>run_until_complete<span class="token punctuation">(</span>main<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+end <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;time is {}&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>end<span class="token operator">-</span>start<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<pre class="language-"><code>&#x8FD0;&#x884C;&#x7ED3;&#x679C;
+i&apos;m coroutine1
+return i&apos;m coroutine1
+time is 2.015313148498535
+</code></pre><p>&#x5F53;&#x5728;main&#x8FD9;&#x4E2A;&#x534F;&#x6210;&#x91CC;&#xFF0C;&#x7B49;&#x5F85;&#x534F;&#x7A0B;<code>f()</code>&#x7684;<code>return</code>&#x7ED3;&#x679C;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>await f(1)</code>&#x7B49;&#x5F85;&#x6267;&#x884C;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x8D4B;&#x503C;&#x7ED9;<code>result</code></p>
+<h4 id="&#x591A;&#x4EFB;&#x52A1;">&#x591A;&#x4EFB;&#x52A1;</h4>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> time <span class="token keyword">import</span> time
+<span class="token keyword">import</span> asyncio
+
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;i&apos;m coroutine{}&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">await</span> asyncio<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;return i&apos;m coroutine{}&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+
+
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    coroutine <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    coroutine1 <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    coroutine2 <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+    tasks <span class="token operator">=</span> <span class="token punctuation">[</span>asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>coroutine<span class="token punctuation">)</span><span class="token punctuation">,</span> asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>
+        coroutine1<span class="token punctuation">)</span><span class="token punctuation">,</span> asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>coroutine2<span class="token punctuation">)</span><span class="token punctuation">]</span>
+    dones<span class="token punctuation">,</span> pendings <span class="token operator">=</span> <span class="token keyword">await</span> asyncio<span class="token punctuation">.</span>wait<span class="token punctuation">(</span>tasks<span class="token punctuation">)</span>
+    <span class="token keyword">for</span> result <span class="token keyword">in</span> dones<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>result<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+start <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+loop <span class="token operator">=</span> asyncio<span class="token punctuation">.</span>get_event_loop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+loop<span class="token punctuation">.</span>run_until_complete<span class="token punctuation">(</span>main<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+end <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;time is {}&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>end<span class="token operator">-</span>start<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x591A;&#x4EFB;&#x52A1;&#x4E2D;&#xFF0C;&#x8981;&#x4F7F;&#x7528;<code>asyncio.wait()</code>&#x5E76;&#x53D1;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#xFF0C;&#x5F53;&#x534F;&#x7A0B;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x4F7F;&#x7528;<code>dones</code>&#xFF0C;<code>pendings</code>&#xFF0C;<code>dones</code>&#xFF0C;<code>pendings</code>&#x7C7B;&#x578B;&#x662F;&#x96C6;&#x5408;&#xFF0C;&#x82E5;&#x662F;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5143;&#x7EC4;&#xFF0C;&#x5143;&#x7EC4;&#x4E2D;&#x6CA1;&#x6709;<code>result()</code>&#x65B9;&#x6CD5;</p>
+<pre class="language-"><code>&#x8FD0;&#x884C;&#x7ED3;&#x679C;
+i&apos;m coroutine1
+i&apos;m coroutine2
+i&apos;m coroutine3
+return i&apos;m coroutine1
+return i&apos;m coroutine2
+return i&apos;m coroutine3
+time is 2.012080430984497
+</code></pre><p>&#x4F7F;&#x7528;<code>asyncio.gather(*tasks)</code>&#x4F1A;&#x5C06;&#x7ED3;&#x679C;&#x4FDD;&#x5B58;&#x81F3;&#x4E00;&#x4E2A;<code>List</code>&#x4E2D;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> time <span class="token keyword">import</span> time
+<span class="token keyword">import</span> asyncio
+
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;i&apos;m coroutine{}&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">await</span> asyncio<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;return i&apos;m coroutine{}&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+
+
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    coroutine <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    coroutine1 <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    coroutine2 <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+    tasks <span class="token operator">=</span> <span class="token punctuation">[</span>asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>coroutine<span class="token punctuation">)</span><span class="token punctuation">,</span> asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>
+        coroutine1<span class="token punctuation">)</span><span class="token punctuation">,</span> asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>coroutine2<span class="token punctuation">)</span><span class="token punctuation">]</span>
+    dones<span class="token punctuation">,</span> pendings <span class="token operator">=</span> <span class="token keyword">await</span> asyncio<span class="token punctuation">.</span>wait<span class="token punctuation">(</span>tasks<span class="token punctuation">)</span>
+    <span class="token keyword">for</span> result <span class="token keyword">in</span> dones<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>result<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+start <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+loop <span class="token operator">=</span> asyncio<span class="token punctuation">.</span>get_event_loop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+loop<span class="token punctuation">.</span>run_until_complete<span class="token punctuation">(</span>main<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+end <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;time is {}&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>end<span class="token operator">-</span>start<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<pre class="language-"><code>&#x8FD0;&#x884C;&#x7ED3;&#x679C;
+i&apos;m coroutine1
+i&apos;m coroutine2
+i&apos;m coroutine3
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span> <span class="token attr-name">&apos;list&apos;</span><span class="token punctuation">&gt;</span></span> [&quot;return i&apos;m coroutine1&quot;, &quot;return i&apos;m coroutine2&quot;, &quot;return i&apos;m coroutine3&quot;]
+return i&apos;m coroutine1
+return i&apos;m coroutine2
+return i&apos;m coroutine3
+time is 2.0033509731292725
+</code></pre><p>&#x4E0D;&#x5728;main&#x534F;&#x7A0B;&#x51FD;&#x6570;&#x91CC;&#x5904;&#x7406;&#x7ED3;&#x679C;&#xFF0C;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;await&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x90A3;&#x4E48;&#x6700;&#x5916;&#x5C42;&#x7684;run_until_complete&#x5C06;&#x4F1A;&#x8FD4;&#x56DE;main&#x534F;&#x7A0B;&#x7684;&#x7ED3;&#x679C;&#x3002; &#x5C06;&#x4E0A;&#x8FF0;&#x7684;&#x4EE3;&#x7801;&#x66F4;&#x6539;&#x4E3A;&#xFF1A; </p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> time <span class="token keyword">import</span> time
+<span class="token keyword">import</span> asyncio
+
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;i&apos;m coroutine{}&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">await</span> asyncio<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;return i&apos;m coroutine{}&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    coroutine <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    coroutine1 <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    coroutine2 <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+    tasks <span class="token operator">=</span> <span class="token punctuation">[</span>asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>coroutine<span class="token punctuation">)</span><span class="token punctuation">,</span> asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>
+        coroutine1<span class="token punctuation">)</span><span class="token punctuation">,</span> asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>coroutine2<span class="token punctuation">)</span><span class="token punctuation">]</span>
+    <span class="token keyword">return</span> <span class="token keyword">await</span> asyncio<span class="token punctuation">.</span>gather<span class="token punctuation">(</span><span class="token operator">*</span>tasks<span class="token punctuation">)</span>
+start <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+loop <span class="token operator">=</span> asyncio<span class="token punctuation">.</span>get_event_loop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+results <span class="token operator">=</span> loop<span class="token punctuation">.</span>run_until_complete<span class="token punctuation">(</span>main<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> result <span class="token keyword">in</span> results<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+end <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;time is {}&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>end<span class="token operator">-</span>start<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<pre class="language-"><code>&#x8FD0;&#x884C;&#x7ED3;&#x679C;
+i&apos;m coroutine1
+i&apos;m coroutine2
+i&apos;m coroutine3
+return i&apos;m coroutine1
+return i&apos;m coroutine2
+return i&apos;m coroutine3
+time is 2.0101969242095947
+</code></pre><p>&#x6216;&#x8005;&#x4F7F;&#x7528;<code>asyncio.wait(tasks)</code>&#x5C06;&#x4EFB;&#x52A1;&#x6302;&#x8D77;&#xFF0C;&#x518D;&#x4ECE;&#x5DF2;&#x5B8C;&#x6210;&#x7684;&#x534F;&#x7A0B;&#x4E2D;&#x8BFB;&#x53D6;<code>result()</code>&#x503C;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> time <span class="token keyword">import</span> time
+<span class="token keyword">import</span> asyncio
+
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;i&apos;m coroutine{}&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">await</span> asyncio<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;return i&apos;m coroutine{}&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+
+
+<span class="token comment"># def callback(future):</span>
+<span class="token comment">#     print(&apos;result is {}&apos;.format(future.result()))</span>
+
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    coroutine <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    coroutine1 <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    coroutine2 <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+    tasks <span class="token operator">=</span> <span class="token punctuation">[</span>asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>coroutine<span class="token punctuation">)</span><span class="token punctuation">,</span> asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>
+        coroutine1<span class="token punctuation">)</span><span class="token punctuation">,</span> asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>coroutine2<span class="token punctuation">)</span><span class="token punctuation">]</span>
+    <span class="token keyword">return</span> <span class="token keyword">await</span> asyncio<span class="token punctuation">.</span>wait<span class="token punctuation">(</span>tasks<span class="token punctuation">)</span>
+
+start <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+loop <span class="token operator">=</span> asyncio<span class="token punctuation">.</span>get_event_loop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+dones<span class="token punctuation">,</span> pendings <span class="token operator">=</span> loop<span class="token punctuation">.</span>run_until_complete<span class="token punctuation">(</span>main<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> result <span class="token keyword">in</span> dones<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>result<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+end <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;time is {}&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>end<span class="token operator">-</span>start<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>asyncio.as_computed</code></p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> time <span class="token keyword">import</span> time
+<span class="token keyword">import</span> asyncio
+
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;i&apos;m coroutine{}&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">await</span> asyncio<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;return i&apos;m coroutine{}&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+
+
+<span class="token comment"># def callback(future):</span>
+<span class="token comment">#     print(&apos;result is {}&apos;.format(future.result()))</span>
+
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    coroutine <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    coroutine1 <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    coroutine2 <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+    tasks <span class="token operator">=</span> <span class="token punctuation">[</span>asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>coroutine<span class="token punctuation">)</span><span class="token punctuation">,</span> asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>
+        coroutine1<span class="token punctuation">)</span><span class="token punctuation">,</span> asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>coroutine2<span class="token punctuation">)</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> task <span class="token keyword">in</span> asyncio<span class="token punctuation">.</span>as_completed<span class="token punctuation">(</span>tasks<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token keyword">await</span> task<span class="token punctuation">)</span>
+
+start <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+loop <span class="token operator">=</span> asyncio<span class="token punctuation">.</span>get_event_loop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+loop<span class="token punctuation">.</span>run_until_complete<span class="token punctuation">(</span>main<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+end <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;time is {}&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>end<span class="token operator">-</span>start<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="&#x534F;&#x7A0B;&#x7684;&#x505C;&#x6B62;">&#x534F;&#x7A0B;&#x7684;&#x505C;&#x6B62;</h3>
+<p> future&#x5BF9;&#x8C61;&#x6709;&#x51E0;&#x4E2A;&#x72B6;&#x6001;&#xFF1A; </p>
+<ul>
+<li>Pending</li>
+<li>Running</li>
+<li>Done</li>
+<li>Cacelled </li>
+</ul>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> time <span class="token keyword">import</span> time
+<span class="token keyword">import</span> asyncio
+
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;i&apos;m coroutine{}&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">await</span> asyncio<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;return i&apos;m coroutine{}&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+
+
+<span class="token comment"># def callback(future):</span>
+<span class="token comment">#     print(&apos;result is {}&apos;.format(future.result()))</span>
+
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    coroutine <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    coroutine1 <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    coroutine2 <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+    tasks <span class="token operator">=</span> <span class="token punctuation">[</span>asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>coroutine<span class="token punctuation">)</span><span class="token punctuation">,</span> asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>
+        coroutine1<span class="token punctuation">)</span><span class="token punctuation">,</span> asyncio<span class="token punctuation">.</span>ensure_future<span class="token punctuation">(</span>coroutine2<span class="token punctuation">)</span><span class="token punctuation">]</span>
+    <span class="token keyword">return</span> <span class="token keyword">await</span> asyncio<span class="token punctuation">.</span>gather<span class="token punctuation">(</span><span class="token operator">*</span>tasks<span class="token punctuation">)</span>
+<span class="token keyword">try</span><span class="token punctuation">:</span>
+    start <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    loop <span class="token operator">=</span> asyncio<span class="token punctuation">.</span>get_event_loop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    result <span class="token operator">=</span> loop<span class="token punctuation">.</span>run_until_complete<span class="token punctuation">(</span>main<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> item <span class="token keyword">in</span> result<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+    end <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;time is {}&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>end<span class="token operator">-</span>start<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">except</span> KeyboardInterrupt<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>asyncio<span class="token punctuation">.</span>Task<span class="token punctuation">.</span>all_tasks<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> item <span class="token keyword">in</span> asyncio<span class="token punctuation">.</span>Task<span class="token punctuation">.</span>all_tasks<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>cancel<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    loop<span class="token punctuation">.</span>stop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    loop<span class="token punctuation">.</span>run_forever<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">finally</span><span class="token punctuation">:</span>
+    loop<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x542F;&#x52A8;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x4E4B;&#x540E;&#xFF0C;&#x9A6C;&#x4E0A;ctrl+c&#xFF0C;&#x4F1A;&#x89E6;&#x53D1;run_until_complete&#x7684;&#x6267;&#x884C;&#x5F02;&#x5E38; KeyBorardInterrupt&#x3002;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x5FAA;&#x73AF;asyncio.Task&#x53D6;&#x6D88;future&#x3002;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8F93;&#x51FA;&#x5982;&#x4E0B;&#xFF1A; </p>
+<pre class="language-"><code>&#x8FD0;&#x884C;&#x7ED3;&#x679C;
+i&apos;m coroutine1
+i&apos;m coroutine2
+i&apos;m coroutine3
+{<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Task</span> <span class="token attr-name">pending</span> <span class="token attr-name">coro</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>&lt;main()</span> <span class="token attr-name">running</span> <span class="token attr-name">at</span> <span class="token attr-name"><span class="token namespace">app.py:</span>29</span><span class="token punctuation">&gt;</span></span> wait_for=<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>_GatheringFuture</span> <span class="token attr-name">pending</span> <span class="token attr-name">cb</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>[&lt;TaskWakeupMethWrapper</span> <span class="token attr-name">object</span> <span class="token attr-name">at</span> <span class="token attr-name">0x0000014E4532CD98</span><span class="token punctuation">&gt;</span></span>()]&gt;&gt;, <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Task</span> <span class="token attr-name">finished</span> <span class="token attr-name">coro</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>&lt;f()</span> <span class="token attr-name">done,</span> <span class="token attr-name">defined</span> <span class="token attr-name">at</span> <span class="token attr-name"><span class="token namespace">app.py:</span>13</span><span class="token punctuation">&gt;</span></span> result=&quot;return i&apos;m coroutine1&quot;&gt;, <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Task</span> <span class="token attr-name">pending</span> <span class="token attr-name">coro</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>&lt;f()</span> <span class="token attr-name">running</span> <span class="token attr-name">at</span> <span class="token attr-name"><span class="token namespace">app.py:</span>15</span><span class="token punctuation">&gt;</span></span> wait_for=<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Future</span> <span class="token attr-name">pending</span> <span class="token attr-name">cb</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>[&lt;TaskWakeupMethWrapper</span> <span class="token attr-name">object</span> <span class="token attr-name">at</span> <span class="token attr-name">0x0000014E4533F4F8</span><span class="token punctuation">&gt;</span></span>()]&gt; cb=[gather.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>locals</span><span class="token punctuation">&gt;</span></span>._done_callback() at C:\Python3\lib\asyncio\tasks.py:691]&gt;, <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Task</span> <span class="token attr-name">pending</span> <span class="token attr-name">coro</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>&lt;f()</span> <span class="token attr-name">running</span> <span class="token attr-name">at</span> <span class="token attr-name"><span class="token namespace">app.py:</span>15</span><span class="token punctuation">&gt;</span></span> wait_for=<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Future</span> <span class="token attr-name">pending</span> <span class="token attr-name">cb</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>[&lt;TaskWakeupMethWrapper</span> <span class="token attr-name">object</span> <span class="token attr-name">at</span> <span class="token attr-name">0x0000014E4556E708</span><span class="token punctuation">&gt;</span></span>()]&gt; cb=[gather.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>locals</span><span class="token punctuation">&gt;</span></span>._done_callback() at C:\Python3\lib\asyncio\tasks.py:691]&gt;}
+True
+False
+True
+True
+</code></pre><p>True&#x8868;&#x793A;cannel&#x6210;&#x529F;&#xFF0C;loop stop&#x4E4B;&#x540E;&#x8FD8;&#x9700;&#x8981;&#x518D;&#x6B21;&#x5F00;&#x542F;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#xFF0C;&#x6700;&#x540E;&#x5728;close&#xFF0C;&#x4E0D;&#x7136;&#x8FD8;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;</p>
+<p>&#x5FAA;&#x73AF;task&#xFF0C;&#x9010;&#x4E2A;cancel&#x662F;&#x4E00;&#x79CD;&#x65B9;&#x6848;&#xFF0C;&#x53EF;&#x662F;&#x6B63;&#x5982;&#x4E0A;&#x9762;&#x6211;&#x4EEC;&#x628A;task&#x7684;&#x5217;&#x8868;&#x5C01;&#x88C5;&#x5728;main&#x51FD;&#x6570;&#x4E2D;&#xFF0C;main&#x51FD;&#x6570;&#x5916;&#x8FDB;&#x884C;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x7684;&#x8C03;&#x7528;&#x3002;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;main&#x76F8;&#x5F53;&#x4E8E;&#x6700;&#x5916;&#x51FA;&#x7684;&#x4E00;&#x4E2A;task&#xFF0C;&#x90A3;&#x4E48;&#x5904;&#x7406;&#x5305;&#x88C5;&#x7684;main&#x51FD;&#x6570;&#x5373;&#x53EF;&#x3002;</p>
+<h3 id="&#x4E0D;&#x540C;&#x7EBF;&#x7A0B;&#x7684;&#x4E8B;&#x4EF6;&#x8F6E;&#x5FAA;">&#x4E0D;&#x540C;&#x7EBF;&#x7A0B;&#x7684;&#x4E8B;&#x4EF6;&#x8F6E;&#x5FAA;</h3>
+<p>&#x5F88;&#x591A;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x7528;&#x4E8E;&#x6CE8;&#x518C;&#x534F;&#x7A0B;&#xFF0C;&#x800C;&#x6709;&#x7684;&#x534F;&#x7A0B;&#x9700;&#x8981;&#x52A8;&#x6001;&#x7684;&#x6DFB;&#x52A0;&#x5230;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x4E2D;&#x3002;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#x4F7F;&#x7528;&#x591A;&#x7EBF;&#x7A0B;&#x3002;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#xFF0C;&#x5728;&#x65B0;&#x7EBF;&#x7A0B;&#x4E2D;&#x542F;&#x52A8;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x3002;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x4E0D;&#x4F1A;&#x88AB;block&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> asyncio
+<span class="token keyword">from</span> threading <span class="token keyword">import</span> Thread
+<span class="token keyword">import</span> time
+
+
+<span class="token keyword">def</span> <span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">return</span> time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">def</span> <span class="token function">start_loop</span><span class="token punctuation">(</span>loop<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    asyncio<span class="token punctuation">.</span>set_event_loop<span class="token punctuation">(</span>loop<span class="token punctuation">)</span>
+    loop<span class="token punctuation">.</span>run_forever<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">def</span> <span class="token function">more_work</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;More work {}&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;Finished more work {}&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+start <span class="token operator">=</span> now<span class="token punctuation">(</span><span class="token punctuation">)</span>
+new_loop <span class="token operator">=</span> asyncio<span class="token punctuation">.</span>new_event_loop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+t <span class="token operator">=</span> Thread<span class="token punctuation">(</span>target<span class="token operator">=</span>start_loop<span class="token punctuation">,</span> args<span class="token operator">=</span><span class="token punctuation">(</span>new_loop<span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+t<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;TIME: {}&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> start<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+new_loop<span class="token punctuation">.</span>call_soon_threadsafe<span class="token punctuation">(</span>more_work<span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span>
+new_loop<span class="token punctuation">.</span>call_soon_threadsafe<span class="token punctuation">(</span>more_work<span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x542F;&#x52A8;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x4E4B;&#x540E;&#xFF0C;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x4E0D;&#x4F1A;&#x88AB;block&#xFF0C;&#x65B0;&#x7EBF;&#x7A0B;&#x4E2D;&#x4F1A;&#x6309;&#x7167;&#x987A;&#x5E8F;&#x6267;&#x884C;call_soon_threadsafe&#x65B9;&#x6CD5;&#x6CE8;&#x518C;&#x7684;more_work&#x65B9;&#x6CD5;&#xFF0C; &#x540E;&#x8005;&#x56E0;&#x4E3A;time.sleep&#x64CD;&#x4F5C;&#x662F;&#x540C;&#x6B65;&#x963B;&#x585E;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x8FD0;&#x884C;&#x5B8C;&#x6BD5;more_work&#x9700;&#x8981;&#x5927;&#x81F4;6 + 3 </p>
+<h3 id="&#x65B0;&#x7EBF;&#x7A0B;&#x534F;&#x7A0B;">&#x65B0;&#x7EBF;&#x7A0B;&#x534F;&#x7A0B;</h3>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> asyncio
+<span class="token keyword">import</span> time
+<span class="token keyword">from</span> threading <span class="token keyword">import</span> Thread
+
+now <span class="token operator">=</span> <span class="token keyword">lambda</span> <span class="token punctuation">:</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">def</span> <span class="token function">start_loop</span><span class="token punctuation">(</span>loop<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    asyncio<span class="token punctuation">.</span>set_event_loop<span class="token punctuation">(</span>loop<span class="token punctuation">)</span>
+    loop<span class="token punctuation">.</span>run_forever<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">do_some_work</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;Waiting {}&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">await</span> asyncio<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;Done after {}s&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+start <span class="token operator">=</span> now<span class="token punctuation">(</span><span class="token punctuation">)</span>
+new_loop <span class="token operator">=</span> asyncio<span class="token punctuation">.</span>new_event_loop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+t <span class="token operator">=</span> Thread<span class="token punctuation">(</span>target<span class="token operator">=</span>start_loop<span class="token punctuation">,</span> args<span class="token operator">=</span><span class="token punctuation">(</span>new_loop<span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+t<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;TIME: {}&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> start<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+asyncio<span class="token punctuation">.</span>run_coroutine_threadsafe<span class="token punctuation">(</span>do_some_work<span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">,</span> new_loop<span class="token punctuation">)</span>
+asyncio<span class="token punctuation">.</span>run_coroutine_threadsafe<span class="token punctuation">(</span>do_some_work<span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">,</span> new_loop<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x4E0A;&#x8FF0;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x4E3B;&#x7EBF;&#x7A0B;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;new_loop&#xFF0C;&#x7136;&#x540E;&#x5728;&#x53E6;&#x5916;&#x7684;&#x5B50;&#x7EBF;&#x7A0B;&#x4E2D;&#x5F00;&#x542F;&#x4E00;&#x4E2A;&#x65E0;&#x9650;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x3002; &#x4E3B;&#x7EBF;&#x7A0B;&#x901A;&#x8FC7;run_coroutine_threadsafe&#x65B0;&#x6CE8;&#x518C;&#x534F;&#x7A0B;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x6837;&#x5C31;&#x80FD;&#x5728;&#x5B50;&#x7EBF;&#x7A0B;&#x4E2D;&#x8FDB;&#x884C;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x7684;&#x5E76;&#x53D1;&#x64CD;&#x4F5C;&#xFF0C;&#x540C;&#x65F6;&#x4E3B;&#x7EBF;&#x7A0B;&#x53C8;&#x4E0D;&#x4F1A;&#x88AB;block&#x3002;&#x4E00;&#x5171;&#x6267;&#x884C;&#x7684;&#x65F6;&#x95F4;&#x5927;&#x6982;&#x5728;6s&#x5DE6;&#x53F3; </p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; aaron 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-03-27 00:13:22
+</span></footer>
+                        
+                    </section>
+                    
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+
+        
+        
+        <a href="10-进程与线程.html" class="navigation navigation-prev " aria-label="Previous page: 10-进程与线程">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        
+        
+        <a href="12.Python协程深入理解.html" class="navigation navigation-next " aria-label="Next page: 12.Python协程深入理解">
+            <i class="fa fa-angle-right"></i>
+        </a>
+        
+        
+        
+    </div>
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"11.Python asyncio","level":"1.5.2.11","depth":3,"next":{"title":"12.Python协程深入理解","level":"1.5.2.12","depth":3,"path":"知识库/04.编程开发/02.Python/12.Python协程深入理解.md","ref":"知识库/04.编程开发/02.Python/12.Python协程深入理解.md","articles":[]},"previous":{"title":"10-进程与线程","level":"1.5.2.10","depth":3,"path":"知识库/04.编程开发/02.Python/10-进程与线程.md","ref":"知识库/04.编程开发/02.Python/10-进程与线程.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","hide-element","code","theme-d4t","-lunr","-search","-sharing","search-pro-fixed","-highlight","chapter-fold","expandable-chapters","lightbox","tbfed-pagefooter","github","flexible-alerts","prism","back-to-top-button","auto-scroll-table","expandable-chapters","lock","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-d4t":{},"tbfed-pagefooter":{"copyright":"Copyright &copy aaron 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript","shell":"bash","xml-dtd":"xml"},"ignore":["mermaid","eval-js","ascii","result","manifest","payload","google","tree","java_out","log4j2","jsp","class","Exception","stack","c#","xml-dtd","C++","twig","jinja2","exception","tpl"]},"github":{"url":"https://github.com/byAaronLuo"},"d4t":{"search-placeholder":"请输入关键字搜索","logo":"/README.assets/logo.svg","favicon":"/README.assets/favicon.ico"},"livereload":{},"splitter":{},"lock":{"verificationCode":{"key":"Token","value":"!&pF@RFL8Vs$nhM6"},"lockTokenKey":"Token","email":"aaronluo54@gmail.com","allPage":false,"articleHeightPercent":0},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"hide-element":{"elements":[".gitbook-link",".title",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{"collapsible":true,"level":2,"prepend":true,"scrollToTitle":true}},"theme":"default","author":"aaron","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Aaron 知识库","gitbook":"*","description":"个人的部分知识技能，倾向于使用知识库的方式进行总结回顾自己","theme-default":{"showLevel":true}},"file":{"path":"知识库/04.编程开发/02.Python/11.Python asyncio.md","mtime":"2020-03-26T16:13:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-07-18T04:41:34.748Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro-fixed/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro-fixed/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lock/lock.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-theme-d4t/script.js"></script>
+        
+    
+
+    </body>
+</html>
+
